@@ -244,9 +244,14 @@ def score_batch(
             if block.type == "tool_use" and block.name == "score_articles":
                 results = {}
                 for s in block.input.get("scores", []):
+                    if not isinstance(s, dict):
+                        continue
                     idx = s.get("index")
-                    sc = max(1, min(5, int(s.get("score", 1))))
-                    reason = s.get("reason", "")
+                    try:
+                        sc = max(1, min(5, int(s.get("score", 1))))
+                    except (TypeError, ValueError):
+                        continue
+                    reason = s.get("reason", "") or ""
                     if idx is not None:
                         results[idx] = (sc, reason)
                 return results
@@ -255,41 +260,80 @@ def score_batch(
     return {}
 
 
-def score_all(papers: list[Paper], config: dict) -> list[Paper]:
+def _keyword_prescore(paper: Paper, profile: dict) -> float:
+    """Quick keyword check returning raw relevance (0–1). Used to pre-filter before Haiku."""
+    core = [kw.lower() for kw in profile.get("core_interests", [])]
+    methods = [kw.lower() for kw in profile.get("methods", [])]
+    emerging = [kw.lower() for kw in profile.get("emerging_interests", [])]
+    text = (paper.title + " " + paper.abstract).lower()
+    raw = 0.0
+    for kw in core:
+        if kw in text:
+            raw += 0.15
+    for kw in methods:
+        if kw in text:
+            raw += 0.08
+    for kw in emerging:
+        if kw in text:
+            raw += 0.06
+    return raw
+
+
+def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Paper]]:
+    """Score papers. Returns (scored_papers, news_items)."""
+    profile = config.get("profile", {})
+
+    # Separate news from academic papers
+    academic, news = [], []
+    for p in papers:
+        if p.feed_category == "News":
+            news.append(p)
+        else:
+            academic.append(p)
+    logger.info(f"Split: {len(academic)} academic, {len(news)} news")
+
+    # Pre-filter academic papers by keyword relevance
+    candidates = []
+    rest = []
+    for p in academic:
+        if _keyword_prescore(p, profile) > 0:
+            candidates.append(p)
+        else:
+            rest.append(p)
+    logger.info(f"Keyword pre-filter: {len(candidates)} candidates, {len(rest)} skipped")
+
+    # Haiku scoring only for keyword-matched candidates
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not api_key:
+    if api_key and candidates:
+        client = anthropic.Anthropic(api_key=api_key)
+        profile_text = profile.get("text", "")
+        batch_size = 40
+        indexed = list(enumerate(candidates, 1))
+        scored_count = 0
+        for i in range(0, len(indexed), batch_size):
+            batch = indexed[i:i + batch_size]
+            logger.info(f"Scoring batch {i // batch_size + 1} ({len(batch)} papers)...")
+            results = score_batch(client, profile_text, batch)
+            for idx, p in batch:
+                if idx in results:
+                    p.score, p.reason = results[idx]
+                    scored_count += 1
+        if scored_count == 0:
+            logger.warning("Haiku returned no results — using keyword fallback")
+            candidates = _keyword_fallback_list(candidates, profile)
+    elif not api_key:
         logger.warning("ANTHROPIC_API_KEY not set — using keyword fallback")
-        return _keyword_fallback(papers, config)
-
-    client = anthropic.Anthropic(api_key=api_key)
-    profile_text = config.get("profile", {}).get("text", "")
-
-    batch_size = 20
-    indexed = list(enumerate(papers, 1))
-    scored_count = 0
-    for i in range(0, len(indexed), batch_size):
-        batch = indexed[i:i + batch_size]
-        logger.info(f"Scoring batch {i // batch_size + 1} ({len(batch)} papers)...")
-        results = score_batch(client, profile_text, batch)
-        for idx, p in batch:
-            if idx in results:
-                p.score, p.reason = results[idx]
-                scored_count += 1
-
-    if scored_count == 0:
-        logger.warning("Haiku scoring returned no results — falling back to keywords")
-        return _keyword_fallback(papers, config)
+        candidates = _keyword_fallback_list(candidates, profile)
 
     threshold = config.get("output", {}).get("score_threshold", 2)
-    scored = [p for p in papers if p.score >= threshold]
+    scored = [p for p in candidates if p.score >= threshold]
     scored.sort(key=lambda p: (-p.score, p.title))
     logger.info(f"Papers above threshold ({threshold}): {len(scored)}")
-    return scored
+    return scored, news
 
 
-def _keyword_fallback(papers: list[Paper], config: dict) -> list[Paper]:
+def _keyword_fallback_list(papers: list[Paper], profile: dict) -> list[Paper]:
     """Simple keyword scoring when no API key is available."""
-    profile = config.get("profile", {})
     core = [kw.lower() for kw in profile.get("core_interests", [])]
     methods = [kw.lower() for kw in profile.get("methods", [])]
     emerging = [kw.lower() for kw in profile.get("emerging_interests", [])]
@@ -310,20 +354,15 @@ def _keyword_fallback(papers: list[Paper], config: dict) -> list[Paper]:
             if kw in text:
                 raw += 0.06
                 m.append(kw)
-        # Map 0–1 float → 1–5 integer
         p.score = max(1, min(5, round(raw * 5 + 0.5)))
         p.matched = m
         p.reason = f"Keyword matches: {', '.join(m[:5])}" if m else ""
-
-    threshold = config.get("output", {}).get("score_threshold", 2)
-    scored = [p for p in papers if p.score >= threshold]
-    scored.sort(key=lambda p: (-p.score, p.title))
-    return scored
+    return papers
 
 
 # ── HTML generation ──────────────────────────────────────────
 
-def generate_html(papers: list[Paper], config: dict, date_str: str) -> str:
+def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str: str) -> str:
     all_papers = papers
 
     def _esc(s: str) -> str:
@@ -535,6 +574,43 @@ def generate_html(papers: list[Paper], config: dict, date_str: str) -> str:
     color: #484f58;
   }}
 
+  /* News section */
+  .news-section {{
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #21262d;
+  }}
+  .news-section h2 {{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }}
+  .news-item {{
+    padding: 8px 0;
+    border-bottom: 1px solid #161b22;
+    font-size: 15px;
+  }}
+  .news-item a {{
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+  }}
+  .news-item a:hover {{ text-decoration: underline; }}
+  .news-source {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #21262d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #8b949e;
+    margin-right: 6px;
+  }}
+  .news-time {{
+    color: #6e7681;
+    font-size: 12px;
+    margin-left: 8px;
+  }}
+
   /* Responsive */
   @media (max-width: 768px) {{
     body {{ padding: 16px; }}
@@ -574,6 +650,22 @@ def generate_html(papers: list[Paper], config: dict, date_str: str) -> str:
 {"".join(rows) if rows else '<tr><td colspan="5" class="empty">No relevant papers found today.</td></tr>'}
 </tbody>
 </table>
+
+{"" if not news else f'''
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    {"".join(
+        f'<div class="news-item">'
+        f'<code class="news-source">{_esc(n.feed_name)}</code> '
+        f'<a href="{n.url}" target="_blank" rel="noopener">{_esc(n.title)}</a>'
+        f'<span class="news-time">{time_ago(n.published)}</span>'
+        f'</div>'
+        for n in news
+    )}
+  </div>
+</div>
+'''}
 
 <script>
 function sortBy(mode) {{
@@ -626,14 +718,14 @@ def main():
     if not papers:
         logger.warning("No papers fetched — generating empty page")
 
-    scored = score_all(papers, config)
+    scored, news = score_all(papers, config)
 
-    html = generate_html(scored, config, date_str)
+    html = generate_html(scored, news, config, date_str)
     args.output.write_text(html, encoding="utf-8")
     logger.info(f"HTML written to {args.output}")
 
     json_path = args.output.parent / "latest.json"
-    save_json(scored, json_path)
+    save_json(scored + news, json_path)
     logger.info(f"JSON written to {json_path}")
 
 
