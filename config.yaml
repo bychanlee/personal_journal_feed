@@ -1,0 +1,114 @@
+# Journal Digest — Configuration
+# 설정된 저널 RSS에서 신규 논문을 가져와 Haiku 스코어링 → 정적 HTML 생성
+
+# ── 피드 목록 ──────────────────────────────────────────────────
+feeds:
+  # ── arXiv ──
+  - name: "cond-mat.mtrl-sci"
+    url: "https://rss.arxiv.org/rss/cond-mat.mtrl-sci"
+    category: "arXiv"
+  - name: "cond-mat.mes-hall"
+    url: "https://rss.arxiv.org/rss/cond-mat.mes-hall"
+    category: "arXiv"
+  - name: "cond-mat.str-el"
+    url: "https://rss.arxiv.org/rss/cond-mat.str-el"
+    category: "arXiv"
+  - name: "physics.comp-ph"
+    url: "https://rss.arxiv.org/rss/physics.comp-ph"
+    category: "arXiv"
+
+  # ── APS Journals ──
+  - name: "PRB"
+    url: "https://feeds.aps.org/rss/recent/prb.xml"
+    category: "APS"
+  - name: "PRL"
+    url: "https://feeds.aps.org/rss/recent/prl.xml"
+    category: "APS"
+  - name: "PRX"
+    url: "https://feeds.aps.org/rss/recent/prx.xml"
+    category: "APS"
+  - name: "RMP"
+    url: "https://feeds.aps.org/rss/recent/rmp.xml"
+    category: "APS"
+
+  # ── Science ──
+  - name: "Science"
+    url: "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+    category: "AAAS"
+  - name: "Sci. Adv."
+    url: "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv"
+    category: "AAAS"
+
+  # ── Nature ──
+  - name: "Nature"
+    url: "https://www.nature.com/nature.rss"
+    category: "Nature"
+  - name: "Nat. Phys."
+    url: "https://www.nature.com/nphys.rss"
+    category: "Nature"
+  - name: "Nat. Mater."
+    url: "https://www.nature.com/nmat.rss"
+    category: "Nature"
+  - name: "Nat. Commun."
+    url: "https://www.nature.com/ncomms.rss"
+    category: "Nature"
+  - name: "Nat. Nano."
+    url: "https://www.nature.com/nnano.rss"
+    category: "Nature"
+  - name: "Nat. Comp. Sci."
+    url: "https://www.nature.com/natcomputsci.rss"
+    category: "Nature"
+  - name: "npj QM"
+    url: "https://www.nature.com/npjquantmats.rss"
+    category: "Nature"
+  - name: "npj 2D"
+    url: "https://www.nature.com/npj2dmaterials.rss"
+    category: "Nature"
+
+  # ── Tech News ──
+  - name: "GeekNews"
+    url: "https://news.hada.io/rss/news"
+    category: "News"
+  - name: "SemiEng"
+    url: "https://semiengineering.com/feed/"
+    category: "News"
+
+# ── 연구 프로필 (Haiku 스코어링 컨텍스트) ──────────────────────
+profile:
+  text: >
+    Condensed matter physicist specializing in first-principles calculations
+    of electron-phonon interactions, quasiparticle properties (GW approximation),
+    and optical spectra (Bethe-Salpeter equation). Uses and develops ab initio
+    software such as EPW, Quantum ESPRESSO, BerkeleyGW, Wannier90, SIESTA, and
+    VASP. Interested in semiconductors, phonon physics, topological materials,
+    and emerging ML-driven interatomic potentials.
+
+  core_interests:
+    - electron-phonon coupling
+    - GW approximation / quasiparticle self-energy
+    - Bethe-Salpeter equation (BSE) / optical spectra
+    - Wannier interpolation
+    - phonon dispersion and thermal transport
+    - semiconductor band structure
+    - density functional theory (DFT)
+
+  methods:
+    - EPW
+    - Quantum ESPRESSO
+    - BerkeleyGW
+    - Wannier90
+    - VASP
+    - SIESTA / TranSIESTA
+    - DFPT
+
+  emerging_interests:
+    - topological insulators / semimetals
+    - machine-learning interatomic potentials
+    - moiré / twisted bilayer systems
+    - phonon polaritons
+
+# ── 출력 ───────────────────────────────────────────────────────
+output:
+  top_n: 10
+  score_threshold: 2          # 1–5점 중 이 미만은 숨김 (2 = tangentially related부터 표시)
+  max_age_days: 2             # 최근 N일 이내 논문만 표시
