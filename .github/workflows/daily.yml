@@ -47,15 +47,15 @@ jobs:
         run: |
           DATE=$(date +%Y-%m-%d)
           MONTH=$(date +%Y/%m)
-          # Save generated files
-          cp -r "$(date +%Y)" /tmp/year_dir
+          # Save generated file to /tmp
+          cp "$MONTH/$DATE.html" /tmp/digest.html
           cp .nojekyll /tmp/.nojekyll
           # Switch to gh-pages
           git fetch origin gh-pages || true
           git checkout -B gh-pages origin/gh-pages || git checkout --orphan gh-pages
-          # Copy dated file into monthly folder (preserve existing)
+          # Copy dated file into monthly folder
           mkdir -p "$MONTH"
-          cp "/tmp/year_dir/$MONTH/$DATE.html" "$MONTH/$DATE.html"
+          cp /tmp/digest.html "$MONTH/$DATE.html"
           # Update index.html to redirect to today's digest
           printf '<!DOCTYPE html>\n<html><head>\n<meta http-equiv="refresh" content="0;url=%s/%s.html">\n</head><body>\n<p>Redirecting to <a href="%s/%s.html">today'\''s digest</a>...</p>\n</body></html>\n' "$MONTH" "$DATE" "$MONTH" "$DATE" > index.html
           cp /tmp/.nojekyll .nojekyll
