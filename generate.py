@@ -362,22 +362,26 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
         except Exception:
             return ""
 
-    # Build table rows
+    # Group by feed_name, sorted by score within each group
+    from itertools import groupby
+    grouped = sorted(all_papers, key=lambda p: (p.feed_name, -p.score))
+
     rows = []
-    for p in all_papers:
-        rows.append(
-            f'<tr>'
-            f'<td class="td-score">'
-            f'<span class="score-num" style="background:{score_color(p.score)}">{score_badge(p.score)}</span></td>'
-            f'<td class="td-source"><code>{_esc(p.feed_name)}</code></td>'
-            f'<td class="td-title">'
-            f'<a href="{p.url}" target="_blank" rel="noopener">{_esc(p.title)}</a>'
-            f'{"<br><span class=reason>" + _esc(p.reason) + "</span>" if p.reason else ""}'
-            f'</td>'
-            f'<td class="td-authors">{_esc(p.authors)}</td>'
-            f'<td class="td-time">{time_ago(p.published)}</td>'
-            f'</tr>'
-        )
+    for feed_name, group in groupby(grouped, key=lambda p: p.feed_name):
+        rows.append(f'<tr class="group-header"><td colspan="4">{_esc(feed_name)}</td></tr>')
+        for p in group:
+            rows.append(
+                f'<tr>'
+                f'<td class="td-score">'
+                f'<span class="score-num" style="background:{score_color(p.score)}">{score_badge(p.score)}</span></td>'
+                f'<td class="td-title">'
+                f'<a href="{p.url}" target="_blank" rel="noopener">{_esc(p.title)}</a>'
+                f'{"<br><span class=reason>" + _esc(p.reason) + "</span>" if p.reason else ""}'
+                f'</td>'
+                f'<td class="td-authors">{_esc(p.authors)}</td>'
+                f'<td class="td-time">{time_ago(p.published)}</td>'
+                f'</tr>'
+            )
 
     # Feed summary for header
     feed_counts: dict[str, int] = {}
@@ -436,29 +440,6 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     margin-top: 4px;
   }}
 
-  /* Toolbar */
-  .toolbar {{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    font-size: 15px;
-    color: #656d76;
-  }}
-  .sort-btns button {{
-    background: none;
-    border: 1px solid #d1d9e0;
-    color: #656d76;
-    font-size: 14px;
-    padding: 4px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: inherit;
-    margin-left: 4px;
-  }}
-  .sort-btns button:hover {{ color: #1f2328; border-color: #848d97; }}
-  .sort-btns button.active {{ background: #f6f8fa; color: #1f2328; border-color: #848d97; }}
-
   /* Table */
   table {{
     width: 100%;
@@ -502,20 +483,6 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-  }}
-
-  .td-source {{
-    width: 110px;
-    white-space: nowrap;
-  }}
-  .td-source code {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    background: #f6f8fa;
-    padding: 3px 8px;
-    border-radius: 4px;
-    color: #656d76;
-    border: 1px solid #eaeef2;
   }}
 
   .td-title a {{
@@ -618,20 +585,11 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   <div class="feeds">{feed_summary}</div>
 </div>
 
-<div class="toolbar">
-  <span>{len(all_papers)} articles</span>
-  <div class="sort-btns">
-    <button class="active" onclick="sortBy('score')">Relevance</button>
-    <button onclick="sortBy('date')">Date</button>
-    <button onclick="sortBy('source')">Source</button>
-  </div>
-</div>
 
 <table>
 <thead>
   <tr>
     <th>Score</th>
-    <th>Source</th>
     <th>Title</th>
     <th>Authors</th>
     <th style="text-align:right">Time</th>
@@ -658,46 +616,6 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
 </div>
 '''}
 
-<script>
-function sortBy(mode) {{
-  document.querySelectorAll('.sort-btns button').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  const tbody = document.getElementById('tbody');
-  // Remove any existing group headers
-  tbody.querySelectorAll('.group-header').forEach(h => h.remove());
-  const rows = Array.from(tbody.querySelectorAll('tr:not(.group-header)'));
-  const getScore = r => parseInt(r.querySelector('.score-num')?.textContent) || 0;
-  const getSource = r => (r.querySelector('.td-source')?.textContent || '').trim();
-
-  if (mode === 'score') {{
-    rows.sort((a, b) => getScore(b) - getScore(a));
-    rows.forEach(r => tbody.appendChild(r));
-  }} else if (mode === 'source') {{
-    // Sort by source name, then by score descending within each source
-    rows.sort((a, b) => {{
-      const cmp = getSource(a).localeCompare(getSource(b));
-      return cmp !== 0 ? cmp : getScore(b) - getScore(a);
-    }});
-    // Insert group headers
-    let lastSource = '';
-    rows.forEach(r => {{
-      const src = getSource(r);
-      if (src !== lastSource) {{
-        const header = document.createElement('tr');
-        header.className = 'group-header';
-        header.innerHTML = '<td colspan="5">' + src + '</td>';
-        tbody.appendChild(header);
-        lastSource = src;
-      }}
-      tbody.appendChild(r);
-    }});
-  }} else {{
-    const parse = t => {{ if (!t || t === 'now') return 0; const n = parseInt(t); return t.endsWith('d') ? n*24 : n; }};
-    rows.sort((a, b) => parse(a.querySelector('.td-time')?.textContent) - parse(b.querySelector('.td-time')?.textContent));
-    rows.forEach(r => tbody.appendChild(r));
-  }}
-}}
-</script>
 </body>
 </html>"""
     return html
