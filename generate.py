@@ -430,19 +430,29 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
   body {{
     font-family: 'Inter', system-ui, sans-serif;
-    background: #0d1117;
-    color: #e6edf3;
+    background: #ffffff;
+    color: #1f2328;
     line-height: 1.5;
     padding: 24px 32px;
     max-width: 1400px;
     margin: 0 auto;
   }}
 
+  /* Site title */
+  .site-title {{
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }}
+
   /* Header */
   .page-header {{
     margin-bottom: 24px;
     padding-bottom: 16px;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid #d1d9e0;
   }}
   .page-header h1 {{
     font-size: 24px;
@@ -451,11 +461,11 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   }}
   .page-header .meta {{
     font-size: 15px;
-    color: #8b949e;
+    color: #656d76;
   }}
   .page-header .feeds {{
     font-size: 13px;
-    color: #6e7681;
+    color: #848d97;
     margin-top: 4px;
   }}
 
@@ -466,12 +476,12 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     justify-content: space-between;
     margin-bottom: 12px;
     font-size: 15px;
-    color: #8b949e;
+    color: #656d76;
   }}
   .sort-btns button {{
     background: none;
-    border: 1px solid #30363d;
-    color: #8b949e;
+    border: 1px solid #d1d9e0;
+    color: #656d76;
     font-size: 14px;
     padding: 4px 12px;
     border-radius: 6px;
@@ -479,8 +489,8 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     font-family: inherit;
     margin-left: 4px;
   }}
-  .sort-btns button:hover {{ color: #e6edf3; border-color: #8b949e; }}
-  .sort-btns button.active {{ background: #21262d; color: #e6edf3; border-color: #8b949e; }}
+  .sort-btns button:hover {{ color: #1f2328; border-color: #848d97; }}
+  .sort-btns button.active {{ background: #f6f8fa; color: #1f2328; border-color: #848d97; }}
 
   /* Table */
   table {{
@@ -493,21 +503,21 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #6e7681;
+    color: #848d97;
     padding: 10px 12px;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 2px solid #d1d9e0;
     position: sticky;
     top: 0;
-    background: #0d1117;
+    background: #ffffff;
     cursor: pointer;
     user-select: none;
   }}
-  thead th:hover {{ color: #8b949e; }}
+  thead th:hover {{ color: #1f2328; }}
   tbody tr {{
-    border-bottom: 1px solid #161b22;
+    border-bottom: 1px solid #eaeef2;
     transition: background 0.1s;
   }}
-  tbody tr:hover {{ background: #161b22; }}
+  tbody tr:hover {{ background: #f6f8fa; }}
   td {{ padding: 10px 12px; vertical-align: top; }}
 
   .td-score {{
@@ -534,14 +544,15 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   .td-source code {{
     font-family: 'JetBrains Mono', monospace;
     font-size: 13px;
-    background: #21262d;
+    background: #f6f8fa;
     padding: 3px 8px;
     border-radius: 4px;
-    color: #8b949e;
+    color: #656d76;
+    border: 1px solid #eaeef2;
   }}
 
   .td-title a {{
-    color: #58a6ff;
+    color: #0969da;
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
@@ -549,13 +560,13 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   .td-title a:hover {{ text-decoration: underline; }}
   .reason {{
     font-size: 13px;
-    color: #6e7681;
+    color: #848d97;
     display: block;
     margin-top: 3px;
   }}
 
   .td-authors {{
-    color: #8b949e;
+    color: #656d76;
     font-size: 14px;
     max-width: 350px;
   }}
@@ -563,7 +574,7 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   .td-time {{
     width: 50px;
     text-align: right;
-    color: #6e7681;
+    color: #848d97;
     font-size: 12px;
     white-space: nowrap;
   }}
@@ -571,14 +582,14 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   .empty {{
     text-align: center;
     padding: 60px;
-    color: #484f58;
+    color: #848d97;
   }}
 
   /* News section */
   .news-section {{
     margin-top: 32px;
     padding-top: 24px;
-    border-top: 1px solid #21262d;
+    border-top: 1px solid #d1d9e0;
   }}
   .news-section h2 {{
     font-size: 18px;
@@ -587,11 +598,11 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   }}
   .news-item {{
     padding: 8px 0;
-    border-bottom: 1px solid #161b22;
+    border-bottom: 1px solid #eaeef2;
     font-size: 15px;
   }}
   .news-item a {{
-    color: #58a6ff;
+    color: #0969da;
     text-decoration: none;
     font-weight: 500;
   }}
@@ -599,14 +610,15 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
   .news-source {{
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
-    background: #21262d;
+    background: #f6f8fa;
     padding: 2px 6px;
     border-radius: 4px;
-    color: #8b949e;
+    color: #656d76;
+    border: 1px solid #eaeef2;
     margin-right: 6px;
   }}
   .news-time {{
-    color: #6e7681;
+    color: #848d97;
     font-size: 12px;
     margin-left: 8px;
   }}
@@ -620,6 +632,8 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
 </style>
 </head>
 <body>
+
+<div class="site-title">Byeongchan Lee's Journal Feed</div>
 
 <div class="page-header">
   <h1>Journal Digest</h1>
