@@ -27,25 +27,45 @@ jobs:
       - name: Generate digest
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python generate.py --output index.html
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          MONTH=$(date +%Y/%m)
+          mkdir -p "$MONTH"
+          python generate.py --output "$MONTH/$DATE.html"
 
       - name: Commit to main
         run: |
+          DATE=$(date +%Y-%m-%d)
+          MONTH=$(date +%Y/%m)
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html latest.json
-          git diff --cached --quiet || git commit -m "digest: $(date +%Y-%m-%d)"
+          git add "$MONTH/$DATE.html" latest.json
+          git diff --cached --quiet || git commit -m "digest: $DATE"
           git push origin main
 
       - name: Deploy to gh-pages
         run: |
-          cp index.html /tmp/index.html
+          DATE=$(date +%Y-%m-%d)
+          MONTH=$(date +%Y/%m)
+          # Save generated files
+          cp -r "$(date +%Y)" /tmp/year_dir
           cp .nojekyll /tmp/.nojekyll
+          # Switch to gh-pages
           git fetch origin gh-pages || true
           git checkout -B gh-pages origin/gh-pages || git checkout --orphan gh-pages
-          git rm -rf . 2>/dev/null || true
-          cp /tmp/index.html index.html
+          # Copy dated file into monthly folder (preserve existing)
+          mkdir -p "$MONTH"
+          cp "/tmp/year_dir/$MONTH/$DATE.html" "$MONTH/$DATE.html"
+          # Update index.html to redirect to today's digest
+          cat > index.html << HEREDOC
+          <!DOCTYPE html>
+          <html><head>
+          <meta http-equiv="refresh" content="0;url=$MONTH/$DATE.html">
+          </head><body>
+          <p>Redirecting to <a href="$MONTH/$DATE.html">today's digest</a>...</p>
+          </body></html>
+          HEREDOC
           cp /tmp/.nojekyll .nojekyll
-          git add index.html .nojekyll
-          git diff --cached --quiet || git commit -m "deploy: $(date +%Y-%m-%d)"
+          git add index.html .nojekyll "$MONTH/$DATE.html"
+          git diff --cached --quiet || git commit -m "deploy: $DATE"
           git push origin gh-pages
