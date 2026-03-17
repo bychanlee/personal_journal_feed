@@ -552,6 +552,16 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
     color: #848d97;
   }}
 
+  .group-header td {{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }}
+
   /* News section */
   .news-section {{
     margin-top: 32px;
@@ -653,22 +663,39 @@ function sortBy(mode) {{
   document.querySelectorAll('.sort-btns button').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
   const tbody = document.getElementById('tbody');
-  const rows = Array.from(tbody.querySelectorAll('tr'));
-  rows.sort((a, b) => {{
-    if (mode === 'score') {{
-      const sa = parseInt(a.querySelector('.score-num')?.textContent) || 0;
-      const sb = parseInt(b.querySelector('.score-num')?.textContent) || 0;
-      return sb - sa;
-    }} else if (mode === 'source') {{
-      const sa = a.querySelector('.td-source')?.textContent || '';
-      const sb = b.querySelector('.td-source')?.textContent || '';
-      return sa.localeCompare(sb);
-    }} else {{
-      const parse = t => {{ if (!t || t === 'now') return 0; const n = parseInt(t); return t.endsWith('d') ? n*24 : n; }};
-      return parse(a.querySelector('.td-time')?.textContent) - parse(b.querySelector('.td-time')?.textContent);
-    }}
-  }});
-  rows.forEach(r => tbody.appendChild(r));
+  // Remove any existing group headers
+  tbody.querySelectorAll('.group-header').forEach(h => h.remove());
+  const rows = Array.from(tbody.querySelectorAll('tr:not(.group-header)'));
+  const getScore = r => parseInt(r.querySelector('.score-num')?.textContent) || 0;
+  const getSource = r => (r.querySelector('.td-source')?.textContent || '').trim();
+
+  if (mode === 'score') {{
+    rows.sort((a, b) => getScore(b) - getScore(a));
+    rows.forEach(r => tbody.appendChild(r));
+  }} else if (mode === 'source') {{
+    // Sort by source name, then by score descending within each source
+    rows.sort((a, b) => {{
+      const cmp = getSource(a).localeCompare(getSource(b));
+      return cmp !== 0 ? cmp : getScore(b) - getScore(a);
+    }});
+    // Insert group headers
+    let lastSource = '';
+    rows.forEach(r => {{
+      const src = getSource(r);
+      if (src !== lastSource) {{
+        const header = document.createElement('tr');
+        header.className = 'group-header';
+        header.innerHTML = '<td colspan="5">' + src + '</td>';
+        tbody.appendChild(header);
+        lastSource = src;
+      }}
+      tbody.appendChild(r);
+    }});
+  }} else {{
+    const parse = t => {{ if (!t || t === 'now') return 0; const n = parseInt(t); return t.endsWith('d') ? n*24 : n; }};
+    rows.sort((a, b) => parse(a.querySelector('.td-time')?.textContent) - parse(b.querySelector('.td-time')?.textContent));
+    rows.forEach(r => tbody.appendChild(r));
+  }}
 }}
 </script>
 </body>
