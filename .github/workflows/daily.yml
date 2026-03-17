@@ -2,19 +2,19 @@ name: Daily Journal Digest
 
 on:
   schedule:
-    - cron: "0 21 * * *"   # 06:00 KST (UTC+9)
-  workflow_dispatch:        # 수동 실행 가능
+    - cron: "0 21 * * 0-4"   # 06:00 KST Mon-Fri (arXiv posts weekdays)
+  workflow_dispatch:          # 수동 실행 가능
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -28,30 +28,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate.py --output index.html
 
-      - name: Commit and push
+      - name: Deploy to gh-pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Commit generated files to main
           git add index.html latest.json
           git diff --cached --quiet || git commit -m "digest: $(date +%Y-%m-%d)"
-          git push
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: "."
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          git push origin main
+          # Deploy index.html to gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf . 2>/dev/null || true
+          git checkout main -- index.html .nojekyll
+          git add index.html .nojekyll
+          git diff --cached --quiet || git commit -m "deploy: $(date +%Y-%m-%d)"
+          git push origin gh-pages
