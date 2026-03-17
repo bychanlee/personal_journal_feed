@@ -1,7 +1,8 @@
-# Journal Digest — Configuration
+# Personal Journal Feed — Configuration
 # 설정된 저널 RSS에서 신규 논문을 가져와 Haiku 스코어링 → 정적 HTML 생성
 
 # ── 피드 목록 ──────────────────────────────────────────────────
+# high_impact: true인 피드는 키워드 사전 필터를 건너뛰고 전부 Haiku에 보냄
 feeds:
   # ── arXiv ──
   - name: "cond-mat.mtrl-sci"
@@ -24,46 +25,58 @@ feeds:
   - name: "PRL"
     url: "https://feeds.aps.org/rss/recent/prl.xml"
     category: "APS"
+    high_impact: true
   - name: "PRX"
     url: "https://feeds.aps.org/rss/recent/prx.xml"
     category: "APS"
+    high_impact: true
   - name: "RMP"
     url: "https://feeds.aps.org/rss/recent/rmp.xml"
     category: "APS"
+    high_impact: true
 
   # ── Science ──
   - name: "Science"
     url: "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
     category: "AAAS"
+    high_impact: true
   - name: "Sci. Adv."
     url: "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv"
     category: "AAAS"
+    high_impact: true
 
   # ── Nature ──
   - name: "Nature"
     url: "https://www.nature.com/nature.rss"
     category: "Nature"
+    high_impact: true
   - name: "Nat. Phys."
     url: "https://www.nature.com/nphys.rss"
     category: "Nature"
+    high_impact: true
   - name: "Nat. Mater."
     url: "https://www.nature.com/nmat.rss"
     category: "Nature"
+    high_impact: true
   - name: "Nat. Commun."
     url: "https://www.nature.com/ncomms.rss"
     category: "Nature"
   - name: "Nat. Nano."
     url: "https://www.nature.com/nnano.rss"
     category: "Nature"
+    high_impact: true
   - name: "Nat. Comp. Sci."
     url: "https://www.nature.com/natcomputsci.rss"
     category: "Nature"
+    high_impact: true
   - name: "npj QM"
     url: "https://www.nature.com/npjquantmats.rss"
     category: "Nature"
+    high_impact: true
   - name: "npj 2D"
     url: "https://www.nature.com/npj2dmaterials.rss"
     category: "Nature"
+    high_impact: true
 
   # ── Tech News ──
   - name: "GeekNews"
@@ -109,6 +122,6 @@ profile:
 
 # ── 출력 ───────────────────────────────────────────────────────
 output:
-  top_n: 10
-  score_threshold: 2          # 1–5점 중 이 미만은 숨김 (2 = tangentially related부터 표시)
-  max_age_days: 2             # 최근 N일 이내 논문만 표시
+  top_n: 30                     # 표시할 상위 논문 수
+  score_threshold: 2            # 1–5점 중 이 미만은 숨김
+  max_age_days: 2               # 최근 N일 이내 논문만 표시

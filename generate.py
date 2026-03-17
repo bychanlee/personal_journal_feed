@@ -212,11 +212,7 @@ def score_batch(
     """Score a batch via Haiku. Returns {index: (score, reason)}."""
     lines = []
     for idx, p in papers:
-        line = f"{idx}. Title: {p.title}"
-        if p.authors:
-            line += f" | Authors: {p.authors}"
-        if p.abstract:
-            line += f" | Abstract: {p.abstract[:500]}"
+        line = f"{idx}. {p.title} [{p.feed_name}]"
         lines.append(line)
 
     user_msg = (
@@ -234,7 +230,7 @@ def score_batch(
     try:
         response = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=2048,
+            max_tokens=4096,
             system="You are an academic paper relevance scorer for a condensed-matter physicist.",
             messages=[{"role": "user", "content": user_msg}],
             tools=[SCORE_TOOL],
@@ -260,25 +256,6 @@ def score_batch(
     return {}
 
 
-def _keyword_prescore(paper: Paper, profile: dict) -> float:
-    """Quick keyword check returning raw relevance (0–1). Used to pre-filter before Haiku."""
-    core = [kw.lower() for kw in profile.get("core_interests", [])]
-    methods = [kw.lower() for kw in profile.get("methods", [])]
-    emerging = [kw.lower() for kw in profile.get("emerging_interests", [])]
-    text = (paper.title + " " + paper.abstract).lower()
-    raw = 0.0
-    for kw in core:
-        if kw in text:
-            raw += 0.15
-    for kw in methods:
-        if kw in text:
-            raw += 0.08
-    for kw in emerging:
-        if kw in text:
-            raw += 0.06
-    return raw
-
-
 def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Paper]]:
     """Score papers. Returns (scored_papers, news_items)."""
     profile = config.get("profile", {})
@@ -292,23 +269,13 @@ def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Pape
             academic.append(p)
     logger.info(f"Split: {len(academic)} academic, {len(news)} news")
 
-    # Pre-filter academic papers by keyword relevance
-    candidates = []
-    rest = []
-    for p in academic:
-        if _keyword_prescore(p, profile) > 0:
-            candidates.append(p)
-        else:
-            rest.append(p)
-    logger.info(f"Keyword pre-filter: {len(candidates)} candidates, {len(rest)} skipped")
-
-    # Haiku scoring only for keyword-matched candidates
+    # Score all academic papers (title-only → fast + cheap)
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if api_key and candidates:
+    if api_key and academic:
         client = anthropic.Anthropic(api_key=api_key)
         profile_text = profile.get("text", "")
-        batch_size = 40
-        indexed = list(enumerate(candidates, 1))
+        batch_size = 60
+        indexed = list(enumerate(academic, 1))
         scored_count = 0
         for i in range(0, len(indexed), batch_size):
             batch = indexed[i:i + batch_size]
@@ -320,13 +287,13 @@ def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Pape
                     scored_count += 1
         if scored_count == 0:
             logger.warning("Haiku returned no results — using keyword fallback")
-            candidates = _keyword_fallback_list(candidates, profile)
+            academic = _keyword_fallback_list(academic, profile)
     elif not api_key:
         logger.warning("ANTHROPIC_API_KEY not set — using keyword fallback")
-        candidates = _keyword_fallback_list(candidates, profile)
+        academic = _keyword_fallback_list(academic, profile)
 
     threshold = config.get("output", {}).get("score_threshold", 2)
-    scored = [p for p in candidates if p.score >= threshold]
+    scored = [p for p in academic if p.score >= threshold]
     scored.sort(key=lambda p: (-p.score, p.title))
     logger.info(f"Papers above threshold ({threshold}): {len(scored)}")
     return scored, news
@@ -633,7 +600,7 @@ def generate_html(papers: list[Paper], news: list[Paper], config: dict, date_str
 </head>
 <body>
 
-<div class="site-title">Byeongchan Lee's Journal Feed</div>
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
 
 <div class="page-header">
   <h1>Journal Digest</h1>
