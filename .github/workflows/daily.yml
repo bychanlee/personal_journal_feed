@@ -57,14 +57,7 @@ jobs:
           mkdir -p "$MONTH"
           cp "/tmp/year_dir/$MONTH/$DATE.html" "$MONTH/$DATE.html"
           # Update index.html to redirect to today's digest
-          cat > index.html << HEREDOC
-          <!DOCTYPE html>
-          <html><head>
-          <meta http-equiv="refresh" content="0;url=$MONTH/$DATE.html">
-          </head><body>
-          <p>Redirecting to <a href="$MONTH/$DATE.html">today's digest</a>...</p>
-          </body></html>
-          HEREDOC
+          printf '<!DOCTYPE html>\n<html><head>\n<meta http-equiv="refresh" content="0;url=%s/%s.html">\n</head><body>\n<p>Redirecting to <a href="%s/%s.html">today'\''s digest</a>...</p>\n</body></html>\n' "$MONTH" "$DATE" "$MONTH" "$DATE" > index.html
           cp /tmp/.nojekyll .nojekyll
           git add index.html .nojekyll "$MONTH/$DATE.html"
           git diff --cached --quiet || git commit -m "deploy: $DATE"
