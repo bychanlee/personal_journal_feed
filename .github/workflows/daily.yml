@@ -2,7 +2,7 @@ name: Daily Journal Digest
 
 on:
   schedule:
-    - cron: "0 21 * * 0-4"   # 06:00 KST Mon-Fri (arXiv posts weekdays)
+    - cron: "0 20 * * *"     # 05:00 KST daily
   workflow_dispatch:          # 수동 실행 가능
 
 permissions:
@@ -39,7 +39,7 @@ jobs:
           MONTH=$(date +%Y/%m)
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$MONTH/$DATE.html" latest.json
+          git add "$MONTH/$DATE.html" "$MONTH/latest.json"
           git diff --cached --quiet || git commit -m "digest: $DATE"
           git push origin main
 
@@ -47,8 +47,9 @@ jobs:
         run: |
           DATE=$(date +%Y-%m-%d)
           MONTH=$(date +%Y/%m)
-          # Save generated file to /tmp
+          # Save generated files to /tmp
           cp "$MONTH/$DATE.html" /tmp/digest.html
+          cp "$MONTH/latest.json" /tmp/latest.json
           cp .nojekyll /tmp/.nojekyll
           # Switch to gh-pages
           git fetch origin gh-pages || true
@@ -56,9 +57,10 @@ jobs:
           # Copy dated file into monthly folder
           mkdir -p "$MONTH"
           cp /tmp/digest.html "$MONTH/$DATE.html"
+          cp /tmp/latest.json "$MONTH/latest.json"
           # Update index.html to redirect to today's digest
           printf '<!DOCTYPE html>\n<html><head>\n<meta http-equiv="refresh" content="0;url=%s/%s.html">\n</head><body>\n<p>Redirecting to <a href="%s/%s.html">today'\''s digest</a>...</p>\n</body></html>\n' "$MONTH" "$DATE" "$MONTH" "$DATE" > index.html
           cp /tmp/.nojekyll .nojekyll
-          git add index.html .nojekyll "$MONTH/$DATE.html"
+          git add index.html .nojekyll "$MONTH/$DATE.html" "$MONTH/latest.json"
           git diff --cached --quiet || git commit -m "deploy: $DATE"
           git push origin gh-pages
