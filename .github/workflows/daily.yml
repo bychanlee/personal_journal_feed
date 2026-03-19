@@ -28,15 +28,15 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          DATE=$(date +%Y-%m-%d)
-          MONTH=$(date +%Y/%m)
+          DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          MONTH=$(TZ=Asia/Seoul date +%Y/%m)
           mkdir -p "$MONTH"
           python generate.py --output "$MONTH/$DATE.html"
 
       - name: Commit to main
         run: |
-          DATE=$(date +%Y-%m-%d)
-          MONTH=$(date +%Y/%m)
+          DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          MONTH=$(TZ=Asia/Seoul date +%Y/%m)
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$MONTH/$DATE.html" "$MONTH/latest.json"
@@ -45,8 +45,8 @@ jobs:
 
       - name: Deploy to gh-pages
         run: |
-          DATE=$(date +%Y-%m-%d)
-          MONTH=$(date +%Y/%m)
+          DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          MONTH=$(TZ=Asia/Seoul date +%Y/%m)
           # Save generated files to /tmp
           cp "$MONTH/$DATE.html" /tmp/digest.html
           cp "$MONTH/latest.json" /tmp/latest.json
