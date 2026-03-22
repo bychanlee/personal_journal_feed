@@ -78,6 +78,12 @@ feeds:
     category: "Nature"
     high_impact: true
 
+  # ── ACS ──
+  - name: "ACS Nano"
+    url: "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=ancac3"
+    category: "ACS"
+    high_impact: true
+
   # ── Tech News ──
   - name: "GeekNews"
     url: "https://news.hada.io/rss/news"
@@ -89,21 +95,31 @@ feeds:
 # ── 연구 프로필 (Haiku 스코어링 컨텍스트) ──────────────────────
 profile:
   text: >
-    Condensed matter physicist specializing in first-principles calculations
-    of electron-phonon interactions, quasiparticle properties (GW approximation),
-    and optical spectra (Bethe-Salpeter equation). Uses and develops ab initio
-    software such as EPW, Quantum ESPRESSO, BerkeleyGW, Wannier90, SIESTA, and
-    VASP. Interested in semiconductors, phonon physics, topological materials,
-    and emerging ML-driven interatomic potentials.
+    Condensed matter physicist with a first-principles calculation background
+    (electron-phonon interactions, GW, BSE). Primary goal of this feed is to
+    catch important NEW experimental observations in condensed matter and
+    materials physics for rapid follow-up. Computational papers are secondary
+    — tracked mainly to monitor what major groups in the field are working on.
 
-  core_interests:
-    - electron-phonon coupling
-    - GW approximation / quasiparticle self-energy
-    - Bethe-Salpeter equation (BSE) / optical spectra
-    - Wannier interpolation
-    - phonon dispersion and thermal transport
-    - semiconductor band structure
-    - density functional theory (DFT)
+  # 높은 우선순위: 새로운 실험적 관측·발견
+  high_priority_topics:
+    - topological quantum phenomena (new phases, edge states, quantized responses)
+    - 2D materials / moiré systems (new correlated phases, flat-band physics)
+    - phonon physics (thermal transport, phonon polaritons, topological phonons)
+    - altermagnets (experimental confirmation, new materials)
+    - quantum geometry effects (Berry curvature dipole, quantum metric measurements)
+    - exciton physics (moiré excitons, interlayer excitons, optical signatures)
+    - kagome metals (CDW, unconventional superconductivity, electron correlation)
+    - nonlinear transport / bulk photovoltaic effect (symmetry breaking signatures)
+    - orbital magnetism / orbital Hall effect
+    - light-induced phases / Floquet engineering (pump-probe experiments)
+
+  # 보통 우선순위: 동향 파악용
+  background_topics:
+    - electron-phonon coupling (ab initio methods)
+    - GW / BSE calculations
+    - DFT methodology advances
+    - high-throughput / autonomous materials discovery
 
   methods:
     - EPW
@@ -113,12 +129,6 @@ profile:
     - VASP
     - SIESTA / TranSIESTA
     - DFPT
-
-  emerging_interests:
-    - topological insulators / semimetals
-    - machine-learning interatomic potentials
-    - moiré / twisted bilayer systems
-    - phonon polaritons
 
 # ── 출력 ───────────────────────────────────────────────────────
 output:
