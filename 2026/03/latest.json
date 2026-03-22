@@ -1,20 +1,6 @@
 {
-  "generated": "2026-03-21T20:13:41.488330+00:00",
+  "generated": "2026-03-22T00:22:53.701744+00:00",
   "papers": [
-    {
-      "title": "A unified ab initio theory of spin-phonon relaxation and decoherence uncovers fast dephasing in magnetic molecules",
-      "authors": "Alessandro Lunghi",
-      "last_author": "Alessandro Lunghi",
-      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3868?af=R",
-      "paper_id": "10.1126/sciadv.aeb3868?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-03-20T07:00:00+00:00",
-      "score": 5,
-      "reason": "Spin-phonon coupling and magnetic decoherence via ab initio theory; directly addresses electron-phonon interactions in magnetic systems.",
-      "matched": []
-    },
     {
       "title": "Exceptional Optical Phonon Coherence in Enriched Cubic Boron Arsenide via Suppression of Three-Phonon Scattering",
       "authors": "Tong Lin, Fengjiao Pan, Gaihua Ye, Sanjna Sukumaran, Cynthia Nnokwe, Ange Benise Niyikiza, William A. Smith, Stephen B. Bayne, Rui He, Zhifeng Ren, and Hanyu Zhu",
@@ -26,21 +12,21 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 5,
-      "reason": "Optical phonon properties and three-phonon scattering in BAs; directly addresses phonon dynamics and electron-phonon interactions via first-principles (EPW relevant).",
+      "reason": "Phonon coherence suppression in cubic boron arsenide via three-phonon scattering—directly relevant to phonon dynamics and e-ph coupling.",
       "matched": []
     },
     {
-      "title": "Fermi liquid and isotropic superconductivity of Hund scenario for bilayer nickelates",
-      "authors": "Jiangfan Wang, Yi-feng Yang",
-      "last_author": "Yi-feng Yang",
-      "abstract": "npj Quantum Materials, Published online: 20 March 2026; doi:10.1038/s41535-026-00871-xFermi liquid and isotropic superconductivity of Hund scenario for bilayer nickelates",
-      "url": "https://www.nature.com/articles/s41535-026-00871-x",
-      "paper_id": "",
-      "feed_name": "npj QM",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 5,
-      "reason": "Bilayer nickelates superconductivity and Fermi liquid behavior; directly addresses quasiparticle properties, electron correlations, and superconducting order—core condensed matter theory relevant to GW and electronic structure calculations.",
+      "title": "A unified ab initio theory of spin-phonon relaxation and decoherence uncovers fast dephasing in magnetic molecules",
+      "authors": "Alessandro Lunghi",
+      "last_author": "Alessandro Lunghi",
+      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3868?af=R",
+      "paper_id": "10.1126/sciadv.aeb3868?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-03-20T07:00:00+00:00",
+      "score": 4,
+      "reason": "First-principles theory of spin-phonon relaxation in magnetic molecules—directly aligned with electron-phonon/ab initio background.",
       "matched": []
     },
     {
@@ -54,35 +40,35 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Quantum metric in magnetic systems via Raman scattering; topological properties and optical spectroscopy measurement directly relevant.",
+      "reason": "Direct Raman observation of quantum metric in magnetic materials—novel experimental technique.",
       "matched": []
     },
     {
-      "title": "Exceptional sensitivity near the bistable transition point of a hybrid quantum system",
-      "authors": "Hanfeng Wang, Kurt Jacobs, Donald Fahey, Yong Hu, Dirk R. Englund, Matthew E. Trusheim",
-      "last_author": "Matthew E. Trusheim",
-      "abstract": "Nature Physics, Published online: 20 March 2026; doi:10.1038/s41567-026-03217-3Operating devices close to a phase transition can improve performance due to the singular behaviour at critical points. An enhancement in sensitivity has now been achieved using the bistable transition point in a hybrid quantum system.",
-      "url": "https://www.nature.com/articles/s41567-026-03217-3",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 4,
-      "reason": "Hybrid quantum systems with exceptional sensitivity; involves quantum mechanical properties and may relate to quasiparticle excitations and topological physics.",
-      "matched": []
-    },
-    {
-      "title": "From quantum geometry to nonlinear optics and gerbes: Recent advances in topological band theory",
-      "authors": "Tomáš Bzdušek",
-      "last_author": "Tomáš Bzdušek",
-      "abstract": "Author(s): Tomáš BzdušekThis Perspective explores recent advances in topological band theory, focusing on the quantum geometric tensor, delicate and multigap topology, and higher-form structures like bundle gerbes. It highlights how these geometric features relate to first- and higher-order optical responses, including the quantization of shift currents. By moving beyond conventional Berryology, these threads offer new insights into discovery and materials design for electronic and synthetic condensed matter systems.[Phys. Rev. B 113, 099601] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/9p92-qt26",
-      "paper_id": "10.1103/9p92-qt26",
+      "title": "High-pressure formation and characterization of a boron carbide polymorph featuring bent C–B–C chains",
+      "authors": "Akun Liang, Umbertoluca Ranieri, James Spender, Charles Lamb, Sarah Bolton, Bernhard Massani, Ryan Stewart McWilliams, Timofey Fedotenko, Konstantin Glazyrin, Nico Giordano, Jonathan Wright, Florian Trybel, and Dominique Laniel",
+      "last_author": "Dominique Laniel",
+      "abstract": "Author(s): Akun Liang, Umbertoluca Ranieri, James Spender, Charles Lamb, Sarah Bolton, Bernhard Massani, Ryan Stewart McWilliams, Timofey Fedotenko, Konstantin Glazyrin, Nico Giordano, Jonathan Wright, Florian Trybel, and Dominique LanielBoron carbide is a material of choice for multiple industries, e.g., aerospace, as a lightweight structural ceramic due to its high hardness, high melting temperature, and low density. However, its mechanical properties have been observed to radically degrade under shockwave compression, presumably …[Phys. Rev. B 113, 104108] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/v5kf-svcz",
+      "paper_id": "10.1103/v5kf-svcz",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Topological band theory and nonlinear optics directly relevant to research interests; likely discusses optical response and band structure.",
+      "reason": "Novel high-pressure boron carbide polymorph with new bonding geometry—direct materials discovery.",
+      "matched": []
+    },
+    {
+      "title": "Magnetic coupling transforms random snapping into ordered sequences in soft metamaterials",
+      "authors": "Haoze Sun, Gabriel Alkuino, Yinding Chi, Yevhen Zabila, Haitao Qing, Denys Makarov, Teng Zhang, Jie Yin",
+      "last_author": "Jie Yin",
+      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3182?af=R",
+      "paper_id": "10.1126/sciadv.aec3182?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-03-20T07:00:00+00:00",
+      "score": 4,
+      "reason": "Magnetic metamaterials with coupling-controlled mechanical response—directly relevant experimental materials/condensed-matter observation.",
       "matched": []
     },
     {
@@ -96,21 +82,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Altermagnetism and spin splitting from orbital ordering; topological magnetic materials with band structure effects of direct interest.",
-      "matched": []
-    },
-    {
-      "title": "Observation of Anomalous Floquet Non-Abelian Topological Insulators",
-      "authors": "Huahui Qiu, Shuaishuai Tong, Qicheng Zhang, Kun Zhang, and Chunyin Qiu",
-      "last_author": "Chunyin Qiu",
-      "abstract": "Author(s): Huahui Qiu, Shuaishuai Tong, Qicheng Zhang, Kun Zhang, and Chunyin QiuAn anomalous Floquet non-Abelian topological insulator is realized in an acoustic system, exhibiting robust edge states across all band gaps, despite a trivial bulk charge, and unique topological interface modes arising from noncommutative dynamics.[Phys. Rev. X 16, 011061] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/qn87-bm33",
-      "paper_id": "10.1103/qn87-bm33",
-      "feed_name": "PRX",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 4,
-      "reason": "Floquet topological insulators; topological materials with dynamic effects, directly relevant to research interests.",
+      "reason": "Layer-dependent spin splitting in altermagnets—emerging magnetic phenomena with experimental characterization.",
       "matched": []
     },
     {
@@ -124,21 +96,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 4,
-      "reason": "Vortices in monoatomic-layer superconductors; emerging superconducting materials with 2D physics potentially analyzable via first-principles.",
-      "matched": []
-    },
-    {
-      "title": "Study of exciton-photon coupling in CuCl semiconductor microcavities with large decay of cavity photons",
-      "authors": "Rintaro Miyanaga, Goro Oohata, Satoshi Tanaka, and Kohji Mizoguchi",
-      "last_author": "Kohji Mizoguchi",
-      "abstract": "Author(s): Rintaro Miyanaga, Goro Oohata, Satoshi Tanaka, and Kohji MizoguchiIn CuCl semiconductor microcavities with large decay of the cavity photon (CP), we have studied the dependence of the coupling energy between excitons and CPs on the position of the active layer in the cavity layer, using angle-resolved transmission (ART) spectroscopy. The ART spectra show that the …[Phys. Rev. B 113, 115309] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/6ng9-4vqy",
-      "paper_id": "10.1103/6ng9-4vqy",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 4,
-      "reason": "Exciton-photon coupling in semiconductors directly relevant to optical spectra, BSE calculations, and semiconductor physics interests.",
+      "reason": "Vortices in monolayer superconductors—important observation of 2D superconductivity phenomena.",
       "matched": []
     },
     {
@@ -152,7 +110,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 4,
-      "reason": "Superconductivity with spin-orbit coupling and magnetic impurities; directly relevant to quasiparticle properties, topological superconductivity, and electronic structure.",
+      "reason": "Superconductivity with magnetic impurities and spin-orbit coupling—core condensed-matter physics experimental observation directly relevant to many-body theory.",
       "matched": []
     },
     {
@@ -166,7 +124,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Acoustic phonon engineering in altermagnetic films; combines phonon physics with topological materials and spintronics.",
+      "reason": "Surface acoustic wave manipulation in altermagnetic films—new experimental approach to spin control.",
       "matched": []
     },
     {
@@ -180,21 +138,35 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Terahertz excitation of TMD monolayers and Fermi polaron dynamics; combines optical excitations with electron interactions in semiconductors.",
+      "reason": "Ultrafast THz-driven carrier dynamics in TMD monolayers—direct experimental observation of light-matter coupling.",
       "matched": []
     },
     {
-      "title": "Three-dimensional photonic topological insulators go unbounded",
-      "authors": "Eran Lustig",
-      "last_author": "Eran Lustig",
-      "abstract": "Nature Materials, Published online: 20 March 2026; doi:10.1038/s41563-026-02559-wThree-dimensional all-dielectric photonic topological insulators are experimentally shown to control far-field emission via the pseudo-spin degree of freedom.",
-      "url": "https://www.nature.com/articles/s41563-026-02559-w",
-      "paper_id": "",
-      "feed_name": "Nat. Mater.",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
+      "title": "Two-stage ferroelastic transition of stishovite due to one-dimensional hydrogen defects",
+      "authors": "Junwei Li, Sensen Wu, Haiyang Xian, Catalin Popescu, Davide Comboni, Michael I. Hanfland, Hongliang Dong, Binbin Yue, Yanhao Lin, and Qingyang Hu",
+      "last_author": "Qingyang Hu",
+      "abstract": "Author(s): Junwei Li, Sensen Wu, Haiyang Xian, Catalin Popescu, Davide Comboni, Michael I. Hanfland, Hongliang Dong, Binbin Yue, Yanhao Lin, and Qingyang HuThe effects of one-dimensional hydrogen on the ferroelastic transition and elasticity of stishovite are determined up to 52.5 GPa using x-ray diffraction, Raman spectroscopy, and first-principles calculations. In contrast to the well-studied hydrogen-free stishovite or that with hydrogarnetlike poin…[Phys. Rev. B 113, 094111] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/26cc-76rm",
+      "paper_id": "10.1103/26cc-76rm",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "3D photonic topological insulators; directly relevant to topological materials and photonic band structure, key interests for first-principles optical and electronic calculations.",
+      "reason": "Experimental structural phase transition study with ferroelastic behavior—important for materials characterization.",
+      "matched": []
+    },
+    {
+      "title": "Unlocking doping effects on altermagnetism in MnTe: Emergence of quasi-altermagnetism",
+      "authors": "Nayana Devaraj, Anumita Bose, Arindom Das, Md Afsar Reja, Arijit Mandal, Awadhesh Narayan, and B. R. K. Nanda",
+      "last_author": "B. R. K. Nanda",
+      "abstract": "Author(s): Nayana Devaraj, Anumita Bose, Arindom Das, Md Afsar Reja, Arijit Mandal, Awadhesh Narayan, and B. R. K. NandaGoverned by specific symmetries, altermagnetism is an emerging field in condensed matter physics, characterized by unique spin-splitting of the bands in the momentum space coexisting with the compensated magnetization as in antiferromagnets. As crystals can have tailored and unintended defects, it i…[Phys. Rev. B 113, 104438] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/k36v-91br",
+      "paper_id": "10.1103/k36v-91br",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 4,
+      "reason": "New magnetic phenomena (altermagnetism) emerging from doping—important experimental observation.",
       "matched": []
     },
     {
@@ -208,35 +180,49 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 4,
-      "reason": "Spin-orbital entanglement probed by RIXS; directly relevant to topological materials and excitation spectroscopy.",
+      "reason": "RIXS measurement of quantum geometry in magnets—experimental probe of topological properties.",
       "matched": []
     },
     {
-      "title": "Bulk plasmons in elemental metals",
-      "authors": "Dario A. Leon, Claudia Cardoso, and Kristian Berland",
-      "last_author": "Kristian Berland",
-      "abstract": "Author(s): Dario A. Leon, Claudia Cardoso, and Kristian BerlandHere, the authors present first-principles plasmonic band structures for 26 elemental metals, revealing complex dispersion and spectral features beyond simple free-electron models, including nonparabolic dispersion, anisotropy-induced discontinuities, and band crossings. Moreover, they introduce an effective momentum- and frequency-dependent representation of the dielectric response, MPA(q), that accurately reproduces the calculated spectra and constitute a quantitative reference for plasmonic spectroscopy and modeling.[Phys. Rev. B 113, 125138] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/w51n-p91p",
-      "paper_id": "10.1103/w51n-p91p",
+      "title": "${\\mathrm{Cr}}^{3+}$ spin dynamics under the octahedral crystal field in van der Waals antiferromagnets",
+      "authors": "Rabindra Basnet, Subhashree Chatterjee, Paul Kigaya, Ezana Negusse, J. van Tol, and Ramesh C. Budhani",
+      "last_author": "Ramesh C. Budhani",
+      "abstract": "Author(s): Rabindra Basnet, Subhashree Chatterjee, Paul Kigaya, Ezana Negusse, J. van Tol, and Ramesh C. BudhaniThe magnetic moment in van der Waals (vdW) materials containing $3d$ transition metals originates from unpaired $d$-electron spins and their interaction with surrounding ligands. The interplay between exchange interactions and magnetic anisotropy stabilizes long-range ordering of such moments. The c…[Phys. Rev. B 113, 094441] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/t7pz-yvz6",
+      "paper_id": "10.1103/t7pz-yvz6",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Plasmon excitations in metals; optical response calculation relevant to Bethe-Salpeter equation applications.",
+      "reason": "Spin dynamics in magnetic materials; relevant to magnon interactions but not directly electron-phonon/GW.",
       "matched": []
     },
     {
-      "title": "High-pressure formation and characterization of a boron carbide polymorph featuring bent C–B–C chains",
-      "authors": "Akun Liang, Umbertoluca Ranieri, James Spender, Charles Lamb, Sarah Bolton, Bernhard Massani, Ryan Stewart McWilliams, Timofey Fedotenko, Konstantin Glazyrin, Nico Giordano, Jonathan Wright, Florian Trybel, and Dominique Laniel",
-      "last_author": "Dominique Laniel",
-      "abstract": "Author(s): Akun Liang, Umbertoluca Ranieri, James Spender, Charles Lamb, Sarah Bolton, Bernhard Massani, Ryan Stewart McWilliams, Timofey Fedotenko, Konstantin Glazyrin, Nico Giordano, Jonathan Wright, Florian Trybel, and Dominique LanielBoron carbide is a material of choice for multiple industries, e.g., aerospace, as a lightweight structural ceramic due to its high hardness, high melting temperature, and low density. However, its mechanical properties have been observed to radically degrade under shockwave compression, presumably …[Phys. Rev. B 113, 104108] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/v5kf-svcz",
-      "paper_id": "10.1103/v5kf-svcz",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
+      "title": "An ultrafast plenoptic-camera system for high-resolution 3D particle tracking in unsegmented scintillators",
+      "authors": "Till Dieminger, Saúl Alonso-Monsalve, Christoph Alt, Claudio Bruschini, Noemi Bührer, Edoardo Charbon, Kodai Kaneyasu, Tim Weber, Matthew Franks, Davide Sgalaberna",
+      "last_author": "Davide Sgalaberna",
+      "abstract": "Nature Communications, Published online: 21 March 2026; doi:10.1038/s41467-026-70918-xWe propose an alternative approach to elementary particle detection: a plenoptic system combined with time-resolving single-photon avalanche diode array sensors leads to ultrafast three-dimensional high-resolution imaging in unsegmented scintillator.",
+      "url": "https://www.nature.com/articles/s41467-026-70918-x",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-03-21T00:00:00+00:00",
       "score": 3,
-      "reason": "High-pressure boron carbide polymorph; structural and materials chemistry with potential first-principles characterization relevance.",
+      "reason": "Detector instrumentation with high-speed imaging in scintillators—materials/experimental physics for particle detection applications.",
+      "matched": []
+    },
+    {
+      "title": "HfO2-based memristive synapses with asymmetrically extended p-n heterointerfaces for highly energy-efficient neuromorphic hardware",
+      "authors": "Babak Bakhit, Xiao Xie, Simon M. Fairclough, Atif Jan, Ingemar Persson, Giuliana Di Martino, Bonan Zhu, Caterina Ducati, Quanxi Jia, Bilge Yildiz, Andrew J. Flewitt, Judith L. MacManus-Driscoll",
+      "last_author": "Judith L. MacManus-Driscoll",
+      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2324?af=R",
+      "paper_id": "10.1126/sciadv.aec2324?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-03-20T07:00:00+00:00",
+      "score": 3,
+      "reason": "Memristive device engineering with heterointerfaces—materials physics with potential device applications, but not primary condensed-matter theory focus.",
       "matched": []
     },
     {
@@ -250,7 +236,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Nodal semimetal discovery; topological electronic properties could benefit from first-principles band structure and optical spectra analysis.",
+      "reason": "Novel boron allotrope with unusual band structure; potential materials candidate.",
       "matched": []
     },
     {
@@ -264,21 +250,21 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Rashba and valley physics in graphene; topological material with spin-orbit coupling effects of interest.",
+      "reason": "Spin-orbit coupling effects in graphene; relevant to transport and weak localization.",
       "matched": []
     },
     {
-      "title": "Magnetic coupling transforms random snapping into ordered sequences in soft metamaterials",
-      "authors": "Haoze Sun, Gabriel Alkuino, Yinding Chi, Yevhen Zabila, Haitao Qing, Denys Makarov, Teng Zhang, Jie Yin",
-      "last_author": "Jie Yin",
-      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3182?af=R",
-      "paper_id": "10.1126/sciadv.aec3182?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-03-20T07:00:00+00:00",
+      "title": "Linear magnetoresistance and anomalous Hall effect in the superconductor ${\\mathrm{NiBi}}_{3}$",
+      "authors": "Gabriel Sant'ana, Jully Paola Peña Pacheco, David Möckli, Fabiano Mesquita da Rosa, Sergio Garcia Magalhães, Andre Avelino Pasa, Paulo Pureur, and Milton Andre Tumelero",
+      "last_author": "Milton Andre Tumelero",
+      "abstract": "Author(s): Gabriel Sant'ana, Jully Paola Peña Pacheco, David Möckli, Fabiano Mesquita da Rosa, Sergio Garcia Magalhães, Andre Avelino Pasa, Paulo Pureur, and Milton Andre TumeleroThe ${\\mathrm{NiBi}}_{3}$ compound exhibits a compelling interplay between superconductivity and magnetism, further enriched by topological characteristics that make it an exceptional platform for exploring emergent electronic phenomena. Here, we report experimental evidence of unconventional magnet…[Phys. Rev. B 113, 094443] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/y3wb-hv8c",
+      "paper_id": "10.1103/y3wb-hv8c",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Soft metamaterials with magnetic coupling; involves materials physics and mechanical metamaterials that may benefit from computational modeling.",
+      "reason": "Superconductor transport properties; worth following for anomalous transport phenomena.",
       "matched": []
     },
     {
@@ -292,7 +278,21 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Rashba spin-orbit coupling and magnetotransport; relevant to topological materials and band structure effects.",
+      "reason": "Rashba coupling in 2D electron systems; relevant to spin-orbit physics.",
+      "matched": []
+    },
+    {
+      "title": "Observation of Anomalous Floquet Non-Abelian Topological Insulators",
+      "authors": "Huahui Qiu, Shuaishuai Tong, Qicheng Zhang, Kun Zhang, and Chunyin Qiu",
+      "last_author": "Chunyin Qiu",
+      "abstract": "Author(s): Huahui Qiu, Shuaishuai Tong, Qicheng Zhang, Kun Zhang, and Chunyin QiuAn anomalous Floquet non-Abelian topological insulator is realized in an acoustic system, exhibiting robust edge states across all band gaps, despite a trivial bulk charge, and unique topological interface modes arising from noncommutative dynamics.[Phys. Rev. X 16, 011061] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/qn87-bm33",
+      "paper_id": "10.1103/qn87-bm33",
+      "feed_name": "PRX",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 3,
+      "reason": "Floquet topological insulators; relevant to time-periodic driven systems.",
       "matched": []
     },
     {
@@ -306,7 +306,49 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 3,
-      "reason": "Josephson junction phase transition; superconductivity physics with potential relevance to electron interactions.",
+      "reason": "Dissipation-driven superconducting transitions; relevant to nonequilibrium phenomena.",
+      "matched": []
+    },
+    {
+      "title": "Study of exciton-photon coupling in CuCl semiconductor microcavities with large decay of cavity photons",
+      "authors": "Rintaro Miyanaga, Goro Oohata, Satoshi Tanaka, and Kohji Mizoguchi",
+      "last_author": "Kohji Mizoguchi",
+      "abstract": "Author(s): Rintaro Miyanaga, Goro Oohata, Satoshi Tanaka, and Kohji MizoguchiIn CuCl semiconductor microcavities with large decay of the cavity photon (CP), we have studied the dependence of the coupling energy between excitons and CPs on the position of the active layer in the cavity layer, using angle-resolved transmission (ART) spectroscopy. The ART spectra show that the …[Phys. Rev. B 113, 115309] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/6ng9-4vqy",
+      "paper_id": "10.1103/6ng9-4vqy",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 3,
+      "reason": "Exciton-photon coupling measurement in semiconductors; relevant to light-matter interaction.",
+      "matched": []
+    },
+    {
+      "title": "Surface versus bulk superconductivity in NbN thin films under magnetic fields",
+      "authors": "Mikhail Belogolovskii, Magdaléna Poláčková, Elena Zhitlukhina, Branislav Grančič, Leonid Satrapinskyy, Pavol Ďurina, Maroš Gregor, and Tomáš Plecenik",
+      "last_author": "Tomáš Plecenik",
+      "abstract": "Author(s): Mikhail Belogolovskii, Magdaléna Poláčková, Elena Zhitlukhina, Branislav Grančič, Leonid Satrapinskyy, Pavol Ďurina, Maroš Gregor, and Tomáš PlecenikThe enhancement of superconductivity at surfaces and interfaces, where the order parameter persists at higher temperatures or magnetic fields than in the bulk, is a subtle yet fundamentally important phenomenon in condensed matter physics. In this work, we experimentally investigate the difference b…[Phys. Rev. B 113, 104516] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/3hbh-7kpn",
+      "paper_id": "10.1103/3hbh-7kpn",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 3,
+      "reason": "Experimental superconductivity in thin films; important for surface/interface effects.",
+      "matched": []
+    },
+    {
+      "title": "Twofold symmetric superconductivity in the bulk Ising superconductor $4{H}_{\\mathrm{a}}{\\text{-NbSe}}_{2}$",
+      "authors": "Shunli Ni, Menghu Zhou, Yu Zhao, Xiang-Bo Xiao, Lewei Chen, Jiali Liu, Ke Shi, Junkun Yi, Hao Xu, Minrui Yang, Kai Hu, Minjie Zhang, Yongqi Han, Hua Zhang, Ze Wang, Chuanying Xi, Min Liu, Zhenghua Xu, Pan Chen, and Zhaosheng Wang",
+      "last_author": "Zhaosheng Wang",
+      "abstract": "Author(s): Shunli Ni, Menghu Zhou, Yu Zhao, Xiang-Bo Xiao, Lewei Chen, Jiali Liu, Ke Shi, Junkun Yi, Hao Xu, Minrui Yang, Kai Hu, Minjie Zhang, Yongqi Han, Hua Zhang, Ze Wang, Chuanying Xi, Min Liu, Zhenghua Xu, Pan Chen, and Zhaosheng WangSymmetry breaking is identified as a predominant mechanism governing the formation of exotic quantum state. The absence of inversion symmetry in noncentrosymmetric superconductors leads to an antisymmetric spin-orbit coupling, which promotes the system toward possible unconventional electron pairing…[Phys. Rev. B 113, 104515] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/hjqc-zqq9",
+      "paper_id": "10.1103/hjqc-zqq9",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 3,
+      "reason": "Superconductivity with broken symmetry; relevant to pairing mechanisms in 2D materials.",
       "matched": []
     },
     {
@@ -320,49 +362,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 3,
-      "reason": "TMD-based sensors with vibrational properties; emerging 2D materials with potential ab initio phonon/optical characterization.",
-      "matched": []
-    },
-    {
-      "title": "Universal classes of disorder scattering for the in-plane anomalous Hall effect",
-      "authors": "Guoao Yang, Tao Qin, and Jianhui Zhou",
-      "last_author": "Jianhui Zhou",
-      "abstract": "Author(s): Guoao Yang, Tao Qin, and Jianhui ZhouThe in-plane anomalous Hall effect (IPAHE) with planar Hall current and magnetization/magnetic fields in various quantum materials has received increasing attention. Most of the current efforts are devoted to the intrinsic part due to the Berry curvature of electronic bands, however, how disorder sc…[Phys. Rev. B 113, 125426] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/7d61-8hh1",
-      "paper_id": "10.1103/7d61-8hh1",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 3,
-      "reason": "Anomalous Hall effect disorder scattering; topological transport properties relevant to band structure studies.",
-      "matched": []
-    },
-    {
-      "title": "Unlocking doping effects on altermagnetism in MnTe: Emergence of quasi-altermagnetism",
-      "authors": "Nayana Devaraj, Anumita Bose, Arindom Das, Md Afsar Reja, Arijit Mandal, Awadhesh Narayan, and B. R. K. Nanda",
-      "last_author": "B. R. K. Nanda",
-      "abstract": "Author(s): Nayana Devaraj, Anumita Bose, Arindom Das, Md Afsar Reja, Arijit Mandal, Awadhesh Narayan, and B. R. K. NandaGoverned by specific symmetries, altermagnetism is an emerging field in condensed matter physics, characterized by unique spin-splitting of the bands in the momentum space coexisting with the compensated magnetization as in antiferromagnets. As crystals can have tailored and unintended defects, it i…[Phys. Rev. B 113, 104438] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/k36v-91br",
-      "paper_id": "10.1103/k36v-91br",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 3,
-      "reason": "Doping effects in altermagnetic MnTe; topological/magnetic materials could involve band structure or optical property calculations.",
-      "matched": []
-    },
-    {
-      "title": "${\\mathrm{Cr}}^{3+}$ spin dynamics under the octahedral crystal field in van der Waals antiferromagnets",
-      "authors": "Rabindra Basnet, Subhashree Chatterjee, Paul Kigaya, Ezana Negusse, J. van Tol, and Ramesh C. Budhani",
-      "last_author": "Ramesh C. Budhani",
-      "abstract": "Author(s): Rabindra Basnet, Subhashree Chatterjee, Paul Kigaya, Ezana Negusse, J. van Tol, and Ramesh C. BudhaniThe magnetic moment in van der Waals (vdW) materials containing $3d$ transition metals originates from unpaired $d$-electron spins and their interaction with surrounding ligands. The interplay between exchange interactions and magnetic anisotropy stabilizes long-range ordering of such moments. The c…[Phys. Rev. B 113, 094441] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/t7pz-yvz6",
-      "paper_id": "10.1103/t7pz-yvz6",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 2,
-      "reason": "Spin dynamics in antiferromagnets; related to condensed matter but outside primary research focus.",
+      "reason": "2D TMD ribbon sensors; relevant to nanoscale materials and properties.",
       "matched": []
     },
     {
@@ -376,7 +376,21 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 2,
-      "reason": "Ferrofluids and phase transitions in elastomers; materials science with phase transition interest but not core focus.",
+      "reason": "Materials engineering/soft matter; tangentially related but not condensed matter physics.",
+      "matched": []
+    },
+    {
+      "title": "Bulk plasmons in elemental metals",
+      "authors": "Dario A. Leon, Claudia Cardoso, and Kristian Berland",
+      "last_author": "Kristian Berland",
+      "abstract": "Author(s): Dario A. Leon, Claudia Cardoso, and Kristian BerlandHere, the authors present first-principles plasmonic band structures for 26 elemental metals, revealing complex dispersion and spectral features beyond simple free-electron models, including nonparabolic dispersion, anisotropy-induced discontinuities, and band crossings. Moreover, they introduce an effective momentum- and frequency-dependent representation of the dielectric response, MPA(q), that accurately reproduces the calculated spectra and constitute a quantitative reference for plasmonic spectroscopy and modeling.[Phys. Rev. B 113, 125138] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/w51n-p91p",
+      "paper_id": "10.1103/w51n-p91p",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 2,
+      "reason": "Plasmon spectroscopy; somewhat relevant but not primary focus.",
       "matched": []
     },
     {
@@ -390,7 +404,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Quantum phase transition in correlated system; theoretical condensed matter but not directly relevant to ab initio methods focus.",
+      "reason": "Quantum phase transitions in lattice models; computational focus.",
       "matched": []
     },
     {
@@ -404,7 +418,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Topological quantum matter (chiral spin liquid); tangentially related but not core ab initio methodology.",
+      "reason": "Topological quantum states; outside primary research focus.",
       "matched": []
     },
     {
@@ -418,63 +432,35 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Dynamical quantum phase transitions; theoretical condensed matter but outside primary research areas.",
+      "reason": "Theoretical quantum dynamics; not aligned with experimental observation goal.",
       "matched": []
     },
     {
-      "title": "Elusive ‘nuclear clocks’ tick closer to reality — after decades in the making",
-      "authors": "Dan Garisto",
-      "last_author": "Dan Garisto",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00848-7Super-precise timekeepers based on atomic nuclei could be tested as soon as this year.",
-      "url": "https://www.nature.com/articles/d41586-026-00848-7",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 2,
-      "reason": "Nuclear clocks development; precision physics that may involve quantum systems but likely not directly related to electron-phonon interactions or optical spectra.",
-      "matched": []
-    },
-    {
-      "title": "In2O3-CNT catalysts enable >500-hour stable CO2-to-methanol hydrogenation via vacancy stabilization",
-      "authors": "Lei Zhang, Yuxiang Yang, Hao Yan, Xinlei Ji, Hua An, Jianyu Rao, Yixuan Zhou, Chang-jun Liu, Xi Chen, Ning Yan",
-      "last_author": "Ning Yan",
-      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea7041?af=R",
-      "paper_id": "10.1126/sciadv.aea7041?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-03-20T07:00:00+00:00",
-      "score": 2,
-      "reason": "Catalyst materials design; applied materials chemistry with potential computational interest but not ab initio spectroscopy focus.",
-      "matched": []
-    },
-    {
-      "title": "Linear magnetoresistance and anomalous Hall effect in the superconductor ${\\mathrm{NiBi}}_{3}$",
-      "authors": "Gabriel Sant'ana, Jully Paola Peña Pacheco, David Möckli, Fabiano Mesquita da Rosa, Sergio Garcia Magalhães, Andre Avelino Pasa, Paulo Pureur, and Milton Andre Tumelero",
-      "last_author": "Milton Andre Tumelero",
-      "abstract": "Author(s): Gabriel Sant'ana, Jully Paola Peña Pacheco, David Möckli, Fabiano Mesquita da Rosa, Sergio Garcia Magalhães, Andre Avelino Pasa, Paulo Pureur, and Milton Andre TumeleroThe ${\\mathrm{NiBi}}_{3}$ compound exhibits a compelling interplay between superconductivity and magnetism, further enriched by topological characteristics that make it an exceptional platform for exploring emergent electronic phenomena. Here, we report experimental evidence of unconventional magnet…[Phys. Rev. B 113, 094443] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/y3wb-hv8c",
-      "paper_id": "10.1103/y3wb-hv8c",
+      "title": "From quantum geometry to nonlinear optics and gerbes: Recent advances in topological band theory",
+      "authors": "Tomáš Bzdušek",
+      "last_author": "Tomáš Bzdušek",
+      "abstract": "Author(s): Tomáš BzdušekThis Perspective explores recent advances in topological band theory, focusing on the quantum geometric tensor, delicate and multigap topology, and higher-form structures like bundle gerbes. It highlights how these geometric features relate to first- and higher-order optical responses, including the quantization of shift currents. By moving beyond conventional Berryology, these threads offer new insights into discovery and materials design for electronic and synthetic condensed matter systems.[Phys. Rev. B 113, 099601] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/9p92-qt26",
+      "paper_id": "10.1103/9p92-qt26",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Superconductor transport properties; related to condensed matter but not focusing on ab initio calculations or phonon/electron interactions.",
+      "reason": "Topological band theory review; computational focus but secondary to experimental work.",
       "matched": []
     },
     {
-      "title": "Mighty mini-magnet is low in cost and light on energy use",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00851-yA compact device can produce a magnetic field that is more than 800,000 times stronger than Earth’s.",
-      "url": "https://www.nature.com/articles/d41586-026-00851-y",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
+      "title": "Interfering trajectories in a ballistic Andreev cavity",
+      "authors": "Pankaj Mandal, Marcel Kaschper, Fernando Dominguez, Soumi Mondal, Lukas Lunczer, Dongyun Chen, Martin P. Stehno, Ewelina M. Hankiewicz, Björn Trauzettel, Teun M. Klapwijk, Charles Gould, and Laurens W. Molenkamp",
+      "last_author": "Laurens W. Molenkamp",
+      "abstract": "Author(s): Pankaj Mandal, Marcel Kaschper, Fernando Dominguez, Soumi Mondal, Lukas Lunczer, Dongyun Chen, Martin P. Stehno, Ewelina M. Hankiewicz, Björn Trauzettel, Teun M. Klapwijk, Charles Gould, and Laurens W. MolenkampThe authors investigate here ballistic transport in an electronic cavity, sandwiched between a metal and a superconductor, going beyond a Sharvin-like point-contact description of Andreev reflection and incorporating the full two-dimensional nature of modern ballistic devices. A distinctive magnetic field response of two subgap conductance peaks is understood as resulting from interfering Andreev trajectories that are separable into open and closed trajectory classes. Open trajectories are magnetic field independent, and closed ones are affected by the Aharonov-Bohm and Doppler effects.[Phys. Rev. B 113, 104517] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/hls3-jqzj",
+      "paper_id": "10.1103/hls3-jqzj",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Brief news item on low-cost magnets; likely materials-related but insufficient detail for assessment.",
+      "reason": "Mesoscopic superconductivity; too specialized.",
       "matched": []
     },
     {
@@ -488,7 +474,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 2,
-      "reason": "Photochemistry of organic phosphorescence; materials chemistry that may involve optical properties but not first-principles electronic structure or phonons.",
+      "reason": "Organic luminescence chemistry; tangentially related to photophysics but primarily synthetic chemistry focus.",
       "matched": []
     },
     {
@@ -502,63 +488,21 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Coulomb drag in quantum wires; low-dimensional electron physics outside primary research scope.",
+      "reason": "Coulomb drag theory in quantum wires; not primarily experimental.",
       "matched": []
     },
     {
-      "title": "Report on reproducibility in condensed matter physics",
-      "authors": "A. Akrap, D. Bordelon, S. Chatterjee, E. D. Dahlberg, R. P. Devaty, S. M. Frolov, C. Gould, L. H. Greene, S. Guchhait, J. J. Hamlin, B. M. Hunt, M. J. A. Jardine, M. Kayyalha, R. C. Kurchin, V. Kozii, H. F. Legg, I. I. Mazin, V. Mourik, A. B. Özgüler, J. Peñuela-Parra, B. Seradjeh, B. Skinner, K. F. Quader, and J. P. Zwolak",
-      "last_author": "J. P. Zwolak",
-      "abstract": "Author(s): A. Akrap, D. Bordelon, S. Chatterjee, E. D. Dahlberg, R. P. Devaty, S. M. Frolov, C. Gould, L. H. Greene, S. Guchhait, J. J. Hamlin, B. M. Hunt, M. J. A. Jardine, M. Kayyalha, R. C. Kurchin, V. Kozii, H. F. Legg, I. I. Mazin, V. Mourik, A. B. Özgüler, J. Peñuela-Parra, B. Seradjeh, B. Skinner, K. F. Quader, and J. P. ZwolakThis report from a diverse collaboration of experts addresses community concerns around reproducibility in condensed matter physics by establishing clear best practices for researchers, publishers, and institutions. It advocates for mandatory sharing of primary data, code, and full experimental parameters to enhance and safeguard the field’s scientific integrity.[Phys. Rev. B 113, 119601] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/27h6-yghn",
-      "paper_id": "10.1103/27h6-yghn",
+      "title": "Universal classes of disorder scattering for the in-plane anomalous Hall effect",
+      "authors": "Guoao Yang, Tao Qin, and Jianhui Zhou",
+      "last_author": "Jianhui Zhou",
+      "abstract": "Author(s): Guoao Yang, Tao Qin, and Jianhui ZhouThe in-plane anomalous Hall effect (IPAHE) with planar Hall current and magnetization/magnetic fields in various quantum materials has received increasing attention. Most of the current efforts are devoted to the intrinsic part due to the Berry curvature of electronic bands, however, how disorder sc…[Phys. Rev. B 113, 125426] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/7d61-8hh1",
+      "paper_id": "10.1103/7d61-8hh1",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 2,
-      "reason": "Reproducibility report; methodological discussion of condensed matter research practices.",
-      "matched": []
-    },
-    {
-      "title": "Surface versus bulk superconductivity in NbN thin films under magnetic fields",
-      "authors": "Mikhail Belogolovskii, Magdaléna Poláčková, Elena Zhitlukhina, Branislav Grančič, Leonid Satrapinskyy, Pavol Ďurina, Maroš Gregor, and Tomáš Plecenik",
-      "last_author": "Tomáš Plecenik",
-      "abstract": "Author(s): Mikhail Belogolovskii, Magdaléna Poláčková, Elena Zhitlukhina, Branislav Grančič, Leonid Satrapinskyy, Pavol Ďurina, Maroš Gregor, and Tomáš PlecenikThe enhancement of superconductivity at surfaces and interfaces, where the order parameter persists at higher temperatures or magnetic fields than in the bulk, is a subtle yet fundamentally important phenomenon in condensed matter physics. In this work, we experimentally investigate the difference b…[Phys. Rev. B 113, 104516] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/3hbh-7kpn",
-      "paper_id": "10.1103/3hbh-7kpn",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 2,
-      "reason": "Superconducting thin film transport; experimental superconductivity outside ab initio calculation scope.",
-      "matched": []
-    },
-    {
-      "title": "Two-stage ferroelastic transition of stishovite due to one-dimensional hydrogen defects",
-      "authors": "Junwei Li, Sensen Wu, Haiyang Xian, Catalin Popescu, Davide Comboni, Michael I. Hanfland, Hongliang Dong, Binbin Yue, Yanhao Lin, and Qingyang Hu",
-      "last_author": "Qingyang Hu",
-      "abstract": "Author(s): Junwei Li, Sensen Wu, Haiyang Xian, Catalin Popescu, Davide Comboni, Michael I. Hanfland, Hongliang Dong, Binbin Yue, Yanhao Lin, and Qingyang HuThe effects of one-dimensional hydrogen on the ferroelastic transition and elasticity of stishovite are determined up to 52.5 GPa using x-ray diffraction, Raman spectroscopy, and first-principles calculations. In contrast to the well-studied hydrogen-free stishovite or that with hydrogarnetlike poin…[Phys. Rev. B 113, 094111] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/26cc-76rm",
-      "paper_id": "10.1103/26cc-76rm",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 2,
-      "reason": "Structural phase transition study; tangentially related to condensed matter but not directly relevant to core interests.",
-      "matched": []
-    },
-    {
-      "title": "Twofold symmetric superconductivity in the bulk Ising superconductor $4{H}_{\\mathrm{a}}{\\text{-NbSe}}_{2}$",
-      "authors": "Shunli Ni, Menghu Zhou, Yu Zhao, Xiang-Bo Xiao, Lewei Chen, Jiali Liu, Ke Shi, Junkun Yi, Hao Xu, Minrui Yang, Kai Hu, Minjie Zhang, Yongqi Han, Hua Zhang, Ze Wang, Chuanying Xi, Min Liu, Zhenghua Xu, Pan Chen, and Zhaosheng Wang",
-      "last_author": "Zhaosheng Wang",
-      "abstract": "Author(s): Shunli Ni, Menghu Zhou, Yu Zhao, Xiang-Bo Xiao, Lewei Chen, Jiali Liu, Ke Shi, Junkun Yi, Hao Xu, Minrui Yang, Kai Hu, Minjie Zhang, Yongqi Han, Hua Zhang, Ze Wang, Chuanying Xi, Min Liu, Zhenghua Xu, Pan Chen, and Zhaosheng WangSymmetry breaking is identified as a predominant mechanism governing the formation of exotic quantum state. The absence of inversion symmetry in noncentrosymmetric superconductors leads to an antisymmetric spin-orbit coupling, which promotes the system toward possible unconventional electron pairing…[Phys. Rev. B 113, 104515] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/hjqc-zqq9",
-      "paper_id": "10.1103/hjqc-zqq9",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
-      "score": 2,
-      "reason": "Superconductivity in NbSe₂; while interesting condensed matter, not focused on electron-phonon coupling or ab initio methods.",
+      "reason": "Disorder scattering theory; theoretical classification, secondary interest.",
       "matched": []
     },
     {
@@ -572,7 +516,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 2,
-      "reason": "Persistent luminescence for biomedical imaging; materials chemistry with optical properties but not directly related to first-principles condensed matter theory.",
+      "reason": "Biomedical luminescence/immunotherapy; minimal condensed-matter physics content despite materials aspect.",
       "matched": []
     },
     {
@@ -586,21 +530,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 1,
-      "reason": "Antibiotic development for tuberculosis; biochemistry/microbiology unrelated to condensed matter physics.",
-      "matched": []
-    },
-    {
-      "title": "An ultrafast plenoptic-camera system for high-resolution 3D particle tracking in unsegmented scintillators",
-      "authors": "Till Dieminger, Saúl Alonso-Monsalve, Christoph Alt, Claudio Bruschini, Noemi Bührer, Edoardo Charbon, Kodai Kaneyasu, Tim Weber, Matthew Franks, Davide Sgalaberna",
-      "last_author": "Davide Sgalaberna",
-      "abstract": "Nature Communications, Published online: 21 March 2026; doi:10.1038/s41467-026-70918-xWe propose an alternative approach to elementary particle detection: a plenoptic system combined with time-resolving single-photon avalanche diode array sensors leads to ultrafast three-dimensional high-resolution imaging in unsegmented scintillator.",
-      "url": "https://www.nature.com/articles/s41467-026-70918-x",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-03-21T00:00:00+00:00",
-      "score": 1,
-      "reason": "Particle tracking camera system; experimental apparatus development unrelated to condensed matter theory or first-principles calculations.",
+      "reason": "Microbiology/antibiotic development; not relevant to condensed-matter physics.",
       "matched": []
     },
     {
@@ -614,21 +544,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Atmospheric PFAS transport and deposition; environmental science unrelated to condensed matter or computational physics.",
-      "matched": []
-    },
-    {
-      "title": "Author Correction: A PP1–PP2A phosphatase relay controls mitotic progression",
-      "authors": "Agnes Grallert, Elvan Boke, Anja Hagting, Ben Hodgson, Yvonne Connolly, John R. Griffiths, Duncan L. Smith, Jonathon Pines, Iain M. Hagan",
-      "last_author": "Iain M. Hagan",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/s41586-026-10411-zAuthor Correction: A PP1–PP2A phosphatase relay controls mitotic progression",
-      "url": "https://www.nature.com/articles/s41586-026-10411-z",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Author correction on cell cycle biology; not relevant to condensed matter physics.",
+      "reason": "Environmental science/atmospheric chemistry; no condensed-matter physics content.",
       "matched": []
     },
     {
@@ -642,7 +558,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Drug delivery; chemistry/materials science but not condensed matter physics focus.",
+      "reason": "Materials chemistry/drug delivery; outside condensed matter focus.",
       "matched": []
     },
     {
@@ -656,21 +572,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Neurobiology and motor disorders; cellular/molecular biology unrelated to condensed matter or computational materials science.",
-      "matched": []
-    },
-    {
-      "title": "Briefing Chat: Are scientists funny? The evidence is in — and it's no joke",
-      "authors": "Benjamin Thompson, Maren Hunsberger",
-      "last_author": "Maren Hunsberger",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00937-7Nature staff discuss some of the week’s top science news.",
-      "url": "https://www.nature.com/articles/d41586-026-00937-7",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Opinion/humor piece on scientists; not scientific research relevant to condensed matter physics.",
+      "reason": "Neuroscience/genetics; outside condensed-matter and materials physics.",
       "matched": []
     },
     {
@@ -698,7 +600,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 1,
-      "reason": "Plant immunology and cell biology; unrelated to condensed matter or computational materials science.",
+      "reason": "Plant biology/immunology; not relevant to condensed-matter physics.",
       "matched": []
     },
     {
@@ -712,21 +614,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Quantum information theory; not condensed matter physics.",
-      "matched": []
-    },
-    {
-      "title": "Chemical pollutants are rife across the world’s oceans",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00850-zCompounds that are used to make plastics and personal-care products were found in all types of marine environment, a meta-analysis shows.",
-      "url": "https://www.nature.com/articles/d41586-026-00850-z",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Environmental chemistry of ocean pollution; environmental science unrelated to condensed matter or computational physics.",
+      "reason": "Quantum information; outside condensed matter physics.",
       "matched": []
     },
     {
@@ -740,7 +628,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Statistical mechanics/non-equilibrium theory; outside condensed matter solid state focus.",
+      "reason": "Nonequilibrium statistical mechanics; outside condensed matter focus.",
       "matched": []
     },
     {
@@ -754,7 +642,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Structural biology (COVID spike protein); not condensed matter.",
+      "reason": "Molecular biology; not condensed matter.",
       "matched": []
     },
     {
@@ -768,7 +656,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Quantum entanglement/information; fundamental quantum mechanics not condensed matter focused.",
+      "reason": "Quantum information; outside condensed matter physics.",
       "matched": []
     },
     {
@@ -782,7 +670,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Immunology/infectious disease; not condensed matter.",
+      "reason": "Immunology; not condensed matter.",
       "matched": []
     },
     {
@@ -796,7 +684,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Editorial introduction, not research content.",
+      "reason": "Editorial introduction, not substantive research.",
       "matched": []
     },
     {
@@ -810,7 +698,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Erratum on cancer biology research; not relevant to condensed matter physics.",
+      "reason": "Erratum for cancer biology paper; not relevant.",
       "matched": []
     },
     {
@@ -824,7 +712,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Erratum on lymphoma genetics; not relevant to condensed matter physics.",
+      "reason": "Erratum for cancer biology paper; not relevant.",
       "matched": []
     },
     {
@@ -838,7 +726,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Plasma physics; outside condensed matter domain.",
+      "reason": "Plasma physics; not condensed matter.",
       "matched": []
     },
     {
@@ -852,7 +740,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Quantum information processing; not relevant to condensed matter research.",
+      "reason": "Quantum information; outside condensed matter physics.",
       "matched": []
     },
     {
@@ -866,7 +754,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Geoscience/environmental science; not condensed matter.",
+      "reason": "Environmental science; not condensed matter.",
       "matched": []
     },
     {
@@ -880,35 +768,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "RNA folding dynamics; biophysics topic with no relevance to condensed matter or ab initio methods.",
-      "matched": []
-    },
-    {
-      "title": "HfO2-based memristive synapses with asymmetrically extended p-n heterointerfaces for highly energy-efficient neuromorphic hardware",
-      "authors": "Babak Bakhit, Xiao Xie, Simon M. Fairclough, Atif Jan, Ingemar Persson, Giuliana Di Martino, Bonan Zhu, Caterina Ducati, Quanxi Jia, Bilge Yildiz, Andrew J. Flewitt, Judith L. MacManus-Driscoll",
-      "last_author": "Judith L. MacManus-Driscoll",
-      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2324?af=R",
-      "paper_id": "10.1126/sciadv.aec2324?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-03-20T07:00:00+00:00",
-      "score": 1,
-      "reason": "Neuromorphic hardware based on memristors; no connection to condensed matter theory, first-principles calculations, or optical/electron-phonon properties.",
-      "matched": []
-    },
-    {
-      "title": "I paused my PhD for 11 years to help save Madagascar’s seas",
-      "authors": "Mark DeGraff",
-      "last_author": "Mark DeGraff",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00401-6Marine scientist Ando Rabearisoa creates sustainable, community-managed fisheries.",
-      "url": "https://www.nature.com/articles/d41586-026-00401-6",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Personal narrative about marine conservation; not scientific research in condensed matter physics.",
+      "reason": "RNA biophysics; outside condensed-matter and materials physics scope.",
       "matched": []
     },
     {
@@ -922,7 +782,7 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 1,
-      "reason": "In vivo metabolic labeling of blood cells; biomedical research unrelated to condensed matter physics.",
+      "reason": "Biomedical cell labeling; outside condensed-matter and materials physics.",
       "matched": []
     },
     {
@@ -936,35 +796,21 @@
       "feed_category": "Nature",
       "published": "2026-03-21T00:00:00+00:00",
       "score": 1,
-      "reason": "Epidemiology and child health outcomes; public health research unrelated to condensed matter physics.",
+      "reason": "Epidemiology/public health; outside condensed-matter physics.",
       "matched": []
     },
     {
-      "title": "Interfering trajectories in a ballistic Andreev cavity",
-      "authors": "Pankaj Mandal, Marcel Kaschper, Fernando Dominguez, Soumi Mondal, Lukas Lunczer, Dongyun Chen, Martin P. Stehno, Ewelina M. Hankiewicz, Björn Trauzettel, Teun M. Klapwijk, Charles Gould, and Laurens W. Molenkamp",
-      "last_author": "Laurens W. Molenkamp",
-      "abstract": "Author(s): Pankaj Mandal, Marcel Kaschper, Fernando Dominguez, Soumi Mondal, Lukas Lunczer, Dongyun Chen, Martin P. Stehno, Ewelina M. Hankiewicz, Björn Trauzettel, Teun M. Klapwijk, Charles Gould, and Laurens W. MolenkampThe authors investigate here ballistic transport in an electronic cavity, sandwiched between a metal and a superconductor, going beyond a Sharvin-like point-contact description of Andreev reflection and incorporating the full two-dimensional nature of modern ballistic devices. A distinctive magnetic field response of two subgap conductance peaks is understood as resulting from interfering Andreev trajectories that are separable into open and closed trajectory classes. Open trajectories are magnetic field independent, and closed ones are affected by the Aharonov-Bohm and Doppler effects.[Phys. Rev. B 113, 104517] Published Fri Mar 20, 2026",
-      "url": "http://link.aps.org/doi/10.1103/hls3-jqzj",
-      "paper_id": "10.1103/hls3-jqzj",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-03-20T10:00:00+00:00",
+      "title": "In2O3-CNT catalysts enable >500-hour stable CO2-to-methanol hydrogenation via vacancy stabilization",
+      "authors": "Lei Zhang, Yuxiang Yang, Hao Yan, Xinlei Ji, Hua An, Jianyu Rao, Yixuan Zhou, Chang-jun Liu, Xi Chen, Ning Yan",
+      "last_author": "Ning Yan",
+      "abstract": "Science Advances, Volume 12, Issue 12, March 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea7041?af=R",
+      "paper_id": "10.1126/sciadv.aea7041?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Andreev cavity transport; quantum transport phenomena not directly relevant to core research focus.",
-      "matched": []
-    },
-    {
-      "title": "Lab-grown oesophagus restores pigs’ ability to swallow",
-      "authors": "Rachel Fieldhouse",
-      "last_author": "Rachel Fieldhouse",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00936-8Engineered tissue could eventually be used for children born with gaps in their alimentary canal, or for adults whose muscles have been damaged by cancer.",
-      "url": "https://www.nature.com/articles/d41586-026-00936-8",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Biomedical engineering and regenerative medicine; unrelated to condensed matter or ab initio calculations.",
+      "reason": "Catalysis/materials chemistry; outside condensed matter focus.",
       "matched": []
     },
     {
@@ -978,7 +824,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Cell biology; not condensed matter.",
+      "reason": "Cellular biology; not condensed matter.",
       "matched": []
     },
     {
@@ -992,7 +838,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Particle physics/dark matter; not condensed matter.",
+      "reason": "Particle physics/cosmology; not condensed matter.",
       "matched": []
     },
     {
@@ -1006,7 +852,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Protein structure; molecular biology not condensed matter.",
+      "reason": "Protein biochemistry; not condensed matter.",
       "matched": []
     },
     {
@@ -1020,7 +866,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Cellular biology and protein interactions; no relevance to condensed matter physics or ab initio methods.",
+      "reason": "Cell biology (protein interactions and transport); not relevant to condensed-matter physics.",
       "matched": []
     },
     {
@@ -1034,21 +880,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Rydberg atom physics; atomic physics not condensed matter focused.",
-      "matched": []
-    },
-    {
-      "title": "Paul R. Ehrlich obituary: pioneering ecologist who caused controversy by predicting a ‘population bomb’",
-      "authors": "Danny Dorling",
-      "last_author": "Danny Dorling",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00939-5The environmentalist founded the field of co-evolution, and warned that rapid human expansion would cause biodiversity collapse and famine.",
-      "url": "https://www.nature.com/articles/d41586-026-00939-5",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Obituary of an ecologist; not scientific research in condensed matter physics.",
+      "reason": "Atomic/quantum optics; outside condensed matter scope.",
       "matched": []
     },
     {
@@ -1062,7 +894,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Organic photocatalysis; synthetic chemistry without connection to condensed matter theory or first-principles calculations.",
+      "reason": "Organic chemistry/catalysis; outside condensed-matter and materials physics.",
       "matched": []
     },
     {
@@ -1076,7 +908,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Monte Carlo simulations for model systems; computational method not relevant to ab initio approaches used.",
+      "reason": "Computational method development; not experimental observation.",
       "matched": []
     },
     {
@@ -1090,7 +922,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Cell biology/proteomics; not condensed matter.",
+      "reason": "Systems biology; not condensed matter.",
       "matched": []
     },
     {
@@ -1104,7 +936,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Quantum metrology; fundamental quantum mechanics not relevant to condensed matter.",
+      "reason": "Quantum information; outside condensed matter physics.",
       "matched": []
     },
     {
@@ -1118,7 +950,21 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Cardiac physiology/gene therapy; biomedical, not condensed matter.",
+      "reason": "Biomedical engineering; not condensed matter.",
+      "matched": []
+    },
+    {
+      "title": "Report on reproducibility in condensed matter physics",
+      "authors": "A. Akrap, D. Bordelon, S. Chatterjee, E. D. Dahlberg, R. P. Devaty, S. M. Frolov, C. Gould, L. H. Greene, S. Guchhait, J. J. Hamlin, B. M. Hunt, M. J. A. Jardine, M. Kayyalha, R. C. Kurchin, V. Kozii, H. F. Legg, I. I. Mazin, V. Mourik, A. B. Özgüler, J. Peñuela-Parra, B. Seradjeh, B. Skinner, K. F. Quader, and J. P. Zwolak",
+      "last_author": "J. P. Zwolak",
+      "abstract": "Author(s): A. Akrap, D. Bordelon, S. Chatterjee, E. D. Dahlberg, R. P. Devaty, S. M. Frolov, C. Gould, L. H. Greene, S. Guchhait, J. J. Hamlin, B. M. Hunt, M. J. A. Jardine, M. Kayyalha, R. C. Kurchin, V. Kozii, H. F. Legg, I. I. Mazin, V. Mourik, A. B. Özgüler, J. Peñuela-Parra, B. Seradjeh, B. Skinner, K. F. Quader, and J. P. ZwolakThis report from a diverse collaboration of experts addresses community concerns around reproducibility in condensed matter physics by establishing clear best practices for researchers, publishers, and institutions. It advocates for mandatory sharing of primary data, code, and full experimental parameters to enhance and safeguard the field’s scientific integrity.[Phys. Rev. B 113, 119601] Published Fri Mar 20, 2026",
+      "url": "http://link.aps.org/doi/10.1103/27h6-yghn",
+      "paper_id": "10.1103/27h6-yghn",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-03-20T10:00:00+00:00",
+      "score": 1,
+      "reason": "Meta-science commentary; not research content.",
       "matched": []
     },
     {
@@ -1132,7 +978,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Geostrophic turbulence; fluid dynamics not condensed matter.",
+      "reason": "Fluid dynamics/geophysics; not condensed matter.",
       "matched": []
     },
     {
@@ -1146,7 +992,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "High-energy physics (QCD gluons); not condensed matter.",
+      "reason": "Gauge theory/QCD; not condensed matter.",
       "matched": []
     },
     {
@@ -1160,7 +1006,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Plant virology; unrelated to condensed matter.",
+      "reason": "Plant virology; not condensed matter.",
       "matched": []
     },
     {
@@ -1174,7 +1020,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Molecular biology (microRNAs); not condensed matter.",
+      "reason": "Molecular biology; not condensed matter.",
       "matched": []
     },
     {
@@ -1188,21 +1034,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Immunotherapy; biomedical not condensed matter.",
-      "matched": []
-    },
-    {
-      "title": "The mid-career reset: how to be strategic about your research direction",
-      "authors": "Mohamed Ezat",
-      "last_author": "Mohamed Ezat",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-025-04077-2A decade after completing a PhD, your research can begin to lose direction. So consider each opportunity carefully, says Mohamed Ezat.",
-      "url": "https://www.nature.com/articles/d41586-025-04077-2",
-      "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "Career advice article; not scientific research relevant to condensed matter.",
+      "reason": "Immunology; not condensed matter.",
       "matched": []
     },
     {
@@ -1230,7 +1062,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "DNA damage response pathway; molecular biology with no connection to condensed matter physics or computational materials science.",
+      "reason": "Molecular biology (transcription/DNA damage response); not relevant to condensed-matter physics.",
       "matched": []
     },
     {
@@ -1244,7 +1076,7 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Cancer cell biology; molecular biology with no connection to condensed matter physics.",
+      "reason": "Cancer biology (splicing/transcription in CML); not condensed-matter physics.",
       "matched": []
     },
     {
@@ -1258,7 +1090,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Quantum information foundations; not condensed matter physics.",
+      "reason": "Quantum information; outside condensed matter physics.",
       "matched": []
     },
     {
@@ -1272,7 +1104,7 @@
       "feed_category": "APS",
       "published": "2026-03-20T10:00:00+00:00",
       "score": 1,
-      "reason": "Particle physics (CP violation); unrelated to condensed matter research.",
+      "reason": "Particle physics; not condensed matter.",
       "matched": []
     },
     {
@@ -1286,21 +1118,63 @@
       "feed_category": "AAAS",
       "published": "2026-03-20T07:00:00+00:00",
       "score": 1,
-      "reason": "Organic photochemistry; synthetic chemistry unrelated to condensed matter or first-principles calculations.",
+      "reason": "Organic photochemistry; outside condensed-matter and materials physics.",
       "matched": []
     },
     {
-      "title": "‘Unaffordable’ visa price hike threatens Australia’s researcher pipeline",
-      "authors": "Linda Nordling",
-      "last_author": "Linda Nordling",
-      "abstract": "Nature, Published online: 20 March 2026; doi:10.1038/d41586-026-00822-3Doubling of the cost of a key visa used by graduates to stay in the country between jobs has sparked critique and consternation.",
-      "url": "https://www.nature.com/articles/d41586-026-00822-3",
+      "title": "생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가",
+      "authors": "helio",
+      "last_author": "helio",
+      "abstract": "Thinking—Fast, Slow, and Artificial AI는 도구가 아니라 ‘세 번째 사고 시스템’이라는 연구 2026년 1월, 펜실베이니아대 와튼스쿨 Steven D. Shaw (박사과정 연구자) Gideon Nave (마케팅/행동과학 교수) 인간 사고 모델을 System 1 / 2 → Sys...",
+      "url": "https://news.hada.io/topic?id=27718",
       "paper_id": "",
-      "feed_name": "Nature",
-      "feed_category": "Nature",
-      "published": "2026-03-20T00:00:00+00:00",
-      "score": 1,
-      "reason": "News on visa costs and researcher funding; not scientific research.",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-03-22T00:06:57+00:00",
+      "score": 0,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "TI-82/83/83+ 계산기용 Drugwars (2011)",
+      "authors": "neo",
+      "last_author": "neo",
+      "abstract": "1980년대 IBM PC용 BASIC 게임을 기반으로 한 거래 시뮬레이션 게임으로, TI-82·83·83+ 계산기에서 TI-BASIC으로 실행되는 버전 플레이어는 여섯 도시를 이동하며 마약을 사고팔고 빚을 갚으며 한 달간 최대 수익을 추구, 무작위 사건과 경찰 추격...",
+      "url": "https://news.hada.io/topic?id=27717",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-03-21T22:33:59+00:00",
+      "score": 0,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Show GN: alogin – TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go)",
+      "authors": "emusal",
+      "last_author": "emusal",
+      "abstract": "2000년대 초부터 개인용 SSH 자동화 도구를 Bash + Expect 스크립트로 만들어 써왔습니다. 20년간 패치하다가 결국 Go로 완전히 재작성해서 오픈소스로 공개했습니다. https://github.com/emusal/alogin2 핵심 문제 의식: 수십 대 서버를 사용자, 포트, 게이트웨이 경로, 자격증명이 제각각",
+      "url": "https://news.hada.io/topic?id=27716",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-03-21T21:35:23+00:00",
+      "score": 0,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개",
+      "authors": "neo",
+      "last_author": "neo",
+      "abstract": "2023년 이후 Azure Entra ID 로그인 로그 우회 취약점이 총 4건 발견되었으며, 최근 두 건은 정상 토큰 발급이 가능한 심각한 문제로 확인됨 GraphGoblin은 OAuth2 ROPC 흐름에서 scope 파라미터를 반복 입력해 로그 생성을...",
+      "url": "https://news.hada.io/topic?id=27715",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-03-21T21:33:25+00:00",
+      "score": 0,
+      "reason": "",
       "matched": []
     },
     {
@@ -1943,62 +1817,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-03-20T00:48:17+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Afroman, 오하이오 경찰 명예훼손 소송에서 무죄 판결",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "힙합 가수 Afroman(본명 Joseph Foreman) 이 자신의 집을 급습한 오하이오 경찰관들을 풍자한 뮤직비디오 관련 명예훼손 소송에서 무죄 판결을 받음 그는 2022년 마약 수색으로 인한 재산 피해 보상금 마련을 위해 자택 CCTV 영상을 활용한 풍자곡...",
-      "url": "https://news.hada.io/topic?id=27660",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-03-20T00:45:17+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Astral, OpenAI에 합류",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "Python 개발 생산성을 높이는 도구 생태계 Astral이 OpenAI의 Codex 팀에 합류함 Astral은 Ruff, uv, ty 등 수억 회 다운로드된 오픈소스 도구를 통해 현대 Python 개발의 핵심 인프라로 자리 잡음 OpenAI는 인수 후에도 Astral의",
-      "url": "https://news.hada.io/topic?id=27659",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-03-20T00:42:17+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "open-pencil - Figma 대체용 AI 기반 디자인 편집기",
-      "authors": "xguru",
-      "last_author": "xguru",
-      "abstract": "AI 중심 설계 철학을 가진 차세대 개방형 오픈소스 디자인 도구 .fig 파일 직접 읽기·쓰기를 지원해 Figma 프로젝트를 그대로 열고 수정 가능 채팅 인터페이스에서 명령을 입력하면 90여 개의 AI 도구가 도형 생성, 속성 변경, 자동 레...",
-      "url": "https://news.hada.io/topic?id=27658",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-03-20T00:31:02+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Claude Code Channels 공개 - Telegram/Discord로 작업 지시 가능",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "MCP 서버를 통해 외부 메시지·알림·웹훅을 실행 중인 세션에 푸시 가능 핵심은 스마트폰에서 Telegram이나 Discord로 Claude Code에 직접 메시지를 보내 작업을 지시하고 결과를 받아볼 수 있다는 것 양방향 통신을 지원하여 Claude가 이벤트를 읽고",
-      "url": "https://news.hada.io/topic?id=27657",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-03-20T00:07:01+00:00",
       "score": 0,
       "reason": "",
       "matched": []
