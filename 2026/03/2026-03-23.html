@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Digest — 2026-03-22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Site title */
+  .site-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Header */
+  .page-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .page-header .meta {
+    font-size: 15px;
+    color: #656d76;
+  }
+  .page-header .feeds {
+    font-size: 13px;
+    color: #848d97;
+    margin-top: 4px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848d97;
+    padding: 10px 12px;
+    border-bottom: 2px solid #d1d9e0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1f2328; }
+  tbody tr {
+    border-bottom: 1px solid #eaeef2;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #f6f8fa; }
+  td { padding: 10px 12px; vertical-align: top; }
+
+  .td-score {
+    width: 48px;
+    text-align: center;
+  }
+  .score-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .td-title a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .td-title a:hover { text-decoration: underline; }
+  .reason {
+    font-size: 13px;
+    color: #848d97;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .td-authors {
+    color: #656d76;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .td-time {
+    width: 50px;
+    text-align: right;
+    color: #848d97;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: #848d97;
+  }
+
+  .group-header td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }
+
+  /* News section */
+  .news-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d1d9e0;
+  }
+  .news-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .news-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeef2;
+    font-size: 15px;
+  }
+  .news-item a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-item a:hover { text-decoration: underline; }
+  .news-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #656d76;
+    border: 1px solid #eaeef2;
+    margin-right: 6px;
+  }
+  .news-time {
+    color: #848d97;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; }
+    .td-authors { max-width: 150px; }
+    .td-time { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
+
+<div class="page-header">
+  <h1>Journal Digest</h1>
+  <div class="meta">2026-03-22 — 8 papers scored by Haiku</div>
+  <div class="feeds">Nat. Commun. (8)</div>
+</div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Score</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th style="text-align:right">Time</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+<tr class="group-header"><td colspan="4">Nat. Commun.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#f97316">4</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70968-1" target="_blank" rel="noopener">Supercurrent-controlled spontaneous ferromagnetism of magnetic impurities in a spin-orbit-coupled superconductor</a><br><span class=reason>Superconductor physics with magnetic impurities and spin-orbit coupling—directly relevant to electron correlations and exotic phases in condensed matter.</span></td><td class="td-authors">Bingke Xiang, Qiushi He, Yishi Lin, Keyi Liang, Zhijie Li, Jinjiang Zhu, Boren Chen, Youfang Wang, Puhua Zhang, Hongxu Yao, Chunxiang Wu, Tingyu Zhou, Minghu Fang, Yao Lu, Ilya Tokatly, Sebastian Bergeret, Yihua Wang</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70999-8" target="_blank" rel="noopener">Proton transfer regulated photocured robust room-temperature phosphorescence from naphthalimide</a><br><span class=reason>Organic photoluminescence chemistry; tangentially related to photophysics but not core condensed matter research.</span></td><td class="td-authors">Aicheng Wang, Haoxuan Wei, Kunquan Lin, Xing Huang, Mingxing Chen, Wentao Bian, Junxiao Wang, Yuzhou Qiao, Bing Fang, Yuxia Zhao, Jianxiang Yu, Meizhen Yin, Yuhua Dai</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71028-4" target="_blank" rel="noopener">X-ray preactivated reversible persistent luminescence enables photodynamic immunotherapy of deep tumors</a><br><span class=reason>Luminescent materials for medical applications; peripheral interest in materials properties but not core condensed matter physics focus.</span></td><td class="td-authors">Win Topatana, Yuchao Sun, Tianao Xie, Yiyuan Zhu, Taorui Yang, Ruijing Shen, Peng Ran, Chengao Li, Jiadong Chen, Xuqiu Shen, Ziyi Lu, Yina Han, Yukai Shan, Shijie Li, Tianen Chen, Xiujun Cai, Renren Deng, Sarun Juengpanich, Mingyu Chen</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70510-3" target="_blank" rel="noopener">Activation of l-histidine biosynthesis as a new antibiotic strategy against Mycobacterium tuberculosis</a><br><span class=reason>Biochemistry and antibiotic development; outside condensed matter domain.</span></td><td class="td-authors">Debbie M. Hunt, João Pedro Pisco, Angela Rodgers, Cesira de Chiara, Anisha Zaveri, Kamila L. Pacholarz, Dimitrios Evangelopoulos, Acely Garza-Garcia, Sabine Ehrt, Dirk Schnappinger, Perdita E. Barran, Maximiliano G. Gutierrez, Luiz Pedro S. de Carvalho</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70918-x" target="_blank" rel="noopener">An ultrafast plenoptic-camera system for high-resolution 3D particle tracking in unsegmented scintillators</a><br><span class=reason>Instrumentation for particle tracking in scintillators; no condensed matter physics content.</span></td><td class="td-authors">Till Dieminger, Saúl Alonso-Monsalve, Christoph Alt, Claudio Bruschini, Noemi Bührer, Edoardo Charbon, Kodai Kaneyasu, Tim Weber, Matthew Franks, Davide Sgalaberna</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70843-z" target="_blank" rel="noopener">Cell-type-specific immune programs orchestrate spatial defense in the Arabidopsis leaf epidermis</a><br><span class=reason>Plant biology and immunity; no relevance to condensed matter or materials physics.</span></td><td class="td-authors">Jingpu Song, Mahsa Modareszadeh, Dinithi Kumarapeli, Wilson Andres Acosta, Yuhai Cui, Yangdou Wei</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71013-x" target="_blank" rel="noopener">In vivo metabolic tagging and targeting of circulating red blood cells</a><br><span class=reason>Biomedical application of cell tagging; not condensed matter physics.</span></td><td class="td-authors">Yusheng Liu, Yizun Wang, Kyungwon Ko, Yuan Liu, Haiyi Huang, Yueji Wang, Jiadiao Zhou, Dhyanesh Baskaran, Joonsu Han, Rimsha Bhatta, Daniel Nguyen, Cecilia Leal, Matthew R. Berry, Fan Lam, Hua Wang</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70786-5" target="_blank" rel="noopener">In-utero exposure to chikungunya and child morbimortality: a population-based study using linked routine data</a><br><span class=reason>Epidemiological study of viral exposure; not relevant to condensed matter or materials physics.</span></td><td class="td-authors">Mio Kushibuchi, Orlagh Carroll, Thiago Cerqueira-Silva, Viviane S. Boaventura, Maria Glória Teixeira, Mauricio L. Barreto, Enny S. Paixão</td><td class="td-time">1d</td></tr>
+</tbody>
+</table>
+
+
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    <div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27744" target="_blank" rel="noopener">Floci – 무료 오픈소스 로컬 AWS 에뮬레이터</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27743" target="_blank" rel="noopener">macOS Tahoe의 메뉴 아이콘 숨기기</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27741" target="_blank" rel="noopener">파리 시장, 앤 이달고의 교통 개혁이 만든 도시의 변화와 논란</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27740" target="_blank" rel="noopener">오리건 학교 휴대전화 사용 금지: ‘몰입하는 학생들, 즐거운 교사들’</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27739" target="_blank" rel="noopener">Gemini + Claude 병렬 리뷰 파이프라인으로 블로그 품질 자동 검증하기</a><span class="news-time">7h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27738" target="_blank" rel="noopener">Tooscut - 브라우저에서 WebGPU와 WASM으로 구현된 전문 영상 편집기</a><span class="news-time">7h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27736" target="_blank" rel="noopener">월 15만원짜리 Claude Code가 바꾼 아이디어-실행 사이클</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27735" target="_blank" rel="noopener">Show GN: MonoPix - AI가 만든 가짜 픽셀아트를 진짜 픽셀아트로 복원</a><span class="news-time">14h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27734" target="_blank" rel="noopener">Show GN: Thask – 프로젝트 의존성을 노드 그래프로 시각화하고 AI 에이전트가 조회/수정 가능</a><span class="news-time">15h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27733" target="_blank" rel="noopener">404 Deno CEO not found</a><span class="news-time">16h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27732" target="_blank" rel="noopener">SaaS의 미래는 Agentic</a><span class="news-time">16h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27731" target="_blank" rel="noopener">메타의 1,600개 언어용 Omnilingual MT</a><span class="news-time">16h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27730" target="_blank" rel="noopener">중국의 오픈클로 열풍에 대하여</a><span class="news-time">17h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27728" target="_blank" rel="noopener">Show GN: vvrite — 오픈소스 macOS 온디바이스 AI 음성 타이핑 앱</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27727" target="_blank" rel="noopener">Tinybox – 120B 파라미터를 지원하는 오프라인 AI 머신</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27726" target="_blank" rel="noopener">Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27725" target="_blank" rel="noopener">Google 검색, AI로 뉴스 헤드라인을 교체하기 시작</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27724" target="_blank" rel="noopener">디자인 프로세스는 죽지 않았다, 압축되었을 뿐</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27723" target="_blank" rel="noopener">아동 보호를 인터넷 접근 통제로 바꾸지 말라</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27722" target="_blank" rel="noopener">시간이 필요한 것들</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27721" target="_blank" rel="noopener">인터넷 아카이브 차단은 AI를 막지 못하지만 웹의 역사 기록을 지워버림</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27720" target="_blank" rel="noopener">IDE의 죽음?</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27719" target="_blank" rel="noopener">onecli - AI 에이전트용 시크릿 게이트웨이</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27718" target="_blank" rel="noopener">생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27717" target="_blank" rel="noopener">TI-82/83/83+ 계산기용 Drugwars (2011)</a><span class="news-time">21h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27716" target="_blank" rel="noopener">Show GN: alogin – TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go)</a><span class="news-time">22h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27715" target="_blank" rel="noopener">Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개</a><span class="news-time">22h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27714" target="_blank" rel="noopener">Wayland가 리눅스 데스크탑을 10년 뒤로 되돌렸는가?</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27713" target="_blank" rel="noopener">서버용 웹 기반 그래픽 인터페이스 Cockpit</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27712" target="_blank" rel="noopener">Bing 검색 &amp;quot;카카오톡&amp;quot; 상위 3개 결과가 전부 중국발 피싱</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27711" target="_blank" rel="noopener">HP, 고객지원 전화에 15분 강제 대기 적용 실험 후 철회</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27710" target="_blank" rel="noopener">일본의 젓가락 사용 금기 용어집</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27709" target="_blank" rel="noopener">Super Micro 주가, 공동창업자의 25억 달러 규모 AI 칩 밀수 혐의 기소 후 25% 급락</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27708" target="_blank" rel="noopener">실행 중인 세션에 채널을 통해 이벤트 푸시하기</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27706" target="_blank" rel="noopener">Andrej Karpathy가 말하는 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대 [유튜브]</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27705" target="_blank" rel="noopener">MacBook M5 Pro와 Qwen3.5 기반 로컬 AI 보안 시스템</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27703" target="_blank" rel="noopener">Noq: n0의 새로운 Rust 기반 QUIC 구현체</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27702" target="_blank" rel="noopener">Cursor Composer 2는 Kimi K2.5에 RL을 적용한 모델로 확인</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27701" target="_blank" rel="noopener">Show GN: Cluefin-Dure - 증권사/DART API를 활용한 국내주식 멀티 AI 에이전트</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27700" target="_blank" rel="noopener">풀 리퀘스트는 죽었다, 풀 리퀘스트 만세</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27699" target="_blank" rel="noopener">Ghostling - Minimum Viable 터미널 에뮬레이터</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27698" target="_blank" rel="noopener">OpenCode – 오픈소스 AI 코딩 에이전트</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27697" target="_blank" rel="noopener">'StravaLeaks': Le Monde, 피트니스 앱을 통해 프랑스 항공모함 위치를 실시간으로 추적</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27696" target="_blank" rel="noopener">척 노리스 사망: ‘워커 텍사스 레인저’ 액션 아이콘, 향년 86세</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27694" target="_blank" rel="noopener">ArXiv, 코넬 대학교로부터의 독립을 선언</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27693" target="_blank" rel="noopener">뒤처져도 괜찮습니다, 고마워요!</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27692" target="_blank" rel="noopener">Windows 품질에 대한 우리의 약속</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27691" target="_blank" rel="noopener">Tabularis - 개발자용 크로스플랫폼 DB 관리 애플리케이션</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27690" target="_blank" rel="noopener">Claude Code, 클라우드 기반 예약 작업 기능 추가</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=27689" target="_blank" rel="noopener">Apple, 인기 '바이브 코딩' 앱 업데이트를 조용히 차단</a><span class="news-time">1d</span></div>
+  </div>
+</div>
+
+
+</body>
+</html>
