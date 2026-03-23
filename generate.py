@@ -17,6 +17,7 @@ import json
 import logging
 import os
 import re
+import subprocess
 from collections import OrderedDict
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
@@ -25,7 +26,6 @@ from time import mktime
 
 import certifi
 import ssl
-import anthropic
 import feedparser
 import yaml
 
@@ -178,44 +178,20 @@ def fetch_all(config: dict) -> list[Paper]:
     return all_papers
 
 
-# ── Haiku scoring (1–5 scale) ────────────────────────────────
-
-SCORE_TOOL = {
-    "name": "score_articles",
-    "description": "Score a batch of articles for relevance to a researcher's interests on a 1-5 scale.",
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "scores": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "index": {"type": "integer"},
-                        "score": {"type": "integer", "minimum": 1, "maximum": 5},
-                        "reason": {"type": "string"},
-                    },
-                    "required": ["index", "score"],
-                },
-            }
-        },
-        "required": ["scores"],
-    },
-}
-
+# ── Claude CLI scoring (1–5 scale) ───────────────────────────
 
 def score_batch(
-    client: anthropic.Anthropic,
     profile_text: str,
     papers: list[tuple[int, Paper]],
 ) -> dict[int, tuple[int, str]]:
-    """Score a batch via Haiku. Returns {index: (score, reason)}."""
+    """Score a batch via Claude Code CLI. Returns {index: (score, reason)}."""
     lines = []
     for idx, p in papers:
         line = f"{idx}. {p.title} [{p.feed_name}]"
         lines.append(line)
 
-    user_msg = (
+    prompt = (
+        "You are an academic paper relevance scorer for a condensed-matter physicist.\n\n"
         f"User research profile:\n{profile_text}\n\n"
         "Score each article on a 1–5 integer scale for relevance:\n"
         "  5 = Directly in my research area, must read\n"
@@ -224,35 +200,47 @@ def score_batch(
         "  2 = Tangentially related\n"
         "  1 = Not relevant\n"
         "Provide a one-line reason for scores >= 3.\n\n"
-        "Articles:\n" + "\n".join(lines)
+        "Articles:\n" + "\n".join(lines) + "\n\n"
+        "Respond with ONLY a JSON array, no other text. Example:\n"
+        '[{"index":1,"score":4,"reason":"..."}, {"index":2,"score":1}]'
     )
 
     try:
-        response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=4096,
-            system="You are an academic paper relevance scorer for a condensed-matter physicist.",
-            messages=[{"role": "user", "content": user_msg}],
-            tools=[SCORE_TOOL],
-            tool_choice={"type": "tool", "name": "score_articles"},
+        result = subprocess.run(
+            ["claude", "--print", "--model", "haiku", prompt],
+            capture_output=True, text=True, timeout=120,
         )
-        for block in response.content:
-            if block.type == "tool_use" and block.name == "score_articles":
-                results = {}
-                for s in block.input.get("scores", []):
-                    if not isinstance(s, dict):
-                        continue
-                    idx = s.get("index")
-                    try:
-                        sc = max(1, min(5, int(s.get("score", 1))))
-                    except (TypeError, ValueError):
-                        continue
-                    reason = s.get("reason", "") or ""
-                    if idx is not None:
-                        results[idx] = (sc, reason)
-                return results
+        if result.returncode != 0:
+            logger.error(f"Claude CLI error: {result.stderr[:200]}")
+            return {}
+
+        output = result.stdout.strip()
+        # Extract JSON array from response
+        match = re.search(r'\[.*\]', output, re.DOTALL)
+        if not match:
+            logger.error("No JSON array found in Claude CLI output")
+            return {}
+
+        scores_list = json.loads(match.group())
+        results = {}
+        for s in scores_list:
+            if not isinstance(s, dict):
+                continue
+            idx = s.get("index")
+            try:
+                sc = max(1, min(5, int(s.get("score", 1))))
+            except (TypeError, ValueError):
+                continue
+            reason = s.get("reason", "") or ""
+            if idx is not None:
+                results[idx] = (sc, reason)
+        return results
+    except subprocess.TimeoutExpired:
+        logger.error("Claude CLI timed out")
+    except json.JSONDecodeError as e:
+        logger.error(f"Failed to parse Claude CLI JSON: {e}")
     except Exception as e:
-        logger.error(f"Haiku scoring error: {e}")
+        logger.error(f"Claude CLI scoring error: {e}")
     return {}
 
 
@@ -269,10 +257,8 @@ def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Pape
             academic.append(p)
     logger.info(f"Split: {len(academic)} academic, {len(news)} news")
 
-    # Score all academic papers (title-only → fast + cheap)
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if api_key and academic:
-        client = anthropic.Anthropic(api_key=api_key)
+    # Score all academic papers via Claude CLI
+    if academic:
         profile_text = profile.get("text", "")
         batch_size = 60
         indexed = list(enumerate(academic, 1))
@@ -280,17 +266,14 @@ def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Pape
         for i in range(0, len(indexed), batch_size):
             batch = indexed[i:i + batch_size]
             logger.info(f"Scoring batch {i // batch_size + 1} ({len(batch)} papers)...")
-            results = score_batch(client, profile_text, batch)
+            results = score_batch(profile_text, batch)
             for idx, p in batch:
                 if idx in results:
                     p.score, p.reason = results[idx]
                     scored_count += 1
         if scored_count == 0:
-            logger.warning("Haiku returned no results — using keyword fallback")
+            logger.warning("Claude CLI returned no results — using keyword fallback")
             academic = _keyword_fallback_list(academic, profile)
-    elif not api_key:
-        logger.warning("ANTHROPIC_API_KEY not set — using keyword fallback")
-        academic = _keyword_fallback_list(academic, profile)
 
     threshold = config.get("output", {}).get("score_threshold", 2)
     scored = [p for p in academic if p.score >= threshold]
