@@ -1,9 +1,10 @@
 name: Daily Journal Digest
 
 on:
-  schedule:
-    - cron: "0 20 * * *"     # 05:00 KST daily
-  workflow_dispatch:          # 수동 실행 가능
+  # schedule disabled — now runs via vesper cron
+  # schedule:
+  #   - cron: "0 20 * * *"   # 05:00 KST daily
+  workflow_dispatch:          # 수동 실행 가능 (fallback)
 
 permissions:
   contents: write
