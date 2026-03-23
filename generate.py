@@ -207,11 +207,13 @@ def score_batch(
 
     try:
         result = subprocess.run(
-            ["claude", "--print", "--model", "haiku", prompt],
+            ["claude", "--print", "--model", "haiku"],
+            input=prompt,
             capture_output=True, text=True, timeout=120,
         )
         if result.returncode != 0:
-            logger.error(f"Claude CLI error: {result.stderr[:200]}")
+            logger.error(f"Claude CLI error (rc={result.returncode}): {result.stderr[:500]}")
+            logger.error(f"Claude CLI stdout: {result.stdout[:500]}")
             return {}
 
         output = result.stdout.strip()
