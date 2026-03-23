@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-23T09:12:32.848823+00:00",
+  "generated": "2026-03-23T09:19:55.932155+00:00",
   "papers": [
     {
       "title": "$\\Delta_T$ Noise, Quantum Shot Noise, and Thermoelectric Clues to the Pairing Puzzle in Iron Pnictides",
@@ -408,20 +408,6 @@
       "matched": []
     },
     {
-      "title": "Engineered microbial hydrogels with confined architecture and binary microbes for efficient hydrogen production",
-      "authors": "Xiaoyi Li, Qing Long, Minwen Jiang, Weiwei Tan, Ning Ding, Han Sun, Xuanqi Liu, Xia Hu, Hai Liu, Xiaojie Li, Jin Liu, Jiajing Zhou, Xiaosheng Du",
-      "last_author": "Xiaosheng Du",
-      "abstract": "Nature Communications, Published online: 23 March 2026; doi:10.1038/s41467-026-70988-xMicroalgae‑based hydrogen production faces challenges including oxygen sensitivity, high water demand, and low efficiency. The authors develop a symbiotic hydrogel system that enhances hydrogen production by using coaxial 3D bioprinting to spatially separate microalgae and bacteria.",
-      "url": "https://www.nature.com/articles/s41467-026-70988-x",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-03-22T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Engineering non-interfacial hydrogen spillover in a Ni17W3-WO2 heterostructure",
       "authors": "Song Xie, Hao Dong, Shuang Cao, Yaping Miao, Liwei Xiong, Biao Gao, Xuming Zhang, Imran Shakir, Yongchao Yao, Xiang Peng, Xuping Sun",
       "last_author": "Xuping Sun",
@@ -716,6 +702,20 @@
       "matched": []
     },
     {
+      "title": "Major human schistosome species express different glycans with immunological and diagnostic implications",
+      "authors": "Laudine M. C. Petralia, Angela van Diepen, Tao Zhang, Anna O. Kildemoes, Tom Veldhuizen, D. Linh Nguyen, Cornelis H. Smit, Peter G. Kremsner, Manfred Wuhrer, Jeremy M. Foster, Cornelis H. Hokke",
+      "last_author": "Cornelis H. Hokke",
+      "abstract": "Nature Communications, Published online: 23 March 2026; doi:10.1038/s41467-026-70850-0The widespread human parasite Schistosoma haematobium has a distinct, immunogenic glycan profile compared to S. mansoni, highlighting the role of glycans in species-specific parasite-host interactions and as diagnostic targets.",
+      "url": "https://www.nature.com/articles/s41467-026-70850-0",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-03-22T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Matched Asymptotic Expansions-Based Transferable Neural Networks for Singular Perturbation Problems",
       "authors": "Zhequan Shen, Lili Ju, Liyong Zhu",
       "last_author": "Liyong Zhu",
@@ -767,20 +767,6 @@
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-03-22T19:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Mid-infrared detection through ligand-driven local heating in lanthanide-doped nanoparticles",
-      "authors": "Chong Wu Wang, Liangliang Liang, Xuran Zhang, Mingjin Dai, Jiaye Chen, Xiaogang Liu, Qi Jie Wang",
-      "last_author": "Qi Jie Wang",
-      "abstract": "Nature Communications, Published online: 23 March 2026; doi:10.1038/s41467-026-70900-7MIR photothermal detection can be limited under weak irradiation due to insufficient thermal sensitivity. Here, the authors show ligand-capped lanthanide nanoparticles enable broadband mid-IR detection through localized heating that modulates visible emission.",
-      "url": "https://www.nature.com/articles/s41467-026-70900-7",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-03-22T15:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1091,6 +1077,20 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-03-22T19:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Selective conversion of syngas to C4+ long-chain alcohols",
+      "authors": "Yihui Li, Ziang Zhao, Miao Jiang, Guoqing Wang, Zheng Li, Wei Lu, Wenhao Cui, Rong Liu, Ronghe Lin, Yu Meng, Yuan Lyu, Li Yan, Hejun Zhu, Yunjie Ding",
+      "last_author": "Yunjie Ding",
+      "abstract": "Nature Communications, Published online: 23 March 2026; doi:10.1038/s41467-026-70994-zConverting syngas into high-value long-chain alcohols is a major industrial challenge due to poor product selectivity. This study achieves 80% selectivity through a modular catalytic design that boosts carbon efficiency while minimizing waste.",
+      "url": "https://www.nature.com/articles/s41467-026-70994-z",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-03-22T15:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
