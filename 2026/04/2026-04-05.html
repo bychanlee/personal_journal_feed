@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Digest — 2026-04-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Site title */
+  .site-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Header */
+  .page-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .page-header .meta {
+    font-size: 15px;
+    color: #656d76;
+  }
+  .page-header .feeds {
+    font-size: 13px;
+    color: #848d97;
+    margin-top: 4px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848d97;
+    padding: 10px 12px;
+    border-bottom: 2px solid #d1d9e0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1f2328; }
+  tbody tr {
+    border-bottom: 1px solid #eaeef2;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #f6f8fa; }
+  td { padding: 10px 12px; vertical-align: top; }
+
+  .td-score {
+    width: 48px;
+    text-align: center;
+  }
+  .score-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .td-title a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .td-title a:hover { text-decoration: underline; }
+  .reason {
+    font-size: 13px;
+    color: #848d97;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .td-authors {
+    color: #656d76;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .td-time {
+    width: 50px;
+    text-align: right;
+    color: #848d97;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: #848d97;
+  }
+
+  .group-header td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }
+
+  /* News section */
+  .news-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d1d9e0;
+  }
+  .news-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .news-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeef2;
+    font-size: 15px;
+  }
+  .news-item a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-item a:hover { text-decoration: underline; }
+  .news-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #656d76;
+    border: 1px solid #eaeef2;
+    margin-right: 6px;
+  }
+  .news-time {
+    color: #848d97;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; }
+    .td-authors { max-width: 150px; }
+    .td-time { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
+
+<div class="page-header">
+  <h1>Journal Digest</h1>
+  <div class="meta">2026-04-05 — 65 papers scored by Haiku</div>
+  <div class="feeds">Nat. Commun. (8) · Nature (1) · PRB (20) · PRL (3) · PRX (2) · RMP (1) · Sci. Adv. (30)</div>
+</div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Score</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th style="text-align:right">Time</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+<tr class="group-header"><td colspan="4">Nat. Commun.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71275-5" target="_blank" rel="noopener">A universal atomically dispersed cobalt catalyst for alkylation of ketones alcohols and lignin-derived compounds</a></td><td class="td-authors">Zhuang Ma, Binyu Zhang, Yanbin Cui, Changyue Ren, Xinmin Li, Rajenahally V. Jagadeesh, Matthias Beller</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71562-1" target="_blank" rel="noopener">Advancing green mobile networks</a></td><td class="td-authors">Antonio De Domenico, Nicola Piovesan, Xiaoyi Zhou, Xiaowen Li, Magnus Olsson, Xin Chen</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71423-x" target="_blank" rel="noopener">An in vivo fitness gene of Toxoplasma, MIC11, is essential for PLP1-mediated egress from host cells</a></td><td class="td-authors">Yuta Tachibana, Xue Gu, Miwa Sasai, Hidetaka Kosako, Eizo Takashima, Daron M. Standley, Vern B. Carruthers, Dominique Soldati-Favre, Masahiro Yamamoto</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71402-2" target="_blank" rel="noopener">Artificial gauge fields for sculpting topological modes on photonic chips</a></td><td class="td-authors">Zhiyuan Lin, Jian Li, Wange Song, Xueyun Li, Haoran Xin, Xian Long, Chen Chen, Shining Zhu, Tao Li, Shuang Zhang</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71147-y" target="_blank" rel="noopener">Layer-selective hydrogenation and proton transport in twisted bilayer graphene</a></td><td class="td-authors">J. Tong, G. Chen, H. Li, E. Hoenig, M. Alhashmi, X. Zhang, D. Bahamon, G. R. Tainton, S. Sullivan-Allsop, Y. Mayamei, D. R. da Costa, L. F. Vega, S. J. Haigh, D. Domaretskiy, F. M. Peeters, M. Lozada-Hidalgo</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71416-w" target="_blank" rel="noopener">Multiscale electric fields direct charges to single-atom cobalt sites for photocatalytic H2 production</a></td><td class="td-authors">Ailing Pan, Bin Liu, Hong Du, Chuanyi Wang, Yuanyuan Che, Hewen Liu, Gang Zhang</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71374-3" target="_blank" rel="noopener">Non-toxic silver telluride colloidal quantum dot mid-infrared photodetector</a></td><td class="td-authors">So Young Eom, Jin Hyeok Lee, Haemin Song, Suheon Son, Kwang Seob Jeong</td><td class="td-time">1d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-70879-1" target="_blank" rel="noopener">Realizing Landau levels with open equifrequency contours around band singularities</a></td><td class="td-authors">Cuicui Lu, Oubo You, Yanji Zheng, Shaojie Ma, Qingdong Yang, Hsun-Chi Chan, Zhihao Wang, Wenshuo Ma, Yong-Chun Liu, Shuang Zhang</td><td class="td-time">1d</td></tr><tr class="group-header"><td colspan="4">Nature</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/d41586-026-01103-9" target="_blank" rel="noopener">What Artemis II’s astronauts will look for on the Moon’s far side</a></td><td class="td-authors">Alexandra Witze</td><td class="td-time">1d</td></tr><tr class="group-header"><td colspan="4">PRB</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/yv52-wm2s" target="_blank" rel="noopener">Boundary renormalization group flow of entanglement entropy at a ($2+1$)-dimensional quantum critical point</a></td><td class="td-authors">Zhiyan Wang, Zhe Wang, Yi-Ming Ding, Zenan Liu, Zheng Yan, and Long Zhang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/17px-9x4m" target="_blank" rel="noopener">Coexistence of superconductivity and nontrivial electronic topology in Se-functionalized ${\mathrm{Mo}}_{2}\mathrm{B}$</a></td><td class="td-authors">Run Long, Min-Quan Kuang, Fang Yun, Fang-guang Kuang, Lai Wei, and Mingmin Zhong</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/zc8g-9fw7" target="_blank" rel="noopener">Dissipative Yao-Lee spin-orbital model: Exact solvability and $\mathcal{PT}$-symmetry breaking</a></td><td class="td-authors">Zihao Qi and Yuan Xue</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/kf11-91mr" target="_blank" rel="noopener">Electronic and physical properties of the topological nodal-line semimetal candidate CoSbTe</a></td><td class="td-authors">Vishnu Kumar Tiwari, Amarjyoti Choudhury, Mohit Mudgal, Priyanka Meena, Pankaj Kumar, Manjari Shukla, Sarita Rajput, Pooja Manral, Sher Singh Meena, B. C. Sahoo, Vivek Kumar Malik, Anil Jain, C. S. Yadav, Tulika Maitra, and Jayita Nayak</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/c3dg-rx1j" target="_blank" rel="noopener">Engineering topological phase transitions via sliding ferroelectricity in $M{\mathrm{Bi}}_{2}{\mathrm{Te}}_{4}$ ($M=\mathrm{Ge},\mathrm{Sn},\mathrm{Pb}$) bilayers</a></td><td class="td-authors">Xinlong Dong, Dan Qiao, Zeyu Li, Xiaohong Xu, and Zhenhua Qiao</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/klwd-xckq" target="_blank" rel="noopener">Fluctuation response of a minimal Kitaev chain in nonequilibrium states</a></td><td class="td-authors">Sergey Smirnov</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/zhtf-trz5" target="_blank" rel="noopener">Goos-Hanchen shifts of a bilayer metagrating with unidirectional guide resonance</a></td><td class="td-authors">Zhihao Xu and Ma Luo</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/lxhl-wq7l" target="_blank" rel="noopener">Identifying the non-Hermitian skin effect in many-body dynamics by graphs</a></td><td class="td-authors">Peng He and Sen Lin</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/pj3y-qfvb" target="_blank" rel="noopener">In situ straining of epitaxial freestanding ferroic films by a microelectromechanical device</a></td><td class="td-authors">Simone Finizio, Tim A. Butcher, Maria Cocconcelli, Elisabeth Müller, Lauren J. Riddiford, Jeffrey A. Brock, Chia-Chun Wei, Li-Shu Wang, Jan-Chi Yang, Shih-Wen Huang, Federico Maspero, Riccardo Bertacco, and Jörg Raabe</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/jzx6-j1kj" target="_blank" rel="noopener">Intrinsic role of polarons in surface catalysis of transition metal oxides</a></td><td class="td-authors">Jian Zheng, Tongtong Wang, Xin Wei, Di Wu, and Da-Jun Shu</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/tmd3-whft" target="_blank" rel="noopener">Kagome bands and magnetism in $\mathrm{MoT}{\mathrm{e}}_{2−x}$ kagome monolayers</a></td><td class="td-authors">Jiaqi Dai, Zhongqin Zhang, Zemin Pan, Cong Wang, Chendong Zhang, Zhihai Cheng, and Wei Ji</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/3n8g-fnhw" target="_blank" rel="noopener">Origin of anomalous nonlinear microwave absorption in Josephson junction qubits: Nature of two-level systems or their dynamic interaction</a></td><td class="td-authors">Alexander L. Burin</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/bfp5-y2c1" target="_blank" rel="noopener">Proton quantum effects in the electronic structure of ${\mathrm{H}}_{3}\mathrm{S}$: A multicomponent DFT study via the nuclear-electronic orbital method</a></td><td class="td-authors">Jianhang Xu, Aaron M. Schankler, and Yosuke Kanai</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/4rsc-ysk8" target="_blank" rel="noopener">Quantification of polarization bowing in III-nitrides by off-axis electron holography and impact on the polarization controversy</a></td><td class="td-authors">Qianqian Lan, Michael Schnedler, Keyan Ji, Jean-François Carlin, Raphaël Butté, Nicolas Grandjean, Rafal E. Dunin-Borkowski, and Philipp Ebert</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/jqs4-hg41" target="_blank" rel="noopener">Reentrant spin glass state in the long-range magnetic order compound ${\mathrm{Er}}_{2}{\mathrm{Cu}}_{2}\mathrm{In}$</a></td><td class="td-authors">Baidyanath Sahu, Ramesh Kumar, R. Djoumessi Fobasso, Rishabh Shukla, Sindisiwe P. Xhakaza, and André M. Strydom</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/lg4x-2xfp" target="_blank" rel="noopener">Signatures of two ferromagnetic states and goniopolarity in ${\mathrm{LaCrGe}}_{3}$ in the Hall effect</a></td><td class="td-authors">Modhumita Sariket, Najrul Islam, Ayan Jana, Manoranjan Kumar, Saquib Shamim, and Nitesh Kumar</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/vfcg-lpbq" target="_blank" rel="noopener">Spin-mixed edge states and their general expressions for conductance and local bond current in graphene</a></td><td class="td-authors">Xiao-Long Lü, Pei-Hao Fu, Lie-Run Tian, Xiang-Long Yu, and Jun-Feng Liu</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/ql6r-x3s8" target="_blank" rel="noopener">Strain-induced structural change and nearly-commensurate diffuse scattering in the model high-temperature superconductor ${\mathrm{HgBa}}_{2}{\mathrm{CuO}}_{4+δ}$</a></td><td class="td-authors">Mai Ye, Wenshan Hong, Tom Laurin Lacmann, Mehdi Frachet, Igor Vinograd, Gaston Garbarino, Sofia-Michaela Souliou, Michael Merz, Rolf Heid, Amir-Abbas Haghighirad, Yuan Li, and Matthieu Le Tacon</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/h1jw-jtnk" target="_blank" rel="noopener">Terahertz spin-orbit torque as a drive of spin dynamics in the insulating antiferromagnet ${\mathrm{Cr}}_{2}{\mathrm{O}}_{3}$</a></td><td class="td-authors">R. M. Dubrovin, Z. V. Gareeva, A. V. Kimel, and A. K. Zvezdin</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/q6dt-kzgc" target="_blank" rel="noopener">Thermal tensor network approach for spin-lattice relaxation in quantum magnets</a></td><td class="td-authors">Ning Xi, Yuan Gao, Huihang Lin, Qiaoyi Li, Chengchen Li, Enze Lv, Shuang Liang, Lei Wang, Rong Yu, Xiaoqun Wang, and Wei Li</td><td class="td-time">2d</td></tr><tr class="group-header"><td colspan="4">PRL</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/cllg-15kd" target="_blank" rel="noopener">Measuring Less to Learn More: Quadratic Speedup in Learning Nonlinear Properties of Quantum States</a></td><td class="td-authors">Yukun Zhang, Yusen Wu, You Zhou, and Xiao Yuan</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/snnn-wqxg" target="_blank" rel="noopener">Novel Limits on Dark Photon Mixing from Radiation Safety</a></td><td class="td-authors">Wen Yin</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/9y6g-42nm" target="_blank" rel="noopener">Symmetry-Protected Acoustic “Ghost Tunnels”</a></td><td class="td-authors">Changqing Xu, Zihao Su, Lingzhe Kong, Ze-Guo Chen, and Yun Lai</td><td class="td-time">2d</td></tr><tr class="group-header"><td colspan="4">PRX</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/ggyn-bn4v" target="_blank" rel="noopener">Observation of Nonadiabatic Landau-Zener Tunneling among Floquet States</a></td><td class="td-authors">Yun Yen, Marcel Reutzel, Andi Li, Zehua Wang, Hrvoje Petek, and Michael Schüler</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/zkyt-r8vd" target="_blank" rel="noopener">Traveling-Wave Parametric Amplifier with Passive Reverse Isolation</a></td><td class="td-authors">C. S. Kow and M. T. Bell</td><td class="td-time">2d</td></tr><tr class="group-header"><td colspan="4">RMP</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="http://link.aps.org/doi/10.1103/2mrp-chly" target="_blank" rel="noopener">Colloquium: Hadron production in open-charm meson pairs at ${e}^{+}{e}^{−}$ colliders</a></td><td class="td-authors">Xiongfei Wang, Xiang Liu, and Yuanning Gao</td><td class="td-time">2d</td></tr><tr class="group-header"><td colspan="4">Sci. Adv.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb8783?af=R" target="_blank" rel="noopener">2D Material light–emitting transistor with a dynamically controllable emission location for optimized waveguide coupling on silicon</a></td><td class="td-authors">Chen Li, Yongzhuo Li, Yutong Zhong, Yuqian Tang, Cun-Zheng Ning</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb4864?af=R" target="_blank" rel="noopener">A microphysiologic human cervical model recapitulates microbial, immune, and pathogenic properties of sexually transmitted infections</a></td><td class="td-authors">Katherine M. Nelson, Daniel J. Minahan, Vonetta L. Edwards, Ian J. Glomski, David J. Delgado Diaz, Keena Thomas, Forrest C. Walker, Patrik M. Bavoil, Isabelle Derré, Alison K. Criss, Jacques Ravel, Jason P. Gleghorn</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea6734?af=R" target="_blank" rel="noopener">A stromal PAI1-tPA axis orchestrates immunosuppression in pancreatic cancer</a></td><td class="td-authors">Tenzin Ngodup, Brynn Elson, Ashley M. Mello, Sean Hannifin, Miranda Liu, Yaqing Zhang, Jiaqi Shi, Yatrik M. Shah, Daniel A. Lawrence, Marina Pasca di Magliano, Kyoung Eun Lee</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb7157?af=R" target="_blank" rel="noopener">Biaxially ductile supramolecular polymer networks</a></td><td class="td-authors">Tong Wu, Zixiang Zhou, Junting Huang, Zifan Wang, Du Wang, Jingzhou Wang, Zhengkai Han, Bohang Wu, Xinling Wang, Chengyu Zeng, Hui Li, Dan Xing, Jianhao Lin, Shaobo Ji, Yang Jiao, Ying Jiang, Yizheng Tan, You Zhou, Rui Shi, Zehuan Huang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.adu7935?af=R" target="_blank" rel="noopener">Complex peopling history and expansion events inferred from large-scale modern and ancient Y chromosome sequences</a></td><td class="td-authors">Guanglin He, Zhiyong Wang, Yutong Jiang, Haibing Yuan, Lintao Luo, Yuhang Feng, Fengxiao Bu, Jing Cheng, Yu Lu, Renkuan Tang, Chao Liu, Huijun Yuan, Mengge Wang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea9268?af=R" target="_blank" rel="noopener">Cryo-EM structures of human P2X2/3 heteromer channel reveal the structural basis of ligand selectivity</a></td><td class="td-authors">Xinyu Cheng, Wei Zhang, Tong Che, Hongmin Guo, Weiwei Nan, Yuting Zhang, Ying Fu, Shuangyan Wan, Jin Zhang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb2907?af=R" target="_blank" rel="noopener">Effect of translational shear on interfacial structure in the viscous fingering instability</a></td><td class="td-authors">Zhaoning Liu, Samar Alqatari, Thomas E. Videbæk, Sidney R. Nagel</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeh2525?af=R" target="_blank" rel="noopener">Erratum for the Research Article “Enhanced TP53 reactivation disrupts MYC transcriptional program and overcomes venetoclax resistance in acute myeloid leukemias” by Y. Nishida et al.</a></td><td class="td-authors"></td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeh2571?af=R" target="_blank" rel="noopener">Erratum for the Research Article “TIE2-mediated tyrosine phosphorylation of H4 regulates DNA damage response by recruiting ABL1” by M. Hossain et al.</a></td><td class="td-authors"></td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeh2567?af=R" target="_blank" rel="noopener">Erratum for the Research Article “Tracking bioturbation through time: The evolution of the marine sedimentary mixed and transition layers” by L. Tarhan et al.</a></td><td class="td-authors"></td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea4292?af=R" target="_blank" rel="noopener">Experimental sample-efficient and device-independent GHZ state certification</a></td><td class="td-authors">Laura dos Santos Martins, Nicolas Laurent-Puig, Simon Neves, Uta I. Meyer, Ivan Šupić, Damian Markham, Eleni Diamanti</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.adz1670?af=R" target="_blank" rel="noopener">Global mapping of disaggregated international trade-linked transportation CO2 emissions</a></td><td class="td-authors">Zhenyu Luo, Yuhan Soo, Zhaofeng Lv, Wei Cong, Xiaotong Wang, Shen Qu, Tingkun He, Wen Yi, Chun Deng, Yongshun Xie, Huan Liu, Kebin He</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.ady7698?af=R" target="_blank" rel="noopener">Hemostatic B-knob–triggered microgels (BK-TriGs) to address bleeding in neonates</a></td><td class="td-authors">Nooshin Zandi, Kimberly Nellenbach, Connor Moore, Julia Storch, Sara R. Abrahams, Matthew J. Flick, Michael Daniele, Ashley Brown</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb1451?af=R" target="_blank" rel="noopener">Inertial sensing of water content in tumor spheroids</a></td><td class="td-authors">Georgios Katsikis, Jennifer C. Yoon, Thomas R. Usherwood, Seth Malinowski, Jiaquan Yu, Chuyi Chen, Sukbom Son, Julie L. Sutton, Keith L. Ligon, Jungchul Lee, Teemu P. Miettinen, Scott R. Manalis</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.adt3886?af=R" target="_blank" rel="noopener">Lattice softening and diffusive dynamics in the polar metal LiReO3</a></td><td class="td-authors">Kantaro Murayama, Ryota Masuki, Cédric Tassel, Hideaki Sakai, Tatsuya Yanagisawa, Keito Yoshida, Hiroshi Oike, Suguru Yoshida, Xiangyu Gu, Kohdai Ishida, Morito Namba, Ksenia Denisova, Valérie Dupray, Simon Clevers, Olivier Mentré, Takuya Nomoto, Terumasa Tadano, Craig M. Brown, Peter Lemmens, Ryotaro Arita, Hiroshi Takatsu, Hiroshi Kageyama</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.adz8130?af=R" target="_blank" rel="noopener">Machine learning–assisted discovery of outside-in structure Ni-rich cathode with high performance</a></td><td class="td-authors">Guihong Mao, Ying Wang, Tengyu Yao, Xianlin Qu, Jieyu Yang, Zhenming Xu, Xiuwen Wang, Zijuan Ge, Yi Wang, Laifa Shen</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aee5882?af=R" target="_blank" rel="noopener">Mechanisms of disassembly at the actin filament pointed and barbed ends</a></td><td class="td-authors">Nicholas J. Palmer, Malgorzata Boczkowska, Grzegorz Rebowski, Roberto Dominguez</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea3382?af=R" target="_blank" rel="noopener">Nuclear translocation of β-catenin in Wg/Wnt signaling via the IFT-A microtubule–associated complex requires Pasovec/Gid8 proteins</a></td><td class="td-authors">Linh T. Vuong and Marek Mlodzik</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb8863?af=R" target="_blank" rel="noopener">Phospholipid-driven conformational switching of HCV NS5A links protein folding to replication membrane remodeling</a></td><td class="td-authors">Anna V. Bulankina, Rebecca M. Richter, James H. Nettles, Daisuke Yamane, Christian Grimm, Yasaman Karami, Richard A. Stanton, Bianca Introini, Jonas Hermann, Hanaa Charif, Mia S. König, Claudia Stroß, Cristina Ortiz, Nico Kraus, Daniel Wood, Facundo Galceran, Rupert Abele, Bernard Maigret, Raymond F. Schinazi, Stefan Zeuzem, Ricardo M. Biondi, MinKyung Yi, Robert Tampé, Mikhail Kudryashev, Christoph Welsch</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb5480?af=R" target="_blank" rel="noopener">Phosphorylation of PfiA modulates Pf4 phage production through PfiA/PfiT stoichiometric reconfiguration in Pseudomonas aeruginosa</a></td><td class="td-authors">Ran Chen, Yu Zhang, Yunxue Guo, Jiayu Gu, Shituan Lin, Xiaoxue Wang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea4125?af=R" target="_blank" rel="noopener">Posttranscriptional reprogramming controls MASLD progression through chronic ER stress adaptation</a></td><td class="td-authors">Eulalia Belloc, Vittorio Calderone, Salvador Naranjo-Suarez, Lidia Mateo, Judit Martin, Florencia Malizia, Annarita Sibilio, Veronica Chanes, Marta Ramirez-Pedraza, M. Eugenia Delgado, Uta Drebber, Karl-Peter Rheinwalt, Sabine Klein, Maximilian Joseph Brol, Robert Schierwagen, Jonel Trebicka, Patrick Aloy, Mercedes Fernandez, Raul Mendez</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb9023?af=R" target="_blank" rel="noopener">Progressive sub-arc mantle oxidation modulated by sediment melt</a></td><td class="td-authors">Mingdi Gao, Yu Wang, Yi-Gang Xu</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.adz6495?af=R" target="_blank" rel="noopener">Pupil-linked arousal heterogeneously modulates cell-type–specific sensory processing</a></td><td class="td-authors">Keith J. Kaufman, Rebecca F. Krall, Ross S. Williamson</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aee0270?af=R" target="_blank" rel="noopener">Quasi-epitaxial heterojunction interface reconstruction enables 11.96% certified efficiency in Cd-free Cu2ZnSnS4 solar cells</a></td><td class="td-authors">Ping Luo, Shuo Chen, Guojie Chen, Muhammad Abbas, Zhenghua Su, Zhuanghao Zheng, Hongli Ma, Xianghua Zhang, Guangxing Liang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aec8684?af=R" target="_blank" rel="noopener">Regulation of mitochondrial ROS by C15ORF48 in a basal cell subpopulation contributes to chemotherapy resistance in TNBC</a></td><td class="td-authors">Yan Jiang, Noor M. Abdulkareem, Amanda L. Rinkenbaugh, Yuan Qi, Steven W. Wall, Xiaomei Zhang, Jiansu Shao, Sabrina Jeter-Jones, Shirong Cai, Faiza Baameur Hancock, Gloria V. Echeverria, Jeffrey T. Chang, Helen Piwnica-Worms</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea0082?af=R" target="_blank" rel="noopener">Rising flood risks in semiarid South Asia driven by changing intraseasonal oscillations under global warming</a></td><td class="td-authors">Jinhui Xie, Pang-Chi Hsu, June-Yi Lee, Lu Wang, Pallav Ray, Lei Zhou, Baosheng Li</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb1134?af=R" target="_blank" rel="noopener">Selective vulnerability of cerebral vasculature to NOTCH3 variants in small vessel disease and rescue by phosphodiesterase-5 inhibitor</a></td><td class="td-authors">Xiangjun Zhao, Chaowen Yu, Antony Adamson, Aite Zhao, Huiyu Zhou, Pankaj Sharma, Tao Wang</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea2470?af=R" target="_blank" rel="noopener">Structural insights into the mechanism underpinning iron piracy in pathogenic Neisseria</a></td><td class="td-authors">Shubham Dubey, Julie Stoudenmire, Gabriel Bury, Lixinhao Yang, Zixing Fan, Peihang Li, Gauree Wadhwa, Yulia Pushkar, James C. Gumbart, Cynthia Nau Cornelissen, Nicholas Noinaj</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aea4279?af=R" target="_blank" rel="noopener">The longevity effects of reduced IGF-1 signaling depend on the stability of the mitochondrial genome</a></td><td class="td-authors">Sarah J. Shemtov, Eric McGann, Lucy Carrillo, Sangmin Lee, Herbert Anson, Eric Hwang, Claire S. Chung, Jaye L. Weinert, Maria-Eleni Anagnostou, Guan-Ju D. Lai, Bert M. Verheijen, Junxiang Wan, Ivetta Vorobyova, Monica Sanchez-Contreras, Cheryl A. Conover, Max A. Thorwald, Pinchas Cohen, Scott R. Kennedy, Jean-François Gout, Suraiya Haroon, Marc Vermulst</td><td class="td-time">2d</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.science.org/doi/abs/10.1126/sciadv.aeb9784?af=R" target="_blank" rel="noopener">Tunable high-efficiency microwave photon detector based on a double quantum dot coupled to a superconducting high-impedance cavity</a></td><td class="td-authors">Fabian Oppliger, Wonjin Jang, Aldo Tarascio, Franco De Palma, Christian Reichl, Werner Wegscheider, Ville F. Maisi, Dominik Zumbühl, Pasquale Scarlino</td><td class="td-time">2d</td></tr>
+</tbody>
+</table>
+
+
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    <div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/automated-security-assertion-generation-using-llms-u-of-florida/" target="_blank" rel="noopener">Automated Security Assertion Generation Using LLMs (U. of Florida)</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/chip-industry-week-in-review-132/" target="_blank" rel="noopener">Chip Industry Week In Review</a><span class="news-time">2d</span></div>
+  </div>
+</div>
+
+
+</body>
+</html>
