@@ -4,7 +4,8 @@ set -euo pipefail
 # LaunchAgent runs with minimal PATH — set explicitly
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export LANG="en_US.UTF-8"
-export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
+# Use macOS launchd SSH agent (auto-set by the system)
+export SSH_AUTH_SOCK=$(launchctl getenv SSH_AUTH_SOCK 2>/dev/null || echo "/private/tmp/com.apple.launchd.*/Listeners")
 
 REPO="$HOME/Projects/personal_journal_feed"
 cd "$REPO"
