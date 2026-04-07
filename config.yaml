@@ -17,6 +17,9 @@ feeds:
   - name: "physics.comp-ph"
     url: "https://rss.arxiv.org/rss/physics.comp-ph"
     category: "arXiv"
+  - name: "physics.app-ph"
+    url: "https://rss.arxiv.org/rss/physics.app-ph"
+    category: "arXiv"
 
   # ── APS Journals ──
   - name: "PRB"
@@ -83,6 +86,37 @@ feeds:
     url: "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=ancac3"
     category: "ACS"
     high_impact: true
+  - name: "Nano Lett."
+    url: "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=nalefd"
+    category: "ACS"
+    high_impact: true
+  - name: "ACS AMI"
+    url: "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=aamick"
+    category: "ACS"
+
+  # ── Nature (device/applied) ──
+  - name: "Nat. Electron."
+    url: "https://www.nature.com/natelectron.rss"
+    category: "Nature"
+    high_impact: true
+
+  # ── IEEE ──
+  - name: "IEEE EDL"
+    url: "https://ieeexplore.ieee.org/rss/TOC55.XML"
+    category: "IEEE"
+  - name: "IEEE TED"
+    url: "https://ieeexplore.ieee.org/rss/TOC16.XML"
+    category: "IEEE"
+
+  # ── AIP ──
+  - name: "APL"
+    url: "https://pubs.aip.org/rss/site_1000043/1000024.xml"
+    category: "AIP"
+
+  # ── IOP ──
+  - name: "2D Mater."
+    url: "https://iopscience.iop.org/journal/rss/2053-1583"
+    category: "IOP"
 
   # ── Tech News ──
   - name: "GeekNews"
@@ -91,15 +125,20 @@ feeds:
   - name: "SemiEng"
     url: "https://semiengineering.com/feed/"
     category: "News"
+  - name: "EETimes"
+    url: "https://www.eetimes.com/feed/"
+    category: "News"
 
 # ── 연구 프로필 (Haiku 스코어링 컨텍스트) ──────────────────────
 profile:
   text: >
     Condensed matter physicist with a first-principles calculation background
-    (electron-phonon interactions, GW, BSE). Primary goal of this feed is to
-    catch important NEW experimental observations in condensed matter and
-    materials physics for rapid follow-up. Computational papers are secondary
-    — tracked mainly to monitor what major groups in the field are working on.
+    (electron-phonon interactions, GW, BSE) building a multi-scale simulation
+    bridge from first-principles to TCAD device simulation. Primary goals:
+    (1) catch important NEW experimental observations in condensed matter and
+    materials physics, (2) track DFT/GW-to-TCAD bridging work and 2D TMD
+    device physics for semiconductor industry applications. Computational
+    papers are secondary — tracked mainly to monitor major groups.
 
   # 높은 우선순위: 새로운 실험적 관측·발견
   high_priority_topics:
@@ -113,6 +152,10 @@ profile:
     - nonlinear transport / bulk photovoltaic effect (symmetry breaking signatures)
     - orbital magnetism / orbital Hall effect
     - light-induced phases / Floquet engineering (pump-probe experiments)
+    - 2D TMD FET device physics (carrier mobility, contact resistance, channel scaling)
+    - TCAD simulation with first-principles parameters (DFT-to-TCAD, GW-informed device modeling)
+    - GW-level device parameters (effective mass, dielectric constant, band alignment at interfaces)
+    - GAA / CFET / nanosheet transistor architecture and scaling
 
   # 보통 우선순위: 동향 파악용
   background_topics:
@@ -120,6 +163,9 @@ profile:
     - GW / BSE calculations
     - DFT methodology advances
     - high-throughput / autonomous materials discovery
+    - carrier mobility from first principles (e-ph scattering, Boltzmann transport)
+    - TCAD methodology (Sentaurus, DEVSIM, Victory Process/Device)
+    - semiconductor device scaling (DTCO, backside power delivery, interconnect RC)
 
   methods:
     - EPW
@@ -129,6 +175,9 @@ profile:
     - VASP
     - SIESTA / TranSIESTA
     - DFPT
+    - DEVSIM
+    - Sentaurus TCAD
+    - BoltzTraP / BoltzWann
 
 # ── 출력 ───────────────────────────────────────────────────────
 output:
