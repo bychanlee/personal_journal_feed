@@ -264,7 +264,17 @@ def score_all(papers: list[Paper], config: dict) -> tuple[list[Paper], list[Pape
 
     # Score all academic papers via Claude CLI
     if academic:
-        profile_text = profile.get("text", "")
+        profile_parts = [profile.get("text", "")]
+        high = profile.get("high_priority_topics", [])
+        if high:
+            profile_parts.append("\nHigh-priority topics (score 4-5):\n" + "\n".join(f"- {t}" for t in high))
+        bg = profile.get("background_topics", [])
+        if bg:
+            profile_parts.append("\nBackground topics (score 2-3):\n" + "\n".join(f"- {t}" for t in bg))
+        methods = profile.get("methods", [])
+        if methods:
+            profile_parts.append("\nMethods/tools I use: " + ", ".join(methods))
+        profile_text = "\n".join(profile_parts)
         batch_size = 60
         indexed = list(enumerate(academic, 1))
         scored_count = 0
