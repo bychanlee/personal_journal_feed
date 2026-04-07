@@ -140,30 +140,40 @@ profile:
     device physics for semiconductor industry applications. Computational
     papers are secondary — tracked mainly to monitor major groups.
 
-  # 높은 우선순위: 새로운 실험적 관측·발견
+  # 높은 우선순위: LANDFALL 직결 — 소자 파라미터/TCAD 입력으로 이어지는 것
   high_priority_topics:
-    - topological quantum phenomena (new phases, edge states, quantized responses)
-    - 2D materials / moiré systems (new correlated phases, flat-band physics)
-    - phonon physics (thermal transport, phonon polaritons, topological phonons)
-    - altermagnets (experimental confirmation, new materials)
-    - quantum geometry effects (Berry curvature dipole, quantum metric measurements)
-    - exciton physics (moiré excitons, interlayer excitons, optical signatures)
-    - kagome metals (CDW, unconventional superconductivity, electron correlation)
-    - nonlinear transport / bulk photovoltaic effect (symmetry breaking signatures)
-    - orbital magnetism / orbital Hall effect
-    - light-induced phases / Floquet engineering (pump-probe experiments)
+    # ── 소자 물리 / TCAD ──
+    - 2D semiconductor channel materials (TMD, Bi₂O₂Se, β-Ga₂O₃, tellurene — device experiments)
     - 2D TMD FET device physics (carrier mobility, contact resistance, channel scaling)
     - TCAD simulation with first-principles parameters (DFT-to-TCAD, GW-informed device modeling)
     - GW-level device parameters (effective mass, dielectric constant, band alignment at interfaces)
     - GAA / CFET / nanosheet transistor architecture and scaling
+    # ── 접촉 / 계면 ──
+    - metal-semiconductor contact / Schottky barrier (GW band alignment, contact resistance)
+    - high-k gate dielectrics and channel-dielectric interfaces (CaF₂, LaOCl, hBN)
+    - band alignment at heterointerfaces (channel/dielectric/metal)
+    # ── 수송 ──
+    - carrier mobility from first principles (e-ph scattering, Boltzmann transport)
+    - high-field carrier transport / velocity saturation
+    - polaron transport (self-trapped carriers, β-Ga₂O₃)
+    - spin-orbit coupling effects on transport (SOC+EPW)
+    # ── 양자 구속 / 박막 ──
+    - quantum confinement in ultrathin channels (thickness-dependent parameters)
+    - dielectric screening in 2D / thin films (environment-dependent ε)
+    # ── 밴드갭 / 결함 ──
+    - electron-phonon renormalization of band gaps (temperature-dependent gap, Varshni)
+    - defect levels in wide-bandgap semiconductors (SRH lifetime, trap states)
+    # ── 열 수송 ──
+    - thermal transport in nanoscale channels (phonon BTE, channel self-heating)
+    - phonon-mediated thermal conductivity in 2D materials
 
   # 보통 우선순위: 동향 파악용
   background_topics:
-    - electron-phonon coupling (ab initio methods)
+    - electron-phonon coupling methodology (ab initio methods, EPW developments)
     - GW / BSE calculations
     - DFT methodology advances
     - high-throughput / autonomous materials discovery
-    - carrier mobility from first principles (e-ph scattering, Boltzmann transport)
+    - exciton physics (optical absorption for photodetector TCAD)
     - TCAD methodology (Sentaurus, DEVSIM, Victory Process/Device)
     - semiconductor device scaling (DTCO, backside power delivery, interconnect RC)
 

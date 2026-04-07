@@ -103,8 +103,11 @@ def fetch_feed(url: str, name: str, category: str) -> list[Paper]:
 
         authors_raw = ""
         if e.get("authors"):
+            authors_list = e["authors"]
             authors_raw = ", ".join(
-                a.get("name", "") for a in e["authors"] if a.get("name")
+                (a.get("name", "") if isinstance(a, dict) else str(a))
+                for a in authors_list
+                if (a.get("name") if isinstance(a, dict) else a)
             )
         elif e.get("author"):
             authors_raw = _clean(e["author"])
