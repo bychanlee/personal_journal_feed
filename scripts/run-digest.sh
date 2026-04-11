@@ -7,7 +7,7 @@ export LANG="en_US.UTF-8"
 # Use macOS launchd SSH agent (auto-set by the system)
 export SSH_AUTH_SOCK=$(launchctl getenv SSH_AUTH_SOCK 2>/dev/null || echo "/private/tmp/com.apple.launchd.*/Listeners")
 
-REPO="$HOME/Projects/personal_journal_feed"
+REPO="$HOME/Projects/_infras/personal_journal_feed"
 cd "$REPO"
 
 DATE=$(TZ=America/Los_Angeles date +%Y-%m-%d)
