@@ -20,6 +20,9 @@ feeds:
   - name: "physics.app-ph"
     url: "https://rss.arxiv.org/rss/physics.app-ph"
     category: "arXiv"
+  - name: "physics.optics"
+    url: "https://rss.arxiv.org/rss/physics.optics"
+    category: "arXiv"
 
   # ── APS Journals ──
   - name: "PRB"
@@ -37,6 +40,12 @@ feeds:
     url: "https://feeds.aps.org/rss/recent/rmp.xml"
     category: "APS"
     high_impact: true
+  - name: "PR Materials"
+    url: "https://feeds.aps.org/rss/recent/prmaterials.xml"
+    category: "APS"
+  - name: "PR Applied"
+    url: "https://feeds.aps.org/rss/recent/prapplied.xml"
+    category: "APS"
 
   # ── Science ──
   - name: "Science"
@@ -70,6 +79,10 @@ feeds:
     high_impact: true
   - name: "Nat. Comp. Sci."
     url: "https://www.nature.com/natcomputsci.rss"
+    category: "Nature"
+    high_impact: true
+  - name: "npj Comput. Mater."
+    url: "https://www.nature.com/npjcompumats.rss"
     category: "Nature"
     high_impact: true
   - name: "npj QM"
@@ -118,6 +131,12 @@ feeds:
     url: "https://iopscience.iop.org/journal/rss/2053-1583"
     category: "IOP"
 
+  # ── Elsevier (MBPT codes / methods) ──
+  # NOTE: ScienceDirect RSS는 publisher마다 패턴이 다름. URL 동작 확인 필요.
+  - name: "Comp. Phys. Comm."
+    url: "https://rss.sciencedirect.com/publication/science/00104655"
+    category: "Elsevier"
+
   # ── Tech News ──
   - name: "GeekNews"
     url: "https://news.hada.io/rss/news"
@@ -128,63 +147,134 @@ feeds:
   - name: "EETimes"
     url: "https://www.eetimes.com/feed/"
     category: "News"
+  - name: "HPCwire"
+    url: "https://www.hpcwire.com/feed/"
+    category: "News"
+  - name: "NVIDIA Tech Blog"
+    url: "https://developer.nvidia.com/blog/feed"
+    category: "News"
 
 # ── 연구 프로필 (Haiku 스코어링 컨텍스트) ──────────────────────
+# Project LANDFALL R1~R6 트랙 기준으로 구조화됨
 profile:
   text: >
-    Condensed matter physicist with a first-principles calculation background
-    (electron-phonon interactions, GW, BSE) building a multi-scale simulation
-    bridge from first-principles to TCAD device simulation. Primary goals:
-    (1) catch important NEW experimental observations in condensed matter and
-    materials physics, (2) track DFT/GW-to-TCAD bridging work and 2D TMD
-    device physics for semiconductor industry applications. Computational
-    papers are secondary — tracked mainly to monitor major groups.
+    Condensed matter physicist trained in first-principles many-body
+    perturbation theory (GW/BSE, EPW electron-phonon, GWPT). Currently
+    visiting the BerkeleyGW main developer group (Zhenglu Li, USC,
+    2026.04~09).
 
-  # 높은 우선순위: LANDFALL 직결 — 소자 파라미터/TCAD 입력으로 이어지는 것
+    Project LANDFALL — building a portfolio across 6 research tracks that
+    bridge first-principles MBPT to industry landing paths (TCAD, HPC/AI
+    infrastructure, displays, EDA software, materials calculation, defense):
+
+    - R1: 2D heterostructure exciton physics (interlayer/moiré excitons,
+      optical absorption) → display, optoelectronic landing
+    - R2: Bi₂O₂Se GWPT carrier mobility → TCAD parameter bridge
+      (Synopsys, 삼성DS, SK하이닉스)
+    - R3: Ag₃SI / chalcohalide GW band gap with disorder & dielectric
+      screening → solar cell, energy materials landing
+    - R4: AI agents / LLM workflow automation for MBPT calculations
+      → AI for Science, EDA+AI
+    - R5: Exascale HPC porting & benchmarking of MBPT codes (BerkeleyGW,
+      EPW) on Frontier/Aurora/Perlmutter → NVIDIA, cloud, EDA, ADD landing
+    - R6: Time-dependent exciton-phonon methodology development → 학계,
+      디스플레이
+
+    Score papers high if they (a) report experimental observations
+    relevant to R1~R3 materials, (b) advance methodology/code on the
+    MBPT/HPC/AI stack (R4~R6), or (c) cover industry trends in TCAD, HPC,
+    AI infrastructure that affect landing paths.
+
+    OUT OF SCOPE — score LOW unless there is a direct methodological
+    connection to the MBPT stack above:
+    - DMFT / Hubbard model / strongly correlated electron physics
+      (Mott transition, Kondo, heavy fermion) as the core method
+    - Pure DFT+U defect studies without GW
+    - MLIP / machine learning force field papers with no MBPT connection
+    - Moiré superconductivity / twistronics phase diagrams
+    - Kagome metal CDW / superconductivity
+    - CO₂ reduction catalysis, water splitting electrochemistry
+    - Battery cathode / electrolyte materials
+    - Classical molecular dynamics (LAMMPS, OpenMM, GROMACS)
+    - Cold atom quantum simulation, pure quantum information theory
+    - Astrophysics, biology, climate
+
+  # 높은 우선순위: LANDFALL R1~R6 직결 — 점수 4~5
+  # 각 항목은 [R트랙] 태그로 시작
   high_priority_topics:
-    # ── 소자 물리 / TCAD ──
-    - 2D semiconductor channel materials (TMD, Bi₂O₂Se, β-Ga₂O₃, tellurene — device experiments)
-    - 2D TMD FET device physics (carrier mobility, contact resistance, channel scaling)
-    - TCAD simulation with first-principles parameters (DFT-to-TCAD, GW-informed device modeling)
-    - GW-level device parameters (effective mass, dielectric constant, band alignment at interfaces)
-    - GAA / CFET / nanosheet transistor architecture and scaling
-    # ── 접촉 / 계면 ──
-    - metal-semiconductor contact / Schottky barrier (GW band alignment, contact resistance)
-    - high-k gate dielectrics and channel-dielectric interfaces (CaF₂, LaOCl, hBN)
-    - band alignment at heterointerfaces (channel/dielectric/metal)
-    # ── 수송 ──
-    - carrier mobility from first principles (e-ph scattering, Boltzmann transport)
-    - high-field carrier transport / velocity saturation
-    - polaron transport (self-trapped carriers, β-Ga₂O₃)
-    - spin-orbit coupling effects on transport (SOC+EPW)
-    # ── 양자 구속 / 박막 ──
-    - quantum confinement in ultrathin channels (thickness-dependent parameters)
-    - dielectric screening in 2D / thin films (environment-dependent ε)
-    # ── 밴드갭 / 결함 ──
-    - electron-phonon renormalization of band gaps (temperature-dependent gap, Varshni)
-    - defect levels in wide-bandgap semiconductors (SRH lifetime, trap states)
-    # ── 열 수송 ──
-    - thermal transport in nanoscale channels (phonon BTE, channel self-heating)
-    - phonon-mediated thermal conductivity in 2D materials
+    # ── R1: 2D heterostructure exciton (display landing) ──
+    - "[R1] interlayer / moiré excitons in TMD heterostructures (GW-BSE)"
+    - "[R1] exciton optical selection rules, valley physics, Γ-valley emission"
+    - "[R1] photodetector / optoelectronic devices with 2D semiconductors"
+    - "[R1] display materials physics (μLED, OLED transport, perovskite LED, QD)"
 
-  # 보통 우선순위: 동향 파악용
+    # ── R2: Bi₂O₂Se GWPT → TCAD bridge ──
+    - "[R2] Bi₂O₂Se electronic structure, transport, devices"
+    - "[R2] 2D semiconductor channel materials for FET (TMD, β-Ga₂O₃, tellurene)"
+    - "[R2] carrier mobility from first principles (e-ph scattering, Boltzmann transport, EPW)"
+    - "[R2] GWPT method (electron-phonon at GW level), polaron transport"
+    - "[R2] high-field transport, velocity saturation, hot carriers"
+    - "[R2] TCAD parameter extraction from DFT/GW (effective mass, ε∞, band alignment)"
+    - "[R2] metal-semiconductor contact / Schottky barrier (GW band alignment)"
+    - "[R2] high-k gate dielectric & channel-dielectric interfaces (CaF₂, hBN, LaOCl)"
+    - "[R2] dielectric screening in 2D / thin films (environment-dependent ε)"
+    - "[R2] electron-phonon renormalization of band gaps (T-dependent, Varshni)"
+    - "[R2] spin-orbit coupling effects on carrier transport"
+
+    # ── R3: Ag₃SI GW + disorder, solar cell landing ──
+    - "[R3] silver / copper chalcohalide semiconductors (Ag₃SI, Cu₃SI, AgCuS)"
+    - "[R3] solar cell absorber materials (GW band gap, BSE optical absorption)"
+    - "[R3] disorder / alloy effects on dielectric screening and band gap"
+    - "[R3] defect tolerance in photovoltaic semiconductors"
+    - "[R3] emerging photovoltaic materials beyond MAPbI₃ (chalcogenides, oxides)"
+
+    # ── R4: AI agent for MBPT workflow ──
+    - "[R4] LLM agents / autonomous agents for scientific computing"
+    - "[R4] AI workflow automation for ab initio (DFT / GW / EPW) calculations"
+    - "[R4] convergence test automation, hyperparameter search for MBPT"
+    - "[R4] code generation / scientific software automation with LLMs"
+    - "[R4] AI for materials discovery built on first-principles (not MLIP-only)"
+
+    # ── R5: HPC exascale MBPT ──
+    - "[R5] GPU porting of ab initio codes (BerkeleyGW, EPW, QE, VASP)"
+    - "[R5] exascale benchmarking on Frontier / Aurora / Perlmutter / El Capitan"
+    - "[R5] MPI + GPU + mixed precision for many-body / GW / BSE methods"
+    - "[R5] parallel scaling of GW / BSE / DFPT / EPW calculations"
+    - "[R5] HPC software engineering for scientific applications"
+
+    # ── R6: TD exciton-phonon methodology ──
+    - "[R6] real-time TDDFT, time-dependent BSE, ultrafast exciton dynamics"
+    - "[R6] exciton-phonon coupling beyond static treatment"
+    - "[R6] phonon-induced exciton dephasing, linewidth, polaron formation"
+    - "[R6] non-equilibrium / pump-probe ab initio spectroscopy theory"
+
+  # 보통 우선순위: 동향 파악용 — 점수 2~3
   background_topics:
-    - electron-phonon coupling methodology (ab initio methods, EPW developments)
-    - GW / BSE calculations
-    - DFT methodology advances
-    - high-throughput / autonomous materials discovery
-    - exciton physics (optical absorption for photodetector TCAD)
-    - TCAD methodology (Sentaurus, DEVSIM, Victory Process/Device)
-    - semiconductor device scaling (DTCO, backside power delivery, interconnect RC)
+    - electron-phonon coupling methodology (general EPW developments)
+    - GW / BSE methodology developments
+    - DFT / DFPT methodology advances
+    - Wannier function methods and downfolding
+    - TCAD methodology and tools (Sentaurus, DEVSIM, Victory Process/Device)
+    - semiconductor device scaling trends (GAA / CFET / nanosheet, DTCO, BSPDN)
+    - thermal transport in nanoscale channels (phonon BTE, self-heating)
+    - phonon thermal conductivity in 2D materials
+    - quantum confinement effects in ultrathin channels
+    - first-principles defect levels in wide-bandgap semiconductors
+    - exciton physics in conventional 3D semiconductors
+    - high-throughput first-principles screening (DFT/GW based)
+    - AI for science (general, methods papers)
+    - autonomous experimentation, self-driving labs
+    - HPC / AI infrastructure industry trends (GPU, interconnect, exascale systems)
 
   methods:
-    - EPW
-    - Quantum ESPRESSO
     - BerkeleyGW
-    - Wannier90
+    - EPW
+    - GWPT
+    - Quantum ESPRESSO
     - VASP
-    - SIESTA / TranSIESTA
+    - Wannier90
     - DFPT
+    - SIESTA / TranSIESTA
     - DEVSIM
     - Sentaurus TCAD
     - BoltzTraP / BoltzWann
