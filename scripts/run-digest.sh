@@ -12,9 +12,20 @@ cd "$REPO"
 
 DATE=$(TZ=America/Los_Angeles date +%Y-%m-%d)
 MONTH=$(TZ=America/Los_Angeles date +%Y/%m)
+CUTOFF=$(TZ=America/Los_Angeles date -v-30d +%Y-%m-%d)
 
 echo "=== Journal Digest: $DATE ==="
 echo "Started at $(date)"
+
+# Stage deletion of tracked 2026/**/*.html files older than CUTOFF
+prune_old_html() {
+    git ls-files '2026/*/*.html' | while read -r f; do
+        name=$(basename "$f" .html)
+        if [[ "$name" < "$CUTOFF" ]]; then
+            git rm -q "$f"
+        fi
+    done
+}
 
 # Sync with remote
 git pull --rebase origin main
@@ -23,8 +34,9 @@ git pull --rebase origin main
 mkdir -p "$MONTH"
 /usr/local/bin/python3 generate.py --output "$MONTH/$DATE.html"
 
-# Commit to main
-git add "$MONTH/$DATE.html" "$MONTH/latest.json" index.html latest.json 2>/dev/null || true
+# Commit to main (add new + prune >30d old)
+git add "$MONTH/$DATE.html" "$MONTH/latest.json" 2>/dev/null || true
+prune_old_html
 if ! git diff --cached --quiet; then
     git commit -m "digest: $DATE"
     git push origin main
@@ -50,6 +62,7 @@ printf '<!DOCTYPE html>\n<html><head>\n<meta http-equiv="refresh" content="0;url
 cp "$TMP/.nojekyll" .nojekyll
 
 git add index.html .nojekyll "$MONTH/$DATE.html" "$MONTH/latest.json" 2>/dev/null || true
+prune_old_html
 if ! git diff --cached --quiet; then
     git commit -m "deploy: $DATE"
     git push origin gh-pages
