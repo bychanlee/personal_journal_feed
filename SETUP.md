@@ -3,8 +3,7 @@
 ## GitHub
 
 - Repo: `bychanlee/personal_journal_feed` (public)
-- Pages: `https://bychanlee.github.io/personal_journal_feed/`
-- Secret: `ANTHROPIC_API_KEY`
+- Pages: `https://bychanlee.github.io/personal_journal_feed/` (source: `gh-pages` branch)
 
 ## URL 구조
 
@@ -35,8 +34,8 @@ personal_journal_feed/
 ├── README.md
 ├── SETUP.md                # 이 파일
 ├── latest.json             # 최근 스코어링 결과
-└── .github/workflows/
-    └── daily.yml           # 월–금 06:00 KST 자동 실행
+└── scripts/
+    └── run-digest.sh       # 로컬 LaunchAgent가 매일 실행
 ```
 
 ## Morning Brief 연동
@@ -59,7 +58,8 @@ Claude Cowork scheduled task `morning-brief`의 프롬프트에 위 내용을 �
 ## 수동 실행
 
 ```bash
-gh workflow run daily.yml --repo bychanlee/personal_journal_feed --ref main
+cd ~/Projects/_infras/personal_journal_feed
+./scripts/run-digest.sh
 ```
 
 ## 점수 기준
