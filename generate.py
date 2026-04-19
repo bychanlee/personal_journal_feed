@@ -190,17 +190,31 @@ def score_batch(
     """Score a batch via Claude Code CLI. Returns {index: (score, reason)}."""
     lines = []
     for idx, p in papers:
+        abs_snippet = re.sub(r"\s+", " ", p.abstract or "").strip()[:300]
         line = f"{idx}. {p.title} [{p.feed_name}]"
+        if abs_snippet:
+            line += f"\n   abstract: {abs_snippet}"
         lines.append(line)
 
     prompt = (
         "You are an academic paper relevance scorer for a condensed-matter physicist.\n\n"
         f"User research profile:\n{profile_text}\n\n"
+        "METHOD GATE (apply BEFORE topic match):\n"
+        "Classify the paper's primary method from title + abstract. If the method is\n"
+        "  - model Hamiltonian (Dirac / k·p / tight-binding / Hubbard toy model),\n"
+        "  - transfer matrix / NEGF on toy models,\n"
+        "  - analytical superlattice / barrier transport without ab initio input,\n"
+        "  - phenomenological spintronics / valleytronics device modeling,\n"
+        "then CAP the score at 2 regardless of material or topic keywords. The user's\n"
+        "tracks (R1~R6) all REQUIRE a first-principles (DFT / GW / BSE / EPW / DFPT /\n"
+        "GWPT / TDDFT) basis. Surface keywords like 'TMD', 'WSe₂', 'exciton',\n"
+        "'magnetoresistance', 'valley' are NOT enough — the (GW-BSE) / (EPW) / (ab initio)\n"
+        "qualifiers in the topic list are load-bearing.\n\n"
         "Score each article on a 1–5 integer scale for relevance:\n"
         "  5 = Directly in my research area, must read\n"
         "  4 = Closely related, likely useful\n"
         "  3 = Somewhat related, worth skimming\n"
-        "  2 = Tangentially related\n"
+        "  2 = Tangentially related (or capped by method gate)\n"
         "  1 = Not relevant\n"
         "Provide a one-line reason for scores >= 3.\n\n"
         "Articles:\n" + "\n".join(lines) + "\n\n"

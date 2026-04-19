@@ -191,7 +191,7 @@ profile:
     MBPT/HPC/AI stack (R4~R6), or (c) cover industry trends in TCAD, HPC,
     AI infrastructure that affect landing paths.
 
-    OUT OF SCOPE — score LOW unless there is a direct methodological
+    OUT OF SCOPE — score LOW (cap at 2) unless there is a direct methodological
     connection to the MBPT stack above:
     - DMFT / Hubbard model / strongly correlated electron physics
       (Mott transition, Kondo, heavy fermion) as the core method
@@ -204,6 +204,14 @@ profile:
     - Classical molecular dynamics (LAMMPS, OpenMM, GROMACS)
     - Cold atom quantum simulation, pure quantum information theory
     - Astrophysics, biology, climate
+    - Model Hamiltonian transport in superlattices / heterostructures
+      (Dirac / k·p / tight-binding + transfer matrix / NEGF on toy models),
+      including spintronics / valleytronics device proposals without ab initio
+      basis — surface keywords like "TMD", "WSe₂", "valley", "magnetoresistance"
+      do NOT lift these into R1/R2 scope
+    - Topological transport / Berry phase anomaly studies on model Hamiltonians
+    - Phenomenological device modeling (TMR, GMR, spin-valve, ballistic) without
+      first-principles input
 
   # 높은 우선순위: LANDFALL R1~R6 직결 — 점수 4~5
   # 각 항목은 [R트랙] 태그로 시작
