@@ -57,6 +57,12 @@ feeds:
     category: "AAAS"
     high_impact: true
 
+  # ── PNAS ──
+  - name: "PNAS"
+    url: "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas"
+    category: "PNAS"
+    high_impact: true
+
   # ── Nature ──
   - name: "Nature"
     url: "https://www.nature.com/nature.rss"
