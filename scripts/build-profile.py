@@ -5,7 +5,7 @@ Reads from the LANDFALL Obsidian vault folder:
 - values.md frontmatter (domains with weights and feed_keywords)
 - graph/projects/*.md frontmatter (topics, status)
 - graph/methods/*.md frontmatter (topics, status)
-- filters.md frontmatter (venue_out, skill_gap_cap_3)
+- filters.md frontmatter (venue_out, manufacturability_cap_2, skill_gap_cap_3)
 
 Rewrites only the `profile:` block of config.yaml. Other blocks (feeds, output) preserved.
 """
@@ -93,7 +93,11 @@ def collect_methods():
 
 def collect_filters():
     fm = parse_frontmatter(LANDFALL / "filters.md")
-    return fm.get("venue_out", []), fm.get("skill_gap_cap_3", [])
+    return (
+        fm.get("venue_out", []),
+        fm.get("manufacturability_cap_2", []),
+        fm.get("skill_gap_cap_3", []),
+    )
 
 
 def build_high_priority_topics(domains, projects, methods):
@@ -119,7 +123,7 @@ def build_high_priority_topics(domains, projects, methods):
     return topics
 
 
-def build_profile_text(domains, projects, venue_out, skill_gap):
+def build_profile_text(domains, projects, venue_out, manufacturability, skill_gap):
     values_lines = [
         f"- {d.get('display') or d.get('name')} (weight {d.get('weight')}, {d.get('contribution')})"
         for d in domains
@@ -131,6 +135,7 @@ def build_profile_text(domains, projects, venue_out, skill_gap):
     ]
 
     venue_lines = "\n".join(f"    - {x}" for x in venue_out)
+    manuf_lines = "\n".join(f"    - {x}" for x in manufacturability)
     skill_lines = "\n".join(f"    - {x}" for x in skill_gap)
 
     return f"""Condensed matter physicist trained in first-principles many-body perturbation theory
@@ -160,6 +165,10 @@ Score papers high (4-5) if they connect to any of:
 OUT OF VENUE — cap at 1:
 {venue_lines}
 
+MANUFACTURABILITY — cap at 2 (from values hard constraint; methodology novelty alone does
+NOT override — only active-graph topic match OR values direct match overrides):
+{manuf_lines}
+
 SKILL GAP — cap at 3 unless paper has direct MBPT-stack connection OR active-graph connection
 OR values (energy/aerospace) connection:
 {skill_lines}
@@ -170,11 +179,11 @@ def build_profile_dict():
     domains = collect_domains()
     projects = collect_projects()
     methods = collect_methods()
-    venue_out, skill_gap = collect_filters()
+    venue_out, manufacturability, skill_gap = collect_filters()
 
     return {
         "profile": {
-            "text": build_profile_text(domains, projects, venue_out, skill_gap),
+            "text": build_profile_text(domains, projects, venue_out, manufacturability, skill_gap),
             "high_priority_topics": build_high_priority_topics(domains, projects, methods),
             "background_topics": BACKGROUND_TOPICS,
             "methods": METHODS,

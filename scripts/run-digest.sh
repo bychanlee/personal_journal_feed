@@ -30,12 +30,15 @@ prune_old_html() {
 # Sync with remote
 git pull --rebase origin main
 
+# Rebuild profile from LANDFALL (values.md, filters.md, graph/) before scoring
+/usr/local/bin/python3 scripts/build-profile.py
+
 # Generate digest
 mkdir -p "$MONTH"
 /usr/local/bin/python3 generate.py --output "$MONTH/$DATE.html"
 
-# Commit to main (add new + prune >30d old)
-git add "$MONTH/$DATE.html" "$MONTH/latest.json" 2>/dev/null || true
+# Commit to main (add new + prune >30d old; include config.yaml if profile changed)
+git add "$MONTH/$DATE.html" "$MONTH/latest.json" config.yaml 2>/dev/null || true
 prune_old_html
 if ! git diff --cached --quiet; then
     git commit -m "digest: $DATE"

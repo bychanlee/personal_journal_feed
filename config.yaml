@@ -203,6 +203,13 @@ profile:
         - IEEE engineering venues (IEEE TED borderline; pure power electronics out)
         - biology, climate, astrophysics, cold-atom quantum info
 
+    MANUFACTURABILITY — cap at 2 (from values hard constraint; methodology novelty alone does
+    NOT override — only active-graph topic match OR values direct match overrides):
+        - moiré heterostructure / twisted bilayer flat-band physics (no wafer-scale synthesis path)
+        - mechanically exfoliated 2D flakes without CVD / MBE / wafer-scale pathway
+        - exfoliation-only bulk layered materials as core system (no scalable growth route)
+        - artificial stacking / dry-transfer-only device demonstrations without manufacturability claim
+
     SKILL GAP — cap at 3 unless paper has direct MBPT-stack connection OR active-graph connection
     OR values (energy/aerospace) connection:
         - DMFT / Hubbard / strongly correlated electron physics as core method (Mott, Kondo, heavy fermion)
