@@ -17,6 +17,7 @@ import json
 import logging
 import os
 import re
+import socket
 import subprocess
 from collections import OrderedDict
 from dataclasses import dataclass, field, asdict
@@ -31,6 +32,9 @@ import yaml
 
 # Fix SSL certificate verification on macOS
 ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=certifi.where())
+
+# Prevent feedparser from hanging on unresponsive feeds (e.g. SemiEng)
+socket.setdefaulttimeout(30)
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
