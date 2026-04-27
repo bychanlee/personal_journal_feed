@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Digest — 2026-04-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Site title */
+  .site-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Header */
+  .page-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .page-header .meta {
+    font-size: 15px;
+    color: #656d76;
+  }
+  .page-header .feeds {
+    font-size: 13px;
+    color: #848d97;
+    margin-top: 4px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848d97;
+    padding: 10px 12px;
+    border-bottom: 2px solid #d1d9e0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1f2328; }
+  tbody tr {
+    border-bottom: 1px solid #eaeef2;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #f6f8fa; }
+  td { padding: 10px 12px; vertical-align: top; }
+
+  .td-score {
+    width: 48px;
+    text-align: center;
+  }
+  .score-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .td-title a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .td-title a:hover { text-decoration: underline; }
+  .reason {
+    font-size: 13px;
+    color: #848d97;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .td-authors {
+    color: #656d76;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .td-time {
+    width: 50px;
+    text-align: right;
+    color: #848d97;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: #848d97;
+  }
+
+  .group-header td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }
+
+  /* News section */
+  .news-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d1d9e0;
+  }
+  .news-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .news-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeef2;
+    font-size: 15px;
+  }
+  .news-item a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-item a:hover { text-decoration: underline; }
+  .news-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #656d76;
+    border: 1px solid #eaeef2;
+    margin-right: 6px;
+  }
+  .news-time {
+    color: #848d97;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; }
+    .td-authors { max-width: 150px; }
+    .td-time { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
+
+<div class="page-header">
+  <h1>Journal Digest</h1>
+  <div class="meta">2026-04-27 — 48 papers scored by Haiku</div>
+  <div class="feeds">2D Mater. (3) · Comp. Phys. Comm. (36) · Nat. Commun. (6) · npj Comput. Mater. (3)</div>
+</div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Score</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th style="text-align:right">Time</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+<tr class="group-header"><td colspan="4">2D Mater.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#f97316">4</span></td><td class="td-title"><a href="https://iopscience.iop.org/article/10.1088/2053-1583/ae5e43" target="_blank" rel="noopener">Wafer-scale 2D materials: from single-crystalline epitaxy to artificial stacking</a><br><span class=reason>Wafer-scale 2D material synthesis and engineering—directly supports 2d-exciton-nn project scope with CVD/MBE scalability pathways</span></td><td class="td-authors">Chen Ji, Han Chen, Yiyang Xu, Huaze Zhu and Wei Kong</td><td class="td-time">5h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://iopscience.iop.org/article/10.1088/2053-1583/ae566e" target="_blank" rel="noopener">Defects in hexagonal boron nitride for quantum technologies: a perspective</a><br><span class=reason>hBN defects as gate dielectric material (relevant to bi2o2se project) but quantum tech focus diverges from core research</span></td><td class="td-authors">Tobias Vogl, Viktor Ivády, Isaac J Luxmoore and Hannah L Stern</td><td class="td-time">5h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://iopscience.iop.org/article/10.1088/2053-1583/ae5cb1" target="_blank" rel="noopener">Fine tuning generative adversarial networks with universal force fields: application to two-dimensional topological insulators</a><br><span class=reason>Topological insulators with model Hamiltonian + MLIP—method gate applies (model Hamiltonian caps at 2, MLIP cap at 2, combined out of scope)</span></td><td class="td-authors">Alexander C Tyner</td><td class="td-time">5h</td></tr><tr class="group-header"><td colspan="4">Comp. Phys. Comm.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#eab308">3</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600127X?dgcid=rss_sd_all" target="_blank" rel="noopener">A computational toolkit for generating WSe2 grain boundaries: Tilted, mirror, and polycrystals</a><br><span class=reason>Computational toolkit for WSe₂ grain boundary generation—useful structure-building tool for TMD heterostructure research</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001116?dgcid=rss_sd_all" target="_blank" rel="noopener">J-V analysis hub: an open-source Python tool for multi-model characterization of organic solar cells</a><br><span class=reason>Solar cell J-V analysis tool relevant to energy/PV domain but focused on organic cells and phenomenological analysis, not MBPT</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001426?dgcid=rss_sd_all" target="_blank" rel="noopener">msmJAX: Fast and differentiable electrostatics on the GPU in Python</a><br><span class=reason>GPU-accelerated electrostatics relevant to hpc-exascale HPC aspects but unclear relevance to MBPT code porting</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001451?dgcid=rss_sd_all" target="_blank" rel="noopener">A low-rank, high-order implicit-explicit integrator for three-dimensional convection-diffusion equations</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001402?dgcid=rss_sd_all" target="_blank" rel="noopener">A self-adjusting FEM-BEM coupling scheme for the nonlinear Poisson-Boltzmann equation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001463?dgcid=rss_sd_all" target="_blank" rel="noopener">Accelerated inchworm method with tensor-train bath influence functional</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001219?dgcid=rss_sd_all" target="_blank" rel="noopener">Corrigendum to “An atomic Dirac–Fock–Roothaan program” [Comput. Phys. Commun. 139 (2001) 218–234]</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001530?dgcid=rss_sd_all" target="_blank" rel="noopener">DDHADTENS: A program for extracting anisotropic damage variables from tensors using Harmonic Analysis</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001128?dgcid=rss_sd_all" target="_blank" rel="noopener">Energy-stable compact exponential time differencing algorithm for phase field models</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001207?dgcid=rss_sd_all" target="_blank" rel="noopener">Extending the gyrokinetic code GENE-X to stellarators</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001360?dgcid=rss_sd_all" target="_blank" rel="noopener">Fast electrostatic evaluation via conformal mapping and 3D image approximation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600113X?dgcid=rss_sd_all" target="_blank" rel="noopener">Fluid–structure interaction training of integral conservation physics-informed neural networks for blood flow in elastic vessels</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001244?dgcid=rss_sd_all" target="_blank" rel="noopener">GPU-accelerated PICNIC and S-PICNIC methods for solving space charge effects in beam dynamics simulations</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001372?dgcid=rss_sd_all" target="_blank" rel="noopener">GPU-native embedding of complex geometries in adaptive octree grids applied to the lattice Boltzmann method</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001141?dgcid=rss_sd_all" target="_blank" rel="noopener">Gas-kinetic scheme for compressible gas-particle system with coarse grained discrete element method</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001232?dgcid=rss_sd_all" target="_blank" rel="noopener">Generative artificial intelligence for air shower simulation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001505?dgcid=rss_sd_all" target="_blank" rel="noopener">HOS-NWT: an open-source Numerical Wave Tank based on the High-Order Spectral method</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001359?dgcid=rss_sd_all" target="_blank" rel="noopener">MQCT 2026: a program for calculations of inelastic scattering of two molecules (new version announcement)</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001086?dgcid=rss_sd_all" target="_blank" rel="noopener">Multi-GPU quantum circuit simulation and the impact of network performance</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001475?dgcid=rss_sd_all" target="_blank" rel="noopener">NAS-PINNv2: Improved neural architecture search framework for physics-informed neural networks in low-temperature plasma simulation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001256?dgcid=rss_sd_all" target="_blank" rel="noopener">Numerical methods for nonlinear Schrödinger equation with shock type initial data</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001268?dgcid=rss_sd_all" target="_blank" rel="noopener">On the development of OpenFOAM solvers for simulating MHD micropolar fluid flows with or without the effect of micromagnetorotation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001074?dgcid=rss_sd_all" target="_blank" rel="noopener">Optimal parallelisation strategies for flat histogram Monte Carlo sampling</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001499?dgcid=rss_sd_all" target="_blank" rel="noopener">Physics-Informed Graph Neural Networks for Transverse Momentum Estimation in CMS Trigger Systems</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001098?dgcid=rss_sd_all" target="_blank" rel="noopener">QEDtool: A python package for numerical quantum information in quantum electrodynamics</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001517?dgcid=rss_sd_all" target="_blank" rel="noopener">Quantum-Inspired Tensor-Network Fractional-Step Method for Incompressible Flow in Curvilinear Coordinates</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001529?dgcid=rss_sd_all" target="_blank" rel="noopener">Random batch list method for metallic system with embedded atom potential</a><br><span class=reason>EAM potentials for metals—classical MD without ab initio/MBPT connection</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001165?dgcid=rss_sd_all" target="_blank" rel="noopener">Ray-Tracing Acceleration Technique for Monte Carlo Radiation Transport in Ubiquitous Geometry</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600144X?dgcid=rss_sd_all" target="_blank" rel="noopener">RePlaChem: A dimensionality reduction library for plasma chemical mechanisms</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001220?dgcid=rss_sd_all" target="_blank" rel="noopener">Simulating ultrarelativistic beam-plasma instabilities with a quasistatic particle-in-cell code</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001153?dgcid=rss_sd_all" target="_blank" rel="noopener">Surrogate-based multilevel Monte Carlo methods for uncertainty quantification in the Grad-Shafranov free boundary problem</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001177?dgcid=rss_sd_all" target="_blank" rel="noopener">Symbolic evaluation of transfer matrices for the XXX model</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001190?dgcid=rss_sd_all" target="_blank" rel="noopener">T3FF: Toroidal 3-dimensional full-f full-k code for isothermal gyrofluid drift-Alfvén turbulence</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001189?dgcid=rss_sd_all" target="_blank" rel="noopener">The software landscape for the density matrix renormalization group</a><br><span class=reason>DMRG software review—skill gap (DMRG/strongly correlated physics disconnected from MBPT stack)</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001414?dgcid=rss_sd_all" target="_blank" rel="noopener">Transformation techniques for weakly and nearly singular integrals: Comparative performance and numerical implementation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001554?dgcid=rss_sd_all" target="_blank" rel="noopener">jaxrts: A Python package for simulating X-ray Thomson scattering spectra from dense plasmas using jax</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr class="group-header"><td colspan="4">Nat. Commun.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#f97316">4</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71891-1" target="_blank" rel="noopener">Coherent control through phonon anharmonicity</a><br><span class=reason>Experimental study of phonon anharmonicity and mode-specific electron-phonon couplings in SnTe/SnSe chalcogenides—directly relevant to e-ph physics interests and energy material class</span></td><td class="td-authors">Gili Scharf, Tomer Hasharoni, Lara Donval, Leah Ben Gur, Alon Ron</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-72458-w" target="_blank" rel="noopener">Author Correction: Dolutegravir restores gut microbiota in late-stage HIV-1 unlike darunavir: an open-label, randomized clinical trial</a></td><td class="td-authors">Francesc Català-Moll, Carlos Blázquez-Bondia, Judit Farré-Badia, Ferran Torres, Christian Manzardo, Eva Bonfill, Adrià Curran, Pere Domingo, Daniel Podzamczer, Lluís Force, Vicenç Falcó, Mariona Parera, Maria Casadellà, José Maria Miró, Marc Noguera-Julian, Roger Paredes, Alessandra Borgognone, Nel Marín, Oriol Careta, Valentina Triviño, Anna Cruceta, Nuria Climent, Francisco Lozano, Montserrat Plana, Juan Ambrosioni, Cristina Rovira, Carmen Hurtado, Maria José Maleno, Alexy Inciarte, Anna Castelli, Emma Fernández, Carmen Ligero, Sandra Serrano, Maria Ángeles Marcos, Elisa Rubio, Jordi Vila, Elisa de Lazzari, Jose M. Gatell, Daniela Malano-Barletta, Paula Suanzes, Esteve Ribera, Ariadna Torrella, Bibiana Planas, Mar Gutierrez, Gracia Mateo, Jèssica Muñoz, Ana García, Kanura Lamarca, Lucía Millan, Judit Fernández, Isabel Mur, Noemí Corbacho, M. Ema Molas, Maria Saumoy, Laura Acerete, Nerea Rozas, Elena Ferrer, Benito Garcia, Maria Silvana Diyacovo, Josefa Torres, Ana Silva, Juan Manuel Tiraboschi, Arkaitz Imaz, Cristina Padilla, Pilar Barrufet, Xavier Boquet, Gloria Sempere</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-71903-0" target="_blank" rel="noopener">Broad spectrum structure discovery in large-scale higher-order networks</a></td><td class="td-authors">John Hood, Caterina De Bacco, Aaron Schein</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-72505-6" target="_blank" rel="noopener">Publisher Correction: The impact of exercise on gene regulation in association with complex trait genetics</a></td><td class="td-authors">Nikolai G. Vetr, Nicole R. Gay, Joshua N. Adkins, Brent G. Albertson, David Amar, Mary Anne S. Amper, Jose Juan Almagro Armenteros, Euan Ashley, Julian Avila-Pacheco, Dam Bae, Ali Tugrul Balci, Marcas Bamman, Nasim Bararpour, Elisabeth R. Barton, Pierre M. Jean Beltran, Bryan C. Bergman, Daniel H. Bessesen, Sue C. Bodine, Frank W. Booth, Brian Bouverat, Thomas W. Buford, Charles F. Burant, Tiziana Caputo, Steven Carr, Toby L. Chambers, Clarisa Chavez, Maria Chikina, Roxanne Chiu, Michael Cicha, Clary B. Clish, Paul M. Coen, Dan Cooper, Elaine Cornell, Gary Cutter, Karen P. Dalton, Surendra Dasari, Courtney Dennis, Karyn Esser, Charles R. Evans, Roger Farrar, Facundo M. Fernández, Kishore Gadde, Nicole Gagne, David A. Gaul, Yongchao Ge, Robert E. Gerszten, Bret H. Goodpaster, Laurie J. Goodyear, Marina A. Gritsenko, Kristy Guevara, Fadia Haddad, Joshua R. Hansen, Melissa Harris, Trevor Hastie, Krista M. Hennig, Steven G. Hershman, Andrea Hevener, Michael F. Hirshman, Zhenxin Hou, Fang-Chi Hsu, Kim M. Huffman, Chia-Jui Hung, Chelsea Hutchinson-Bunch, Anna A. Ivanova, Bailey E. Jackson, Catherine M. Jankowski, David Jimenez-Morales, Christopher A. Jin, Neil M. Johannsen, Robert L. Newton Jr, Maureen T. Kachman, Benjamin G. Ke, Hasmik Keshishian, Wendy M. Kohrt, Kyle S. Kramer, William E. Kraus, Ian Lanza, Christiaan Leeuwenburgh, Sarah J. Lessard, Bridget Lester, Jun Z. Li, Malene E. Lindholm, Ana K. Lira, Xueyun Liu, Ching-ju Lu, Nathan S. Makarewicz, Kristal M. Maner-Smith, D. R. Mani, Gina M. Many, Nada Marjanovic, Andrea Marshall, Shruti Marwaha, Sandy May, Edward L. Melanson, Michael E. Miller, Matthew E. Monroe, Samuel G. Moore, Ronald J. Moore, Kerrie L. Moreau, Charles C. Mundorff, Nicolas Musi, Daniel Nachun, Venugopalan D. Nair, K. Sreekumaran Nair, Michael D. Nestor, Barbara Nicklas, Pasquale Nigro, German Nudelman, Eric A. Ortlund, Marco Pahor, Cadence Pearce, Vladislav A. Petyuk, Paul D. Piehowski, Hanna Pincas, Scott Powers, David M. Presby, Wei-Jun Qian, Shlomit Radom-Aizik, Archana Natarajan Raja, Krithika Ramachandran, Megan E. Ramaker, Irene Ramos, Tuomo Rankinen, Alexander Sasha Raskind, Blake B. Rasmussen, Eric Ravussin, R. Scott Rector, W. Jack Rejeski, Collyn Z-T. Richards, Stas Rirak, Jeremy M. Robbins, Jessica L. Rooney, Aliza B. Rubenstein, Frederique Ruf-Zamojski, Scott Rushing, Tyler J. Sagendorf, Mihir Samdarshi, James A. Sanford, Evan M. Savage, Irene E. Schauer, Simon Schenk, Robert S. Schwartz, Stuart C. Sealfon, Nitish Seenarine, Kevin S. Smith, Gregory R. Smith, Michael P. Snyder, Tanu Soni, Luis Gustavo Oliveira De Sousa, Lauren M. Sparks, Alec Steep, Cynthia L. Stowe, Yifei Sun, Christopher Teng, Anna Thalacker-Mercer, John Thyfault, Rob Tibshirani, Russell Tracy, Scott Trappe, Todd A. Trappe, Karan Uppal, Sindhu Vangeti, Mital Vasoya, Elena Volpi, Alexandria Vornholt, Michael P. Walkup, Martin J. Walsh, Matthew T. Wheeler, John P. Williams, Si Wu, Ashley Xia, Zhen Yan, Xuechen Yu, Chongzhi Zang, Elena Zaslavsky, Navid Zebarjadi, Tiantian Zhang, Bingqing Zhao, Jimmy Zhen, Stephen B. Montgomery</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-72373-0" target="_blank" rel="noopener">Single-bacterium metabolome revealing heterogeneous cellular states in bacterial populations</a></td><td class="td-authors">Liujuan Zhan, Huimin Liu, Wenjiao Chang, Kaiming Cao, Shan Zhang, Yiwen Gao, Baoyou Chu, Hao Yin, Hongbin He, Rongbin Zhou, Xiaoling Ma, Zhuanghao Hou, Guangming Huang</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41467-026-72253-7" target="_blank" rel="noopener">Spurious alignment between large language models and brains can emerge from non-robust methods and overlooked confounds</a></td><td class="td-authors">Nima Hadidi, Ebrahim Feghhi, Bryan H. Song, Idan A. Blank, Jonathan C. Kao</td><td class="td-time">4h</td></tr><tr class="group-header"><td colspan="4">npj Comput. Mater.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41524-026-02025-w" target="_blank" rel="noopener">Autonomous fabrication of tailored defect structures in 2D materials using machine learning-enabled scanning transmission electron microscopy</a><br><span class=reason>ML-enabled experimental fabrication of 2D defects—interesting AI application but not MBPT-connected to core research</span></td><td class="td-authors">Zijie Wu, Kevin M. Roccapriore, Ayana Ghosh, Kai Xiao, Raymond R. Unocic, Stephen Jesse, Rama Vasudevan, Matthew G. Boebinger</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41524-026-02080-3" target="_blank" rel="noopener">Flexible uncertainty calibration for machine-learned interatomic potentials</a><br><span class=reason>MLIP for interatomic potentials—skill gap rule (MLIP without MBPT connection caps at 3, general uncertainty method caps at 2)</span></td><td class="td-authors">Cheuk Hin Ho, Christoph Ortner, YangShuai Wang</td><td class="td-time">4h</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.nature.com/articles/s41524-026-02099-6" target="_blank" rel="noopener">AQCat25: unlocking spin-aware, high-fidelity machine learning potentials for heterogeneous catalysis</a><br><span class=reason>Heterogeneous catalysis is out of scope (CO2 reduction catalysis explicitly listed as outside values)</span></td><td class="td-authors">Omar Allam, Brook Wander, SungYeon Kim, Rudi Plesch, Tyler Sours, Jia-Min Chu, Thomas Ludwig, Jiyoon Kim, Rodrigo Wang, Shivang Agarwal, Alan Rask, Alexandre Fleury, Chuhong Wang, Andrew Wildman, Thomas Mustard, Kevin Ryczko, Paul Abruzzo, AJ Nish, Aayush R. Singh</td><td class="td-time">4h</td></tr>
+</tbody>
+</table>
+
+
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    <div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28950" target="_blank" rel="noopener">자동 갱신되는 스크린샷</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28949" target="_blank" rel="noopener">SWE-bench Verified가 더 이상 프런티어 코딩 역량을 측정하지 못하는 이유</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28947" target="_blank" rel="noopener">stitch가 유행시킨(?) DESIGN.md를 모아놓은 사이트</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28946" target="_blank" rel="noopener">Show GN: TTSC - TypeScript-Go 기반 transformer &amp;amp; runner</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28945" target="_blank" rel="noopener">Show GN: Codex Discord Connector - Discord에서 로컬 Codex를 그대로 쓰는 커넥터</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28944" target="_blank" rel="noopener">Show GN: Fairy - 개발자 프로젝트와 오픈소스를 후원하는 서비스</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28942" target="_blank" rel="noopener">Show GN: slaude - 흔적 안 남기는 일회용 Claude Code</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28941" target="_blank" rel="noopener">tailscale 개인 사용자 무제한 디바이스 접속 가능</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28940" target="_blank" rel="noopener">Sawe, 경쟁 레이스에서 처음으로 2시간 이내 마라톤을 뛴 첫 선수로 등극</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28939" target="_blank" rel="noopener">Mixture of Experts(MoE)란 무엇인가 — DeepSeek이 왜 1.6조 파라미터인데 싸게 돌아가는지</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28938" target="_blank" rel="noopener">Statecharts: 계층적 상태 기계</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28937" target="_blank" rel="noopener">AI는 사고를 대체하지 말고 끌어올려야 함</a><span class="news-time">1h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28936" target="_blank" rel="noopener">Show GN: ManyPerson - 통계청 MDIS 기반 한국 AI 페르소나 여론 시뮬레이터</a><span class="news-time">1h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28934" target="_blank" rel="noopener">터미널용 Glyph Protocol 소개</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28933" target="_blank" rel="noopener">Friendster를 3만 달러에 샀어요 – 이제 이렇게 운영할꺼에요</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28932" target="_blank" rel="noopener">로보틱스 및 피지컬 AI 예측: 2026년의 6가지 투자 전망</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28931" target="_blank" rel="noopener">GPT 5.5 vs Opus 4.7, 코딩/프로그래밍에 더 나은 모델은?</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28930" target="_blank" rel="noopener">EU Age Control: 디지털 ID를 위한 트로이 목마</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28929" target="_blank" rel="noopener">가장 큰 버티컬 AI 시장은 눈에 보이는 곳에 숨어 있다</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28928" target="_blank" rel="noopener">Alzheimer&amp;#039;s disease 연구 진전이 더딘 이유</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28927" target="_blank" rel="noopener">AI 에이전트가 우리 프로덕션 데이터베이스를 삭제했다. 그 에이전트의 자백은 아래에 있다</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28926" target="_blank" rel="noopener">Agentic Inbox - AI 에이전트 탑재 셀프호스팅 이메일 클라이언트</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28925" target="_blank" rel="noopener">GoDaddy가 아무런 서류도 없이 모르는 사람에게 도메인을 넘겨주었음</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28924" target="_blank" rel="noopener">Tell HN: 내 iPhone에 앱 하나가 매일 조용히 설치되고 있음</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28923" target="_blank" rel="noopener">자신보다 뛰어난 사람을 채용하는 법</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28922" target="_blank" rel="noopener">Asahi Linux 진행 보고서 Linux 7.0</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28921" target="_blank" rel="noopener">서구는 물건 만드는 법을 잊었고, 이제는 코드를 잊고 있다</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28920" target="_blank" rel="noopener">Obscura - 오픈소스 헤드리스 브라우저</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28919" target="_blank" rel="noopener">NVIDIA Nemotron-Personas-Korea - 대한민국 실제 인구 분포 기반 100만 건 합성 페르소나 데이터셋</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28918" target="_blank" rel="noopener">OpenAI Privacy Filter 소개</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28917" target="_blank" rel="noopener">Stash - AI 에이전트를 위한 지속형 메모리 계층</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28916" target="_blank" rel="noopener">Lightwhale 3: Linux 서버를 다시 재미있게 만들기</a><span class="news-time">6h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28915" target="_blank" rel="noopener">지식 노동의 시뮬라크럼(허상)</a><span class="news-time">6h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28914" target="_blank" rel="noopener">1980년대 Commodore 64 게임의 Martin Galway 음악 소스 파일</a><span class="news-time">7h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28913" target="_blank" rel="noopener">Turbo Vision 2.0 - 90년대 텍스트 UI의 재현</a><span class="news-time">8h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28912" target="_blank" rel="noopener">Google, Anthropic에 현금과 컴퓨트로 최대 400억 달러 투자</a><span class="news-time">8h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28911" target="_blank" rel="noopener">Niri 26.04: 스크롤형 타일링 Wayland 컴포지터</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28910" target="_blank" rel="noopener">WUPHF - Karpathy 스타일 LLM 위키를 에이전트들이 직접 유지하는 시스템</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28909" target="_blank" rel="noopener">AI 산업은 대중이 자신들을 혐오한다는 사실을 발견하고 있음</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28908" target="_blank" rel="noopener">Show GN: Streamlit 대안으로 시작했던 파이썬 웹 프레임워크 &amp;#039;Violit&amp;#039; 대규모 업데이트 (ORM/Auth 내장)</a><span class="news-time">11h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28905" target="_blank" rel="noopener">Show GN: Clarc - 비개발자 동료들도 Claude Code 쓸 수 있게 만든 macOS 앱</a><span class="news-time">14h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28904" target="_blank" rel="noopener">코딩 보조 도구로 끝내지 못할 프로젝트 되살리기</a><span class="news-time">15h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28903" target="_blank" rel="noopener">USB 치트시트 (2022)</a><span class="news-time">19h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28902" target="_blank" rel="noopener">ChatGPT를 활용한 아마추어가 Erdős 문제를 풀다</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28900" target="_blank" rel="noopener">플레인 텍스트는 수십 년 동안 이어져 왔고 앞으로도 남을 것</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28899" target="_blank" rel="noopener">grdpwasm - 웹 기반 RDP 클라이언트</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28898" target="_blank" rel="noopener">Claude Code 루틴이 내 재정을 지켜볼 수 있을까?</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28897" target="_blank" rel="noopener">CSS를 질의 언어로 보기</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28896" target="_blank" rel="noopener">GPT-5.5 바이오 버그 바운티</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=28895" target="_blank" rel="noopener">Trump, 미국 국립과학재단(NSF) 감독 기구인 국가과학위원회 위원 24명 전원 해임</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/when-semiconductor-materials-misbehave/" target="_blank" rel="noopener">When Semiconductor Materials Misbehave</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/tsmc-tech-symposium-2026-by-the-numbers/" target="_blank" rel="noopener">TSMC Tech Symposium 2026, By The Numbers</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/why-data-centers-must-become-system%e2%80%91aware/" target="_blank" rel="noopener">Why Data Centers Must Become System‑Aware</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/sk-hynix-receives-2026-ieee-corporate-innovation-award/" target="_blank" rel="noopener">SK hynix Receives 2026 IEEE Corporate Innovation Award</a><span class="news-time">12h</span></div>
+  </div>
+</div>
+
+
+</body>
+</html>
