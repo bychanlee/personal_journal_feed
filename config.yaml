@@ -161,124 +161,117 @@ feeds:
     category: "News"
 
 # ── 연구 프로필 (Haiku 스코어링 컨텍스트) ──────────────────────
-# 이 블록은 scripts/build-profile.py가 LANDFALL values + graph + filters에서 자동 생성.
-# 직접 편집하지 말고 LANDFALL 쪽(values.md, graph/*/, filters.md)을 수정한 뒤
-# `python3 scripts/build-profile.py`로 재생성할 것.
+# 정적 프로필 — 수동 편집.
 profile:
   text: |
     Condensed matter physicist trained in first-principles many-body perturbation theory
     (GW/BSE, EPW electron-phonon, GWPT). Currently visiting BerkeleyGW main developer group
     (Zhenglu Li, USC, 2026.04~09).
 
-    Project LANDFALL — no fixed research tracks. Evaluation axes:
+    Current focused research clusters:
 
-    (1) Values (intrinsic motivation, weighted):
-    - 에너지 (weight 0.6, direct)
-    - 우주항공 (weight 0.4, either)
+    (A) Bi2O2Se & layered semiconductor transport
+        - Phonon-limited mobility via GWPT vs DWPT (Fröhlich, soft modes)
+        - Quasiparticle band structure, Wannier-based tight-binding modeling
+        - 2D semiconductor FET channel candidates (TMD, β-Ga2O3, tellurene, Bi2O2Se)
 
-    (2) Active graph (current projects and methods):
-    - 2d-exciton-nn [submitted] — venue: Nature Nanotechnology
-    - ag3si-gw [active] — venue: PRB / PRM / npj Comput Mater / Nat Mater (확장 시)
-    - ai-agent-mbpt [active] — venue: Comp Phys Comm / npj Comput Mater / J Chem Theory Comput
-    - bi2o2se-gwpt [active] — venue: PRB / Nat Commun / npj Comput Mater
-    - hpc-exascale [seed] — venue: Comp Phys Comm / 물리 방법론 venue (SC proceedings 아님)
+    (B) Chalcohalide / PV absorber GW
+        - Ag3SI / Cu3SI silver chalcohalides as PV absorbers
+        - Disorder effects on QP gap: supercell GW vs unit-cell χ unfolding methodology
+        - Broader PV absorbers (chalcohalide, chalcogenide, perovskite-adjacent)
+        - Defect tolerance, dielectric screening in absorber materials
 
-    (3) Invariant skill stack: MBPT physics (GW/BSE/EPW/GWPT, DFPT, Wannier) + HPC exascale
-        + AI workflow automation. Tool/code is free — constraint is venue.
+    (C) AI agents for ab-initio computational workflows
+        - LLM agents orchestrating GW/BSE/EPW pipelines on HPC
+        - Domain knowledge distillation into SKILLs for autonomous CMS
+        - Convergence test automation, hyperparameter search for MBPT
+        - Result validation, silently-wrong-result catching
 
-    (4) Venue constraint: physics-adjacent journals up to ACS Nano (inclusive).
-        PRB, PRL, PRM, PR Applied, Nat Phys, Nat Mater, Nat Nano, Nat Commun,
-        npj Comput Mater, APL, ACS Nano, Nano Lett., 2D Mater., Comp Phys Comm, J Chem Theory Comput — in.
+    (D) MBPT methodology & exascale acceleration
+        - EPW / Wannier-basis e-ph matrix element selection rules (zero-block skipping)
+        - Band / χ matrix unfolding for supercells and disordered systems
+        - GPU porting of BerkeleyGW / EPW / QE on Frontier / Aurora / Perlmutter
+        - Parallel scaling of GW / BSE / DFPT / EPW on exascale
 
-    Score papers high (4-5) if they connect to any of:
-    (a) MBPT methodology advance (GW/BSE/EPW/GWPT)
-    (b) Active graph materials (Bi2O2Se / Ag3SI / TMD heterostructure) or project topics
-    (c) Values axis (energy absorber materials, aerospace-adjacent physics)
+    Invariant skill stack: MBPT physics (GW/BSE/EPW/GWPT, DFPT, Wannier) + HPC exascale
+    + AI workflow automation. Tool/code is free — constraint is venue.
+
+    Score papers high (4-5) if they connect to any of clusters A-D directly.
+    Score 2-3 for background topics (general MBPT methodology, 2D exciton physics,
+    HPC infrastructure trends, AI-for-science, AiiDA workflow plumbing).
+    Score 1 for out-of-venue or out-of-scope (see caps below).
+
+    Venue scope (in-scope, up to ACS Nano inclusive):
+        PRB, PRL, PRX, PRM, PR Applied, Nat Phys, Nat Mater, Nat Nano, Nat Commun,
+        npj Comput Mater, APL, ACS Nano, Nano Lett., 2D Mater., Comp Phys Comm,
+        J Chem Theory Comput.
 
     OUT OF VENUE — cap at 1:
-        - materials engineering venues (Acta Mater, Scripta Mater, etc.)
-        - pure chemistry venues (JACS, Angew Chem — excluding J. Phys. Chem. C/Letters)
+        - materials engineering venues (Acta Mater, Scripta Mater)
+        - pure chemistry venues (JACS, Angew Chem — J. Phys. Chem. C/Letters OK)
         - SC proceedings and CS-only HPC venues
         - ML workshops (NeurIPS, ICLR physics workshops) — methodology paper must be in physics venue
-        - IEEE engineering venues (IEEE TED borderline; pure power electronics out)
+        - IEEE engineering venues (TED borderline; pure power electronics out)
         - biology, climate, astrophysics, cold-atom quantum info
 
-    MANUFACTURABILITY — cap at 2 (from values hard constraint; methodology novelty alone does
-    NOT override — only active-graph topic match OR values direct match overrides):
-        - moiré heterostructure / twisted bilayer flat-band physics (no wafer-scale synthesis path)
-        - mechanically exfoliated 2D flakes without CVD / MBE / wafer-scale pathway
-        - exfoliation-only bulk layered materials as core system (no scalable growth route)
-        - artificial stacking / dry-transfer-only device demonstrations without manufacturability claim
-
-    SKILL GAP — cap at 3 unless paper has direct MBPT-stack connection OR active-graph connection
-    OR values (energy/aerospace) connection:
+    OUT OF SCOPE — cap at 2 (unless direct cluster A-D connection):
         - DMFT / Hubbard / strongly correlated electron physics as core method (Mott, Kondo, heavy fermion)
         - MLIP / machine learning force fields without MBPT connection (MACE, CHGNet, NequIP)
         - pure DFT+U defect studies without GW
         - classical molecular dynamics (LAMMPS, OpenMM, GROMACS)
-        - moire superconductivity / twistronics phase diagrams
+        - moiré superconductivity / twistronics phase diagrams
         - Kagome metal CDW / superconductivity
-        - model Hamiltonian transport on toy models (Dirac / k·p / TB + NEGF toy)
-        - topological transport / Berry phase anomaly studies on model Hamiltonians
+        - model Hamiltonian transport on toy models (Dirac / k·p / TB+NEGF toy)
+        - topological transport / Berry phase anomaly on model Hamiltonians
         - phenomenological device modeling (TMR, GMR, spin-valve) without first-principles input
         - CO2 reduction catalysis, water splitting electrochemistry
         - battery cathode / electrolyte materials (engineering venue + MBPT-disconnected)
+        - moiré / twisted bilayer flat-band physics (no MBPT angle)
+        - exfoliation-only 2D flakes without scalable growth pathway
   high_priority_topics:
-  - '[values:에너지 w=0.6] photovoltaic absorber materials (chalcohalide, chalcogenide, perovskite beyond
-    MAPbI3)'
-  - '[values:에너지 w=0.6] solar cell absorber — GW band gap + BSE optical absorption'
-  - '[values:에너지 w=0.6] dielectric screening in PV absorbers'
-  - '[values:에너지 w=0.6] defect tolerance in photovoltaic semiconductors'
-  - '[values:에너지 w=0.6] emerging photovoltaic materials beyond MAPbI3'
-  - '[values:에너지 w=0.6] GW-level first-principles for energy materials'
-  - '[values:우주항공 w=0.4] radiation-hardened semiconductors (defect physics from MBPT)'
-  - '[values:우주항공 w=0.4] space telescope photodetectors, optical materials'
-  - '[values:우주항공 w=0.4] high-power semiconductors (β-Ga2O3, GaN) for orbital communication'
-  - '[values:우주항공 w=0.4] extreme-environment semiconductor devices'
-  - '[2d-exciton-nn:submitted] interlayer / moiré excitons in TMD heterostructures (GW-BSE)'
-  - '[2d-exciton-nn:submitted] exciton optical selection rules, valley physics, Γ-valley emission'
-  - '[2d-exciton-nn:submitted] 2D heterostructure optoelectronics'
-  - '[2d-exciton-nn:submitted] photodetector / optoelectronic devices with 2D semiconductors'
-  - '[2d-exciton-nn:submitted] dark excitons, trions in TMD'
-  - '[ag3si-gw:active] silver / copper chalcohalide semiconductors (Ag3SI, Cu3SI, AgCuS)'
-  - '[ag3si-gw:active] chalcohalide / antiperovskite photovoltaics'
-  - '[ag3si-gw:active] solar cell absorber — GW band gap + BSE optical absorption'
-  - '[ag3si-gw:active] disorder / alloy effects on dielectric screening and band gap'
-  - '[ag3si-gw:active] local disorder / polymorphous representation in perovskites and analogues'
-  - '[ag3si-gw:active] defect tolerance in photovoltaic semiconductors'
-  - '[ag3si-gw:active] emerging photovoltaic materials beyond MAPbI3 (chalcogenides, oxides, halides)'
-  - '[ag3si-gw:active] anharmonic electron-phonon renormalization in ionic semiconductors'
-  - '[ai-agent-mbpt:active] LLM agents / autonomous agents for scientific computing'
-  - '[ai-agent-mbpt:active] AI workflow automation for ab initio (DFT / GW / EPW) calculations'
-  - '[ai-agent-mbpt:active] convergence test automation, hyperparameter search for MBPT'
-  - '[ai-agent-mbpt:active] code generation / scientific software automation with LLMs'
-  - '[ai-agent-mbpt:active] AI for materials discovery built on first-principles (not MLIP-only)'
-  - '[ai-agent-mbpt:active] tool paper / methodology paper in physics venue'
-  - '[ai-agent-mbpt:active] MBPT workflow orchestration, input generation, result validation'
-  - '[bi2o2se-gwpt:active] Bi2O2Se electronic structure, transport, devices'
-  - '[bi2o2se-gwpt:active] 2D semiconductor channel materials for FET (TMD, β-Ga2O3, tellurene, Bi2O2Se)'
-  - '[bi2o2se-gwpt:active] carrier mobility from first principles (e-ph scattering, Boltzmann transport,
-    EPW)'
-  - '[bi2o2se-gwpt:active] GWPT (electron-phonon at GW level), polaron transport'
-  - '[bi2o2se-gwpt:active] high-field transport, velocity saturation, hot carriers'
-  - '[bi2o2se-gwpt:active] TCAD parameter extraction from DFT/GW (effective mass, ε∞, band alignment)'
-  - '[bi2o2se-gwpt:active] metal-semiconductor contact / Schottky barrier (GW band alignment)'
-  - '[bi2o2se-gwpt:active] high-k gate dielectric & channel-dielectric interfaces (CaF2, hBN, LaOCl)'
-  - '[bi2o2se-gwpt:active] dielectric screening in 2D / thin films'
-  - '[bi2o2se-gwpt:active] electron-phonon renormalization of band gaps (T-dependent, Varshni)'
-  - '[bi2o2se-gwpt:active] spin-orbit coupling effects on carrier transport'
-  - '[hpc-exascale:seed] GPU porting of ab initio codes (BerkeleyGW, EPW, QE, VASP)'
-  - '[hpc-exascale:seed] exascale benchmarking on Frontier / Aurora / Perlmutter / El Capitan'
-  - '[hpc-exascale:seed] MPI + GPU + mixed precision for many-body / GW / BSE methods'
-  - '[hpc-exascale:seed] parallel scaling of GW / BSE / DFPT / EPW calculations'
-  - '[hpc-exascale:seed] HPC software engineering for scientific applications (physics venue)'
-  - '[method:td-exciton-phonon:have] real-time TDDFT, time-dependent BSE, ultrafast exciton dynamics'
-  - '[method:td-exciton-phonon:have] exciton-phonon coupling beyond static treatment'
-  - '[method:td-exciton-phonon:have] phonon-induced exciton dephasing, linewidth, polaron formation'
-  - '[method:td-exciton-phonon:have] non-equilibrium / pump-probe ab initio spectroscopy theory'
+  - '[A:Bi2O2Se] Bi2O2Se electronic structure, transport, devices'
+  - '[A:Bi2O2Se] phonon-limited mobility from first principles (e-ph scattering, Boltzmann transport, EPW)'
+  - '[A:Bi2O2Se] GWPT (electron-phonon at GW level), polaron transport'
+  - '[A:Bi2O2Se] electron-phonon renormalization of band gaps (T-dependent, Varshni)'
+  - '[A:Bi2O2Se] Fröhlich long-range e-ph coupling in polar materials'
+  - '[A:Bi2O2Se] soft phonon modes, dynamical instabilities in layered semiconductors'
+  - '[A:Bi2O2Se] Wannier-based tight-binding modeling from ab initio'
+  - '[A:layered-FET] 2D semiconductor channel materials for FET (TMD, β-Ga2O3, tellurene, Bi2O2Se)'
+  - '[A:layered-FET] high-field transport, velocity saturation, hot carriers'
+  - '[A:layered-FET] TCAD parameter extraction from DFT/GW (effective mass, ε∞, band alignment)'
+  - '[A:layered-FET] metal-semiconductor contact / Schottky barrier (GW band alignment)'
+  - '[A:layered-FET] high-k gate dielectric & channel-dielectric interfaces (CaF2, hBN, LaOCl)'
+  - '[A:layered-FET] dielectric screening in 2D / thin films'
+  - '[B:chalcohalide] silver / copper chalcohalide semiconductors (Ag3SI, Cu3SI, AgCuS)'
+  - '[B:chalcohalide] chalcohalide / antiperovskite photovoltaics'
+  - '[B:disorder-GW] disorder / alloy effects on dielectric screening and band gap'
+  - '[B:disorder-GW] supercell GW methodology, χ matrix unfolding from unit cell'
+  - '[B:disorder-GW] local disorder / polymorphous representation in perovskites and analogues'
+  - '[B:disorder-GW] anharmonic electron-phonon renormalization in ionic semiconductors'
+  - '[B:PV-absorber] solar cell absorber — GW band gap + BSE optical absorption'
+  - '[B:PV-absorber] defect tolerance in photovoltaic semiconductors'
+  - '[B:PV-absorber] emerging photovoltaic materials beyond MAPbI3 (chalcogenides, oxides, halides)'
+  - '[B:PV-absorber] dielectric screening in PV absorbers'
+  - '[C:AI-agent] LLM agents / autonomous agents for scientific computing'
+  - '[C:AI-agent] AI workflow automation for ab initio (DFT / GW / EPW) calculations'
+  - '[C:AI-agent] domain knowledge distillation, SKILL design for scientific workflows'
+  - '[C:AI-agent] convergence test automation, hyperparameter search for MBPT'
+  - '[C:AI-agent] code generation / scientific software automation with LLMs'
+  - '[C:AI-agent] AI for materials discovery built on first-principles (not MLIP-only)'
+  - '[C:AI-agent] tool / methodology paper in physics or computing-physics venue'
+  - '[C:AI-agent] MBPT workflow orchestration, input generation, result validation'
+  - '[D:methodology] EPW / Wannier interpolation acceleration (selection rules, sparsity, symmetry)'
+  - '[D:methodology] band / χ matrix unfolding methods for supercells and disordered systems'
+  - '[D:methodology] GW / BSE methodology developments (algorithms, approximations, convergence)'
+  - '[D:methodology] electron-phonon methodology advances (GWPT, density-functional perturbation)'
+  - '[D:methodology] real-time TDDFT, time-dependent BSE, ultrafast exciton dynamics'
+  - '[D:HPC] GPU porting of ab initio codes (BerkeleyGW, EPW, QE, VASP, abinit)'
+  - '[D:HPC] exascale benchmarking on Frontier / Aurora / Perlmutter / El Capitan'
+  - '[D:HPC] MPI + GPU + mixed precision for many-body / GW / BSE methods'
+  - '[D:HPC] parallel scaling of GW / BSE / DFPT / EPW calculations'
   background_topics:
   - electron-phonon coupling methodology (general EPW developments)
-  - GW / BSE methodology developments
+  - GW / BSE methodology developments (general)
   - DFT / DFPT methodology advances
   - Wannier function methods and downfolding
   - TCAD methodology and tools (Sentaurus, DEVSIM, Victory Process/Device)
@@ -292,18 +285,26 @@ profile:
   - AI for science (general, methods papers)
   - autonomous experimentation, self-driving labs
   - HPC / AI infrastructure industry trends (GPU, interconnect, exascale systems)
+  - interlayer / moiré excitons in TMD heterostructures (GW-BSE)
+  - exciton-phonon coupling in bulk semiconductors (xct-ph)
+  - dark excitons, trions, valley physics in TMD
+  - strain-dependent exciton properties in 2D materials
+  - AiiDA / scientific workflow management for ab initio codes
+  - non-equilibrium / pump-probe ab initio spectroscopy theory
   methods:
   - BerkeleyGW
   - EPW
   - GWPT
   - Quantum ESPRESSO
   - VASP
+  - abinit
   - Wannier90
   - DFPT
   - SIESTA / TranSIESTA
   - DEVSIM
   - Sentaurus TCAD
   - BoltzTraP / BoltzWann
+  - AiiDA
 output:
   top_n: 1000                     # 표시할 상위 논문 수
   score_threshold: 1            # 1–5점 중 이 미만은 숨김
