@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-31T11:04:05.983824+00:00",
+  "generated": "2026-05-31T12:03:21.612329+00:00",
   "papers": [
     {
       "title": "Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity",
@@ -11,22 +11,36 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 2,
-      "reason": "Phonon anharmonicity/DFPT background; tangential to EPW e-ph coupling focus",
+      "score": 3,
+      "reason": "DFPT calculation of phonon renormalization and anharmonicity; relevant to cluster D phonon methodology",
       "matched": []
     },
     {
-      "title": "Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Josep Plana-Riu, F. Xavier Trias, Adel Alsalti-Badellou, Xavier Álvarez-Farré, Guillem Colomer, Assensi Oliva",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Gate-tunable spin texture in a Dirac-semimetal–ferromagnetic-semiconductor heterostructure",
+      "authors": "Saurav Islam, Emma Steinebronn, Kaijie Yang, Bimal Neupane, Juan Chamorro, Tanya Berry, Supriya Ghosh, K. Andre Mkhoyan, Tyrel M. McQueen, Yuanxi Wang, Olle Heinonen, Chaoxing Liu, and Nitin Samarth",
+      "last_author": "Nitin Samarth",
+      "abstract": "Author(s): Saurav Islam, Emma Steinebronn, Kaijie Yang, Bimal Neupane, Juan Chamorro, Tanya Berry, Supriya Ghosh, K. Andre Mkhoyan, Tyrel M. McQueen, Yuanxi Wang, Olle Heinonen, Chaoxing Liu, and Nitin SamarthWe use a concerted theory-experiment effort to investigate the formation of chiral real space spin texture when the archetypal Dirac semimetal ${\\mathrm{Cd}}_{3}{\\mathrm{As}}_{2}$ is interfaced with ${\\mathrm{In}}_{1−x}{\\mathrm{Mn}}_{x}\\mathrm{As}$, a ferromagnetic semiconductor with perpendicular m…[Phys. Rev. B 113, 205434] Published Fri May 29, 2026",
+      "url": "http://link.aps.org/doi/10.1103/rl21-3spb",
+      "paper_id": "10.1103/rl21-3spb",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-05-29T18:00:00+00:00",
       "score": 2,
-      "reason": "CFD optimization on HPC; background exascale trends, not ab initio materials",
+      "reason": "Gate-tunable 2D heterostructure effects; tangentially related to cluster A gate modulation concepts",
+      "matched": []
+    },
+    {
+      "title": "General Framework Enabling Polarity-Tunable Time-Reversal Symmetric Superconducting Diode Effects in Gate-Defined Homojunctions",
+      "authors": "Hongwei Zhang, Chunsheng Wang, Ran Wang, Senyang Pan, Hengning Wang, Jiaqiang Cai, Yonglai Liu, Zhe Qu, Xiangde Zhu, Wei Ning, Chuanying Xi, Jinglei Zhang, Ning Hao, Guolin Zheng, and Mingliang Tian",
+      "last_author": "Mingliang Tian",
+      "abstract": "Author(s): Hongwei Zhang, Chunsheng Wang, Ran Wang, Senyang Pan, Hengning Wang, Jiaqiang Cai, Yonglai Liu, Zhe Qu, Xiangde Zhu, Wei Ning, Chuanying Xi, Jinglei Zhang, Ning Hao, Guolin Zheng, and Mingliang TianLocal protonic gating in NbSe2 homojunctions induces a time-reversal symmetric superconducting diode effect, enabling the magnetic-field-free control of nonreciprocal critical currents.[Phys. Rev. X 16, 021046] Published Fri May 29, 2026",
+      "url": "http://link.aps.org/doi/10.1103/wm2k-vlvc",
+      "paper_id": "10.1103/wm2k-vlvc",
+      "feed_name": "PRX",
+      "feed_category": "APS",
+      "published": "2026-05-29T18:00:00+00:00",
+      "score": 2,
+      "reason": "Gate-tunable superconductor; touches on gate effects in 2D materials but superconductivity out of scope",
       "matched": []
     },
     {
@@ -40,7 +54,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Spin space groups software; background symmetry/HPC methodology for condensed matter",
+      "reason": "Magnetic symmetry classification software; crystallography tool but magnetic-material focused",
       "matched": []
     },
     {
@@ -54,7 +68,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Physics-informed neural networks; background AI for science, not ab initio materials-specific",
+      "reason": "Physics-informed neural networks for PDEs; general AI-for-science without MBPT/materials specificity",
+      "matched": []
+    },
+    {
+      "title": "Machine-learning-accelerated quantum transport study on the effects of superlattice disorder and strain in a midwave-infrared curved sensor",
+      "authors": "John Glennon, Alexandros Kyrtsos, Mark R. O’Masta, Binh-Minh Nguyen, and Enrico Bellotti",
+      "last_author": "Enrico Bellotti",
+      "abstract": "Author(s): John Glennon, Alexandros Kyrtsos, Mark R. O’Masta, Binh-Minh Nguyen, and Enrico BellottiAn emerging device architecture for infrared imaging is the curved focal-plane array, which benefits from several optical advantages over the traditional flat design. However, the curving process introduces additional strain in the active region, which must be taken into account. Type-II superlattic…[Phys. Rev. Applied 25, 054076] Published Fri May 29, 2026",
+      "url": "http://link.aps.org/doi/10.1103/bz8d-9f4q",
+      "paper_id": "10.1103/bz8d-9f4q",
+      "feed_name": "PR Applied",
+      "feed_category": "APS",
+      "published": "2026-05-29T18:00:00+00:00",
+      "score": 2,
+      "reason": "ML-accelerated quantum transport study; tangentially related to cluster C (AI acceleration) but applied to infrared device engineering, not MBPT workflows",
       "matched": []
     },
     {
@@ -68,7 +96,7 @@
       "feed_category": "APS",
       "published": "2026-05-29T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Kondo lattice model — strongly correlated electron physics capped at 2 per method gate",
       "matched": []
     },
     {
@@ -82,7 +110,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Moiré electronic structure tool; topic capped at 2 (out-of-scope without MBPT angle)",
+      "reason": "Moiré electronic structure tool; moiré physics capped at 2 without explicit GW/BSE/MBPT",
       "matched": []
     },
     {
@@ -96,7 +124,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Physics-integrated ML for PDEs; background AI/HPC infrastructure, not materials focus",
+      "reason": "Physics-informed learning for PDE acceleration; general AI-for-science without MBPT connection",
+      "matched": []
+    },
+    {
+      "title": "Reconfigurable and nonvolatile photo-pyroelectricity in a ceramic-like biaxial molecular ferroelectric via polarization engineering",
+      "authors": "Liwei Tang, Jialu Chen, Yu Ma, Yi Liu, Jingtian Zhang, Junhua Luo, Zhihua Sun",
+      "last_author": "Zhihua Sun",
+      "abstract": "Science Advances, Volume 12, Issue 22, May 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5864?af=R",
+      "paper_id": "10.1126/sciadv.aec5864?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-05-29T15:00:00+00:00",
+      "score": 2,
+      "reason": "Ferroelectric photovoltaic material; touches on cluster B (PV absorbers) but materials type and methods (polarization engineering vs. GW/BSE) misaligned",
       "matched": []
     },
     {
@@ -110,7 +152,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Eigenvalue solver methodology; potential use for GW/BSE diagonalization, but generic linear algebra",
+      "reason": "GPU-accelerated eigenvalue solver; HPC/numerical method potentially useful for exascale but generic",
+      "matched": []
+    },
+    {
+      "title": "Revealing bond level origin of stability in disordered solids from marginal stability to ultrastability",
+      "authors": "Junchao Huang, Jianhua Zhang, Ding Xu, Shiyun Zhang, Hua Tong, Ning Xu",
+      "last_author": "Ning Xu",
+      "abstract": "Nature Communications, Published online: 31 May 2026; doi:10.1038/s41467-026-73939-8Understanding the structural origins of stability in disordered solids is essential for predicting mechanical failure and manipulating their properties, yet the inherent disorder complicates this analysis. This study identifies stabilizing bonds as critical structural features that govern stability across a spectrum from marginal to ultra-stable disordered solids, providing a unified framework for understanding their mechanical behavior.",
+      "url": "https://www.nature.com/articles/s41467-026-73939-8",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-05-31T08:00:00+00:00",
+      "score": 2,
+      "reason": "Computational study of disordered solids stability; touches on disorder effects but mechanical properties focus, not electronic structure or GW",
       "matched": []
     },
     {
@@ -124,21 +180,35 @@
       "feed_category": "APS",
       "published": "2026-05-29T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Constrained DMFT methodology — strongly correlated electron physics capped at 2 per method gate",
       "matched": []
     },
     {
-      "title": "Thermodynamics in a split Hilbert space: Quantum impurity at the edge of a one-dimensional superconductor",
-      "authors": "Pradip Kattel, Abay Zhakenov, and Natan Andrei",
-      "last_author": "Natan Andrei",
-      "abstract": "Author(s): Pradip Kattel, Abay Zhakenov, and Natan AndreiWe present a full thermodynamic description of a magnetic impurity at the edge of a superconducting wire. We find that, depending on the relative strengths of the impurity and the superconducting bulk couplings, the impurity exhibits four phases: Kondo, Yu-Shiba-Rusinov (YSR) I and II, and local mom…[Phys. Rev. B 113, 195155] Published Fri May 29, 2026",
-      "url": "http://link.aps.org/doi/10.1103/qw2d-k8wv",
-      "paper_id": "10.1103/qw2d-k8wv",
+      "title": "Unexplored phases in ${\\mathrm{HfO}}_{2}$ from first principles",
+      "authors": "Tianhongyi Zhao, Songsong Zhou, and Andrew M. Rappe",
+      "last_author": "Andrew M. Rappe",
+      "abstract": "Author(s): Tianhongyi Zhao, Songsong Zhou, and Andrew M. RappeExperimentally, hafnia (${\\mathrm{HfO}}_{2}$) has shown a complicated structural configuration space with various metastable phases that are not present in the equilibrium phase diagram. This leads not only to the ferroelectric orthorhombic phase with promising applications, but also to various nonp…[Phys. Rev. B 113, 184122] Published Fri May 29, 2026",
+      "url": "http://link.aps.org/doi/10.1103/4m2d-3h2w",
+      "paper_id": "10.1103/4m2d-3h2w",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-05-29T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "First-principles DFT study of HfO₂ phases; background relevance to gate dielectrics but not primary focus",
+      "matched": []
+    },
+    {
+      "title": "Unlocking the performance limits of 2T0C DRAM with Ω-shaped-gated single-crystal In2O3 FETs",
+      "authors": "Shiyue Zuo, Zhengdao Xie, Xu Zhao, Lin Tang, Yidan Zhao, Yu Zeng, Wencheng Niu, Sen Liu, Qingjiang Li, Guanhua Yang, Ling Li, Zhipeng Wei, Cong Ye, Xuming Zou, Xingqiang Liu, Lei Liao, Penghui He",
+      "last_author": "Penghui He",
+      "abstract": "Science Advances, Volume 12, Issue 22, May 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3934?af=R",
+      "paper_id": "10.1126/sciadv.aec3934?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-05-29T15:00:00+00:00",
+      "score": 2,
+      "reason": "In2O3 FET device engineering for DRAM; touches on cluster A (FET channels) but device optimization focus, not first-principles materials physics",
       "matched": []
     },
     {
@@ -152,7 +222,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "DFT+GPU methodology; not in user's MBPT workflow (BerkeleyGW, EPW, QE)",
+      "reason": "Inverse DFT methodology; niche DFT variant outside cluster scope",
       "matched": []
     },
     {
@@ -166,7 +236,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "GPU particle generation for complex geometries; computational geometry, not materials",
       "matched": []
     },
     {
@@ -194,7 +264,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Nearshore wave modeling; fluid mechanics, out of scope",
       "matched": []
     },
     {
@@ -208,7 +278,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Acoustic wave scattering domain embedding; wave physics, not materials",
       "matched": []
     },
     {
@@ -222,7 +292,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Volume-of-Fluid multiphase advection scheme; fluid mechanics",
       "matched": []
     },
     {
@@ -236,7 +306,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Discrete element method for particle mechanics; out of scope (engineering)",
       "matched": []
     },
     {
@@ -250,7 +320,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Porous media flow solver; out of scope (engineering)",
       "matched": []
     },
     {
@@ -292,7 +362,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Battery electrochemistry modeling; capped at 1 per scope (engineering + MBPT-disconnected)",
       "matched": []
     },
     {
@@ -306,7 +376,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Lippmann-Schwinger scattering solver; nuclear/particle physics",
       "matched": []
     },
     {
@@ -320,7 +390,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Boundary element method for elasticity; mechanical engineering",
       "matched": []
     },
     {
@@ -348,7 +418,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Gross-Pitaevskii equation for ultracold atoms; cold-atom quantum info excluded",
       "matched": []
     },
     {
@@ -516,7 +586,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Photoionization rates in plasmas; plasma spectroscopy",
       "matched": []
     },
     {
@@ -562,6 +632,20 @@
       "matched": []
     },
     {
+      "title": "Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Josep Plana-Riu, F. Xavier Trias, Adel Alsalti-Badellou, Xavier Álvarez-Farré, Guillem Colomer, Assensi Oliva",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "CFD optimization; out of scope (fluid mechanics engineering)",
+      "matched": []
+    },
+    {
       "title": "Extrinsic anomalous Hall effect in altermagnets",
       "authors": "Alexander Osin, Alex Levchenko, Maxim Khodas",
       "last_author": "Maxim Khodas",
@@ -572,7 +656,7 @@
       "feed_category": "Nature",
       "published": "2026-05-30T08:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Anomalous Hall effect in altermagnets; topological magnetism outside semiconductor/MBPT focus",
       "matched": []
     },
     {
@@ -586,7 +670,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Gravity/relativity calculation; astrophysics excluded",
       "matched": []
     },
     {
@@ -600,7 +684,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Turbulent combustion solver; out of scope (engineering)",
       "matched": []
     },
     {
@@ -632,20 +716,6 @@
       "matched": []
     },
     {
-      "title": "Gate-tunable spin texture in a Dirac-semimetal–ferromagnetic-semiconductor heterostructure",
-      "authors": "Saurav Islam, Emma Steinebronn, Kaijie Yang, Bimal Neupane, Juan Chamorro, Tanya Berry, Supriya Ghosh, K. Andre Mkhoyan, Tyrel M. McQueen, Yuanxi Wang, Olle Heinonen, Chaoxing Liu, and Nitin Samarth",
-      "last_author": "Nitin Samarth",
-      "abstract": "Author(s): Saurav Islam, Emma Steinebronn, Kaijie Yang, Bimal Neupane, Juan Chamorro, Tanya Berry, Supriya Ghosh, K. Andre Mkhoyan, Tyrel M. McQueen, Yuanxi Wang, Olle Heinonen, Chaoxing Liu, and Nitin SamarthWe use a concerted theory-experiment effort to investigate the formation of chiral real space spin texture when the archetypal Dirac semimetal ${\\mathrm{Cd}}_{3}{\\mathrm{As}}_{2}$ is interfaced with ${\\mathrm{In}}_{1−x}{\\mathrm{Mn}}_{x}\\mathrm{As}$, a ferromagnetic semiconductor with perpendicular m…[Phys. Rev. B 113, 205434] Published Fri May 29, 2026",
-      "url": "http://link.aps.org/doi/10.1103/rl21-3spb",
-      "paper_id": "10.1103/rl21-3spb",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-05-29T18:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Gel-confined strain amplifies FRET efficiency toward red emission enhancement beyond pressure quenching",
       "authors": "Xihan Yu, Haijing Hu, Ying Xie, Guangming Niu, Xin He, Jingtian Wang, Laizhi Sui, Kaijun Yuan, Kai Wang, Guanjun Xiao, Haotong Wei, Bo Zou",
       "last_author": "Bo Zou",
@@ -655,20 +725,6 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-05-29T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "General Framework Enabling Polarity-Tunable Time-Reversal Symmetric Superconducting Diode Effects in Gate-Defined Homojunctions",
-      "authors": "Hongwei Zhang, Chunsheng Wang, Ran Wang, Senyang Pan, Hengning Wang, Jiaqiang Cai, Yonglai Liu, Zhe Qu, Xiangde Zhu, Wei Ning, Chuanying Xi, Jinglei Zhang, Ning Hao, Guolin Zheng, and Mingliang Tian",
-      "last_author": "Mingliang Tian",
-      "abstract": "Author(s): Hongwei Zhang, Chunsheng Wang, Ran Wang, Senyang Pan, Hengning Wang, Jiaqiang Cai, Yonglai Liu, Zhe Qu, Xiangde Zhu, Wei Ning, Chuanying Xi, Jinglei Zhang, Ning Hao, Guolin Zheng, and Mingliang TianLocal protonic gating in NbSe2 homojunctions induces a time-reversal symmetric superconducting diode effect, enabling the magnetic-field-free control of nonreciprocal critical currents.[Phys. Rev. X 16, 021046] Published Fri May 29, 2026",
-      "url": "http://link.aps.org/doi/10.1103/wm2k-vlvc",
-      "paper_id": "10.1103/wm2k-vlvc",
-      "feed_name": "PRX",
-      "feed_category": "APS",
-      "published": "2026-05-29T18:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -684,7 +740,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Neutrino telescope analysis; astrophysics excluded",
       "matched": []
     },
     {
@@ -796,7 +852,7 @@
       "feed_category": "Nature",
       "published": "2026-05-30T08:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Altermagnetism detection via optical effects; magnetic materials physics outside cluster A-D scope",
       "matched": []
     },
     {
@@ -809,20 +865,6 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-05-29T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Machine-learning-accelerated quantum transport study on the effects of superlattice disorder and strain in a midwave-infrared curved sensor",
-      "authors": "John Glennon, Alexandros Kyrtsos, Mark R. O’Masta, Binh-Minh Nguyen, and Enrico Bellotti",
-      "last_author": "Enrico Bellotti",
-      "abstract": "Author(s): John Glennon, Alexandros Kyrtsos, Mark R. O’Masta, Binh-Minh Nguyen, and Enrico BellottiAn emerging device architecture for infrared imaging is the curved focal-plane array, which benefits from several optical advantages over the traditional flat design. However, the curving process introduces additional strain in the active region, which must be taken into account. Type-II superlattic…[Phys. Rev. Applied 25, 054076] Published Fri May 29, 2026",
-      "url": "http://link.aps.org/doi/10.1103/bz8d-9f4q",
-      "paper_id": "10.1103/bz8d-9f4q",
-      "feed_name": "PR Applied",
-      "feed_category": "APS",
-      "published": "2026-05-29T18:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -894,7 +936,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Molecular laser cooling; cold-atom physics excluded",
       "matched": []
     },
     {
@@ -936,7 +978,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Padé approximation and statistical mechanics; no materials science connection",
       "matched": []
     },
     {
@@ -1006,21 +1048,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Reconfigurable and nonvolatile photo-pyroelectricity in a ceramic-like biaxial molecular ferroelectric via polarization engineering",
-      "authors": "Liwei Tang, Jialu Chen, Yu Ma, Yi Liu, Jingtian Zhang, Junhua Luo, Zhihua Sun",
-      "last_author": "Zhihua Sun",
-      "abstract": "Science Advances, Volume 12, Issue 22, May 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5864?af=R",
-      "paper_id": "10.1126/sciadv.aec5864?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-05-29T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
+      "reason": "CFD solver for turbulent flow; out of scope (engineering, not materials)",
       "matched": []
     },
     {
@@ -1033,20 +1061,6 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-05-29T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Revealing bond level origin of stability in disordered solids from marginal stability to ultrastability",
-      "authors": "Junchao Huang, Jianhua Zhang, Ding Xu, Shiyun Zhang, Hua Tong, Ning Xu",
-      "last_author": "Ning Xu",
-      "abstract": "Nature Communications, Published online: 31 May 2026; doi:10.1038/s41467-026-73939-8Understanding the structural origins of stability in disordered solids is essential for predicting mechanical failure and manipulating their properties, yet the inherent disorder complicates this analysis. This study identifies stabilizing bonds as critical structural features that govern stability across a spectrum from marginal to ultra-stable disordered solids, providing a unified framework for understanding their mechanical behavior.",
-      "url": "https://www.nature.com/articles/s41467-026-73939-8",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-05-31T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1090,7 +1104,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Operator-splitting schemes for stochastic mechanics; pure numerical methods without materials connection",
       "matched": []
     },
     {
@@ -1132,7 +1146,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Smoothed particle hydrodynamics GPU solver; fluid mechanics",
       "matched": []
     },
     {
@@ -1164,26 +1178,12 @@
       "matched": []
     },
     {
-      "title": "UBA1-CDK16: A female-specific chimeric RNA emerging through evolution and involved in immune regulation",
-      "authors": "Xinrui Shi, Loryn Blackburn, Sandeep Singh, Martyna Glowczyk-Gluc, Anam Tajammal, Shafaque Zahra, Shailesh Kumar, Robert Cornelison, Chen Liang, Fujun Qin, Aiqun Liu, Shitong Lin, Yue Tang, Justin Elfman, Thomas Manley, Timothy Bullock, Doris M. Haverstick, Peng Wu, Hui Li",
-      "last_author": "Hui Li",
-      "abstract": "Science Advances, Volume 12, Issue 22, May 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz9784?af=R",
-      "paper_id": "10.1126/sciadv.adz9784?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-05-29T15:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Unexplored phases in ${\\mathrm{HfO}}_{2}$ from first principles",
-      "authors": "Tianhongyi Zhao, Songsong Zhou, and Andrew M. Rappe",
-      "last_author": "Andrew M. Rappe",
-      "abstract": "Author(s): Tianhongyi Zhao, Songsong Zhou, and Andrew M. RappeExperimentally, hafnia (${\\mathrm{HfO}}_{2}$) has shown a complicated structural configuration space with various metastable phases that are not present in the equilibrium phase diagram. This leads not only to the ferroelectric orthorhombic phase with promising applications, but also to various nonp…[Phys. Rev. B 113, 184122] Published Fri May 29, 2026",
-      "url": "http://link.aps.org/doi/10.1103/4m2d-3h2w",
-      "paper_id": "10.1103/4m2d-3h2w",
+      "title": "Thermodynamics in a split Hilbert space: Quantum impurity at the edge of a one-dimensional superconductor",
+      "authors": "Pradip Kattel, Abay Zhakenov, and Natan Andrei",
+      "last_author": "Natan Andrei",
+      "abstract": "Author(s): Pradip Kattel, Abay Zhakenov, and Natan AndreiWe present a full thermodynamic description of a magnetic impurity at the edge of a superconducting wire. We find that, depending on the relative strengths of the impurity and the superconducting bulk couplings, the impurity exhibits four phases: Kondo, Yu-Shiba-Rusinov (YSR) I and II, and local mom…[Phys. Rev. B 113, 195155] Published Fri May 29, 2026",
+      "url": "http://link.aps.org/doi/10.1103/qw2d-k8wv",
+      "paper_id": "10.1103/qw2d-k8wv",
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-05-29T18:00:00+00:00",
@@ -1192,12 +1192,12 @@
       "matched": []
     },
     {
-      "title": "Unlocking the performance limits of 2T0C DRAM with Ω-shaped-gated single-crystal In2O3 FETs",
-      "authors": "Shiyue Zuo, Zhengdao Xie, Xu Zhao, Lin Tang, Yidan Zhao, Yu Zeng, Wencheng Niu, Sen Liu, Qingjiang Li, Guanhua Yang, Ling Li, Zhipeng Wei, Cong Ye, Xuming Zou, Xingqiang Liu, Lei Liao, Penghui He",
-      "last_author": "Penghui He",
+      "title": "UBA1-CDK16: A female-specific chimeric RNA emerging through evolution and involved in immune regulation",
+      "authors": "Xinrui Shi, Loryn Blackburn, Sandeep Singh, Martyna Glowczyk-Gluc, Anam Tajammal, Shafaque Zahra, Shailesh Kumar, Robert Cornelison, Chen Liang, Fujun Qin, Aiqun Liu, Shitong Lin, Yue Tang, Justin Elfman, Thomas Manley, Timothy Bullock, Doris M. Haverstick, Peng Wu, Hui Li",
+      "last_author": "Hui Li",
       "abstract": "Science Advances, Volume 12, Issue 22, May 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3934?af=R",
-      "paper_id": "10.1126/sciadv.aec3934?af=R",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz9784?af=R",
+      "paper_id": "10.1126/sciadv.adz9784?af=R",
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-05-29T15:00:00+00:00",
@@ -1230,7 +1230,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Non-equilibrium plasma GPU solver; plasma physics",
       "matched": []
     },
     {
@@ -1244,7 +1244,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Optical resonator modes; photonics, not semiconductor materials",
       "matched": []
     },
     {
@@ -1286,7 +1286,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Bifurcation analysis for nonlinear PDEs; dynamical systems, not materials physics",
       "matched": []
     },
     {
@@ -1300,7 +1300,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "Reaction-diffusion PDE solver; out of scope (chemical kinetics)",
       "matched": []
     },
     {
