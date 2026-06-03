@@ -17,6 +17,7 @@ import json
 import logging
 import os
 import re
+import signal
 import socket
 import subprocess
 from collections import OrderedDict
@@ -187,6 +188,30 @@ def fetch_all(config: dict) -> list[Paper]:
 
 # ── Claude CLI scoring (1–5 scale) ───────────────────────────
 
+def _kill_group(proc: subprocess.Popen, reap_timeout: int = 10) -> None:
+    """SIGKILL a subprocess AND its whole process group, then reap.
+
+    A bare proc.kill() signals only the direct child. If `claude` spawned
+    helper processes, they survive and keep the stdout pipe open, so the
+    follow-up communicate() blocks forever — that is the morning hang.
+    The child is started with start_new_session=True, making it the group
+    leader, so killpg() takes down claude and every helper at once; the
+    pipe then closes and the reap returns. The reap itself is timeout-
+    bounded so even cleanup cannot hang.
+    """
+    try:
+        os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+    except (ProcessLookupError, PermissionError):
+        try:
+            proc.kill()
+        except ProcessLookupError:
+            pass
+    try:
+        proc.communicate(timeout=reap_timeout)
+    except Exception:
+        pass  # group is already dead; never block on cleanup
+
+
 def score_batch(
     profile_text: str,
     papers: list[tuple[int, Paper]],
@@ -234,18 +259,27 @@ def score_batch(
         '[{"index":1,"score":4,"reason":"..."}, {"index":2,"score":1}]'
     )
 
+    proc = None
     try:
-        result = subprocess.run(
+        proc = subprocess.Popen(
             ["claude", "--print", "--model", "haiku"],
-            input=prompt,
-            capture_output=True, text=True, timeout=120,
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            text=True,
+            start_new_session=True,  # own process group → kill claude AND its helpers together
         )
-        if result.returncode != 0:
-            logger.error(f"Claude CLI error (rc={result.returncode}): {result.stderr[:500]}")
-            logger.error(f"Claude CLI stdout: {result.stdout[:500]}")
+        try:
+            stdout_raw, stderr_raw = proc.communicate(input=prompt, timeout=120)
+        except subprocess.TimeoutExpired:
+            _kill_group(proc)  # kill the whole group, not just claude — else the reap hangs
+            logger.error("Claude CLI timed out (process group killed)")
             return {}
 
-        output = result.stdout.strip()
+        if proc.returncode != 0:
+            logger.error(f"Claude CLI error (rc={proc.returncode}): {stderr_raw[:500]}")
+            logger.error(f"Claude CLI stdout: {stdout_raw[:500]}")
+            return {}
+
+        output = stdout_raw.strip()
         # Extract JSON array from response
         match = re.search(r'\[.*\]', output, re.DOTALL)
         if not match:
@@ -266,12 +300,13 @@ def score_batch(
             if idx is not None:
                 results[idx] = (sc, reason)
         return results
-    except subprocess.TimeoutExpired:
-        logger.error("Claude CLI timed out")
     except json.JSONDecodeError as e:
         logger.error(f"Failed to parse Claude CLI JSON: {e}")
     except Exception as e:
         logger.error(f"Claude CLI scoring error: {e}")
+    finally:
+        if proc is not None and proc.poll() is None:
+            _kill_group(proc)  # never leave a live claude/helper behind
     return {}
 
 
