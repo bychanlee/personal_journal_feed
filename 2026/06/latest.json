@@ -1,6 +1,20 @@
 {
-  "generated": "2026-06-15T11:16:19.826859+00:00",
+  "generated": "2026-06-15T12:04:50.168399+00:00",
   "papers": [
+    {
+      "title": "Large Language Model Based Agent for Automated Discovery in Computational Physics",
+      "authors": "Hang Lin, Chongwen Liu, Gang Yan",
+      "last_author": "Gang Yan",
+      "abstract": "arXiv:2606.14266v1 Announce Type: new Abstract: Scientific discovery in computational physics can often be framed as the optimization of quantitatively evaluable objectives subject to physical constraints. While researchers excel at formulating such problems, they frequently devote substantial effort to iterative refinement of methods and solution strategies. To accelerate this process, we introduce PhyNex, an autonomous agent that systematically explores the solution space of scorable scientific tasks by coupling large language model (LLM)-guided search with domain-specific computational tools that enforce physical consistency. PhyNex operates via progressive local search, accumulates reusable knowledge from both successful and failed attempts, and produces interpretable exploration trajectories that reveal which algorithmic components drive performance improvements. We validate PhyNex on three representative and scientifically important problems: predicting frequency-dependent dielectric spectra of semiconductors from crystal structure, designing probabilistic-circuit heuristics for Max-Cut on graphs, and optimizing charging protocols for Dicke quantum batteries in the chaotic coupling regime. Across the three tasks, PhyNex autonomously identifies solutions that match or exceed state-of-the-art approaches designed by human scientists, yielding search-averaged improvements of up to 3.8\\% in spectral similarity, up to 15.0\\% in normalized mean cut for Max-Cut, and 5.9\\% in ergotropy at the $80\\mathrm{k}$ training checkpoint in open exploration. These findings demonstrate that LLM-based agents with structured, feedback-driven exploration can substantially accelerate the path from problem specification to effective implementation, suggesting a practical division of labor in which scientists define objectives and constraints while automated systems navigate the methodological search space.",
+      "url": "https://arxiv.org/abs/2606.14266",
+      "paper_id": "2606.14266",
+      "feed_name": "physics.comp-ph",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 5,
+      "reason": "LLM agents for computational physics directly addresses cluster C research focus on AI workflow automation for ab initio calculations",
+      "matched": []
+    },
     {
       "title": "A Robust Agentic Framework for Expert-Level Automation of Atomistic Simulations",
       "authors": "Yutack Park, Yeonwoo Chung, Jinmu You, Jisu Kim, Suyeon Ju, Seungwu Han",
@@ -11,8 +25,8 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
-      "score": 5,
-      "reason": "LLM agents for expert-level autonomous ab initio simulation workflows; core to cluster C",
+      "score": 4,
+      "reason": "LLM agents for automating atomistic simulations; directly relevant to cluster C (AI agents for computational workflows)",
       "matched": []
     },
     {
@@ -26,7 +40,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 4,
-      "reason": "Real-time TDDFT methodology (cluster D high-priority topic) with GPU-accelerated heterogeneous implementation for ab initio excited-state dynamics",
+      "reason": "GPU-accelerated real-time TDDFT in ABACUS—directly hits high-priority topics D:methodology (TDDFT / ultrafast exciton dynamics) and D:HPC (GPU porting of ab initio codes).",
       "matched": []
     },
     {
@@ -39,22 +53,22 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 4,
-      "reason": "Ab initio thermal transport with phonon renormalization and DFPT directly relevant to cluster A electron-phonon physics and cluster D methodology",
+      "score": 3,
+      "reason": "Ab initio thermal transport with phonon renormalization and anharmonicity; directly relevant to [D:methodology] and electron-phonon [A:Bi2O2Se]",
       "matched": []
     },
     {
-      "title": "Large Language Model Based Agent for Automated Discovery in Computational Physics",
-      "authors": "Hang Lin, Chongwen Liu, Gang Yan",
-      "last_author": "Gang Yan",
-      "abstract": "arXiv:2606.14266v1 Announce Type: new Abstract: Scientific discovery in computational physics can often be framed as the optimization of quantitatively evaluable objectives subject to physical constraints. While researchers excel at formulating such problems, they frequently devote substantial effort to iterative refinement of methods and solution strategies. To accelerate this process, we introduce PhyNex, an autonomous agent that systematically explores the solution space of scorable scientific tasks by coupling large language model (LLM)-guided search with domain-specific computational tools that enforce physical consistency. PhyNex operates via progressive local search, accumulates reusable knowledge from both successful and failed attempts, and produces interpretable exploration trajectories that reveal which algorithmic components drive performance improvements. We validate PhyNex on three representative and scientifically important problems: predicting frequency-dependent dielectric spectra of semiconductors from crystal structure, designing probabilistic-circuit heuristics for Max-Cut on graphs, and optimizing charging protocols for Dicke quantum batteries in the chaotic coupling regime. Across the three tasks, PhyNex autonomously identifies solutions that match or exceed state-of-the-art approaches designed by human scientists, yielding search-averaged improvements of up to 3.8\\% in spectral similarity, up to 15.0\\% in normalized mean cut for Max-Cut, and 5.9\\% in ergotropy at the $80\\mathrm{k}$ training checkpoint in open exploration. These findings demonstrate that LLM-based agents with structured, feedback-driven exploration can substantially accelerate the path from problem specification to effective implementation, suggesting a practical division of labor in which scientists define objectives and constraints while automated systems navigate the methodological search space.",
-      "url": "https://arxiv.org/abs/2606.14266",
-      "paper_id": "2606.14266",
-      "feed_name": "physics.comp-ph",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 4,
-      "reason": "LLM agents for automated discovery in computational physics — directly aligned with cluster C (AI agents for scientific workflows)",
+      "title": "Semi-empirical pseudopotential method for monolayer transition metal dichalcogenides",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Raj Kumar Paudel, Chung-Yuan Ren, Yia-Chung Chang",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002225?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 3,
+      "reason": "Semi-empirical pseudopotential band structure for monolayer TMDs; related to 2D semiconductor electronic structure methodology [A:layered-FET]",
       "matched": []
     },
     {
@@ -67,64 +81,22 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
-      "score": 4,
-      "reason": "Computational workflows integrating theory/experiment/data for materials discovery; directly relevant to cluster C",
+      "score": 3,
+      "reason": "HPC/workflow infrastructure trends for materials discovery; cluster C (AI agents) tangential",
       "matched": []
     },
     {
-      "title": "Epstein zeta method for many-body lattice sums",
-      "authors": "Andreas A. Buchheit, Jonathan K. Busse",
-      "last_author": "Jonathan K. Busse",
-      "abstract": "arXiv:2504.11989v2 Announce Type: replace-cross Abstract: Many-body interactions arise naturally in the perturbative treatment of classical and quantum many-body systems and play a crucial role in the description of condensed matter systems. In the case of three-body interactions, the Axilrod-Teller-Muto (ATM) potential is highly relevant for the quantitative prediction of material properties. This work solves the long-standing issue of the numerical computation of the resulting energies in $d$-dimensional lattice systems. We present an efficiently computable representation of many-body lattice sums in terms of singular integrals over products of Epstein zeta functions. For three-body interactions in three dimensions, this approach reduces the runtime for computing the ATM lattice sum from weeks to minutes. Our approach further extends to a broad class of $n$-body lattice sums. We demonstrate that the computational cost of our method only increases linearly with $n$, evading the exponential increase in complexity of direct summation. We discuss techniques for numerically computing the arising singular integrals and compare the accuracy of our results against computable special cases and against direct summation in low dimensions, achieving full precision for exponents greater than the system dimension. Finally, we apply our method to study the stability of a three-dimensional lattice system with Lennard-Jones two-body interactions under the inclusion of an ATM three-body term at finite pressure, finding a transition from the face-centered-cubic to the body-centered-cubic lattice structure with increasing ATM coupling strength. This work establishes both the numerical and analytical foundation for an ongoing investigation into the influence of many-body interactions on the stability of matter.",
-      "url": "https://arxiv.org/abs/2504.11989",
-      "paper_id": "2504.11989",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
+      "title": "invDFT : A CPU-GPU massively parallel tool to find exact exchange-correlation potentials from groundstate densities",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Vishal Subramanian, Bikash Kanungo, Vikram Gavini",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002006?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 3,
-      "reason": "Many-body lattice sum acceleration methods; relevant to cluster D computational acceleration",
-      "matched": []
-    },
-    {
-      "title": "Extreme-Scale Atomistic Simulation of Real-Temperature Magnetic Skyrmion Dynamics by Coupled Spin-Lattice Modeling",
-      "authors": "Pin Chen, Cheng-bing Chen, Hai Liu, Yuewen Huang, Kangyou Zhong, Hai-Jun Zhao, Liu-Liu Han, Guixin Guo, Jiang Li, Dan Huang, Ben Xu, Yutong Lu",
-      "last_author": "Yutong Lu",
-      "abstract": "arXiv:2606.14073v1 Announce Type: cross Abstract: Real-temperature topological magnetic dynamics in functional materials is governed by coupled lattice and spin evolution, yet remains inaccessible to predictive simulation at device-relevant scales. As a flagship example, thermally driven helix-to-skyrmion transformation in FeGe requires atomistic resolution, explicit lattice motion, and micrometer-scale domains to resolve device-scale topological texture formation. We combine a spin-constrained density-functional-theory-trained neuro-evolution potential with a structure-preserving spin-lattice integrator within one machine-learned framework. Architecture-specific optimizations, kernel fusion, SVE2 vectorization, and NUMA-aware data layout deliver a seven orders-of-magnitude speedup over prior spin-aware methods. Deployed on LineShine exascale supercomputer, the full application scales to 12.45 million CPU cores with 89.7% weak-scaling efficiency, enabling simulations of 1.34 trillion atoms and an equal number of spins while reaching 48.5 PFLOPS in double precision. The simulations directly resolve real-temperature skyrmion nucleation and reorganization at previously inaccessible scales, establishing a new regime for predictive simulation of coupled spin-lattice topological magnetic dynamics.",
-      "url": "https://arxiv.org/abs/2606.14073",
-      "paper_id": "2606.14073",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 3,
-      "reason": "Exascale HPC for atomistic simulations; tangential to cluster D exascale acceleration",
-      "matched": []
-    },
-    {
-      "title": "Lone-Pair-Induced Lattice Softness Enables Ultralow Thermal Conductivity in Hybrid Organic-Inorganic Perovskite GuaPbI$_3$",
-      "authors": "Rudra P. Singh, Shantanu Pathak, Saswata Bhattacharya, R Lakshmi Narayan",
-      "last_author": "R Lakshmi Narayan",
-      "abstract": "arXiv:2606.13561v2 Announce Type: replace Abstract: Thermal conductivity ($\\kappa$) minimization of inorganic thermoelectrics can only be achieved to a certain extent via nanostructural engineering. Here, we introduce a lone-pair-driven materials design strategy based on chemically induced lattice softness to develop hybrid organic-inorganic perovskites with ultra-low $\\kappa$. A physics-guided symbolic-regression machine-learning framework identifies a lone-pair-dominated compositional regime statistically associated with suppressed lattice $\\kappa$ and selects $\\text{GuaPbI}_3$ as a candidate material. Mechanochemical synthesis yields $\\text{GuaPbI}_3$ with an ultra-low room-temperature $\\kappa \\approx 0.088\\text{ W m}^{-1}\\text{ K}^{-1}$. Electrical measurements reveal electronically active, bias-dependent bulk conduction pathways despite strong phonon suppression, while impedance spectroscopy confirms predominantly bulk-dominated transport. Density functional theory calculations indicate weakly dispersive valence bands, pronounced valence-conduction asymmetry, and localized electrostatic microenvironments arising from lattice charge redistribution. Calculated transport coefficients suggest strong sensitivity of carrier transport to chemical potential, while Lorenz-number analysis reveals deviations from conventional Wiedemann-Franz behavior near band edges. These observations indicate that lone-pair-rich hybrid frameworks generate intrinsically soft and electronically heterogeneous lattice environments capable of strongly suppressing phonon transport while preserving electronically accessible states. This work establishes chemically induced lattice softness as a viable design principle for identifying ultralow-thermal-conductivity hybrid materials without relying on nanostructuring or extrinsic disorder engineering.",
-      "url": "https://arxiv.org/abs/2606.13561",
-      "paper_id": "2606.13561",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 3,
-      "reason": "Perovskite thermal conductivity via DFPT; related to cluster B photovoltaic absorbers",
-      "matched": []
-    },
-    {
-      "title": "Resolving Finite-Size Errors in EOM-CCSD Band Gaps of Solids with Interacting-Bath Dynamical Embedding Theory",
-      "authors": "Jiachen Li, Christopher Hillenbrand, Christian Venturella, Enzhi Chen, Tianyu Zhu",
-      "last_author": "Tianyu Zhu",
-      "abstract": "arXiv:2606.12621v2 Announce Type: replace Abstract: Periodic equation-of-motion coupled-cluster theory with single and double excitations (EOM-CCSD) has shown promise for quantitative calculations of band structures in solids. However, its steep computational scaling has limited calculations to relatively coarse $k$-point meshes, leading to sizable finite-size errors and discrepant estimates of thermodynamic-limit band gaps in recent benchmarks. In this work, we revisit EOM-CCSD band gaps for ten semiconductors and insulators using interacting-bath dynamical embedding theory (ibDET), a systematically improvable Green's function embedding framework that enables dense Brillouin-zone sampling at modest computational cost. By pushing the $k$-point sampling up to $10\\times10\\times10$, well beyond the system sizes accessible in canonical periodic EOM-CCSD calculations, we significantly reduce finite-size errors and obtain stable thermodynamic-limit extrapolations. We further compare $G_0W_0$@PBE, $G_0W_0$@HF, and EOM-CCSD on an equal footing using the same numerical settings in PySCF. We find that EOM-CCSD yields a mean absolute error of 0.32 eV relative to experimental band gaps for a test set of ten semiconductors and insulators, lower than that of $G_0W_0$@PBE. For ZnO, EOM-CCSD also accurately describes the Zn $3d$-band binding energy, despite overestimating the band gap. These results demonstrate that ibDET offers a practical route to high-accuracy many-body electronic structure calculations in periodic systems.",
-      "url": "https://arxiv.org/abs/2606.12621",
-      "paper_id": "2606.12621",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 3,
-      "reason": "EOM-CCSD band gap methodology; MBPT-adjacent approach for electronic structure",
+      "reason": "GPU-accelerated XC potential inversion from DFT densities; DFT+GPU methodology related to [D:HPC] and MBPT preprocessing",
       "matched": []
     },
     {
@@ -138,7 +110,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "p-wave magnetism and Berry curvature; topological magnetism background",
+      "matched": []
+    },
+    {
+      "title": "Breaking symmetry yields a low-loss out-of-plane tunable microwave dielectric",
+      "authors": "Florian Bergmann, Matthew R. Barone, Zishen Tian, Aiden Ross, Gerhard H. Olsen, Meagan C. Papac, Samuel Freed, Bryan T. Bosworth, Nicholas R. Jungwirth, Eric J. Marksz, Tomasz M. Karpisz, Angela C. Stelson, Noah Schnitzer, Lopa Bhatt, Dylan Sotir, Akash Surampalli, Veronica Goian, Christelle Kadlec, Asher Hansen, Nathan Rongitsch, Dmitri A. Tenne, Stanislav Kamba, David A. Muller, Ichiro Takeuchi, Long-Qing Chen, Lane W. Martin, Nathan D. Orloff, Darrell G. Schlom",
+      "last_author": "Darrell G. Schlom",
+      "abstract": "Nature Electronics, Published online: 15 June 2026; doi:10.1038/s41928-026-01651-yBy breaking the out-of-plane symmetry of a Ruddlesden–Popper thin film, a low-loss and tunable microwave dielectric can be created that is compatible with an out-of-plane parallel-plate varactor design.",
+      "url": "https://www.nature.com/articles/s41928-026-01651-y",
+      "paper_id": "",
+      "feed_name": "Nat. Electron.",
+      "feed_category": "Nature",
+      "published": "2026-06-15T08:00:00+00:00",
+      "score": 2,
+      "reason": "Tunable dielectric materials; materials science but no MBPT methodology",
       "matched": []
     },
     {
@@ -152,21 +138,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Wannier-based Berry curvature code is background methodology but focused on topological properties rather than GW/EPW",
+      "reason": "First-principles Berry curvature transport code; related to electronic structure but not MBPT focus",
       "matched": []
     },
     {
-      "title": "Closed-loop discovery of out-of-distribution processing protocols by evolutionary search and uncertainty-aware learning",
-      "authors": "Yu Liu, Stanislav Udovenko, Ching-Che Lin, Jaegyu Kim, Lane W. Martin, Susan Trolier-McKinstry, Sergei V. Kalinin",
-      "last_author": "Sergei V. Kalinin",
-      "abstract": "arXiv:2606.13859v1 Announce Type: new Abstract: Many materials and chemical systems exhibit history-dependent responses, where functional outcomes are governed not only by final-state variables but by the time-dependent sequence of fields, temperatures, or chemical potentials applied during operation. Discovering new processing protocols is therefore a high-dimensional search problem in which the control variable is an entire waveform or sample history, and conventional strategies either remain confined to conservative interpolative families or become prohibitively measurement intensive. Here, a closed-loop workflow is introduced that couples evolutionary search over a compact waveform representation with uncertainty-aware deep kernel learning to generate, rank, and experimentally validate candidate protocols. Applied to ferroelectric thin films, with the scanning-probe tip-bias waveform as the protocol and the nonlinear electromechanical response as the reward, the workflow discovers waveform families that enhance nonlinearity by de-aging the film. Spatially resolved before/after measurements show that the best-performing waveforms selectively activate pre-existing, weakly pinned domain-wall segments, whereas the worst drive long-range irreversible switching. This framework reframes protocol tuning as out-of-distribution discovery, generalizable to synthesis and annealing trajectories, battery formation protocols, and other high-dimensional control problems.",
-      "url": "https://arxiv.org/abs/2606.13859",
-      "paper_id": "2606.13859",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
+      "title": "ChemNetworks: New Capabilities for High-Throughput, Real-Time Chemical Graph Construction and Analysis",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: Available online 9 June 2026Source: Computer Physics CommunicationsAuthor(s): Daniel J. Pope, Jackson Elowitt, Bo Zhang, Manish Parashar, Aurora E. Clark",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002341?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 2,
-      "reason": "",
+      "reason": "High-throughput chemical graph analysis—tangential to high-throughput screening, but chemical/molecular focus outside first-principles materials scope.",
       "matched": []
     },
     {
@@ -177,6 +163,20 @@
       "url": "https://arxiv.org/abs/2606.13831",
       "paper_id": "2606.13831",
       "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 2,
+      "reason": "Computational spectroscopy (EELS); background methodology topic, not MBPT clusters",
+      "matched": []
+    },
+    {
+      "title": "Computational regimes in matrix-product-state-based quantum trajectory simulations",
+      "authors": "Aaron Sander, Simon Cichy, Martin Eigel, Jens Eisert, Maximilian Fr\\\"ohlich, Tom Peham, Robert Wille",
+      "last_author": "Robert Wille",
+      "abstract": "arXiv:2606.13779v1 Announce Type: cross Abstract: Efficient simulation of open quantum systems is central to modeling noisy quantum hardware and many-body dynamics. In trajectory-based tensor network methods, cost is often associated with trajectory-level quantities such as entanglement growth or bond dimension. However, the total cost of a fixed-accuracy simulation also depends on statistical sampling, and the interplay between per-trajectory complexity and sampling effort remains poorly understood. Here we introduce a cost-resolved framework for matrix product state (MPS)-based quantum trajectory simulations that decomposes total cost into memory per trajectory, runtime per trajectory, and sampling effort. We show that physically equivalent stochastic unravelings of the same Lindblad dynamics do not necessarily reduce total cost, but instead redistribute cost between trajectory complexity and statistical convergence. This trade-off is quantified by two dimensionless inflation factors: a bond dimension inflation $\\alpha$ and a sampling inflation $\\kappa$, which together determine the preferred unraveling under hardware-dependent memory and parallelism constraints. We provide a practical protocol for extracting $(\\alpha,\\kappa)$ from modest pilot simulations and demonstrate it using benchmarks across multiple noise channels. The resulting decision maps show that the computationally favorable unraveling can change with noise strength, time-step resolution, system size, and available parallelism. These results establish unraveling choice as a hardware-aware simulation design problem rather than an intrinsic optimization of trajectory entanglement alone.",
+      "url": "https://arxiv.org/abs/2606.13779",
+      "paper_id": "2606.13779",
+      "feed_name": "physics.comp-ph",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
@@ -194,7 +194,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "DFTB+NEGF transport on 2D goldene; tight-binding model Hamiltonian capped at 2 by method gate",
       "matched": []
     },
     {
@@ -208,7 +208,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Ab initio phonon + magnetism (dynamical multiferroicity); DFPT background methodology",
+      "matched": []
+    },
+    {
+      "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: Available online 12 June 2026Source: Computer Physics CommunicationsAuthor(s): Yongheng Li, Changpeng Lin, Qi Ren, Junyan Liu, Bin Wei, Jiawang Hong",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 2,
+      "reason": "Dynamical structure factor computation—background condensed matter methodology, but no clear connection to GW/BSE/EPW or target materials (Bi2O2Se, chalcohalides, semiconductors).",
       "matched": []
     },
     {
@@ -222,21 +236,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Electron-phonon dynamics in DMFT Mott insulators; strongly-correlated core method capped at 2",
       "matched": []
     },
     {
-      "title": "Evidence of time-reversal symmetry breaking above the charge density wave order in a kagome metal",
-      "authors": "Jaehun Cha, Hyunggeun Lee, Sangjun Sim, Yeahan Sur, Kwang-Tak Kim, Jae-Ho Han, Sun-Woo Kim, Gyubin Lee, Jounghoon Hyun, Chan-young Lim, Yeojin Ahn, Seonggeon Gim, Jonathan D. Denlinger, Sunghun Kim, Kee Hoon Kim, SungBin Lee, Myung Joon Han, Yeongkwan Kim",
-      "last_author": "Yeongkwan Kim",
-      "abstract": "Nature Physics, Published online: 15 June 2026; doi:10.1038/s41567-026-03331-2Time-reversal symmetry breaking in kagome metals remains an open problem. Now, a circulating phase called the loop-current order is shown to break time-reversal symmetry at a temperature well above the charge order transition in CsV3Sb5.",
-      "url": "https://www.nature.com/articles/s41567-026-03331-2",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-15T08:00:00+00:00",
+      "title": "Epstein zeta method for many-body lattice sums",
+      "authors": "Andreas A. Buchheit, Jonathan K. Busse",
+      "last_author": "Jonathan K. Busse",
+      "abstract": "arXiv:2504.11989v2 Announce Type: replace-cross Abstract: Many-body interactions arise naturally in the perturbative treatment of classical and quantum many-body systems and play a crucial role in the description of condensed matter systems. In the case of three-body interactions, the Axilrod-Teller-Muto (ATM) potential is highly relevant for the quantitative prediction of material properties. This work solves the long-standing issue of the numerical computation of the resulting energies in $d$-dimensional lattice systems. We present an efficiently computable representation of many-body lattice sums in terms of singular integrals over products of Epstein zeta functions. For three-body interactions in three dimensions, this approach reduces the runtime for computing the ATM lattice sum from weeks to minutes. Our approach further extends to a broad class of $n$-body lattice sums. We demonstrate that the computational cost of our method only increases linearly with $n$, evading the exponential increase in complexity of direct summation. We discuss techniques for numerically computing the arising singular integrals and compare the accuracy of our results against computable special cases and against direct summation in low dimensions, achieving full precision for exponents greater than the system dimension. Finally, we apply our method to study the stability of a three-dimensional lattice system with Lennard-Jones two-body interactions under the inclusion of an ATM three-body term at finite pressure, finding a transition from the face-centered-cubic to the body-centered-cubic lattice structure with increasing ATM coupling strength. This work establishes both the numerical and analytical foundation for an ongoing investigation into the influence of many-body interactions on the stability of matter.",
+      "url": "https://arxiv.org/abs/2504.11989",
+      "paper_id": "2504.11989",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "Kagome metal CDW/superconductivity explicitly out-of-scope per research profile, capped at 2",
+      "reason": "Many-body lattice sum methodology; mathematical many-body background",
       "matched": []
     },
     {
@@ -250,45 +264,31 @@
       "feed_category": "Nature",
       "published": "2026-06-15T08:00:00+00:00",
       "score": 2,
-      "reason": "2D exciton physics is background topic, but magnetic/magnon focus not in primary research clusters",
+      "reason": "Exciton physics in magnetic semiconductors; background topic but not primary research direction (magnon/magnetization focus)",
       "matched": []
     },
     {
-      "title": "Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Josep Plana-Riu, F. Xavier Trias, Adel Alsalti-Badellou, Xavier Álvarez-Farré, Guillem Colomer, Assensi Oliva",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "Exascale CFD optimization is background HPC interest but CFD-specific, not ab initio code porting",
-      "matched": []
-    },
-    {
-      "title": "Fast contracted Clebsch--Gordan tensor products for equivariant graph neural networks",
-      "authors": "Anton Bochkarev, Yury Lysogorskiy, Ralf Drautz",
-      "last_author": "Ralf Drautz",
-      "abstract": "arXiv:2605.15073v2 Announce Type: replace-cross Abstract: We present an $\\mathcal{O}(L^3)$ algorithm for evaluating contracted Clebsch--Gordan tensor products in $\\mathrm{O}(3)$-equivariant machine learning potentials at fixed Canonical Polyadic (CP) rank. Mapping the angular integral to a structured Gauss--Legendre and Fourier tensor-product grid decouples the radial channel contractions from the angular transforms. The antisymmetric parity-odd Clebsch--Gordan channels, unreachable by the symmetric pointwise product on a scalar $S^2$ grid, are recovered through the surface-curl pairing $\\hat r \\cdot [\\nabla_{S^2} A \\times \\nabla_{S^2} B]$, the spherical Poisson bracket, which supplies the $L=1$ angular momentum on the grid while preserving rotational equivariance. The construction extends to parity-aware equivariant message passing in atomic-cluster-expansion-style architectures and is verified by direct numerical quadrature. The full uncontracted Clebsch--Gordan tensor product remains subject to the $\\mathcal{O}(L^4)$ output-size lower bound. A benchmark shows wall-clock scaling empirically as $L^2$ across the practical $l_{\\max}$ range. For the on-site contraction this is pre-asymptotic, giving way to $L^3$ at large $l_{\\max}$. For message passing it is structural and the runtime is memory-bandwidth bound on $L^2$-sized grid tensors.",
-      "url": "https://arxiv.org/abs/2605.15073",
-      "paper_id": "2605.15073",
+      "title": "Extreme-Scale Atomistic Simulation of Real-Temperature Magnetic Skyrmion Dynamics by Coupled Spin-Lattice Modeling",
+      "authors": "Pin Chen, Cheng-bing Chen, Hai Liu, Yuewen Huang, Kangyou Zhong, Hai-Jun Zhao, Liu-Liu Han, Guixin Guo, Jiang Li, Dan Huang, Ben Xu, Yutong Lu",
+      "last_author": "Yutong Lu",
+      "abstract": "arXiv:2606.14073v1 Announce Type: cross Abstract: Real-temperature topological magnetic dynamics in functional materials is governed by coupled lattice and spin evolution, yet remains inaccessible to predictive simulation at device-relevant scales. As a flagship example, thermally driven helix-to-skyrmion transformation in FeGe requires atomistic resolution, explicit lattice motion, and micrometer-scale domains to resolve device-scale topological texture formation. We combine a spin-constrained density-functional-theory-trained neuro-evolution potential with a structure-preserving spin-lattice integrator within one machine-learned framework. Architecture-specific optimizations, kernel fusion, SVE2 vectorization, and NUMA-aware data layout deliver a seven orders-of-magnitude speedup over prior spin-aware methods. Deployed on LineShine exascale supercomputer, the full application scales to 12.45 million CPU cores with 89.7% weak-scaling efficiency, enabling simulations of 1.34 trillion atoms and an equal number of spins while reaching 48.5 PFLOPS in double precision. The simulations directly resolve real-temperature skyrmion nucleation and reorganization at previously inaccessible scales, establishing a new regime for predictive simulation of coupled spin-lattice topological magnetic dynamics.",
+      "url": "https://arxiv.org/abs/2606.14073",
+      "paper_id": "2606.14073",
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Exascale spin-lattice dynamics simulation; HPC trend but classical magnetism, not MBPT",
       "matched": []
     },
     {
-      "title": "Ferromagnetic Order of Reduced Magnetic Moments in a Frustrated Sawtooth Chain of the Magnetic Semiconductor ZnYb$_2$S$_4$",
-      "authors": "Shinji Okada, Hiroto Suzuki, Nonoka Higa, Yasuyuki Shimura, Takanori Taniguchi, Takahiro Onimaru",
-      "last_author": "Takahiro Onimaru",
-      "abstract": "arXiv:2606.14196v1 Announce Type: cross Abstract: In a sawtooth spin chain, competing nearest- and next-nearest-neighbor interactions suppress long-range order, yielding novel quantum states such as a spin-dimer singlet, 1/2 magnetization plateau, and spin contraction. Here, we investigate the magnetic properties of the orthorhombic semiconductor ZnYb$_2$S$_4$, in which Yb$^{3+}$ ions with an effective spin-1/2 form a sawtooth chain along the $b$-axis. The specific heat exhibits a sharp peak at ${T}_{\\rm m}$ $=$ 1.4 K, at which the magnetic entropy $S_{\\rm m}$ reaches only 27% of $R$ln2. This reduced $S_{\\rm m}$ at $T_{\\rm m}$ indicates the entropy release of the ground state doublet of Yb$^{3+}$ even for $T$ $>$ $T_{\\rm m}$. The isothermal magnetization $M(B)$ at 0.28 K exhibits hysteresis for $\\left|B\\right| \\leq 0.2$ T and increases monotonically for $B > 0.2$ T. The spontaneous magnetization is only 0.1 ${\\it \\mu}_{\\rm B}$$/$Yb, an order of magnitude smaller than that expected for the ground state doublet of Yb$^{3+}$. Moreover, in powder neutron diffraction measurements, no superlattice reflections due to antiferromagnetic order are observed for $T$ $<$ $T_{\\rm m}$. Therefore, in the ground state, the Yb moments are ferromagnetically aligned, but their amplitude is reduced by magnetic frustration in the sawtooth Yb chain.",
-      "url": "https://arxiv.org/abs/2606.14196",
-      "paper_id": "2606.14196",
-      "feed_name": "cond-mat.mtrl-sci",
+      "title": "Extreme-ultraviolet optical response of atomically-thin molybdenum disulfide",
+      "authors": "G. Fiorentini, N. Di Palo, G. Inzani, G. L. Dolso, S. Bonetti, Q. Li, F. Liu, X. Zhu, A. Giglia, N. Mahne, L. Pasquali, M. D'Alessandro, M. Malakhov, M. Camarasa-G\\'omez, J. J. Esteve-Paredes, J. J. Palacios, R. Borrego-Varillas, M. Nisoli, A. Pic\\'on, D. Sangalli, M. Lucchini",
+      "last_author": "M. Lucchini",
+      "abstract": "arXiv:2606.14527v1 Announce Type: new Abstract: We report multi-angle reflectivity measurements in the extreme-ultraviolet (XUV) range for mono- and bilayer MoS$_2$ on a Si$_3$N$_4$ substrate. Using a single-sheet 2D conductivity model, we extract the complex optical response of the MoS$_2$ bilayer between 25 and 90 eV and derive an effective refractive index by introducing a thickness equal to the interlayer spacing. The MoS$_2$ monolayer response is consistently reproduced either by halving the 2D conductivity or the effective thickness, indicating a robust scaling with layer number. The resulting optical constants display a broad resonance at the Mo N$_{2,3}$ edge with no signatures of sharp core-exciton features despite the reduced dimensionality. First-principles calculations reproduce the experimental results and show that local-field (Hartree) effects dominate the XUV response, while screened-exchange (SEX) contributions remain weak and mainly induce spectral shifts. Our analysis demonstrates that excitonic effects play a minor role in the XUV optical response of atomically thin MoS$_2$, highlighting key differences with respect to the visible and infrared regimes, and calling for a reassessment of the use of Mo-based transition metal dichalcogenides in attosecond spectroscopy and XUV excitonics.",
+      "url": "https://arxiv.org/abs/2606.14527",
+      "paper_id": "2606.14527",
+      "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
@@ -306,7 +306,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "First-principles spin defect dynamics; quantum defect physics background",
       "matched": []
     },
     {
@@ -320,7 +320,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Ferroelectric control of spin splitting; spintronics background methodology",
       "matched": []
     },
     {
@@ -334,7 +334,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Non-equilibrium Green's function methods potentially relevant to real-time TDDFT/GW, but likely DMFT-focused and not directly connected to clusters A–D materials or GW-BSE pipelines",
+      "reason": "Non-equilibrium systems simulation; author expertise (Gull, Golež) suggests DMFT focus, capped per out-of-scope—DMFT core methodology.",
       "matched": []
     },
     {
@@ -348,7 +348,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Spin space group symmetry tangentially relevant to cluster D EPW selection rules and Wannier sparsity optimization",
+      "reason": "Spin space groups symmetry tool; potentially useful for MBPT preprocessing but not core methodology",
       "matched": []
     },
     {
@@ -362,7 +362,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Physics-informed neural networks tangentially related to cluster C AI methodology but not MBPT-focused",
+      "reason": "Physics-informed neural networks with liquid residual blocks; AI-for-science methodology but not MBPT-specific",
       "matched": []
     },
     {
@@ -376,7 +376,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "DFPT lattice dynamics under pressure (AlOOH); DFPT methodology background",
       "matched": []
     },
     {
@@ -390,7 +390,21 @@
       "feed_category": "Nature",
       "published": "2026-06-15T08:00:00+00:00",
       "score": 2,
-      "reason": "Moiré superconductivity explicitly out-of-scope per research profile, capped at 2",
+      "reason": "Moiré superconductivity in twisted trilayer graphene; out-of-scope topic capped at 2",
+      "matched": []
+    },
+    {
+      "title": "Lone-Pair-Induced Lattice Softness Enables Ultralow Thermal Conductivity in Hybrid Organic-Inorganic Perovskite GuaPbI$_3$",
+      "authors": "Rudra P. Singh, Shantanu Pathak, Saswata Bhattacharya, R Lakshmi Narayan",
+      "last_author": "R Lakshmi Narayan",
+      "abstract": "arXiv:2606.13561v2 Announce Type: replace Abstract: Thermal conductivity ($\\kappa$) minimization of inorganic thermoelectrics can only be achieved to a certain extent via nanostructural engineering. Here, we introduce a lone-pair-driven materials design strategy based on chemically induced lattice softness to develop hybrid organic-inorganic perovskites with ultra-low $\\kappa$. A physics-guided symbolic-regression machine-learning framework identifies a lone-pair-dominated compositional regime statistically associated with suppressed lattice $\\kappa$ and selects $\\text{GuaPbI}_3$ as a candidate material. Mechanochemical synthesis yields $\\text{GuaPbI}_3$ with an ultra-low room-temperature $\\kappa \\approx 0.088\\text{ W m}^{-1}\\text{ K}^{-1}$. Electrical measurements reveal electronically active, bias-dependent bulk conduction pathways despite strong phonon suppression, while impedance spectroscopy confirms predominantly bulk-dominated transport. Density functional theory calculations indicate weakly dispersive valence bands, pronounced valence-conduction asymmetry, and localized electrostatic microenvironments arising from lattice charge redistribution. Calculated transport coefficients suggest strong sensitivity of carrier transport to chemical potential, while Lorenz-number analysis reveals deviations from conventional Wiedemann-Franz behavior near band edges. These observations indicate that lone-pair-rich hybrid frameworks generate intrinsically soft and electronically heterogeneous lattice environments capable of strongly suppressing phonon transport while preserving electronically accessible states. This work establishes chemically induced lattice softness as a viable design principle for identifying ultralow-thermal-conductivity hybrid materials without relying on nanostructuring or extrinsic disorder engineering.",
+      "url": "https://arxiv.org/abs/2606.13561",
+      "paper_id": "2606.13561",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 2,
+      "reason": "Perovskite thermal conductivity via phonon softness; cluster B (PV absorbers) tangential background on lattice dynamics",
       "matched": []
     },
     {
@@ -404,35 +418,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "ML force fields without MBPT connection explicitly capped at 2 per research profile",
-      "matched": []
-    },
-    {
-      "title": "Machine Learning Accelerated SSNEB for Efficient Minimum Energy Pathway Calculations",
-      "authors": "Yu Zhang, Guanzhi Li, Minkyung Han, Sean Gasiorowski, Daniel Ratner, Chunjing Jia, Yu Lin",
-      "last_author": "Yu Lin",
-      "abstract": "arXiv:2606.13917v1 Announce Type: new Abstract: Metastable states and their minimum energy pathways (MEPs) are central to understanding transformations and phase stability in complex materials, yet mapping transition pathways between competing states remains computationally demanding and experimentally challenging. Here, we introduce a hybrid solid-state nudged elastic band (SSNEB) framework that integrates two pretrained machine learning models, EquiformerV2 (eqV2) and the equivariant Smooth Energy Network (eSEN), with DFT for energy, force, and stress evaluations. Applied to three solid-state systems, CsPbI$_3$, GaN, and TiO$_2$, our framework achieves up to a 7-fold speedup while converging to the same pathways predicted by first-principles calculations. Moreover, the hybrid SSNEB framework enables systematic benchmarking of existing ML models, providing both efficiency and reliability for predicting MEPs across various materials.",
-      "url": "https://arxiv.org/abs/2606.13917",
-      "paper_id": "2606.13917",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Machine-learned dynamics of surface polarons at reduced oxide surfaces",
-      "authors": "Luca Leoni, Cesare Franchini",
-      "last_author": "Cesare Franchini",
-      "abstract": "arXiv:2606.13833v1 Announce Type: new Abstract: Reducible oxides exhibit a rich interplay of electronic, structural, and chemical properties that underpins applications in catalysis, photovoltaics, batteries, and energy storage. This interplay is strongly shaped by excess electrons, often introduced by oxygen vacancies, that localize as small polarons and influence charge transport and surface chemistry. At surfaces, these polarons play a central role in charge localization, mobility, and reactivity, yet their finite-temperature dynamics remain difficult to access from first principles. Ab initio molecular dynamics is typically limited to picosecond time scales, precluding statistically meaningful sampling of polaron hopping dynamics. To overcome this limitation, we extend machine-learning-assisted polaron dynamics [V. Birschitzky et al., Phys. Rev. Lett. 134, 216301 (2025)] to redox-active oxide surfaces, using oxygen-deficient rutile TiO2(110) as a paradigmatic case. By accessing several nanoseconds of dynamics over a range of temperatures, we show that small-polaron mobility at the reduced rutile TiO2(110) surface is suppressed by several orders of magnitude relative to the corresponding bulk material, providing a microscopic interpretation of the lower electron mobilities observed in porous rutile TiO2 compared with single-crystal samples. This suppressed mobility arises from the loss of favorable hopping pathways: surface polaron motion is largely confined to planar inter-row trajectories within the second topmost layers, with only rare interlayer hopping events. Oxygen vacancies further reshape the polaron free-energy landscape by acting as attractive centers for excess electrons, biasing the polaron distribution toward nearby Ti sites and promoting occasional charge transfer to the outermost surface layer. These results establish a transferable machine-learning strategy for investigating polaron dynamics in reducible oxides.",
-      "url": "https://arxiv.org/abs/2606.13833",
-      "paper_id": "2606.13833",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "MD with machine learning potentials; MLIP/MLFF without MBPT connection, out-of-scope capped at 2",
       "matched": []
     },
     {
@@ -446,21 +432,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Moiré electronic structure explicitly out-of-scope per research profile, capped at 2",
-      "matched": []
-    },
-    {
-      "title": "Multi-modal machine learning analysis of GaSe molecular beam epitaxy growth conditions",
-      "authors": "Mingyu Yu, Isaiah A. Moses, Wesley F. Reinhart, Stephanie Law",
-      "last_author": "Stephanie Law",
-      "abstract": "arXiv:2606.13900v1 Announce Type: new Abstract: Autonomous synthesis platforms integrating machine learning with in situ diagnostics have the potential to revolutionize thin-film growth by enabling real-time process optimization and reducing the need for manual tuning. However, their application to molecular beam epitaxy (MBE) remains underdeveloped. Here, we present a machine learning-guided framework for MBE growth of GaSe films, leveraging reflection high-energy electron diffraction (RHEED) as an in situ diagnostic alongside ex situ characterization via X-ray diffraction and atomic force microscopy. Unsupervised learning on RHEED patterns reveals a well-defined boundary between high- and low-quality samples, capturing physically meaningful features. Mutual information analysis shows a strong correlation between RHEED embeddings and rocking curve full-width at half-maximum (fwhm), while the correlation with AFM root-mean-square (RMS) roughness is weak. Among key growth conditions, growth rate most strongly influences fwhm, whereas the Se/Ga flux ratio primarily affects RMS roughness and the RHEED embeddings. Supervised learning models trained to predict fwhm and RMS roughness demonstrate moderate accuracy, with significant improvement achieved by incorporating RHEED embeddings. Furthermore, anomaly detection via residual analysis in supervised learning aligns well with unsupervised classification from RHEED, reinforcing the reliability of the predictive models. This study establishes a data-driven framework for machine learning-assisted MBE, paving the way for real-time process control and accelerated optimization of thin-film synthesis.",
-      "url": "https://arxiv.org/abs/2606.13900",
-      "paper_id": "2606.13900",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Moiré electronic structure; moiré/twisted bilayer physics out-of-scope capped at 2",
       "matched": []
     },
     {
@@ -474,7 +446,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "2D ferroelectric Edelstein/spin Hall effect; 2D ferroelectric background",
       "matched": []
     },
     {
@@ -488,21 +460,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Orbital Hall conductivity and relaxation in thin films with variable disorder",
-      "authors": "Min-Gu Kang, Federica Nasr, Giacomo Sala, Richard Schlitz, Shilei Ding, Stefan Bartsch, Marta D. Rossell, Santos F. Alvarado, Pietro Gambardella",
-      "last_author": "Pietro Gambardella",
-      "abstract": "Nature Physics, Published online: 15 June 2026; doi:10.1038/s41567-026-03334-zThe role of disorder in orbital angular momentum transport induced by electric fields is not well understood. Now orbital Hall conductivity and orbital relaxation are shown to be robust even in strongly disordered thin films.",
-      "url": "https://www.nature.com/articles/s41567-026-03334-z",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-15T08:00:00+00:00",
-      "score": 2,
-      "reason": "Orbital transport in solids tangentially related but not in primary research clusters",
+      "reason": "Deep RL for skyrmion stabilization; AI applied to magnetism, tangential to cluster C but not MBPT",
       "matched": []
     },
     {
@@ -513,20 +471,6 @@
       "url": "https://arxiv.org/abs/2606.13849",
       "paper_id": "2606.13849",
       "feed_name": "physics.comp-ph",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "Coupled-cluster optical excitations — background methodology for spectroscopy (not GW/BSE)",
-      "matched": []
-    },
-    {
-      "title": "Oxygen deficiency and valency reconstruction in multiferroic V-doped HfO$_2$",
-      "authors": "Vincenzo Fiorentini",
-      "last_author": "Vincenzo Fiorentini",
-      "abstract": "arXiv:2606.13950v1 Announce Type: new Abstract: The interplay of oxygen deficiency and vanadium multiple valency in the candidate multiferroic V-doped $Pca2_1$ hafnia HfO$_2$ is studied by first-principles calculations. Low-lying V majority gap states accept electrons from oxygen-vacancy donors, reducing their formation energy, and converting nominal V$^{4+}$ centers into V$^{3+}$. The resulting local magnetization and screening changes are reflected in the calculated V core-level shifts, which are consistent with the experimentally observed XPS signatures. The calculated V$^{3+}$/V$^{4+}$ population ratio determined by oxygen vacancies only matches experiment in reducing conditions, suggesting that additional electron reservoirs may contribute under ALD growth conditions. A similar scenario also seems to apply to the recently observed multiferroicity in Cr-doped hafnia, where oxygen deficiency is intrinsic to the growth technique.",
-      "url": "https://arxiv.org/abs/2606.13950",
-      "paper_id": "2606.13950",
-      "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
@@ -544,7 +488,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "General PINN framework tangentially related to cluster C AI methodology but not MBPT-specific",
+      "reason": "Physics-informed neural networks for general PDEs; AI-for-science but not MBPT-specific",
       "matched": []
     },
     {
@@ -558,7 +502,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "ML-accelerated PDE solving tangentially related to cluster C AI methodology but not MBPT workflow automation",
+      "reason": "Physics-integrated learning for PDE simulations; AI-for-science but generic, not MBPT-focused",
       "matched": []
     },
     {
@@ -572,7 +516,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "2D ferromagnet anomalous Hall effect; tangential 2D materials background",
       "matched": []
     },
     {
@@ -586,7 +530,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Antiferromagnet p-wave spin splitting; antiferromagnetism background",
       "matched": []
     },
     {
@@ -600,17 +544,31 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Eigenvalue iteration tangentially relevant to cluster D GW/BSE scaling but is generic numerical methodology",
+      "reason": "Eigenvalue solver for Hermitian problems; potentially useful for GW diagonalization but generic methodology",
       "matched": []
     },
     {
-      "title": "SR-CGCNN: Shared Recurrent Convolution in Crystal Graph Neural Networks for Materials Property Prediction",
-      "authors": "Satadeep Bhattacharjee",
-      "last_author": "Satadeep Bhattacharjee",
-      "abstract": "arXiv:2605.01304v3 Announce Type: replace Abstract: Crystal graph neural networks predict materials properties by propagating information through local atomic environments. In conventional crystal graph convolutional neural networks (CGCNNs), this propagation depth is increased by stacking independently parameterized convolutional layers. This coupling between message-passing depth and parameter count raises a simple question: can repeated application of the same learned local update recover most of the benefit of a deeper CGCNN? We address this question by introducing a shared-recurrent CGCNN (SR-CGCNN), in which the main crystal-graph convolutional weights are tied across recurrent message-passing steps. The graph construction, pooling operation, and prediction head are kept unchanged, allowing a controlled comparison with standard CGCNN baselines. On Materials Project-derived formation-energy and band-gap datasets, a three-step SR-CGCNN approaches the accuracy of a standard three-layer CGCNN while using only $34.5\\%$ of its trainable convolutional parameters. The formation-energy test mean absolute error changes from $0.0945$ to $0.0986~\\mathrm{eV\\,atom^{-1}}$, while the band-gap error changes from $0.4346$ to $0.4503~\\mathrm{eV}$. These results indicate that repeated shared message passing can provide a parameter-efficient approximation to stacked CGCNN depth, offering a compact recurrent interpretation of crystal graph convolution.",
-      "url": "https://arxiv.org/abs/2605.01304",
-      "paper_id": "2605.01304",
+      "title": "Resolving Finite-Size Errors in EOM-CCSD Band Gaps of Solids with Interacting-Bath Dynamical Embedding Theory",
+      "authors": "Jiachen Li, Christopher Hillenbrand, Christian Venturella, Enzhi Chen, Tianyu Zhu",
+      "last_author": "Tianyu Zhu",
+      "abstract": "arXiv:2606.12621v2 Announce Type: replace Abstract: Periodic equation-of-motion coupled-cluster theory with single and double excitations (EOM-CCSD) has shown promise for quantitative calculations of band structures in solids. However, its steep computational scaling has limited calculations to relatively coarse $k$-point meshes, leading to sizable finite-size errors and discrepant estimates of thermodynamic-limit band gaps in recent benchmarks. In this work, we revisit EOM-CCSD band gaps for ten semiconductors and insulators using interacting-bath dynamical embedding theory (ibDET), a systematically improvable Green's function embedding framework that enables dense Brillouin-zone sampling at modest computational cost. By pushing the $k$-point sampling up to $10\\times10\\times10$, well beyond the system sizes accessible in canonical periodic EOM-CCSD calculations, we significantly reduce finite-size errors and obtain stable thermodynamic-limit extrapolations. We further compare $G_0W_0$@PBE, $G_0W_0$@HF, and EOM-CCSD on an equal footing using the same numerical settings in PySCF. We find that EOM-CCSD yields a mean absolute error of 0.32 eV relative to experimental band gaps for a test set of ten semiconductors and insulators, lower than that of $G_0W_0$@PBE. For ZnO, EOM-CCSD also accurately describes the Zn $3d$-band binding energy, despite overestimating the band gap. These results demonstrate that ibDET offers a practical route to high-accuracy many-body electronic structure calculations in periodic systems.",
+      "url": "https://arxiv.org/abs/2606.12621",
+      "paper_id": "2606.12621",
       "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 2,
+      "reason": "EOM-CCSD band gap theory with embedding; quantum chemistry methodology, not standard GW/BSE/EPW toolkit",
+      "matched": []
+    },
+    {
+      "title": "Scaling native entanglement generation in layered semiconductors with quasi-phase matching",
+      "authors": "Benjamin Braun, Andrea Alessandrini, Josip Bajo, Philipp K. Jenke, Leone di Mauro Villari, Birui Yang, Zhi Hao Peng, P. James Schuck, Cory R. Dean, Andrea Marini, Philip Walther, Chiara Trovatello, Lee A. Rozema",
+      "last_author": "Lee A. Rozema",
+      "abstract": "arXiv:2606.14553v1 Announce Type: cross Abstract: Efficient generation of entangled photons typically relies on spontaneous parametric down-conversion (SPDC) in phase-matched macroscopic nonlinear media. However, generating entanglement under phase-matching constraints requires additional bulk optics or interferometers. In contrast, ultrathin van der Waals semiconductors - such as transition metal dichalcogenides (TMDs) - exhibit strong enough optical nonlinearities for SPDC to be observed from subwavelength-thick media, thereby bypassing conventional phase-matching constraints. In this microscopic domain, the intrinsic crystal symmetry governs the nonlinear optical response, enabling the native generation of polarization-entangled photon pairs. However, generating these states efficiently has been fundamentally restricted by the material's coherence length ($L_c$), which limits the attainable conversion efficiency. Here, we investigate periodically-poled TMDs (PPTMDs) designed to scale up this interaction via quasi-phase matching. We demonstrate that mechanically flipping the sign of the nonlinearity at precise intervals of $L_c$ introduces quasi-phase matching, that scales the pair-production rate while preserving the pristine, symmetry-generated polarization entanglement, with fidelities exceeding 99%. Backed by a rigorous theoretical model, our work clarifies the interplay between crystal symmetry and propagation effects in thin nonlinear media, providing a new avenue for engineering quantum light in nanophotonic systems.",
+      "url": "https://arxiv.org/abs/2606.14553",
+      "paper_id": "2606.14553",
+      "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
@@ -628,21 +586,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "DFT XC functional development — background topic (foundational for GW/EPW but not MBPT itself)",
-      "matched": []
-    },
-    {
-      "title": "Semi-empirical pseudopotential method for monolayer transition metal dichalcogenides",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Raj Kumar Paudel, Chung-Yuan Ren, Yia-Chung Chang",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002225?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "TMD band structure of interest for cluster A, but semi-empirical method is background tier vs ab initio GW/EPW",
+      "reason": "",
       "matched": []
     },
     {
@@ -656,7 +600,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "Electron-phonon coupling methodology via QMC — background topic related to MBPT",
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Spatiotemporal order and parametric instabilities from first-principles",
+      "authors": "Daniel Kaplan, Pavel A. Volkov, Jennifer Coulter, Shiwei Zhang, Premala Chandra",
+      "last_author": "Premala Chandra",
+      "abstract": "npj Quantum Materials, Published online: 15 June 2026; doi:10.1038/s41535-025-00829-5Spatiotemporal order and parametric instabilities from first-principles",
+      "url": "https://www.nature.com/articles/s41535-025-00829-5",
+      "paper_id": "",
+      "feed_name": "npj QM",
+      "feed_category": "Nature",
+      "published": "2026-06-15T08:00:00+00:00",
+      "score": 2,
+      "reason": "First-principles order and instabilities; in-venue (npj QM) but abstract too minimal to assess relevance",
       "matched": []
     },
     {
@@ -670,7 +628,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "DFT electronic/spin response of Kékule-Y graphene; graphene electronic structure background",
       "matched": []
     },
     {
@@ -684,21 +642,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Strain- and doping-tunable optical resonance in Kekul\\'e-Y graphene",
-      "authors": "Yawar Mohammadi",
-      "last_author": "Yawar Mohammadi",
-      "abstract": "arXiv:2606.14424v1 Announce Type: new Abstract: We investigate the optical response of Kekul\\'e-Y graphene under uniaxial strain and carrier doping. Using a low-energy effective Hamiltonian, we show that strain reshapes the low-energy electronic structure of the Kekul\\'e-Y phase and induces Van Hove singularities at energies well below those of pristine graphene. Within the Kubo formalism, we calculate the optical conductivity and identify multiple anisotropic interband features, with a pronounced resonance arising from strain-induced Van Hove singularities. The pronounced resonance is strongly anisotropic and robust against moderate thermal broadening and disorder, providing a clear optical signature of Kekul\\'e-Y ordering. We further derive analytical expressions for the low-energy optical conductivity and the Drude weight, providing a detailed characterization of the strain- and doping-dependent optical response. Our results establish strain engineering as an effective route for controlling valley-dependent optical properties in Kekul\\'e-Y graphene, originating from the Kekul\\'e-induced coupling of the Dirac valleys, and suggest feasible optical probes for the experimental identification of the Kekul\\'e-Y phase.",
-      "url": "https://arxiv.org/abs/2606.14424",
-      "paper_id": "2606.14424",
-      "feed_name": "cond-mat.mes-hall",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Oxide metal-insulator transition theory; oxide electronic structure background",
       "matched": []
     },
     {
@@ -712,49 +656,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Spin wave dynamics in ultrathin films with DMI; magnetism and damping background",
       "matched": []
     },
     {
-      "title": "XRDiff: Crystal Structure Prediction from Powder X-Ray Diffraction Data Using Diffusion Models",
-      "authors": "Nofit Segal, Mingda Li, Benjamin Kurt Miller, Rafael G\\'omez-Bombarelli",
-      "last_author": "Rafael G\\'omez-Bombarelli",
-      "abstract": "arXiv:2606.14003v1 Announce Type: new Abstract: Determining the crystal structure of a material from its powder X-ray diffraction (PXRD) pattern is a central challenge in materials science. PXRD is an accessible and widely used characterization technique, yet recovering the atomic structure from diffraction data requires solving an underdetermined inverse problem due to the loss of phase information. Generative modeling can provide a prior over atomic structure and learn the mapping from PXRD patterns to crystal structures via simulated structure-spectrum pairs. We present XRDiff, a diffusion model that recovers crystal structures from PXRD given either the stoichiometry or, in a more challenging setting, the elemental constituents and total number of atoms in the unit cell. We evaluate on datasets where each stoichiometry has multiple polymorphs and all polymorphs of a given composition are held out together, ensuring that high performance reflects genuine use of the diffraction signal. XRDiff achieves strong structure recovery rates on simulated benchmarks, indicating that the model learns a spectrum-to-structure mapping precise enough to differentiate between polymorphs. To address generalization to experimental data, we compare a full-spectrum encoding against an encoding based on peak descriptors. The peak-based encoding generalizes substantially better, outperforming even a model trained on full spectra with augmentations fitted to the experimental noise distribution. These results demonstrate that representations robust to the noise and artifacts present in real-world PXRD offer a practical and scalable path toward closing the simulation-to-experiment gap, enabling zero-shot crystal structure solution from experimental PXRD with full or partial chemical composition input.",
-      "url": "https://arxiv.org/abs/2606.14003",
-      "paper_id": "2606.14003",
-      "feed_name": "cond-mat.mtrl-sci",
+      "title": "Who can compete with quantum computers? Lecture notes on quantum inspired tensor networks computational techniques",
+      "authors": "Xavier Waintal, Chen-How Huang, Christoph W. Groth",
+      "last_author": "Christoph W. Groth",
+      "abstract": "arXiv:2601.03035v2 Announce Type: replace-cross Abstract: This is a set of lectures on tensor networks with a strong emphasis on the core algorithms involving Matrix Product States (MPS) and Matrix Product Operators (MPO). Compared to other presentations, particular care has been given to disentangle aspects of tensor networks from the quantum many-body problem: MPO/MPS algorithms are presented as a way to deal with linear algebra on extremely (exponentially) large matrices and vectors, regardless of any particular application. The lectures include well-known algorithms to find eigenvectors of MPOs (the celebrated DMRG), solve linear problems, and recent learning algorithms that allow one to map a known function into an MPS (the Tensor Cross Interpolation, or TCI, algorithm). The lectures end with a discussion of how to represent functions and perform calculus with tensor networks using the \"quantics\" representation. They include the detailed analytical construction of important MPOs such as those for differentiation, indefinite integration, convolution, and the quantum Fourier transform. Three concrete applications are discussed in detail: the simulation of a quantum computer (either exactly or with compression), the simulation of a quantum annealer, and techniques to solve partial differential equations (e.g. Poisson, diffusion, or Gross-Pitaevskii) within the \"quantics\" representation. The lectures have been designed to be accessible to a first-year PhD student and include detailed proofs of all statements.",
+      "url": "https://arxiv.org/abs/2601.03035",
+      "paper_id": "2601.03035",
+      "feed_name": "cond-mat.str-el",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 2,
       "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Zero Indirect Band Gap and Flat Bands in a Niobium Oxyiodide Cluster Material",
-      "authors": "Jan Beitlberger, Mario Martin, Marcus Scheele, Marek Matas, Carl P. Romao, Markus Str\\\"obele, H. -J\\\"urgen Meyer",
-      "last_author": "H. -J\\\"urgen Meyer",
-      "abstract": "arXiv:2602.16011v2 Announce Type: replace-cross Abstract: Explorative chemistry in a reaction system composed of NbI$_4$, Li$_2$(CN$_2$), and Li$_2$O has led to the discovery of a number of niobium oxyiodide cluster compounds. During this reaction, the formation of solid phases was detected alongside with gaseous phases, resulting in a range of products with cluster cores of varying shapes. After several niobium oxyiodide cluster compounds have already been identified within this reaction system, two additional compounds, Nb$_6$O$_3$I$_{15}$ and Nb$_{11}$O$_6$I$_{24}$, are discovered and structurally characterized by single-crystal X-ray diffraction. Both structures are based on the butterfly-shaped, oxygen-capped niobium cluster [Nb$_4$O], which is extended to larger cluster fragments. The [Nb$_4$O] cluster core in Nb$_6$O$_3$I$_{15}$is extended by two [NbO] units to form a three-dimensional framework, and Nb$_{11}$O$_6$I$_{24}$ contains two connected [Nb$_4$O] units, which form chiral units within an antiferrochiral hexagonal packing of strings. The striking string-like character of Nb$_{11}$O$_6$I$_{24}$ was investigated in terms of its electronic structure and properties. DFT calculations showed Nb$_{11}$O$_6$I$_{24}$ to possess a zero indirect band gap, with a pair of 3-dimensional flat bands surrounding the Fermi level. These unusual features of the electronic band structure suggest the presence of strongly correlated inter-cluster singlet electron states, arising from the helical shape of the clusters, the hexagonal packing of the strings, and the delocalized nature of cluster electron wavefunctions.",
-      "url": "https://arxiv.org/abs/2602.16011",
-      "paper_id": "2602.16011",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "invDFT : A CPU-GPU massively parallel tool to find exact exchange-correlation potentials from groundstate densities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Vishal Subramanian, Bikash Kanungo, Vikram Gavini",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002006?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "DFT XC potential methodology is background, not directly GW/BSE/EPW focused",
       "matched": []
     },
     {
@@ -768,7 +684,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Cavity magnon Hamiltonian theory; cavity magnonics, out of scope",
       "matched": []
     },
     {
@@ -851,6 +767,20 @@
       "feed_name": "physics.comp-ph",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "A miniaturized ingestible temperature sensor for continuous internal monitoring",
+      "authors": "Saransh Sharma, Yubin Cai, Injoo Moon, Zhenming Yang, Peter Chai, Niora Fabian, Kailyn Schmidt, Alison M. Hayward, Andrew Pettinari, Maria Platero, Benedict Laidlaw, Ashley Guevara, Anantha P. Chandrakasan, Giovanni Traverso",
+      "last_author": "Giovanni Traverso",
+      "abstract": "Nature Electronics, Published online: 15 June 2026; doi:10.1038/s41928-026-01643-yAn ingestible device that integrates a low-power integrated circuit, an antenna for wireless backscatter communication and a coin-cell battery measures just 6 mm in diameter and 4 mm in height, and can provide internal temperature sensing in swine models under diverse physiological and pathophysiological conditions.",
+      "url": "https://www.nature.com/articles/s41928-026-01643-y",
+      "paper_id": "",
+      "feed_name": "Nat. Electron.",
+      "feed_category": "Nature",
+      "published": "2026-06-15T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -964,7 +894,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Diamond NV center quantum device; out of scope",
       "matched": []
     },
     {
@@ -1006,7 +936,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "AlN photodetector characterization; device engineering, out of scope",
       "matched": []
     },
     {
@@ -1192,20 +1122,6 @@
       "matched": []
     },
     {
-      "title": "ChemNetworks: New Capabilities for High-Throughput, Real-Time Chemical Graph Construction and Analysis",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: Available online 9 June 2026Source: Computer Physics CommunicationsAuthor(s): Daniel J. Pope, Jackson Elowitt, Bo Zhang, Manish Parashar, Aurora E. Clark",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002341?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Chirally-sensitive optical rectification by isotropic chiral media",
       "authors": "Raju Adhikary, Luca Assogna, Ambaresh Sahoo, Matteo Venturi, Andrea De Marcellis, Massimiliano Aschi, Antonio Mecozzi, Jens Biegert, Davide Tedeschi, Carino Ferrante, Andrea Marini",
       "last_author": "Andrea Marini",
@@ -1231,6 +1147,20 @@
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Closed-loop discovery of out-of-distribution processing protocols by evolutionary search and uncertainty-aware learning",
+      "authors": "Yu Liu, Stanislav Udovenko, Ching-Che Lin, Jaegyu Kim, Lane W. Martin, Susan Trolier-McKinstry, Sergei V. Kalinin",
+      "last_author": "Sergei V. Kalinin",
+      "abstract": "arXiv:2606.13859v1 Announce Type: new Abstract: Many materials and chemical systems exhibit history-dependent responses, where functional outcomes are governed not only by final-state variables but by the time-dependent sequence of fields, temperatures, or chemical potentials applied during operation. Discovering new processing protocols is therefore a high-dimensional search problem in which the control variable is an entire waveform or sample history, and conventional strategies either remain confined to conservative interpolative families or become prohibitively measurement intensive. Here, a closed-loop workflow is introduced that couples evolutionary search over a compact waveform representation with uncertainty-aware deep kernel learning to generate, rank, and experimentally validate candidate protocols. Applied to ferroelectric thin films, with the scanning-probe tip-bias waveform as the protocol and the nonlinear electromechanical response as the reward, the workflow discovers waveform families that enhance nonlinearity by de-aging the film. Spatially resolved before/after measurements show that the best-performing waveforms selectively activate pre-existing, weakly pinned domain-wall segments, whereas the worst drive long-range irreversible switching. This framework reframes protocol tuning as out-of-distribution discovery, generalizable to synthesis and annealing trajectories, battery formation protocols, and other high-dimensional control problems.",
+      "url": "https://arxiv.org/abs/2606.13859",
+      "paper_id": "2606.13859",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "Materials discovery via ML/evolutionary algorithms; engineering venue, no MBPT",
       "matched": []
     },
     {
@@ -1269,20 +1199,6 @@
       "url": "https://arxiv.org/abs/2412.16317",
       "paper_id": "2412.16317",
       "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Computational regimes in matrix-product-state-based quantum trajectory simulations",
-      "authors": "Aaron Sander, Simon Cichy, Martin Eigel, Jens Eisert, Maximilian Fr\\\"ohlich, Tom Peham, Robert Wille",
-      "last_author": "Robert Wille",
-      "abstract": "arXiv:2606.13779v1 Announce Type: cross Abstract: Efficient simulation of open quantum systems is central to modeling noisy quantum hardware and many-body dynamics. In trajectory-based tensor network methods, cost is often associated with trajectory-level quantities such as entanglement growth or bond dimension. However, the total cost of a fixed-accuracy simulation also depends on statistical sampling, and the interplay between per-trajectory complexity and sampling effort remains poorly understood. Here we introduce a cost-resolved framework for matrix product state (MPS)-based quantum trajectory simulations that decomposes total cost into memory per trajectory, runtime per trajectory, and sampling effort. We show that physically equivalent stochastic unravelings of the same Lindblad dynamics do not necessarily reduce total cost, but instead redistribute cost between trajectory complexity and statistical convergence. This trade-off is quantified by two dimensionless inflation factors: a bond dimension inflation $\\alpha$ and a sampling inflation $\\kappa$, which together determine the preferred unraveling under hardware-dependent memory and parallelism constraints. We provide a practical protocol for extracting $(\\alpha,\\kappa)$ from modest pilot simulations and demonstrate it using benchmarks across multiple noise channels. The resulting decision maps show that the computationally favorable unraveling can change with noise strength, time-step resolution, system size, and available parallelism. These results establish unraveling choice as a hardware-aware simulation design problem rather than an intrinsic optimization of trajectory entanglement alone.",
-      "url": "https://arxiv.org/abs/2606.13779",
-      "paper_id": "2606.13779",
-      "feed_name": "physics.comp-ph",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
@@ -1356,7 +1272,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Cavity Dicke model superradiance; model Hamiltonian, out of scope",
       "matched": []
     },
     {
@@ -1384,7 +1300,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "PT-symmetric entanglement in quantum systems; quantum information, out of scope",
       "matched": []
     },
     {
@@ -1397,20 +1313,6 @@
       "feed_name": "cond-mat.str-el",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: Available online 12 June 2026Source: Computer Physics CommunicationsAuthor(s): Yongheng Li, Changpeng Lin, Qi Ren, Junyan Liu, Bin Wei, Jiawang Hong",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1454,7 +1356,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Phenomenological TFT electrostatic model; no first-principles, out of scope",
       "matched": []
     },
     {
@@ -1468,7 +1370,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Photonic engineering of spontaneous emission; photonics, out of scope",
       "matched": []
     },
     {
@@ -1482,7 +1384,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Magnetic multilayer spin current enhancement; spintronics device experiment, out of scope",
       "matched": []
     },
     {
@@ -1528,15 +1430,15 @@
       "matched": []
     },
     {
-      "title": "Extreme-ultraviolet optical response of atomically-thin molybdenum disulfide",
-      "authors": "G. Fiorentini, N. Di Palo, G. Inzani, G. L. Dolso, S. Bonetti, Q. Li, F. Liu, X. Zhu, A. Giglia, N. Mahne, L. Pasquali, M. D'Alessandro, M. Malakhov, M. Camarasa-G\\'omez, J. J. Esteve-Paredes, J. J. Palacios, R. Borrego-Varillas, M. Nisoli, A. Pic\\'on, D. Sangalli, M. Lucchini",
-      "last_author": "M. Lucchini",
-      "abstract": "arXiv:2606.14527v1 Announce Type: new Abstract: We report multi-angle reflectivity measurements in the extreme-ultraviolet (XUV) range for mono- and bilayer MoS$_2$ on a Si$_3$N$_4$ substrate. Using a single-sheet 2D conductivity model, we extract the complex optical response of the MoS$_2$ bilayer between 25 and 90 eV and derive an effective refractive index by introducing a thickness equal to the interlayer spacing. The MoS$_2$ monolayer response is consistently reproduced either by halving the 2D conductivity or the effective thickness, indicating a robust scaling with layer number. The resulting optical constants display a broad resonance at the Mo N$_{2,3}$ edge with no signatures of sharp core-exciton features despite the reduced dimensionality. First-principles calculations reproduce the experimental results and show that local-field (Hartree) effects dominate the XUV response, while screened-exchange (SEX) contributions remain weak and mainly induce spectral shifts. Our analysis demonstrates that excitonic effects play a minor role in the XUV optical response of atomically thin MoS$_2$, highlighting key differences with respect to the visible and infrared regimes, and calling for a reassessment of the use of Mo-based transition metal dichalcogenides in attosecond spectroscopy and XUV excitonics.",
-      "url": "https://arxiv.org/abs/2606.14527",
-      "paper_id": "2606.14527",
-      "feed_name": "physics.optics",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
+      "title": "Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Josep Plana-Riu, F. Xavier Trias, Adel Alsalti-Badellou, Xavier Álvarez-Farré, Guillem Colomer, Assensi Oliva",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1552,7 +1454,35 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Microwave single photon detector; quantum device, out of scope",
+      "matched": []
+    },
+    {
+      "title": "Fast contracted Clebsch--Gordan tensor products for equivariant graph neural networks",
+      "authors": "Anton Bochkarev, Yury Lysogorskiy, Ralf Drautz",
+      "last_author": "Ralf Drautz",
+      "abstract": "arXiv:2605.15073v2 Announce Type: replace-cross Abstract: We present an $\\mathcal{O}(L^3)$ algorithm for evaluating contracted Clebsch--Gordan tensor products in $\\mathrm{O}(3)$-equivariant machine learning potentials at fixed Canonical Polyadic (CP) rank. Mapping the angular integral to a structured Gauss--Legendre and Fourier tensor-product grid decouples the radial channel contractions from the angular transforms. The antisymmetric parity-odd Clebsch--Gordan channels, unreachable by the symmetric pointwise product on a scalar $S^2$ grid, are recovered through the surface-curl pairing $\\hat r \\cdot [\\nabla_{S^2} A \\times \\nabla_{S^2} B]$, the spherical Poisson bracket, which supplies the $L=1$ angular momentum on the grid while preserving rotational equivariance. The construction extends to parity-aware equivariant message passing in atomic-cluster-expansion-style architectures and is verified by direct numerical quadrature. The full uncontracted Clebsch--Gordan tensor product remains subject to the $\\mathcal{O}(L^4)$ output-size lower bound. A benchmark shows wall-clock scaling empirically as $L^2$ across the practical $l_{\\max}$ range. For the on-site contraction this is pre-asymptotic, giving way to $L^3$ at large $l_{\\max}$. For message passing it is structural and the runtime is memory-bandwidth bound on $L^2$-sized grid tensors.",
+      "url": "https://arxiv.org/abs/2605.15073",
+      "paper_id": "2605.15073",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "Fast Clebsch-Gordan for equivariant ML potentials; ML methodology without MBPT",
+      "matched": []
+    },
+    {
+      "title": "Ferromagnetic Order of Reduced Magnetic Moments in a Frustrated Sawtooth Chain of the Magnetic Semiconductor ZnYb$_2$S$_4$",
+      "authors": "Shinji Okada, Hiroto Suzuki, Nonoka Higa, Yasuyuki Shimura, Takanori Taniguchi, Takahiro Onimaru",
+      "last_author": "Takahiro Onimaru",
+      "abstract": "arXiv:2606.14196v1 Announce Type: cross Abstract: In a sawtooth spin chain, competing nearest- and next-nearest-neighbor interactions suppress long-range order, yielding novel quantum states such as a spin-dimer singlet, 1/2 magnetization plateau, and spin contraction. Here, we investigate the magnetic properties of the orthorhombic semiconductor ZnYb$_2$S$_4$, in which Yb$^{3+}$ ions with an effective spin-1/2 form a sawtooth chain along the $b$-axis. The specific heat exhibits a sharp peak at ${T}_{\\rm m}$ $=$ 1.4 K, at which the magnetic entropy $S_{\\rm m}$ reaches only 27% of $R$ln2. This reduced $S_{\\rm m}$ at $T_{\\rm m}$ indicates the entropy release of the ground state doublet of Yb$^{3+}$ even for $T$ $>$ $T_{\\rm m}$. The isothermal magnetization $M(B)$ at 0.28 K exhibits hysteresis for $\\left|B\\right| \\leq 0.2$ T and increases monotonically for $B > 0.2$ T. The spontaneous magnetization is only 0.1 ${\\it \\mu}_{\\rm B}$$/$Yb, an order of magnitude smaller than that expected for the ground state doublet of Yb$^{3+}$. Moreover, in powder neutron diffraction measurements, no superlattice reflections due to antiferromagnetic order are observed for $T$ $<$ $T_{\\rm m}$. Therefore, in the ground state, the Yb moments are ferromagnetically aligned, but their amplitude is reduced by magnetic frustration in the sawtooth Yb chain.",
+      "url": "https://arxiv.org/abs/2606.14196",
+      "paper_id": "2606.14196",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "Frustrated magnetic semiconductor; out of scope",
       "matched": []
     },
     {
@@ -1636,7 +1566,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Ultrafast laser-induced phase transition; materials transformation, out of scope",
       "matched": []
     },
     {
@@ -1794,6 +1724,20 @@
       "matched": []
     },
     {
+      "title": "In the field — and sometimes in the lab — the simplest tool is best",
+      "authors": "Amanda Heidt",
+      "last_author": "Amanda Heidt",
+      "abstract": "Nature, Published online: 15 June 2026; doi:10.1038/d41586-026-01885-yTechnology has led to unprecedented innovation, but common household items can help make research more reproducible — and accessible.",
+      "url": "https://www.nature.com/articles/d41586-026-01885-y",
+      "paper_id": "",
+      "feed_name": "Nature",
+      "feed_category": "Nature",
+      "published": "2026-06-15T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Injection-rate effects on failure in a fluid-saturated granular fault gouge",
       "authors": "Pritom Sarma, Stanislav Parez, Renaud Toussaint, Einat Aharonov",
       "last_author": "Einat Aharonov",
@@ -1818,7 +1762,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Zero mode critical dynamics in topological systems; topological physics, out of scope",
       "matched": []
     },
     {
@@ -1847,6 +1791,34 @@
       "published": "",
       "score": 1,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Machine Learning Accelerated SSNEB for Efficient Minimum Energy Pathway Calculations",
+      "authors": "Yu Zhang, Guanzhi Li, Minkyung Han, Sean Gasiorowski, Daniel Ratner, Chunjing Jia, Yu Lin",
+      "last_author": "Yu Lin",
+      "abstract": "arXiv:2606.13917v1 Announce Type: new Abstract: Metastable states and their minimum energy pathways (MEPs) are central to understanding transformations and phase stability in complex materials, yet mapping transition pathways between competing states remains computationally demanding and experimentally challenging. Here, we introduce a hybrid solid-state nudged elastic band (SSNEB) framework that integrates two pretrained machine learning models, EquiformerV2 (eqV2) and the equivariant Smooth Energy Network (eSEN), with DFT for energy, force, and stress evaluations. Applied to three solid-state systems, CsPbI$_3$, GaN, and TiO$_2$, our framework achieves up to a 7-fold speedup while converging to the same pathways predicted by first-principles calculations. Moreover, the hybrid SSNEB framework enables systematic benchmarking of existing ML models, providing both efficiency and reliability for predicting MEPs across various materials.",
+      "url": "https://arxiv.org/abs/2606.13917",
+      "paper_id": "2606.13917",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "ML acceleration of MEP calculations; methodology without MBPT connection",
+      "matched": []
+    },
+    {
+      "title": "Machine-learned dynamics of surface polarons at reduced oxide surfaces",
+      "authors": "Luca Leoni, Cesare Franchini",
+      "last_author": "Cesare Franchini",
+      "abstract": "arXiv:2606.13833v1 Announce Type: new Abstract: Reducible oxides exhibit a rich interplay of electronic, structural, and chemical properties that underpins applications in catalysis, photovoltaics, batteries, and energy storage. This interplay is strongly shaped by excess electrons, often introduced by oxygen vacancies, that localize as small polarons and influence charge transport and surface chemistry. At surfaces, these polarons play a central role in charge localization, mobility, and reactivity, yet their finite-temperature dynamics remain difficult to access from first principles. Ab initio molecular dynamics is typically limited to picosecond time scales, precluding statistically meaningful sampling of polaron hopping dynamics. To overcome this limitation, we extend machine-learning-assisted polaron dynamics [V. Birschitzky et al., Phys. Rev. Lett. 134, 216301 (2025)] to redox-active oxide surfaces, using oxygen-deficient rutile TiO2(110) as a paradigmatic case. By accessing several nanoseconds of dynamics over a range of temperatures, we show that small-polaron mobility at the reduced rutile TiO2(110) surface is suppressed by several orders of magnitude relative to the corresponding bulk material, providing a microscopic interpretation of the lower electron mobilities observed in porous rutile TiO2 compared with single-crystal samples. This suppressed mobility arises from the loss of favorable hopping pathways: surface polaron motion is largely confined to planar inter-row trajectories within the second topmost layers, with only rare interlayer hopping events. Oxygen vacancies further reshape the polaron free-energy landscape by acting as attractive centers for excess electrons, biasing the polaron distribution toward nearby Ti sites and promoting occasional charge transfer to the outermost surface layer. These results establish a transferable machine-learning strategy for investigating polaron dynamics in reducible oxides.",
+      "url": "https://arxiv.org/abs/2606.13833",
+      "paper_id": "2606.13833",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "ML surface chemistry (MLIP without MBPT connection)",
       "matched": []
     },
     {
@@ -1916,7 +1888,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Organic electrochemical devices; out of scope",
       "matched": []
     },
     {
@@ -1930,7 +1902,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Chalcogenide MBE synthesis without electronic structure characterization",
       "matched": []
     },
     {
@@ -1944,7 +1916,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Twisted bilayer graphene quantum dot devices; explicitly out of scope",
+      "matched": []
+    },
+    {
+      "title": "Multi-modal machine learning analysis of GaSe molecular beam epitaxy growth conditions",
+      "authors": "Mingyu Yu, Isaiah A. Moses, Wesley F. Reinhart, Stephanie Law",
+      "last_author": "Stephanie Law",
+      "abstract": "arXiv:2606.13900v1 Announce Type: new Abstract: Autonomous synthesis platforms integrating machine learning with in situ diagnostics have the potential to revolutionize thin-film growth by enabling real-time process optimization and reducing the need for manual tuning. However, their application to molecular beam epitaxy (MBE) remains underdeveloped. Here, we present a machine learning-guided framework for MBE growth of GaSe films, leveraging reflection high-energy electron diffraction (RHEED) as an in situ diagnostic alongside ex situ characterization via X-ray diffraction and atomic force microscopy. Unsupervised learning on RHEED patterns reveals a well-defined boundary between high- and low-quality samples, capturing physically meaningful features. Mutual information analysis shows a strong correlation between RHEED embeddings and rocking curve full-width at half-maximum (fwhm), while the correlation with AFM root-mean-square (RMS) roughness is weak. Among key growth conditions, growth rate most strongly influences fwhm, whereas the Se/Ga flux ratio primarily affects RMS roughness and the RHEED embeddings. Supervised learning models trained to predict fwhm and RMS roughness demonstrate moderate accuracy, with significant improvement achieved by incorporating RHEED embeddings. Furthermore, anomaly detection via residual analysis in supervised learning aligns well with unsupervised classification from RHEED, reinforcing the reliability of the predictive models. This study establishes a data-driven framework for machine learning-assisted MBE, paving the way for real-time process control and accelerated optimization of thin-film synthesis.",
+      "url": "https://arxiv.org/abs/2606.13900",
+      "paper_id": "2606.13900",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "ML analysis of GaSe MBE synthesis; materials engineering, out of scope",
       "matched": []
     },
     {
@@ -2042,7 +2028,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Bilayer graphene RF reflectometry measurement; device measurement, out of scope",
       "matched": []
     },
     {
@@ -2057,6 +2043,20 @@
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Oxygen deficiency and valency reconstruction in multiferroic V-doped HfO$_2$",
+      "authors": "Vincenzo Fiorentini",
+      "last_author": "Vincenzo Fiorentini",
+      "abstract": "arXiv:2606.13950v1 Announce Type: new Abstract: The interplay of oxygen deficiency and vanadium multiple valency in the candidate multiferroic V-doped $Pca2_1$ hafnia HfO$_2$ is studied by first-principles calculations. Low-lying V majority gap states accept electrons from oxygen-vacancy donors, reducing their formation energy, and converting nominal V$^{4+}$ centers into V$^{3+}$. The resulting local magnetization and screening changes are reflected in the calculated V core-level shifts, which are consistent with the experimentally observed XPS signatures. The calculated V$^{3+}$/V$^{4+}$ population ratio determined by oxygen vacancies only matches experiment in reducing conditions, suggesting that additional electron reservoirs may contribute under ALD growth conditions. A similar scenario also seems to apply to the recently observed multiferroicity in Cr-doped hafnia, where oxygen deficiency is intrinsic to the growth technique.",
+      "url": "https://arxiv.org/abs/2606.13950",
+      "paper_id": "2606.13950",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "DFT defect study (HfO₂); pure DFT without GW, capped at 2, not in target clusters",
       "matched": []
     },
     {
@@ -2112,7 +2112,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Floquet cavity magnonics theory; cavity magnonics, out of scope",
       "matched": []
     },
     {
@@ -2126,7 +2126,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Battery material (Li₂CO₃) ionic transport; out of scope",
       "matched": []
     },
     {
@@ -2168,7 +2168,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Hole spin qubit k·p theory; model Hamiltonian quantum device, out of scope",
       "matched": []
     },
     {
@@ -2182,7 +2182,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Josephson junction qubit design; superconductor quantum device, out of scope",
       "matched": []
     },
     {
@@ -2238,21 +2238,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Research on physics education where physics education happens",
-      "authors": "Drew J. Rosen, Paula R. L. Heron, N. G. Holmes",
-      "last_author": "N. G. Holmes",
-      "abstract": "Nature Physics, Published online: 15 June 2026; doi:10.1038/s41567-026-03289-1As physics departments continue to grapple with how growing interdisciplinarity fits the disciplinary departmental model, we argue for the mutual benefits that incorporating physics education researchers within physics departments can bring.",
-      "url": "https://www.nature.com/articles/s41567-026-03289-1",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-15T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
+      "reason": "Pseudo entropy and modular Hamiltonians; quantum field theory, out of scope",
       "matched": []
     },
     {
@@ -2298,6 +2284,20 @@
       "matched": []
     },
     {
+      "title": "SR-CGCNN: Shared Recurrent Convolution in Crystal Graph Neural Networks for Materials Property Prediction",
+      "authors": "Satadeep Bhattacharjee",
+      "last_author": "Satadeep Bhattacharjee",
+      "abstract": "arXiv:2605.01304v3 Announce Type: replace Abstract: Crystal graph neural networks predict materials properties by propagating information through local atomic environments. In conventional crystal graph convolutional neural networks (CGCNNs), this propagation depth is increased by stacking independently parameterized convolutional layers. This coupling between message-passing depth and parameter count raises a simple question: can repeated application of the same learned local update recover most of the benefit of a deeper CGCNN? We address this question by introducing a shared-recurrent CGCNN (SR-CGCNN), in which the main crystal-graph convolutional weights are tied across recurrent message-passing steps. The graph construction, pooling operation, and prediction head are kept unchanged, allowing a controlled comparison with standard CGCNN baselines. On Materials Project-derived formation-energy and band-gap datasets, a three-step SR-CGCNN approaches the accuracy of a standard three-layer CGCNN while using only $34.5\\%$ of its trainable convolutional parameters. The formation-energy test mean absolute error changes from $0.0945$ to $0.0986~\\mathrm{eV\\,atom^{-1}}$, while the band-gap error changes from $0.4346$ to $0.4503~\\mathrm{eV}$. These results indicate that repeated shared message passing can provide a parameter-efficient approximation to stacked CGCNN depth, offering a compact recurrent interpretation of crystal graph convolution.",
+      "url": "https://arxiv.org/abs/2605.01304",
+      "paper_id": "2605.01304",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "Crystal graph neural networks for property prediction; MLIP without MBPT",
+      "matched": []
+    },
+    {
       "title": "Scalable Fabrication of Thermally Reconfigurable Ge Metasurfaces Using Stencil Lithography for Mid-Infrared Molecular Sensing",
       "authors": "Shovasis Kumar Biswas, Samir Rosas, Wihan Adi, Aidana Beisenova, Vaishakh Unnikrishnan, Furkan Kuruoglu, Filiz Yesilkoy",
       "last_author": "Filiz Yesilkoy",
@@ -2319,20 +2319,6 @@
       "url": "https://arxiv.org/abs/2606.14696",
       "paper_id": "2606.14696",
       "feed_name": "physics.comp-ph",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Scaling native entanglement generation in layered semiconductors with quasi-phase matching",
-      "authors": "Benjamin Braun, Andrea Alessandrini, Josip Bajo, Philipp K. Jenke, Leone di Mauro Villari, Birui Yang, Zhi Hao Peng, P. James Schuck, Cory R. Dean, Andrea Marini, Philip Walther, Chiara Trovatello, Lee A. Rozema",
-      "last_author": "Lee A. Rozema",
-      "abstract": "arXiv:2606.14553v1 Announce Type: cross Abstract: Efficient generation of entangled photons typically relies on spontaneous parametric down-conversion (SPDC) in phase-matched macroscopic nonlinear media. However, generating entanglement under phase-matching constraints requires additional bulk optics or interferometers. In contrast, ultrathin van der Waals semiconductors - such as transition metal dichalcogenides (TMDs) - exhibit strong enough optical nonlinearities for SPDC to be observed from subwavelength-thick media, thereby bypassing conventional phase-matching constraints. In this microscopic domain, the intrinsic crystal symmetry governs the nonlinear optical response, enabling the native generation of polarization-entangled photon pairs. However, generating these states efficiently has been fundamentally restricted by the material's coherence length ($L_c$), which limits the attainable conversion efficiency. Here, we investigate periodically-poled TMDs (PPTMDs) designed to scale up this interaction via quasi-phase matching. We demonstrate that mechanically flipping the sign of the nonlinearity at precise intervals of $L_c$ introduces quasi-phase matching, that scales the pair-production rate while preserving the pristine, symmetry-generated polarization entanglement, with fidelities exceeding 99%. Backed by a rigorous theoretical model, our work clarifies the interplay between crystal symmetry and propagation effects in thin nonlinear media, providing a new avenue for engineering quantum light in nanophotonic systems.",
-      "url": "https://arxiv.org/abs/2606.14553",
-      "paper_id": "2606.14553",
-      "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
@@ -2406,7 +2392,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Quantum dot spin-orbit coupling engineering; quantum device, out of scope",
       "matched": []
     },
     {
@@ -2424,17 +2410,17 @@
       "matched": []
     },
     {
-      "title": "Strong coupling of a microwave photon to an electron on helium",
-      "authors": "Gerwin Koolstra, Elena O. Glen, Niyaz R. Beysengulov, Heejun Byeon, Kyle E. Castoria, Michael Sammon, Stephen A. Lyon, David G. Rees, Johannes Pollanen",
-      "last_author": "Johannes Pollanen",
-      "abstract": "Nature Physics, Published online: 15 June 2026; doi:10.1038/s41567-026-03342-zIndividual electrons on superfluid helium can be used as qubits. Strong coupling between the motional state of a single superfluid helium-bound electron and a single cavity photon has now been demonstrated, enabling qubit readout schemes.",
-      "url": "https://www.nature.com/articles/s41567-026-03342-z",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-15T08:00:00+00:00",
+      "title": "Strain- and doping-tunable optical resonance in Kekul\\'e-Y graphene",
+      "authors": "Yawar Mohammadi",
+      "last_author": "Yawar Mohammadi",
+      "abstract": "arXiv:2606.14424v1 Announce Type: new Abstract: We investigate the optical response of Kekul\\'e-Y graphene under uniaxial strain and carrier doping. Using a low-energy effective Hamiltonian, we show that strain reshapes the low-energy electronic structure of the Kekul\\'e-Y phase and induces Van Hove singularities at energies well below those of pristine graphene. Within the Kubo formalism, we calculate the optical conductivity and identify multiple anisotropic interband features, with a pronounced resonance arising from strain-induced Van Hove singularities. The pronounced resonance is strongly anisotropic and robust against moderate thermal broadening and disorder, providing a clear optical signature of Kekul\\'e-Y ordering. We further derive analytical expressions for the low-energy optical conductivity and the Drude weight, providing a detailed characterization of the strain- and doping-dependent optical response. Our results establish strain engineering as an effective route for controlling valley-dependent optical properties in Kekul\\'e-Y graphene, originating from the Kekul\\'e-induced coupling of the Dirac valleys, and suggest feasible optical probes for the experimental identification of the Kekul\\'e-Y phase.",
+      "url": "https://arxiv.org/abs/2606.14424",
+      "paper_id": "2606.14424",
+      "feed_name": "cond-mat.mes-hall",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "k·p model of Kékule-Y graphene optical response; model Hamiltonian capped at 2 by method gate",
       "matched": []
     },
     {
@@ -2462,7 +2448,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "High-Tc superconductor thin film processing; out of scope",
       "matched": []
     },
     {
@@ -2476,7 +2462,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Tantalum superconductor quantum circuits; out of scope",
       "matched": []
     },
     {
@@ -2504,7 +2490,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Quantum magnetic materials (sawtooth chain); out of scope",
       "matched": []
     },
     {
@@ -2518,7 +2504,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Twisted bilayer moiré lattice relaxation; explicitly out of scope per criteria",
       "matched": []
     },
     {
@@ -2546,7 +2532,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "STM atom manipulation; materials engineering/synthesis, out of scope",
       "matched": []
     },
     {
@@ -2560,7 +2546,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Vacuum diode transit-time oscillations; electron transport in vacuum, out of scope",
       "matched": []
     },
     {
@@ -2602,7 +2588,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Organic semiconductor thin films; out of scope",
       "matched": []
     },
     {
@@ -2634,15 +2620,15 @@
       "matched": []
     },
     {
-      "title": "Who can compete with quantum computers? Lecture notes on quantum inspired tensor networks computational techniques",
-      "authors": "Xavier Waintal, Chen-How Huang, Christoph W. Groth",
-      "last_author": "Christoph W. Groth",
-      "abstract": "arXiv:2601.03035v2 Announce Type: replace-cross Abstract: This is a set of lectures on tensor networks with a strong emphasis on the core algorithms involving Matrix Product States (MPS) and Matrix Product Operators (MPO). Compared to other presentations, particular care has been given to disentangle aspects of tensor networks from the quantum many-body problem: MPO/MPS algorithms are presented as a way to deal with linear algebra on extremely (exponentially) large matrices and vectors, regardless of any particular application. The lectures include well-known algorithms to find eigenvectors of MPOs (the celebrated DMRG), solve linear problems, and recent learning algorithms that allow one to map a known function into an MPS (the Tensor Cross Interpolation, or TCI, algorithm). The lectures end with a discussion of how to represent functions and perform calculus with tensor networks using the \"quantics\" representation. They include the detailed analytical construction of important MPOs such as those for differentiation, indefinite integration, convolution, and the quantum Fourier transform. Three concrete applications are discussed in detail: the simulation of a quantum computer (either exactly or with compression), the simulation of a quantum annealer, and techniques to solve partial differential equations (e.g. Poisson, diffusion, or Gross-Pitaevskii) within the \"quantics\" representation. The lectures have been designed to be accessible to a first-year PhD student and include detailed proofs of all statements.",
-      "url": "https://arxiv.org/abs/2601.03035",
-      "paper_id": "2601.03035",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-15T12:00:00+00:00",
+      "title": "Why people should work together to shape the economy",
+      "authors": "Clara Mattei",
+      "last_author": "Clara Mattei",
+      "abstract": "Nature, Published online: 15 June 2026; doi:10.1038/d41586-026-01889-8An economist sets out how communities can direct economic decisions and not just endure their consequences.",
+      "url": "https://www.nature.com/articles/d41586-026-01889-8",
+      "paper_id": "",
+      "feed_name": "Nature",
+      "feed_category": "Nature",
+      "published": "2026-06-15T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2659,6 +2645,34 @@
       "published": "2026-06-15T12:00:00+00:00",
       "score": 1,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "XRDiff: Crystal Structure Prediction from Powder X-Ray Diffraction Data Using Diffusion Models",
+      "authors": "Nofit Segal, Mingda Li, Benjamin Kurt Miller, Rafael G\\'omez-Bombarelli",
+      "last_author": "Rafael G\\'omez-Bombarelli",
+      "abstract": "arXiv:2606.14003v1 Announce Type: new Abstract: Determining the crystal structure of a material from its powder X-ray diffraction (PXRD) pattern is a central challenge in materials science. PXRD is an accessible and widely used characterization technique, yet recovering the atomic structure from diffraction data requires solving an underdetermined inverse problem due to the loss of phase information. Generative modeling can provide a prior over atomic structure and learn the mapping from PXRD patterns to crystal structures via simulated structure-spectrum pairs. We present XRDiff, a diffusion model that recovers crystal structures from PXRD given either the stoichiometry or, in a more challenging setting, the elemental constituents and total number of atoms in the unit cell. We evaluate on datasets where each stoichiometry has multiple polymorphs and all polymorphs of a given composition are held out together, ensuring that high performance reflects genuine use of the diffraction signal. XRDiff achieves strong structure recovery rates on simulated benchmarks, indicating that the model learns a spectrum-to-structure mapping precise enough to differentiate between polymorphs. To address generalization to experimental data, we compare a full-spectrum encoding against an encoding based on peak descriptors. The peak-based encoding generalizes substantially better, outperforming even a model trained on full spectra with augmentations fitted to the experimental noise distribution. These results demonstrate that representations robust to the noise and artifacts present in real-world PXRD offer a practical and scalable path toward closing the simulation-to-experiment gap, enabling zero-shot crystal structure solution from experimental PXRD with full or partial chemical composition input.",
+      "url": "https://arxiv.org/abs/2606.14003",
+      "paper_id": "2606.14003",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "ML structure prediction from PXRD; materials discovery ML, no MBPT",
+      "matched": []
+    },
+    {
+      "title": "Zero Indirect Band Gap and Flat Bands in a Niobium Oxyiodide Cluster Material",
+      "authors": "Jan Beitlberger, Mario Martin, Marcus Scheele, Marek Matas, Carl P. Romao, Markus Str\\\"obele, H. -J\\\"urgen Meyer",
+      "last_author": "H. -J\\\"urgen Meyer",
+      "abstract": "arXiv:2602.16011v2 Announce Type: replace-cross Abstract: Explorative chemistry in a reaction system composed of NbI$_4$, Li$_2$(CN$_2$), and Li$_2$O has led to the discovery of a number of niobium oxyiodide cluster compounds. During this reaction, the formation of solid phases was detected alongside with gaseous phases, resulting in a range of products with cluster cores of varying shapes. After several niobium oxyiodide cluster compounds have already been identified within this reaction system, two additional compounds, Nb$_6$O$_3$I$_{15}$ and Nb$_{11}$O$_6$I$_{24}$, are discovered and structurally characterized by single-crystal X-ray diffraction. Both structures are based on the butterfly-shaped, oxygen-capped niobium cluster [Nb$_4$O], which is extended to larger cluster fragments. The [Nb$_4$O] cluster core in Nb$_6$O$_3$I$_{15}$is extended by two [NbO] units to form a three-dimensional framework, and Nb$_{11}$O$_6$I$_{24}$ contains two connected [Nb$_4$O] units, which form chiral units within an antiferrochiral hexagonal packing of strings. The striking string-like character of Nb$_{11}$O$_6$I$_{24}$ was investigated in terms of its electronic structure and properties. DFT calculations showed Nb$_{11}$O$_6$I$_{24}$ to possess a zero indirect band gap, with a pair of 3-dimensional flat bands surrounding the Fermi level. These unusual features of the electronic band structure suggest the presence of strongly correlated inter-cluster singlet electron states, arising from the helical shape of the clusters, the hexagonal packing of the strings, and the delocalized nature of cluster electron wavefunctions.",
+      "url": "https://arxiv.org/abs/2602.16011",
+      "paper_id": "2602.16011",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-15T12:00:00+00:00",
+      "score": 1,
+      "reason": "Niobium oxyiodide cluster compound discovery; material discovery, out of scope",
       "matched": []
     },
     {
