@@ -1,20 +1,6 @@
 {
-  "generated": "2026-06-20T11:23:25.743122+00:00",
+  "generated": "2026-06-20T12:03:29.574092+00:00",
   "papers": [
-    {
-      "title": "General ab initio framework for electronic-order–induced lattice-dynamics symmetry breaking",
-      "authors": "Shuai Zhang, Mengqi Wang, Pan Zhang, Tiantian Zhang",
-      "last_author": "Tiantian Zhang",
-      "abstract": "Science Advances, Volume 12, Issue 25, June 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7081?af=R",
-      "paper_id": "10.1126/sciadv.aed7081?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-06-19T15:00:00+00:00",
-      "score": 4,
-      "reason": "General ab initio framework for electronic-order–induced lattice-dynamics symmetry breaking; directly relevant to cluster D: DFPT methodology and phonon renormalization",
-      "matched": []
-    },
     {
       "title": "A unified heterogeneous implementation of numerical atomic orbitals-based real-time TDDFT within the ABACUS package",
       "authors": "",
@@ -26,7 +12,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 3,
-      "reason": "Real-time TDDFT ab-initio code; directly matches background topic D (real-time dynamics, ultrafast excitons)",
+      "reason": "real-time TDDFT for ultrafast exciton dynamics; directly relevant to cluster D:methodology",
+      "matched": []
+    },
+    {
+      "title": "General ab initio framework for electronic-order–induced lattice-dynamics symmetry breaking",
+      "authors": "Shuai Zhang, Mengqi Wang, Pan Zhang, Tiantian Zhang",
+      "last_author": "Tiantian Zhang",
+      "abstract": "Science Advances, Volume 12, Issue 25, June 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7081?af=R",
+      "paper_id": "10.1126/sciadv.aed7081?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-06-19T15:00:00+00:00",
+      "score": 3,
+      "reason": "ab initio framework for electronic-order–lattice-dynamics coupling; directly relevant to cluster D (DFPT / electron-phonon methodology background topic)",
       "matched": []
     },
     {
@@ -39,36 +39,22 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 3,
-      "reason": "Phonon renormalization and anharmonicity in ab-initio thermal transport; directly relevant to cluster D (electron-phonon methodology)",
-      "matched": []
-    },
-    {
-      "title": "Scientific computing in an AI world",
-      "authors": "Jack Dongarra, Daniel Reed, and Dennis Gannon",
-      "last_author": "Dennis Gannon",
-      "abstract": "Science, Volume 392, Issue 6804, Page 1244-1247, June 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aef4214?af=R",
-      "paper_id": "10.1126/science.aef4214?af=R",
-      "feed_name": "Science",
-      "feed_category": "AAAS",
-      "published": "2026-06-18T14:00:17+00:00",
-      "score": 3,
-      "reason": "AI and scientific computing infrastructure trends relevant to cluster C: AI agents for ab initio workflows",
-      "matched": []
-    },
-    {
-      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 2,
-      "reason": "First-principles Berry curvature; topological transport methodology but not in user's primary clusters",
+      "reason": "phonon renormalization from first principles; thermal transport focus rather than e-ph electronic coupling",
+      "matched": []
+    },
+    {
+      "title": "Biomimetic ferroelectric-semiconductor transistor enables neuronal multisensory integration",
+      "authors": "Shuo Liu, Ligong Zhang, Ruiqing Xie, Zhiyuan Wu, Aojie Chen, Lixia Han, Linbo Shan, Zuoyuan Dong, Junling Liu, Xinrui Guo, Yu Zhu, Zhenghua Zhou, Fei Liu, Linxiao Shen, Peng Huang, Xinran Wang, Zongwei Wang, Yimao Cai, Ming He",
+      "last_author": "Ming He",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74648-yReplicating the brain’s multisensory integration is vital for artificial intelligences. Liu et al. have developed biomimetic ferroelectric-semiconductor field-effect transistors to mimick the brain’s audiovisual integration driven by hardware-native multi-physics coupling.",
+      "url": "https://www.nature.com/articles/s41467-026-74648-y",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
+      "score": 2,
+      "reason": "semiconductor transistor device, but no electronic structure / GW / transport methodology",
       "matched": []
     },
     {
@@ -82,7 +68,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Dynamical structure factor simulation could tangentially relate to phonon spectroscopy characterization, but is a general computational tool paper unconnected to ab-initio MBPT or first-principles electron-phonon methods.",
+      "reason": "Dynamical structure factor calculations; background condensed matter spectroscopy tool, tangentially relevant to phonon properties but not core MBPT methodology",
       "matched": []
     },
     {
@@ -96,7 +82,7 @@
       "feed_category": "IOP",
       "published": "2026-06-19T07:00:00+00:00",
       "score": 2,
-      "reason": "2D materials review, tangential to cluster A (layered semiconductors) but not MBPT-focused",
+      "reason": "2D materials review, but MXenes not in focus clusters; no GW / e-ph methodology",
       "matched": []
     },
     {
@@ -110,7 +96,7 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "2D band engineering on SiC with flat bands; topological theory not MBPT-connected.",
+      "reason": "Band structure engineering and flat bands on SiC surface, background 2D materials",
       "matched": []
     },
     {
@@ -124,7 +110,7 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "Semiconductor band/valley engineering in Si/SiGe (background device physics).",
+      "reason": "Si/SiGe valley splitting via k·p theory, background semiconductor device scaling",
       "matched": []
     },
     {
@@ -138,7 +124,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Nonequilibrium systems simulation, potentially relevant to GWPT but abstract unclear",
+      "reason": "non-equilibrium many-body simulation package; tangential to MBPT methodology but non-equilibrium focus",
       "matched": []
     },
     {
@@ -152,7 +138,7 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "MAPbI₃ perovskite material type in PV cluster scope; hyperfine coupling not research focus.",
+      "reason": "Perovskite spectroscopy and spin dynamics, background topic",
       "matched": []
     },
     {
@@ -166,7 +152,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Spin space group symmetry tool, background methodology for MBPT calculations",
+      "reason": "spin space groups for crystallographic symmetry; potentially useful tool for band structure work but not ab-initio focused",
       "matched": []
     },
     {
@@ -180,49 +166,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Physics-informed neural networks, background for cluster C (AI for science) but not materials-specific",
-      "matched": []
-    },
-    {
-      "title": "Large isolated stripes on short 18-leg $t\\text{−}J$ cylinders",
-      "authors": "Tizian Blatz, Sebastian Paeckel, Ulrich Schollwöck, Fabian Grusdt, and Annabelle Bohrdt",
-      "last_author": "Annabelle Bohrdt",
-      "abstract": "Author(s): Tizian Blatz, Sebastian Paeckel, Ulrich Schollwöck, Fabian Grusdt, and Annabelle BohrdtSpin-charge stripes are among the most prominent competing orders in high-temperature superconductors. However, this phase is particularly challenging to study numerically due to finite-size effects. Here, we study the formation of long isolated stripes in the $t\\text{−}{t}^{′}\\text{−}J$ model using…[Phys. Rev. B 113, 245138] Published Thu Jun 18, 2026",
-      "url": "http://link.aps.org/doi/10.1103/3jnq-y7gc",
-      "paper_id": "10.1103/3jnq-y7gc",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-06-18T18:00:00+00:00",
-      "score": 2,
-      "reason": "Model Hamiltonian (t-J) theory; method gate cap—no ab initio input.",
-      "matched": []
-    },
-    {
-      "title": "Low-temperature hyperbolic phonon polaritonics with suppressed phononic scattering",
-      "authors": "Gang Zhong, Lu Liu, Wenqi Bi, Zongyuan Xie, Zhe Cui, Hao Yang, Jingda Wu, Qintao Sun, Ying Xiao, Qiaoxia Xing, Yingjie Wu, Tao Cheng, Hugen Yan, Bo Peng, Qiaoliang Bao, Chong Wang, Zhigao Dai, Qingdong Ou",
-      "last_author": "Qingdong Ou",
-      "abstract": "Science Advances, Volume 12, Issue 25, June 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2802?af=R",
-      "paper_id": "10.1126/sciadv.aef2802?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-06-19T15:00:00+00:00",
-      "score": 2,
-      "reason": "Hyperbolic phonon polaritonics; background topic on phononic phenomena but lacks connection to EPW/transport/GW",
-      "matched": []
-    },
-    {
-      "title": "MDcraft – A modern molecular dynamics simulation package with machine learning potentials support",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): I.S. Galtsov, R.V. Muratov, G.V. Vyskvarko, S.A. Murzov, S.A. Dyachkov, P.R. Levashov",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002262?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "MD with machine learning potentials, capped by lack of MBPT connection",
+      "reason": "physics-informed neural networks; background on AI-for-science but not ab-initio / MBPT specific",
       "matched": []
     },
     {
@@ -236,7 +180,21 @@
       "feed_category": "AAAS",
       "published": "2026-06-19T15:00:00+00:00",
       "score": 2,
-      "reason": "MLIP for alloys; machine learning force fields capped at 2 without MBPT connection per scope gate",
+      "reason": "Machine learning potentials for alloys; MLIP without MBPT connection capped per rubric (no GW/EPW/ab initio first-principles scope)",
+      "matched": []
+    },
+    {
+      "title": "Neural Network Preconditioning of Linear Tabulation Methods for Fast Function Approximation",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: Available online 16 June 2026Source: Computer Physics CommunicationsAuthor(s): Pavel P. Popov, Jay M. Arcities, Kaku E. Eduku",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002584?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 2,
+      "reason": "General AI/ML numerical methodology; background for cluster (C) but not specific to MBPT/semiconductor applications",
       "matched": []
     },
     {
@@ -250,35 +208,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Physics-informed neural networks, background for cluster C but generic",
-      "matched": []
-    },
-    {
-      "title": "PhySimNet: Accelerating PDE simulations with physics-integrated learning",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Qi Wang, Yuan Mi, Mengtao Yan, Yang Liu, Ji-Rong Wen, Hao Sun",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600202X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "PDE solver with physics-integrated learning, background for cluster C (AI for science)",
-      "matched": []
-    },
-    {
-      "title": "Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Nikhil Kodali, Kartick Ramakrishnan, Phani Motamarri",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "Hermitian eigenvalue solver; relevant to HPC/GW numerics background",
+      "reason": "physics-informed neural networks; background on AI-for-science but not ab-initio / MBPT specific",
       "matched": []
     },
     {
@@ -292,7 +222,21 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "Thermoelectric semiconductor band optimization (background materials physics).",
+      "reason": "DFT band structure optimization for thermoelectric transport, background methodology",
+      "matched": []
+    },
+    {
+      "title": "Scientific computing in an AI world",
+      "authors": "Jack Dongarra, Daniel Reed, and Dennis Gannon",
+      "last_author": "Dennis Gannon",
+      "abstract": "Science, Volume 392, Issue 6804, Page 1244-1247, June 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aef4214?af=R",
+      "paper_id": "10.1126/science.aef4214?af=R",
+      "feed_name": "Science",
+      "feed_category": "AAAS",
+      "published": "2026-06-18T14:00:17+00:00",
+      "score": 2,
+      "reason": "AI in scientific computing; tangentially related to cluster C (AI agents for ab initio workflows), but editorial overview rather than primary research",
       "matched": []
     },
     {
@@ -306,7 +250,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Semi-empirical pseudopotential for TMD; capped by method gate (model Hamiltonian, not first-principles MBPT)",
+      "reason": "TMD electronic structure relevant to cluster A, but semi-empirical method not GW/EPW",
       "matched": []
     },
     {
@@ -320,7 +264,7 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "TMD exciton physics (background); metasurface coupling not MBPT-connected.",
+      "reason": "Exciton-photon strong coupling in TMD monolayers, background exciton physics",
       "matched": []
     },
     {
@@ -334,7 +278,7 @@
       "feed_category": "AAAS",
       "published": "2026-06-19T15:00:00+00:00",
       "score": 2,
-      "reason": "Quantum emitters in hexagonal boron nitride; 2D materials context relevant to cluster A, but lacks MBPT/GW methodology",
+      "reason": "hBN quantum emitters under twist; tangentially related to 2D exciton physics background, but no first-principles MBPT angle or direct match to target materials (Bi2O2Se, chalcohalides)",
       "matched": []
     },
     {
@@ -348,7 +292,7 @@
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
       "score": 2,
-      "reason": "Wannier-basis computational method overlap, but altermagnet spectroscopy outside MBPT focus.",
+      "reason": "Wannier orbital methods applied to altermagnet spectroscopy, background methodology",
       "matched": []
     },
     {
@@ -362,7 +306,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Inverse DFT methodology, background for cluster C/D (MBPT workflow support)",
+      "reason": "DFT XC potential methodology; background on DFT but not GW/EPW focus",
       "matched": []
     },
     {
@@ -656,7 +600,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "",
+      "reason": "battery modeling explicitly out of scope",
       "matched": []
     },
     {
@@ -842,6 +786,20 @@
       "matched": []
     },
     {
+      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "Berry curvature transport explicitly out of scope for this user",
+      "matched": []
+    },
+    {
       "title": "CD4+ T cells impair tumor growth through IL-3 and TNF-dependent vascular damage",
       "authors": "Qiaoshi Lian, Jia Nie, Jatinder Singh, Qiang Chen, Jennifer Matta, Waipan Chan, Mariah Balmaceno-Criss, Melanie S. Vacchio, Weiming Yu, Alexander D. Clark, Elijah Edmondson, Michael C. Kelly, Ronald N. Germain, Rémy Bosselut",
       "last_author": "Rémy Bosselut",
@@ -1005,6 +963,20 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Dynamic palladium catalysis enables chiral amplification toward acyclic Schiff base atropisomers",
+      "authors": "Qi Liu, Jun Gu, Shu-Yun Cui, Linghua Tan, Ying He",
+      "last_author": "Ying He",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74668-8Acyclic Schiff base atropisomers have remained inaccessible because of longstanding synthetic and stereocontrol challenges. Here, the authors report a palladium-catalysed asymmetric N-allylation enabled by substrate guided catalyst evolution, delivering Z selective atropisomeric Schiff bases with high yields and enantioselectivities.",
+      "url": "https://www.nature.com/articles/s41467-026-74668-8",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1430,6 +1402,20 @@
       "matched": []
     },
     {
+      "title": "Large isolated stripes on short 18-leg $t\\text{−}J$ cylinders",
+      "authors": "Tizian Blatz, Sebastian Paeckel, Ulrich Schollwöck, Fabian Grusdt, and Annabelle Bohrdt",
+      "last_author": "Annabelle Bohrdt",
+      "abstract": "Author(s): Tizian Blatz, Sebastian Paeckel, Ulrich Schollwöck, Fabian Grusdt, and Annabelle BohrdtSpin-charge stripes are among the most prominent competing orders in high-temperature superconductors. However, this phase is particularly challenging to study numerically due to finite-size effects. Here, we study the formation of long isolated stripes in the $t\\text{−}{t}^{′}\\text{−}J$ model using…[Phys. Rev. B 113, 245138] Published Thu Jun 18, 2026",
+      "url": "http://link.aps.org/doi/10.1103/3jnq-y7gc",
+      "paper_id": "10.1103/3jnq-y7gc",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-06-18T18:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Limited impact of Greenland meltwater on abruptness and reversibility of future Atlantic overturning changes",
       "authors": "Oliver Mehling, Katinka Bellomo, Federico Fabiano, Marion Devilliers, Michele Petrini, Susanna Corti, Jost von Hardenberg",
       "last_author": "Jost von Hardenberg",
@@ -1458,6 +1444,20 @@
       "matched": []
     },
     {
+      "title": "Low-temperature hyperbolic phonon polaritonics with suppressed phononic scattering",
+      "authors": "Gang Zhong, Lu Liu, Wenqi Bi, Zongyuan Xie, Zhe Cui, Hao Yang, Jingda Wu, Qintao Sun, Ying Xiao, Qiaoxia Xing, Yingjie Wu, Tao Cheng, Hugen Yan, Bo Peng, Qiaoliang Bao, Chong Wang, Zhigao Dai, Qingdong Ou",
+      "last_author": "Qingdong Ou",
+      "abstract": "Science Advances, Volume 12, Issue 25, June 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2802?af=R",
+      "paper_id": "10.1126/sciadv.aef2802?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-06-19T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "MCPlas, a MATLAB toolbox for reproducible plasma modelling with COMSOL",
       "authors": "",
       "last_author": "",
@@ -1469,6 +1469,20 @@
       "published": "",
       "score": 1,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "MDcraft – A modern molecular dynamics simulation package with machine learning potentials support",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): I.S. Galtsov, R.V. Muratov, G.V. Vyskvarko, S.A. Murzov, S.A. Dyachkov, P.R. Levashov",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002262?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "MLIP without MBPT connection, explicitly out of scope",
       "matched": []
     },
     {
@@ -1598,6 +1612,20 @@
       "matched": []
     },
     {
+      "title": "Modal contrast engineering in ultraviolet and visible metalenses enabled by material-selective hybridization",
+      "authors": "Junhwa Seong, Youngsun Jeon, Geongu Han, Sangwon Lee, Younghwan Yang, Seokwoo Kim, Chihun Lee, Joohoon Kim, Jaekyung Kim, Minsu Jeong, Jaebum Noh, Jihwan An, Junsuk Rho",
+      "last_author": "Junsuk Rho",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74547-2The authors present a material-selective hybrid metalens which produces high-efficiency performance in distinct spectral windows without geometric modification. The work establishes hybrid metsurfaces as a manufacturing-compatible alternative to bulk refractive optics.",
+      "url": "https://www.nature.com/articles/s41467-026-74547-2",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Modifications in clusterization procedures for heavy-ion collisions: minimum spanning tree, simulated annealing, coalescence",
       "authors": "",
       "last_author": "",
@@ -1622,7 +1650,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
-      "reason": "Moiré electronic structure; explicitly out of scope per user's guidelines",
+      "reason": "moiré superconductivity explicitly out of scope",
       "matched": []
     },
     {
@@ -1677,20 +1705,6 @@
       "feed_name": "PR Applied",
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Neural Network Preconditioning of Linear Tabulation Methods for Fast Function Approximation",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: Available online 16 June 2026Source: Computer Physics CommunicationsAuthor(s): Pavel P. Popov, Jay M. Arcities, Kaku E. Eduku",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002584?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1808,6 +1822,20 @@
       "matched": []
     },
     {
+      "title": "Overcoming chromium poisoning in solid oxide cells through multiscale perovskite engineering",
+      "authors": "Min Li, Huixian Liu, Yunfei Bu, Xiang Wang, Haoran Wang, Jiawei Chen, Jiawei Li, Yantao Zhao, Zhibin Yang",
+      "last_author": "Zhibin Yang",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74650-4Chromium poisoning and sluggish oxygen kinetics limit oxygen electrodes in reversible solid oxide cells. Here, the authors report a triple-barrier perovskite that suppresses Sr segregation, traps chromium, and tunes surface chemistry, enabling strong chromium tolerance and long-term stability.",
+      "url": "https://www.nature.com/articles/s41467-026-74650-4",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Padé approximation and partition function zeros",
       "authors": "",
       "last_author": "",
@@ -1850,6 +1878,20 @@
       "matched": []
     },
     {
+      "title": "PhySimNet: Accelerating PDE simulations with physics-integrated learning",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Qi Wang, Yuan Mi, Mengtao Yan, Yang Liu, Ji-Rong Wen, Hao Sun",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600202X?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Pioneer-factor activity requires stable chromatin occupancy mediated by both sequence-specific binding and disordered protein domains",
       "authors": "Meghan M. Freund, F. Javier deHaro-Arbona, Sarah Baloul, Ali Torhorst, Charalambos Roussos, Abby J. Ruffridge, Andrew Q. Rashoff, Ryen Hazzard, Peter W. Lewis, Sarah J. Bray, Melissa M. Harrison",
       "last_author": "Melissa M. Harrison",
@@ -1859,6 +1901,20 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-06-19T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Practical and divergent electrochemical access to thiocarbamoyl fluorides and N-trifluoromethyl amines from secondary amines",
+      "authors": "Feba T. Pulikkottil, Daniel F. Carvalho, Kohei Taniguchi, John S. Burnett, Charles A. I. Goodall, Victoria K. Elmes, Andrew Hurt, Ewan R. Clark, Anthony J. H. M. Meijer, Kevin Lam",
+      "last_author": "Kevin Lam",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74660-2The authors report a practical and divergent electrochemical method for converting simple secondary amines into thiocarbamoyl fluorides and N-trifluoromethyl amines, proceeding under mild, open-air conditions without solvent drying, degassing, inert atmosphere, or stoichiometric silver reagents.",
+      "url": "https://www.nature.com/articles/s41467-026-74660-2",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2013,6 +2069,20 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-06-19T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Nikhil Kodali, Kartick Ramakrishnan, Phani Motamarri",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2214,6 +2284,20 @@
       "matched": []
     },
     {
+      "title": "Soluble CD95L triggers Caspase-10-driven reactive oxygen species production in neutrophils and aggravates anti-neutrophil cytoplasmic antibody-vasculitis",
+      "authors": "Andréa Boizard-Moracchini, Dhouha Msalbi, Sarah Huot-Marchand, Layla Haymour, Eden Lebrault, John Tchen, Titia Jekel, Gaël Galli, Benoît Brilland, Nathalie Mérillon, Coralie Josensi, Clément Lozano, Juliana Mazars, Matthieu Douard, Yannick Danger, Franck Vérité, Thomas Barnetche, Estibaliz Lazaro, Pierre Duffau, Pierre Pfirmann, Aude Magerus-Chatinet, Mickael Jean, Jean-François Augusto, Jean Armengaud, Christophe Richez, Pierre Vacher, Patrick Legembre, Patrick Blanco",
+      "last_author": "Patrick Blanco",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74452-8Excessive Reactive oxygen species (ROS) production by neutrophils drives necrotizing inflammation of small blood vessels in Anti-neutrophil cytoplasmic antibody (ANCA)–associated vasculitis (AAV). However, the mechanism responsible for the dysregulated ROS production remains uncharacterized. Here, the authors report the contribution of soluble CD95L to neutrophil activation and ROS production and show that sCD95L—exposed AAV neutrophils undergo Caspase-10 cleavage of OTULIN, LUBAC activation and downstream mitochondrion-dependent ROS production and propose targeting of CD95 signaling as a promising therapeutic strategy in AAV.",
+      "url": "https://www.nature.com/articles/s41467-026-74452-8",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Spectroscopy of $^{4}\\mathrm{He}$ at 0.25 ppt Uncertainty and Improved Alpha-Helion Charge-Radius Difference Determination",
       "authors": "K. Steinebach, J. C. J. Koelemeij, H. L. Bethlem, and K. S. E. Eikema",
       "last_author": "K. S. E. Eikema",
@@ -2293,6 +2377,20 @@
       "feed_name": "Nat. Phys.",
       "feed_category": "Nature",
       "published": "2026-06-19T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Structure of the NAT10 acetyltransferase and mechanism of tRNA acetylation",
+      "authors": "Mingyang Zhou, Supuni Thalalla Gamage, Khoa A. Tran, David Bartee, Xuepeng Wei, Boyu Yin, Shelley Berger, Jordan L. Meier, Ronen Marmorstein",
+      "last_author": "Ronen Marmorstein",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74222-6RNA acetylation by NAT10 is linked to disease, but its catalytic mechanism is unclear. Here, the authors report cryo-EM structures of Chaetomium thermophilum NAT10 in complex with a cytidine-CoA probe with and without ADP.",
+      "url": "https://www.nature.com/articles/s41467-026-74222-6",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2405,6 +2503,20 @@
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-06-18T18:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Trigger-day hCG effects on DNA methylation and neurodevelopment in ART offspring",
+      "authors": "Yue Jiang, Xiaoyu Wei, Xianghu Liu, Jun Zhou, Muyi Han, Anqi Zhao, Hong Lv, Yangqian Jiang, Yayun Gu, Cheng Wang, Juncheng Dai, Hongxia Ma, Guangfu Jin, Ran Huo, Qiang Wang, Xuejiang Guo, Hongbing Shen, Yuan Lin, Yuanlin He, Qigang Zhou, Zhibin Hu",
+      "last_author": "Zhibin Hu",
+      "abstract": "Nature Communications, Published online: 20 June 2026; doi:10.1038/s41467-026-74712-7This study suggests that higher-dose trigger-day human chorionic gonadotropin during assisted reproduction may be associated with DNA methylation and early neurodevelopment.",
+      "url": "https://www.nature.com/articles/s41467-026-74712-7",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-06-20T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2574,6 +2686,20 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "AI 시대에 K-공문서(HWP)를 못 여는 진짜 이유, 그리고 해법을 논의합니다",
+      "authors": "shuggie",
+      "last_author": "shuggie",
+      "abstract": "표준 명세만 있으면 호환 앱이든 렌더러든 어떻게든 만들어내는 게 AI 시대입니다. 그런데 왜 공문서 HWP는 못 열까요? 한컴오피스(아래아한글)가 처음 나온 1989년은 '오픈소스'라는 용어조차 없던 시절입니다. 오픈소스 폰트요? 당연히 없었습니다. 그래서 지난 30여 년간 정부가 생성한 모든 문서가 저작권",
+      "url": "https://news.hada.io/topic?id=30663",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-06-20T19:51:06+00:00",
+      "score": 0,
       "reason": "",
       "matched": []
     },
@@ -3259,20 +3385,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-06-19T01:38:51+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Show GN: GitHub 저장소를 서버리스 RDB처럼 쓰는 GitDB를 만들었습니다",
-      "authors": "3xhaust",
-      "last_author": "3xhaust",
-      "abstract": "GitDB라는 TypeScript 라이브러리를 만들고 있습니다. GitHub 저장소를 backend로 쓰는 서버리스 RDB식 데이터베이스입니다. 데이터는 repo 안에 manifest, mutation log, snapshot 같은 파일로 커밋되고, Git history가 그대로 데이터 변경 이력이 됩니다. 지원하는 것들: table API: in",
-      "url": "https://news.hada.io/topic?id=30608",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-06-18T22:51:56+00:00",
       "score": 0,
       "reason": "",
       "matched": []
