@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Digest — 2026-06-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Site title */
+  .site-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Header */
+  .page-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .page-header .meta {
+    font-size: 15px;
+    color: #656d76;
+  }
+  .page-header .feeds {
+    font-size: 13px;
+    color: #848d97;
+    margin-top: 4px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848d97;
+    padding: 10px 12px;
+    border-bottom: 2px solid #d1d9e0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1f2328; }
+  tbody tr {
+    border-bottom: 1px solid #eaeef2;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #f6f8fa; }
+  td { padding: 10px 12px; vertical-align: top; }
+
+  .td-score {
+    width: 48px;
+    text-align: center;
+  }
+  .score-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .td-title a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .td-title a:hover { text-decoration: underline; }
+  .reason {
+    font-size: 13px;
+    color: #848d97;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .td-authors {
+    color: #656d76;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .td-time {
+    width: 50px;
+    text-align: right;
+    color: #848d97;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: #848d97;
+  }
+
+  .group-header td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }
+
+  /* News section */
+  .news-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d1d9e0;
+  }
+  .news-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .news-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeef2;
+    font-size: 15px;
+  }
+  .news-item a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-item a:hover { text-decoration: underline; }
+  .news-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #656d76;
+    border: 1px solid #eaeef2;
+    margin-right: 6px;
+  }
+  .news-time {
+    color: #848d97;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; }
+    .td-authors { max-width: 150px; }
+    .td-time { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
+
+<div class="page-header">
+  <h1>Journal Digest</h1>
+  <div class="meta">2026-06-27 — 34 papers scored by Haiku</div>
+  <div class="feeds">Comp. Phys. Comm. (34)</div>
+</div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Score</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th style="text-align:right">Time</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+<tr class="group-header"><td colspan="4">Comp. Phys. Comm.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001955?dgcid=rss_sd_all" target="_blank" rel="noopener">Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity</a><br><span class=reason>Ab initio phonon methodology (DFPT anharmonicity, thermal transport); background relevant to cluster D but not user's specific materials</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002535?dgcid=rss_sd_all" target="_blank" rel="noopener">Additions to the FUMILIM minimization package</a><br><span class=reason>Optimization package update; computational infrastructure background with potential ab initio application</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all" target="_blank" rel="noopener">Dysurf: A program for simulating four-dimensional dynamical structure factor</a><br><span class=reason>Dynamical structure factor calculation; condensed matter methodology background but not connected to user's MBPT/GW/EPW clusters</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all" target="_blank" rel="noopener">Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers</a><br><span class=reason>HPC performance optimization on supercomputers; relevant to cluster D infrastructure interest but applied to CFD, not MBPT</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001724?dgcid=rss_sd_all" target="_blank" rel="noopener">IRSSG: An open-source software package for spin space groups</a><br><span class=reason>Spin space group symmetry tool; background infrastructure for ab initio codes, but not core to MBPT/GW workflows</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002195?dgcid=rss_sd_all" target="_blank" rel="noopener">LNN-PINN: A unified physics-only training framework with liquid residual blocks</a><br><span class=reason>Physics-informed neural networks; AI-for-science background (cluster C) but not MBPT-specific</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001980?dgcid=rss_sd_all" target="_blank" rel="noopener">MoireStudio: A universal twisted electronic structure calculation package</a><br><span class=reason>Moiré electronic structure calculator; user explicitly caps moiré physics at 2 without direct GW/MBPT angle</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002584?dgcid=rss_sd_all" target="_blank" rel="noopener">Neural Network Preconditioning of Linear Tabulation Methods for Fast Function Approximation</a><br><span class=reason>Neural network preconditioning for numerical methods; AI-for-science background but general function approximation, not MBPT</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600202X?dgcid=rss_sd_all" target="_blank" rel="noopener">PhySimNet: Accelerating PDE simulations with physics-integrated learning</a><br><span class=reason>ML acceleration of PDE simulations; cluster C (AI-for-science) methodology but general PDEs, not MBPT workflows</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002006?dgcid=rss_sd_all" target="_blank" rel="noopener">invDFT : A CPU-GPU massively parallel tool to find exact exchange-correlation potentials from groundstate densities</a><br><span class=reason>DFT XC-functional infrastructure with GPU acceleration; background computational methodology but not MBPT-core</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002572?dgcid=rss_sd_all" target="_blank" rel="noopener">kalypsso: a performance portable platform for compressible hydrodynamics simulations using adaptive mesh refinement</a><br><span class=reason>Performance portable HPC solver with AMR; cluster D exascale infrastructure interest but applied to hydrodynamics, not MBPT</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001979?dgcid=rss_sd_all" target="_blank" rel="noopener">A GPU-accelerated multi-resolution feature-preserving particle generation method for complex geometries</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600192X?dgcid=rss_sd_all" target="_blank" rel="noopener">A domain embedding strategy for acoustic wave scattering by moving obstacles</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002614?dgcid=rss_sd_all" target="_blank" rel="noopener">A new DGTD algorithm for calculating radiation form rotationally symmetric antennas</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001943?dgcid=rss_sd_all" target="_blank" rel="noopener">A new geometric Volume-of-Fluid advection scheme using Lagrangian volume particles in two-dimensional multi-material fluids</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002018?dgcid=rss_sd_all" target="_blank" rel="noopener">Abradable DEM: A novel framework to capture the mechanistic evolution of particle shape</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001967?dgcid=rss_sd_all" target="_blank" rel="noopener">An OpenFOAM based solver for three-phase flow in porous media incorporating foam effects</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002201?dgcid=rss_sd_all" target="_blank" rel="noopener">Application of direct interpolation boundary element method to 2D elasticity with general body forces and thermoelastic effects</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002638?dgcid=rss_sd_all" target="_blank" rel="noopener">BO-PBK: A new solver for dispersion relations of obliquely propagating waves in multi-species plasmas with anisotropic loss-cone drift product-bi-kappa distributions</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002432?dgcid=rss_sd_all" target="_blank" rel="noopener">Computation of the dynamics of rotating 2D/3D Gross-Pitaevskii equations based on the HPC pseudo-spectral solver BEC2HPC</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600250X?dgcid=rss_sd_all" target="_blank" rel="noopener">Editorial Board</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001931?dgcid=rss_sd_all" target="_blank" rel="noopener">Enhancing photoionization rate calculations in low-temperature plasmas using spectral methods</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001815?dgcid=rss_sd_all" target="_blank" rel="noopener">FeynGrav 4.0</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001657?dgcid=rss_sd_all" target="_blank" rel="noopener">FiReSMOKE: An OpenFOAM-based collection of finite-rate chemistry solvers for turbulent combustion systems</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001773?dgcid=rss_sd_all" target="_blank" rel="noopener">GollumFit: An icecube open-source framework for binned-likelihood neutrino telescope analyses</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002596?dgcid=rss_sd_all" target="_blank" rel="noopener">MF-toolkit: A High-Performance Python Library for Multifractal Analysis with Automated Crossover Detection, Source Identification and Application to Gravitational Waves Data</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002626?dgcid=rss_sd_all" target="_blank" rel="noopener">PPFM (Plasma Properties For Many): An Object Oriented C++ Library for Computing Thermodynamic and Transport Properties of Plasmas Under Different Operating Conditions</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600216X?dgcid=rss_sd_all" target="_blank" rel="noopener">Padé approximation and partition function zeros</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002158?dgcid=rss_sd_all" target="_blank" rel="noopener">RHEA-X: Distributed GPU-resident high-fidelity flow solver for multiphysics turbulence</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001906?dgcid=rss_sd_all" target="_blank" rel="noopener">Simple third order operator-splitting schemes for stochastic mechanics and field theory</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002183?dgcid=rss_sd_all" target="_blank" rel="noopener">Vidyut3d: A GPU accelerated fluid solver for non-equilibrium plasmas on adaptive grids</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600189X?dgcid=rss_sd_all" target="_blank" rel="noopener">WGrin: A Matlab toolbox for computing whispering gallery modes in graded index optical resonators</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002031?dgcid=rss_sd_all" target="_blank" rel="noopener">ff-bifbox: A scalable, open-source toolbox for bifurcation analysis of nonlinear PDEs</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001876?dgcid=rss_sd_all" target="_blank" rel="noopener">moljax: GPU-accelerated method of lines for stiff reaction-diffusion PDEs with FFT preconditioning</a></td><td class="td-authors"></td><td class="td-time"></td></tr>
+</tbody>
+</table>
+
+
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    <div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30880" target="_blank" rel="noopener">Om Malik을 추모하며</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30879" target="_blank" rel="noopener">캘리포니아 3D 프린터 감시 법안은 아직 막을 수 있음</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30878" target="_blank" rel="noopener">미국, Anthropic의 Mythos AI를 ‘신뢰된’ 미국 조직에 공개 허용</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30877" target="_blank" rel="noopener">Springer Nature가 Max Planck 논문 두 편을 삭제한 이유</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30874" target="_blank" rel="noopener">이번 주말에 무엇을 할 예정인가요?</a><span class="news-time">7h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30873" target="_blank" rel="noopener">실패한 국가 배후 추정 공격 해부</a><span class="news-time">8h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30872" target="_blank" rel="noopener">37signals의 의사결정 가이드</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30871" target="_blank" rel="noopener">가짜 트랙션 문제</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30870" target="_blank" rel="noopener">&amp;#039;기획 하네스(planning harness)&amp;#039;로 완성하는 상세기획 워크플로우 자동화</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30869" target="_blank" rel="noopener">오픈소스 보안을 함께 지키기 위한 Akrites 공개서한</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30868" target="_blank" rel="noopener">CVE-2026-LGTM 사고 보고서</a><span class="news-time">9h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30867" target="_blank" rel="noopener">미국 정부가 GPT-5.6 사용자를 결정할 예정</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30866" target="_blank" rel="noopener">GPT‑5.6 Sol 프리뷰: 차세대 모델</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30865" target="_blank" rel="noopener">새로운 산업혁명의 잠금 해제</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30864" target="_blank" rel="noopener">gofumpt- gofmt보다 더 엄격한 Go 코드 포매터</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30863" target="_blank" rel="noopener">훔치기도 기술이다</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30862" target="_blank" rel="noopener">Apple, 고급형 M6 Mac 칩 건너뛰고 AI 중심 M7 라인으로 전환 예정</a><span class="news-time">13h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30861" target="_blank" rel="noopener">민주·권위주의 국가들이 대규모 감시 경쟁을 벌이고 있음</a><span class="news-time">15h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30860" target="_blank" rel="noopener">Show HN: OpenKnowledge – Obsidian/Notion의 오픈소스 AI 우선 대안</a><span class="news-time">17h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30859" target="_blank" rel="noopener">IBM, 1nm 미만 0.7nm 칩 기술 공개</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30858" target="_blank" rel="noopener">Nico의 데이터룸, Papermark 코드 도용 의혹 제기</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30856" target="_blank" rel="noopener">Vibecoding 공개로 Emacs 패치가 거절됨</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30855" target="_blank" rel="noopener">AI에게 주도권을 빼앗기지 마세요 — 두 번의 자동화 실패에서 배운 것</a><span class="news-time">23h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30854" target="_blank" rel="noopener">Show GN: SongRyeon Core - LLM이 쓴 말과 코드가 검증한 정보를 분리하는 로컬 에이전트 런타임 실험</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30853" target="_blank" rel="noopener">Show GN: macSandbox – Apple Silicon Mac을 위한 일회용 Windows 11 샌드박스</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30850" target="_blank" rel="noopener">인터넷의 ‘신분증 제시’ 시대가 프라이버시를 무너뜨린다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30848" target="_blank" rel="noopener">Show GN: 삼선 - 세 선으로 그린 그림</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30847" target="_blank" rel="noopener">Om Malik 별세</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30846" target="_blank" rel="noopener">새로운 HTTP QUERY 메소드</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30845" target="_blank" rel="noopener">모든 고객을 위한 Cloudflare OAuth</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30844" target="_blank" rel="noopener">LastPass가 또 다른 데이터 유출을 사용자에게 통지함</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30843" target="_blank" rel="noopener">Ford, AI 품질검사 차질로 ‘gray beard’ 검사관 재고용</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30842" target="_blank" rel="noopener">Apple, MacBook과 iPad 가격 인상</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30841" target="_blank" rel="noopener">도구와 대화하는 것의 피로감</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30839" target="_blank" rel="noopener">Herculaneum 두루마리 전체를 처음으로 해독</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30838" target="_blank" rel="noopener">딥테크 기업은 다르게 만들어진다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30837" target="_blank" rel="noopener">auth.md — 에이전트가 사용자를 대신해 가입시키기 위한 오픈 프로토콜</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30836" target="_blank" rel="noopener">CSS font-family 권장 사항</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30835" target="_blank" rel="noopener">대부분의 스타트업은 번(burn) 문제가 아니라 의사결정 문제를 안고 있다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30834" target="_blank" rel="noopener">Zig, 새로운 @bitCast 의미론과 LLVM 백엔드 개선</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30833" target="_blank" rel="noopener">Hacker News 데이터로 살펴보는 18년간 기술 트렌드 변화</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30832" target="_blank" rel="noopener">Nub - Node.js용 Bun 유사 올인원 툴킷</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30831" target="_blank" rel="noopener">California AB 2047, 학생·교육자·기업의 3D 프린터 접근 제한 우려</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30830" target="_blank" rel="noopener">테러와의 전쟁은 어떻게 미국을 독재 체제로 길들였는가</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30829" target="_blank" rel="noopener">Slate 전기 트럭, 시작가 $24,950</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30828" target="_blank" rel="noopener">Xteink X4 E-Ink 리더</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30827" target="_blank" rel="noopener">Meta, 내부 데이터 유출 뒤 직원 추적 프로그램 중단</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30826" target="_blank" rel="noopener">블로깅은 그저 당연한 것을 말하는 일이어도 된다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30825" target="_blank" rel="noopener">Krea 2: 오픈 가중치 12B 이미지 모델 기술 보고서</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=30824" target="_blank" rel="noopener">45°C 냉각 설계로 데이터센터 물 사용량을 거의 0으로 줄임</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/chip-industry-week-in-review-144/" target="_blank" rel="noopener">Chip Industry Week In Review</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/i-o-design-challenges-grow-in-ai-data-centers-and-hpc-clusters/" target="_blank" rel="noopener">I/O Design Challenges Grow In AI Data Centers And HPC Clusters</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/verification-methodologies-struggle-to-keep-up-with-ai/" target="_blank" rel="noopener">Verification Methodologies Struggle To Keep Up With AI</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/executive-outlook-agentic-ais-impact-on-chip-design/" target="_blank" rel="noopener">Executive Outlook: Agentic AI’s Impact On Chip Design</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/how-far-left-can-we-really-shift-verification/" target="_blank" rel="noopener">How Far Left Can We Really Shift Verification?</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/realizing-the-future-of-3d-ic-design/" target="_blank" rel="noopener">Realizing The Future Of 3D-IC Design</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/reducing-avoidable-memory-trips-in-hbm-systems/" target="_blank" rel="noopener">Reducing Avoidable Memory Trips In HBM Systems</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/wafer-scale-vs-chiplets-the-new-war-part-2/" target="_blank" rel="noopener">Wafer-Scale vs. Chiplets: The New War? Part 2</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/more-massive-still-why-ai-infrastructure-demands-a-unified-design-approach/" target="_blank" rel="noopener">More Massive Still: Why AI Infrastructure Demands A Unified Design Approach</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/introducing-an-agentic-llm-for-chip-design/" target="_blank" rel="noopener">Introducing An Agentic LLM For Chip Design</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/synaptics-acquisition-by-onsemi-affirms-edge-ai-is-for-real/" target="_blank" rel="noopener">Synaptics Acquisition by Onsemi Affirms Edge AI Is for Real</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/the-pqc-silicon-is-here-today-for-tomorrows-quantum-threats/" target="_blank" rel="noopener">The PQC Silicon Is Here Today for Tomorrow’s Quantum Threats</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/next%e2%80%91gen-adas-ad-architectures-power-networking-safety-sensors/" target="_blank" rel="noopener">Next‑Gen ADAS/AD Architectures: Power, Networking, Safety &amp; Sensors</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/jim-keller-on-tenstorrents-blackhole-scaling-and-ipo-ambitions/" target="_blank" rel="noopener">Jim Keller: ‘AI Still Obeys the Old Laws of Compute’</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/openai-jalapeno-will-be-spicy-but-the-real-sizzle-is-its-chip-design-ai/" target="_blank" rel="noopener">OpenAI’s Jalapeño Will Be Spicy, But the Real Sizzle Is Its Chip Design AI</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/vicfuse-introduces-ul-class-fuse-series-for-modern-ai-infrastructure-and-industrial-protection/" target="_blank" rel="noopener">Vicfuse Introduces UL Class Fuse Series for Modern AI Infrastructure and Industrial Protection</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/ibm-shows-sub-1-nm-chips-targeting-production-in-5-years/" target="_blank" rel="noopener">IBM Shows Sub-1-nm Chips, Targeting Production in 5 Years</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/qualcomm-forecasts-billions-in-additional-revenue-from-new-data-center-solutions/" target="_blank" rel="noopener">Qualcomm Forecasts Billions in Additional Revenue from New Data Center Solutions</a><span class="news-time">2d</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/chinese-scientists-and-sugon-representatives-visit-dkrz-following-isc-2026/" target="_blank" rel="noopener">Chinese Scientists and Sugon Representatives Visit DKRZ Following ISC 2026</a><span class="news-time">14h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/llnl-helps-advance-ai-driven-design-and-simulation-for-nnsa-aires-tide-collaboration/" target="_blank" rel="noopener">LLNL Helps Advance AI-Driven Design and Simulation for NNSA Aires Tide Collaboration</a><span class="news-time">17h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/taiwans-nchc-launches-nano4-ai-supercomputer-to-power-next-gen-ai-innovation/" target="_blank" rel="noopener">Taiwan’s NCHC Launches Nano4 AI Supercomputer to Power Next-Gen AI Innovation</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/qualcomm-and-meta-announce-strategic-multi-generation-agreement-on-data-center-cpus/" target="_blank" rel="noopener">Qualcomm and Meta Announce Strategic Multi-Generation Agreement on Data Center CPUs</a><span class="news-time">20h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/jetcool-brings-direct-to-chip-liquid-cooling-to-dell-poweredge-xe7745/" target="_blank" rel="noopener">JetCool Brings Direct-to-Chip Liquid Cooling to Dell PowerEdge XE7745</a><span class="news-time">21h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/vast-data-helps-dkrz-advance-the-data-foundation-behind-modern-climate-research/" target="_blank" rel="noopener">VAST Data Helps DKRZ Advance the Data Foundation Behind Modern Climate Research</a><span class="news-time">21h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/medra-launches-ai-experimentalist-and-announces-darpa-collaboration/" target="_blank" rel="noopener">Medra Launches AI Experimentalist and Announces DARPA Collaboration</a><span class="news-time">21h</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/isc-introduces-rio-yokota-as-isc-2027-program-chair/" target="_blank" rel="noopener">ISC Introduces Rio Yokota as ISC 2027 Program Chair</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/texas-am-supercomputer-named-most-powerful-among-us-universities/" target="_blank" rel="noopener">Texas A&amp;M Supercomputer Named Most Powerful Among US Universities</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">HPCwire</code> <a href="https://www.hpcwire.com/off-the-wire/nscc-singapore-launches-next-gen-supercomputer-aspire-2b/" target="_blank" rel="noopener">NSCC Singapore Launches Next-Gen Supercomputer ASPIRE 2B</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">NVIDIA Tech Blog</code> <a href="https://developer.nvidia.com/blog/deploy-a-production-ready-nvidia-ai-q-blueprint-on-oracle-cloud-infrastructure/" target="_blank" rel="noopener">Deploy a Production-Ready NVIDIA AI-Q Blueprint on Oracle Cloud Infrastructure</a><span class="news-time">15h</span></div><div class="news-item"><code class="news-source">NVIDIA Tech Blog</code> <a href="https://developer.nvidia.com/blog/creating-the-nvidia-nemotron-3-ultra-nvfp4-checkpoint-with-nvidia-model-optimizer/" target="_blank" rel="noopener">Creating the NVIDIA Nemotron 3 Ultra NVFP4 Checkpoint with NVIDIA Model Optimizer</a><span class="news-time">18h</span></div><div class="news-item"><code class="news-source">NVIDIA Tech Blog</code> <a href="https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/" target="_blank" rel="noopener">Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor Heaps</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">NVIDIA Tech Blog</code> <a href="https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support/" target="_blank" rel="noopener">Scaling AI Inference Across Multiple GPUs Using NVIDIA TensorRT with Multi-Device Inference Support</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">NVIDIA Tech Blog</code> <a href="https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/" target="_blank" rel="noopener">Q&amp;amp;A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE</a><span class="news-time">1d</span></div>
+  </div>
+</div>
+
+
+</body>
+</html>
