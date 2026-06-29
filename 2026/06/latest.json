@@ -1,6 +1,34 @@
 {
-  "generated": "2026-06-29T11:27:30.305765+00:00",
+  "generated": "2026-06-29T12:05:25.516323+00:00",
   "papers": [
+    {
+      "title": "Improving photovoltaics by adding extra terminals to extract hot carriers",
+      "authors": "Bruno Bertin-Johannet, Thibaut Thu\\'egaz, Janine Splettstoesser, Robert S. Whitney",
+      "last_author": "Robert S. Whitney",
+      "abstract": "arXiv:2507.13279v2 Announce Type: replace Abstract: Photovoltaic cells usually have two terminals, one collecting electrons and the other collecting holes. Can more terminals improve such solar cells? Energy-filtering terminals could collect \"hot\" carriers (electrons or holes not yet relaxed to the band edge), with other terminals for low-energy carriers. When collection is faster than carrier-phonon relaxation, we predict that four-terminal cells have higher power output than optimal two-terminal cells, often 20-40% higher. Similar effects will occur in multi-terminal thermoelectrics exploiting non-equilibrium distributions.",
+      "url": "https://arxiv.org/abs/2507.13279",
+      "paper_id": "2507.13279",
+      "feed_name": "cond-mat.mes-hall",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 3,
+      "reason": "PV absorber solar cells and hot carrier extraction relate to cluster B research on photovoltaic materials",
+      "matched": []
+    },
+    {
+      "title": "A BRAVE Alloy Design Campaign (Bayesian Risk-aware Alloy discoVery and Exploration)",
+      "authors": "Mrinalini Mulukutla (a), Danial Khatamsaz (a), Trevor Hastings (a), Wenle Xu (a), Daniel Salas (a), Joydeep Kundu (a), Vasanth C. Shunmugasamy (a), Daniel Lewis (a), Jacob Hempel (a), Clinton Strosser (a), Alexandra Salinas (b), Brent Vela (a), Nicolas Flores (a), Sina Hossein Zadeh (a), Ali Rachidi (d), David Elbert (d), Brady Butler (c), James Paramore (e), Dimitris Lagoudas (a), Justin Wilkerson (b), George Pharr (a), Douglas Allaire (b), Vahid Attari (a), Ibrahim Karaman (a), Ankit Srivastava (a), Raymundo Arr\\'oyave (a, b)",
+      "last_author": "b)",
+      "abstract": "arXiv:2606.27522v1 Announce Type: new Abstract: In constrained alloy optimization, the compositions with the highest performance potential often reside at the boundary of phase stability -- where the risk of experimental failure is also highest. This work demonstrates this principle through a risk-aware Bayesian optimization campaign on single-phase FCC high-entropy alloys in the Al-V-Cr-Mn-Fe-Co-Ni-Cu system. A learned feasibility classifier, integrated directly into the multi-objective acquisition function, probabilistically penalizes candidates likely to produce failed experiments while preserving access to high-performing boundary compositions. From approximately 27,000 CALPHAD-screened candidates, 48 alloys were synthesized over three closed-loop iterations targeting five objectives (yield strength, UTS/YS ratio, strain at UTS, dynamic-to-quasi-static hardness ratio, and simulated depth of penetration), exploring 0.12\\% of the feasible space. Two compositional regimes emerged: a V-rich, Ni-rich high-strength regime (UTS up to ${\\sim}1480$~MPa at 50% elongation) and a Mn-containing high-ductility regime (UTS/YS up to 4.20 at $>$50% elongation). Among feasible alloys, vanadium simultaneously drives yield strength ($r = 0.84$) and sigma-phase formation ($r = 0.54$ with infeasibility); at V = 24~at.%, the three strongest alloys and three sigma failures share the same compositional point. Additionally, the strongest performing alloys cluster in a narrow region of compositional space (V $\\geq$ 20 at.%, Ni $\\geq$ 36 at.%), representing ${\\sim}100$ of $27,074$ feasible candidates -- a probability of $P \\approx 6.5 \\times 10^{-6}$ under random sampling. This dual role -- consistent with the KKT prediction that constrained optima lie on active constraint boundaries -- required feasibility-aware acquisition to access; hard filtering would have excluded this region entirely.",
+      "url": "https://arxiv.org/abs/2606.27522",
+      "paper_id": "2606.27522",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "",
+      "matched": []
+    },
     {
       "title": "A General Pipeline for Digesting Scientific Literature into a Shared Scientific Knowledge Base",
       "authors": "Charles T. Black",
@@ -11,64 +39,22 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 3,
-      "reason": "LLM-based literature extraction for materials knowledge base; somewhat related to AI-agent cluster",
-      "matched": []
-    },
-    {
-      "title": "A unified heterogeneous implementation of numerical atomic orbitals-based real-time TDDFT within the ABACUS package",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Taoni Bao, Yuanbo Li, Zichao Deng, Haotian Zhao, Denghui Lu, Yike Huang, Chao Lian, Lixin He, Mohan Chen",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002420?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 3,
-      "reason": "Real-time TDDFT with GPU heterogeneous implementation directly addresses cluster D (time-dependent BSE methodology, ultrafast exciton dynamics, GPU acceleration of ab initio methods)",
-      "matched": []
-    },
-    {
-      "title": "LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion",
-      "authors": "Honghui Kim, Dohoon Kim, Jihan Kim",
-      "last_author": "Jihan Kim",
-      "abstract": "arXiv:2512.01693v3 Announce Type: replace-cross Abstract: Metal-organic framework (MOF) databases have grown rapidly through experimental deposition and large-scale literature extraction, but recent analyses show that nearly half of their entries contain substantial structural errors. These inaccuracies propagate through high-throughput screening and machine-learning workflows, limiting the reliability of data-driven MOF discovery. Correcting such errors is exceptionally difficult because true repairs require integrating crystallographic files, synthesis descriptions, and contextual evidence scattered across the literature. Here we introduce LitMOF, a large language model-driven multi-agent framework that validates crystallographic information directly from the original literature and cross-validates it with database entries to repair structural errors. Applying LitMOF to the experimental MOF database (the CSD MOF Subset), we constructed LitMOF-DB, a curated set of 189,567 computation-ready structures, including the successful repair of 9,227 invalid entries, which accounts for 69.1% of the CSD-derived not-computation-ready MOFs in the latest CoRE MOF DB. Additionally, the system uncovered 8,771 experimentally reported MOFs absent from existing resources, substantially expanding the known experimental design space. Using direct air capture screening as a case study, we demonstrate that structural errors severely distort predicted adsorption energies and CO2/H2O selectivity, leading to systematic misranking of materials, false positives, and the omission of high-performance candidates. This work establishes a scalable pathway toward self-correcting scientific databases and a generalizable approach for LLM-driven curation in materials science.",
-      "url": "https://arxiv.org/abs/2512.01693",
-      "paper_id": "2512.01693",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 3,
-      "reason": "LLM multi-agent for MOF database validation; AI methodology somewhat related to cluster C",
-      "matched": []
-    },
-    {
-      "title": "Moir\\'e Phonons and Emergent Exciton-Phonon Coupling in a Moir\\'e Heterobilayer",
-      "authors": "Can B. Uzundal, Woochang Kim, Zhiyuan Cui, Yuxuan Wei, Zheyu Lu, Qixin Feng, Francis L. Hong, Indrajit Maity, Takashi Taniguchi, Kenji Watanabe, Manish Jain, Mit H. Naik, Yoseob Yoon, Michael F. Crommie, Steven G. Louie, Feng Wang",
-      "last_author": "Feng Wang",
-      "abstract": "arXiv:2606.28185v1 Announce Type: new Abstract: Moir\\'e superlattices have emerged as a new platform for engineering electronic and optical properties in van der Waals heterostructures, enabling control over correlated and excitonic phenomena. Yet the impact of moir\\'e superlattices on exciton-phonon coupling remains largely unexplored. Here we demonstrate emergent, layer-selective coupling between moir\\'e phonons and moir\\'e excitons in angle-aligned WS2/WSe2 heterobilayers. Using a broadband terahertz phonon transducer, we coherently launch moir\\'e phonons that resonantly perturb the excitonic states. We show that the exciton-phonon coupling is intrinsically modified by the moir\\'e superlattice in a layer-selective manner. A driven oscillator model captures the dynamics, revealing three moir\\'e phonon resonances with distinct coupling to the moir\\'e excitons. First principles calculations show that many moir\\'e phonon modes can arise with distinct strongly hybridized in-plane and out-of-plane vibrations in the moir\\'e unit cells. The calculations further identify the three experimentally observed moir\\'e phonons and their emergent characteristic coupling to the moir\\'e excitons.",
-      "url": "https://arxiv.org/abs/2606.28185",
-      "paper_id": "2606.28185",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 3,
-      "reason": "Exciton-phonon coupling in moiré heterostructures; background topic for GW-BSE plus phonon effects",
-      "matched": []
-    },
-    {
-      "title": "Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Soham Mandal, Manish Jain, Prabal K. Maiti",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001955?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 2,
       "reason": "",
+      "matched": []
+    },
+    {
+      "title": "A universal and efficient hybrid digital-analog fermionic quantum simulator",
+      "authors": "Hao-Tian Wei, Kaden R. A. Hazzard",
+      "last_author": "Kaden R. A. Hazzard",
+      "abstract": "arXiv:2606.05517v2 Announce Type: replace-cross Abstract: We present a universal framework to harness fermionic ultracold atom platforms for quantum simulation, showing how variational algorithms on existing hardware can simulate many-body systems well beyond the hardware's native Hamiltonian. Our analysis provides evidence that one can quantum simulate the ground-state properties of a broad class of gapless target Hamiltonians of local observables in a quantum evolution time that grows polynomially with the inverse relative error, $T\\sim O(\\mathrm{poly}(1/\\epsilon))$ up to logarithmic corrections, offering an exponential speedup over na{\\\"i}ve classical algorithms such as exact diagonalization. We provide numerical evidence and theoretical argument that this holds for energy density, density-density, and spin-spin correlations in three qualitatively distinct models -- the repulsive Hubbard model; a Hubbard model augmented with nearest-neighbor attractive interactions, which introduces the phenomenon of pairing; and the Hofstadter-Hubbard model, which introduces a gauge field and fractional quantum Hall physics. This work demonstrates quantum simulation using current fermionic platforms far beyond the models natively implemented in the hardware.",
+      "url": "https://arxiv.org/abs/2606.05517",
+      "paper_id": "2606.05517",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "Fermionic ultracold atom quantum simulator; quantum simulation background",
       "matched": []
     },
     {
@@ -82,7 +68,7 @@
       "feed_category": "Nature",
       "published": "2026-06-29T08:00:00+00:00",
       "score": 2,
-      "reason": "Quantum magnetism perspective; background on integrating theory/numerics for spin systems, but capped at 2 by model-Hamiltonian gate",
+      "reason": "Perspective on quantum magnetism theory-numerics collaboration; methodology but strongly correlated systems out of scope",
       "matched": []
     },
     {
@@ -96,7 +82,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "2D perovskite photoluminescence; emerging PV material but experimental characterization only",
+      "reason": "",
       "matched": []
     },
     {
@@ -110,35 +96,35 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Machine learning interatomic potential; out-of-scope MLIP without MBPT connection",
+      "reason": "",
       "matched": []
     },
     {
-      "title": "Comment on \"Altermagnetic and Dipolar Spitting of Magnons in FeF_2\" arXiv:2601.04303",
-      "authors": "S. W. Lovesey",
-      "last_author": "S. W. Lovesey",
-      "abstract": "arXiv:2606.27975v1 Announce Type: new Abstract: Conclusions by Sears et al. (arXiv: 2601.04303) about dispersions of magnons in rutile FeF_2 are unsound because compulsory lattice vibrations are omitted in the analysis of their neutron scattering spectra. Hybridized magnon-phonon modes in magnetically ordered FeF_2 were observed and successfully analysed half a century ago.",
-      "url": "https://arxiv.org/abs/2606.27975",
-      "paper_id": "2606.27975",
+      "title": "Competing spin-1 and spin-2 regimes in a frustrated four-leg spin-1/2 ladder",
+      "authors": "D. S. Almeida, R. R. Montenegro-Filho",
+      "last_author": "R. R. Montenegro-Filho",
+      "abstract": "arXiv:2606.27991v1 Announce Type: new Abstract: We investigate a frustrated four-leg spin-$1/2$ ladder using density matrix renormalization group calculations. The uniform system displays three regimes: short-range antiferromagnetic legs, short-range ferromagnetic legs, and an effective spin-2 Heisenberg chain, separated by a crossover and a first-order transition. The spin-2 regime is confirmed through its finite string order parameter, edge-localized excitations, and excellent agreement with a projected $S_r=2$ effective Hamiltonian. Recasting the model as two frustrated two-leg ladders coupled by rung and diagonal interactions, we track how the trivial and Haldane phases of an isolated ladder evolve as interladder couplings are introduced. The resulting phase diagrams reveal crossover and first-order lines whose locations are captured by the spin-2 projection and show how singlet- and triplet-dominated regimes reorganize when two ladders merge into a four-leg structure, clarifying the emergence of effective spin-1 versus spin-2 behavior.",
+      "url": "https://arxiv.org/abs/2606.27991",
+      "paper_id": "2606.27991",
       "feed_name": "cond-mat.str-el",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Magnon-phonon hybridization relates tangentially to electron-phonon coupling methodology",
+      "reason": "Frustrated spin ladder via DMRG; toy spin model, out of scope",
       "matched": []
     },
     {
-      "title": "Confined exciton polaron in MoS$_2$ on twisted-hBN",
-      "authors": "Garima Gupta, Mayank Chhaperwal, Pankaj Kumar, Pushkar Dasika, Kenji Watanabe, Takashi Taniguchi, Archana Raja, Kausik Majumdar",
-      "last_author": "Kausik Majumdar",
-      "abstract": "arXiv:2606.27770v1 Announce Type: cross Abstract: The simple electrostatic picture of a trion is that of an excess charge inducing an exciton polarization and binding closer (farther) to the hole (electron) side of it. Trion formation can be forbidden when such spontaneous rearrangement of charges is not allowed by the application of external perturbation, such as electric field. Here we test this hypothesis experimentally using a non-monotonic electric field. We realize this scenario by imprinting the ferroelectric domains at the AA-stacked twisted-hBN (t-hBN) interface onto a monolayer of MoS2 placed over it. The spatially varying in-plane electric field around the domain wall serves the dual purpose of (a) confining and polarizing the 2D exciton in the domain wall, and (b) depleting the free charge carriers from the domain wall. We observe a large quantized exciton splitting confirming strong exciton confinement in the domain wall. Forced by the confining potential, the electron side of the polarized exciton lies closer to the domain with accumulated free electrons, which should ideally prevent any trion formation. Contrary to the laid hypothesis, we observe signatures of quantized charged exciton emission, with an inter-level splitting that mimics the level-splitting of the quantized excitons. This paradox is explained using the many-body picture of exciton polaron, where a conduction band hole attractively binds the polarized exciton and the electron Fermi sea. The results provide a definitive way to unambiguously discern exciton polaron from trion.",
-      "url": "https://arxiv.org/abs/2606.27770",
-      "paper_id": "2606.27770",
-      "feed_name": "cond-mat.mtrl-sci",
+      "title": "Dynamics of many-body localized systems: logarithmic lightcones and $\\log \\, t$-law of $\\alpha$-R\\'enyi entropies",
+      "authors": "Daniele Toniolo, Sougato Bose",
+      "last_author": "Sougato Bose",
+      "abstract": "arXiv:2408.02016v3 Announce Type: replace-cross Abstract: In the context of the Many-Body-Localization phenomenology we consider arbitrarily large one-dimensional local spin systems, the XXZ model with random magnetic field is a prototypical example. Without assuming the existence of exponentially localized integrals of motion (LIOM), but assuming instead that the system's dynamics gives rise to a Lieb-Robinson bound (L-R) with a logarithmic lightcone, we rigorously evaluate the dynamical generation, starting from a generic product state, of $ \\alpha$-R\\'enyi entropies, with $ \\alpha $ close to one, obtaining a $\\log \\, t$-law, that denotes a slow spread of entanglement. This is in sharp contrast with Anderson localized phases that show no dynamically generated entanglement. To prove this result we apply a general theory recently developed by us in arXiv:2408.00743 that quantitatively relates the L-R bounds of a local Hamiltonian with the dynamical generation of entanglement. Assuming instead the existence of LIOM we provide new independent proofs of the known facts that the L-R bound of the system's dynamics has a logarithmic lightcone and show that the dynamical generation of the von Neumann entropy has for large times a $ \\log \\, t$-shape. L-R bounds, that quantify the dynamical spreading of local operators, may be easier to measure in experiments in comparison to global quantities such as entanglement.",
+      "url": "https://arxiv.org/abs/2408.02016",
+      "paper_id": "2408.02016",
+      "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Moiré exciton-polaron; moiré physics without explicit GW-BSE MBPT methods",
+      "reason": "Many-body localization in XXZ model; strongly correlated physics, out of scope",
       "matched": []
     },
     {
@@ -152,7 +138,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Dynamical structure factor calculations tangentially related to phonon spectroscopy methodology, but not central to GW/BSE/EPW transport or optical absorption focus",
+      "reason": "Dynamical structure factor is a condensed matter quantity relevant to excitonic and MBPT calculations, but the computational method (ab initio vs. phenomenological) and application domain are not specified in the title.",
       "matched": []
     },
     {
@@ -166,7 +152,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Exciton physics in TMD heterostructures, background topic",
+      "reason": "Exciton-anyon binding in FCIs with TMDs; topological exciton physics, not main research area",
       "matched": []
     },
     {
@@ -180,7 +166,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Machine learning potential for Fe-H; out-of-scope MLIP without MBPT",
+      "reason": "",
       "matched": []
     },
     {
@@ -194,21 +180,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Quantum algorithms for ground-state energies; not connected to MBPT or research clusters",
+      "reason": "",
       "matched": []
     },
     {
-      "title": "H-NESSi: The hierarchical non-equilibrium systems simulation package",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Thomas Blommel, Jeremija Kovačević, Jason Kaye, Emanuel Gull, Jakša Vučičević, Denis Golež",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002389?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Ferrimagnetic and Haldane-type phases in a mixed-spin $1$-$\\tfrac{1}{2}$-$\\tfrac{1}{2}$ quantum trimer chain",
+      "authors": "A. Felinto, R. R. Montenegro-Filho",
+      "last_author": "R. R. Montenegro-Filho",
+      "abstract": "arXiv:2606.28000v1 Announce Type: new Abstract: Bipartite Lieb-Mattis ferrimagnetism and the symmetry-protected Haldane phase are paradigmatic mechanisms in quasi-one-dimensional quantum magnets. Both emerge, in distinct regimes, in a mixed-spin $1$-$\\tfrac{1}{2}$-$\\tfrac{1}{2}$ Heisenberg trimer chain with antiferromagnetic backbone exchange $J$ and a side spin-$\\tfrac{1}{2}$ coupled to each backbone spin by an exchange $J_t$ of either sign. Using the density matrix renormalization group, we compute magnetization curves and the entanglement spectrum and entropy. For $J_t>0$ a robust ferrimagnetic plateau forms at magnetization per unit cell $m=1$, whose multiplet entropy reflects how the conserved magnetization splits between the halves. For $J_t<0$ an $m=0$ plateau opens and grows with $|J_t|$, while the $m=1$ plateau closes. As $J_t\\to-\\infty$ the chain maps onto a spin-$1$ Heisenberg chain with coupling $J/2$: the $m=0$ width $\\Delta h\\simeq 0.196$ matches half the Haldane gap. Exponentially localized spin-$\\tfrac{1}{2}$ edge states and the even-fold degeneracy of the entanglement spectrum confirm the Haldane character of the $m=0$ phase.",
+      "url": "https://arxiv.org/abs/2606.28000",
+      "paper_id": "2606.28000",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Quantum trimer chain magnetism; toy spin model, out of scope",
       "matched": []
     },
     {
@@ -222,7 +208,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "ML for phase recognition; tangentially related to AI-for-science cluster C",
+      "reason": "Quantum-classical NN for topological phases; ML for quantum, background topic",
       "matched": []
     },
     {
@@ -236,21 +222,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Hubbard model for strongly correlated systems; out-of-scope without MBPT connection",
-      "matched": []
-    },
-    {
-      "title": "Improving photovoltaics by adding extra terminals to extract hot carriers",
-      "authors": "Bruno Bertin-Johannet, Thibaut Thu\\'egaz, Janine Splettstoesser, Robert S. Whitney",
-      "last_author": "Robert S. Whitney",
-      "abstract": "arXiv:2507.13279v2 Announce Type: replace Abstract: Photovoltaic cells usually have two terminals, one collecting electrons and the other collecting holes. Can more terminals improve such solar cells? Energy-filtering terminals could collect \"hot\" carriers (electrons or holes not yet relaxed to the band edge), with other terminals for low-energy carriers. When collection is faster than carrier-phonon relaxation, we predict that four-terminal cells have higher power output than optimal two-terminal cells, often 20-40% higher. Similar effects will occur in multi-terminal thermoelectrics exploiting non-equilibrium distributions.",
-      "url": "https://arxiv.org/abs/2507.13279",
-      "paper_id": "2507.13279",
-      "feed_name": "cond-mat.mes-hall",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 2,
-      "reason": "Hot-carrier photovoltaic device; PV application but device engineering without first-principles MBPT",
+      "reason": "",
       "matched": []
     },
     {
@@ -264,49 +236,63 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Hubbard model study of altermagnets; capped at 2 by model-Hamiltonian gate",
+      "reason": "Altermagnetic band structures via Hubbard model; model-Hamiltonian approach, out of scope",
       "matched": []
     },
     {
-      "title": "Interlayer electric multipole Hall effect in twisted multilayers",
-      "authors": "Chengxin Xiao, Cong Xiao, Dawei Zhai, Wang Yao",
-      "last_author": "Wang Yao",
-      "abstract": "arXiv:2606.28205v1 Announce Type: new Abstract: Electrons in layered van der Waals materials possess a layer pseudospin characterizing their wave-function distribution among layers. In twisted structures, this pseudospin forms nontrivial textures, leading to intriguing phenomena such as the layer Hall effect (LHE), where distinct layer Hall currents flow despite the presence of time-reversal symmetry. In chiral bilayers, LHE manifests as an interlayer electric dipole Hall effect with Hall counterflows and a concomitant in-plane magnetic dipole. Multilayers host richer layer-dependent Hall currents, generating interlayer electric multipole Hall effects and in-plane magnetic multipoles. We start from exploring the interlayer electric quadrupole Hall effect in mirror-symmetric twisted trilayers. At small twist angles, interlayer translation efficiently tunes layer Hall current magnitudes. At large angles and low doping, the currents can be well accounted for by adding the contributions from the two individual twisted interfaces. This decomposition allows obtaining layer-resolved Hall currents in large-angle twisted multilayers even without well-defined periodicity.",
-      "url": "https://arxiv.org/abs/2606.28205",
-      "paper_id": "2606.28205",
+      "title": "Kondo breakdown induced by non-Hermitian complex hybridization",
+      "authors": "Kazuki Yamamoto, Masaya Nakagawa, Norio Kawakami",
+      "last_author": "Norio Kawakami",
+      "abstract": "arXiv:2510.20186v2 Announce Type: replace-cross Abstract: Recently, a non-Hermitian Anderson impurity model with one-body loss has been studied in [Phys. Rev. B 111, 125157 (2025)}], and it has been demonstrated that the renormalization effect generated by strong correlations counterintuitively changes the nature of dissipation into an emergent many-body dissipation that causes a Kondo breakdown. In a closely related context, it is also known that two-body loss in a non-Hermitian Kondo model triggers the Kondo breakdown. To elucidate the essence of these phenomena, we study the Anderson impurity model with a non-Hermitian complex hybridization as an effective model that provides a simple understanding of the Kondo breakdown. Using the slave-boson mean-field theory, we show that this model can explain the Kondo breakdown with a single complex parameter. Furthermore, we provide the exact Bethe ansatz solutions that support the results obtained by the slave-boson mean-field theory.",
+      "url": "https://arxiv.org/abs/2510.20186",
+      "paper_id": "2510.20186",
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Twisted multilayer transport; model theory without MBPT methods",
+      "reason": "Kondo effect with non-Hermitian physics; strongly correlated, out of scope",
       "matched": []
     },
     {
-      "title": "Mosaic: A Benchmark Suite for Differentiable Physics Solvers",
-      "authors": "Andrin Rehmann, Heiko Zimmermann, Dion H\\\"afner",
-      "last_author": "Dion H\\\"afner",
-      "abstract": "arXiv:2606.27895v1 Announce Type: new Abstract: Differentiable partial differential equation (PDE) solvers underpin solver-in-the-loop ML training, gradient-based optimal control, and inverse problems, yet the practical cost of obtaining correct, usable gradients from a given solver on a given problem is largely undocumented. Integration effort, computational cost, gradient accuracy, and numerical conditioning vary widely across solvers and are discoverable only by trial and error. We introduce Mosaic, an extensible benchmarking framework for differentiable PDE solvers that standardizes access to solver gradients. Each solver is packaged as a containerized component (Tesseract) exposing a uniform gradient API regardless of language or automatic differentiation (AD) strategy, enabling researchers to evaluate, compare, and build on non-trivial physical solvers. Our evaluation of 14 solvers across fluid dynamics, structural mechanics, and heat transfer demonstrates that the benchmark surfaces practically relevant differences: order-of-magnitude variation in computational cost and Jacobian conditioning, alongside structural incompatibilities that eliminate solvers from realistic tasks entirely. Despite this variation, all solvers that produce gradients converge to similar optima, indicating that the practical barriers are memory limits, numerical stability, and setup compatibility rather than gradient accuracy alone. Mosaic is open-source and available at https://github.com/pasteurlabs/mosaic.",
-      "url": "https://arxiv.org/abs/2606.27895",
-      "paper_id": "2606.27895",
-      "feed_name": "physics.comp-ph",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 2,
-      "reason": "Differentiable PDE solvers; tangentially related to computational methods for MBPT",
-      "matched": []
-    },
-    {
-      "title": "Multiphoton Fingerprints of Altermagnetic Spin Splittings",
-      "authors": "Sayed Ali Akbar Ghorashi, Andrew M. Rappe",
-      "last_author": "Andrew M. Rappe",
-      "abstract": "arXiv:2606.27548v1 Announce Type: cross Abstract: We systematically investigate multiphoton absorption as a polarization-resolved nonlinear optical probe of planar altermagnets (ALMs). We show that the angular harmonic of the altermagnetic spin splitting fixes the lowest optical absorption at which a symmetry-selective response appears: two-photon absorption for $d$-wave order, four-photon absorption for $g$-wave order, and six-photon absorption for $i$-wave order. In each case, there exists a polarization channel locked to the symmetry harmonic of the altermagnetic texture in which the direct $n$-photon contribution to the transition matrix element is absent. This changes the frequency scaling of the absorption rate relative to other polarization channels and provides a direct optical fingerprint of the underlying altermagnetic harmonic. Our results establish a hierarchy of nonlinear spectroscopic signatures that distinguishes $d$-, $g$-, and $i$-wave altermagnetic spin splittings beyond linear response.",
-      "url": "https://arxiv.org/abs/2606.27548",
-      "paper_id": "2606.27548",
+      "title": "LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion",
+      "authors": "Honghui Kim, Dohoon Kim, Jihan Kim",
+      "last_author": "Jihan Kim",
+      "abstract": "arXiv:2512.01693v3 Announce Type: replace-cross Abstract: Metal-organic framework (MOF) databases have grown rapidly through experimental deposition and large-scale literature extraction, but recent analyses show that nearly half of their entries contain substantial structural errors. These inaccuracies propagate through high-throughput screening and machine-learning workflows, limiting the reliability of data-driven MOF discovery. Correcting such errors is exceptionally difficult because true repairs require integrating crystallographic files, synthesis descriptions, and contextual evidence scattered across the literature. Here we introduce LitMOF, a large language model-driven multi-agent framework that validates crystallographic information directly from the original literature and cross-validates it with database entries to repair structural errors. Applying LitMOF to the experimental MOF database (the CSD MOF Subset), we constructed LitMOF-DB, a curated set of 189,567 computation-ready structures, including the successful repair of 9,227 invalid entries, which accounts for 69.1% of the CSD-derived not-computation-ready MOFs in the latest CoRE MOF DB. Additionally, the system uncovered 8,771 experimentally reported MOFs absent from existing resources, substantially expanding the known experimental design space. Using direct air capture screening as a case study, we demonstrate that structural errors severely distort predicted adsorption energies and CO2/H2O selectivity, leading to systematic misranking of materials, false positives, and the omission of high-performance candidates. This work establishes a scalable pathway toward self-correcting scientific databases and a generalizable approach for LLM-driven curation in materials science.",
+      "url": "https://arxiv.org/abs/2512.01693",
+      "paper_id": "2512.01693",
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Altermagnet nonlinear optics; out-of-scope topic without explicit MBPT",
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Magnetic long-range order at finite temperature in two-dimensional hyperbolic lattices",
+      "authors": "Alexander Hickey, Joseph Maciejko",
+      "last_author": "Joseph Maciejko",
+      "abstract": "arXiv:2606.27422v1 Announce Type: new Abstract: Infrared singularities of gapless Goldstone modes preclude magnetic long-range order at finite temperature in conventional two-dimensional systems. By studying the spin-$S$ Heisenberg model on regular tilings of the hyperbolic plane, we show that this obstruction is absent in negatively curved space. Using spin-wave theory, we find that the zero-energy collective modes required by symmetry carry vanishing local spectral weight and are separated from the thermodynamic bulk magnon continuum by a finite gap in the bulk local spectral density. As a result, local transverse correlations remain short ranged, with a finite correlation length, despite the presence of Goldstone modes associated with the broken SO(3) spin-rotation symmetry. Stronger negative curvature is found to suppress quantum fluctuations in bulk thermodynamic quantities, pushing the ordered state toward \"mean-field-like\" behavior. We further estimate the ordering temperature from the thermal spin-wave correction to the ordered moment. These results establish hyperbolic geometry as a route to finite-temperature magnetic order that circumvents the Mermin-Wagner obstruction without breaking or modifying the continuous symmetry.",
+      "url": "https://arxiv.org/abs/2606.27422",
+      "paper_id": "2606.27422",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "Heisenberg magnetism on hyperbolic lattices; strongly correlated, out of scope",
+      "matched": []
+    },
+    {
+      "title": "Moir\\'e Phonons and Emergent Exciton-Phonon Coupling in a Moir\\'e Heterobilayer",
+      "authors": "Can B. Uzundal, Woochang Kim, Zhiyuan Cui, Yuxuan Wei, Zheyu Lu, Qixin Feng, Francis L. Hong, Indrajit Maity, Takashi Taniguchi, Kenji Watanabe, Manish Jain, Mit H. Naik, Yoseob Yoon, Michael F. Crommie, Steven G. Louie, Feng Wang",
+      "last_author": "Feng Wang",
+      "abstract": "arXiv:2606.28185v1 Announce Type: new Abstract: Moir\\'e superlattices have emerged as a new platform for engineering electronic and optical properties in van der Waals heterostructures, enabling control over correlated and excitonic phenomena. Yet the impact of moir\\'e superlattices on exciton-phonon coupling remains largely unexplored. Here we demonstrate emergent, layer-selective coupling between moir\\'e phonons and moir\\'e excitons in angle-aligned WS2/WSe2 heterobilayers. Using a broadband terahertz phonon transducer, we coherently launch moir\\'e phonons that resonantly perturb the excitonic states. We show that the exciton-phonon coupling is intrinsically modified by the moir\\'e superlattice in a layer-selective manner. A driven oscillator model captures the dynamics, revealing three moir\\'e phonon resonances with distinct coupling to the moir\\'e excitons. First principles calculations show that many moir\\'e phonon modes can arise with distinct strongly hybridized in-plane and out-of-plane vibrations in the moir\\'e unit cells. The calculations further identify the three experimentally observed moir\\'e phonons and their emergent characteristic coupling to the moir\\'e excitons.",
+      "url": "https://arxiv.org/abs/2606.28185",
+      "paper_id": "2606.28185",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "",
       "matched": []
     },
     {
@@ -320,7 +306,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "2D electron fluid hydrodynamics; interesting but not MBPT-related",
+      "reason": "",
       "matched": []
     },
     {
@@ -334,7 +320,35 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Orbital magnetization topological invariants; possibly ab initio but not MBPT-focused",
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Photo-thermal origin of pulse laser induced orientation of crystallographic c axis in Tellurium thin films",
+      "authors": "Arata Mitsuzuka, Yuta Kobayashi, Takuto Hiraoka, Masashi Kawaguchi, Masamitsu Hayashi",
+      "last_author": "Masamitsu Hayashi",
+      "abstract": "arXiv:2606.26499v2 Announce Type: replace Abstract: Recent studies have shown that the orientation of crystallographic c axis of Tellurium thin films can be controlled using picosecond long laser pulses. This method provides spatially programmable control of the crystal orientation and is therefore highly attractive for practical applications in functional optical and electronic devices. Previously, it was suggested that laser-induced selective melting and recrystallization can cause the laser-induced reorientation. However, this interpretation remains inconclusive due to limited data. To clarify the mechanism, here we systematically study Te samples under different irradiation conditions. We find that the threshold fluence for inducing optical reorientation depends on the number of laser pulses. The results agrees well with a minimal kinetic model based on the Arrhenius law. Using the model developed, we investigate the condition required to control the optic axis in other two-dimensional materials, such as black phosphorus, WTe2, and SnSe. These findings provide a guide for developing functional electro-optical devices based on anisotropic materials.",
+      "url": "https://arxiv.org/abs/2606.26499",
+      "paper_id": "2606.26499",
+      "feed_name": "cond-mat.mes-hall",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Physics-constrained neural networks for surrogate modeling of lossless periodic structures",
+      "authors": "Eric Prehn, Peter Jung",
+      "last_author": "Peter Jung",
+      "abstract": "arXiv:2606.28119v1 Announce Type: new Abstract: We introduce a physics-constrained neural network (PCNN) for the rapid prediction of rigorous coupled-wave analysis (RCWA) outputs in the form of Jones matrices. Starting from energy conservation in lossless layered periodic structures, we use the fact that RCWA outputs lie on a Stiefel manifold. This energy constraint is enforced as a hard condition by projecting onto the manifold using differentiable symmetric orthogonalization. The resulting surrogate enforces energy conservation by construction while preserving differentiability for gradient-based inverse design. The performance and generality of the proposed approach are demonstrated through the inverse design of a diffractive waveguide combiner for augmented reality glasses.",
+      "url": "https://arxiv.org/abs/2606.28119",
+      "paper_id": "2606.28119",
+      "feed_name": "physics.optics",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "Physics-constrained NN for photonic structures; AI for physics but photonics-focused",
       "matched": []
     },
     {
@@ -348,7 +362,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Perovskite solar cell degradation via ML; device-level characterization without first-principles",
+      "reason": "",
       "matched": []
     },
     {
@@ -362,7 +376,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Dirac fermion model theory in graphene; model Hamiltonian without ab initio",
+      "reason": "",
       "matched": []
     },
     {
@@ -376,21 +390,35 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Magnon-phonon coupling tangentially related to e-ph physics but not MBPT-focused",
+      "reason": "",
       "matched": []
     },
     {
-      "title": "Semi-empirical pseudopotential method for monolayer transition metal dichalcogenides",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Raj Kumar Paudel, Chung-Yuan Ren, Yia-Chung Chang",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002225?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "SU(4) Heisenberg model on the hyperhoneycomb lattice",
+      "authors": "I. V. Lukin, A. G. Sotnikov",
+      "last_author": "A. G. Sotnikov",
+      "abstract": "arXiv:2606.27493v1 Announce Type: new Abstract: We study the ground state of the SU(4) Heisenberg model on the hyperhoneycomb lattice using three-dimensional projected entangled pair states. We show that it is possible to compute physical observables for the ground states using loop expansions, which converge quickly on tree-like lattices. Our extrapolations to the limit of infinite bond dimensions point toward gapless spin-liquid ground state.",
+      "url": "https://arxiv.org/abs/2606.27493",
+      "paper_id": "2606.27493",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "SU(4) Heisenberg model via PEPS; toy model, out of scope",
+      "matched": []
+    },
+    {
+      "title": "Study of the triangular-lattice Hubbard model with constrained-path quantum Monte Carlo",
+      "authors": "Shu Fay Ung, Ankit Mahajan, David R. Reichman",
+      "last_author": "David R. Reichman",
+      "abstract": "arXiv:2603.14808v3 Announce Type: replace Abstract: We benchmark constrained-path Monte Carlo (CPMC) on the triangular-lattice Hubbard model for several fillings and $U$ values and show that symmetry-adapted trial wave functions substantially improve quantitative accuracy. Away from half-filling, simple free-electron-based trials that preserve the ground state symmetry yield energy deviations $\\lesssim 1\\%$ from exact diagonalization and density matrix renormalization group results. At half-filling, strong frustration in the intermediate to large $U$ regimes necessitates symmetry-projected trials to reach comparable accuracy, where both free-electron and symmetry-broken Hartree-Fock trials incur substantial constraint bias. Since the computational cost of CPMC with symmetry projection scales polynomially with system size, our results motivate its use as a practical route for studying competing ground states in strongly correlated, frustrated systems.",
+      "url": "https://arxiv.org/abs/2603.14808",
+      "paper_id": "2603.14808",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "Triangular Hubbard model via CPMC; strongly correlated, out of scope",
       "matched": []
     },
     {
@@ -404,7 +432,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Altermagnet strain engineering; out-of-scope topic without ab initio MBPT methods",
+      "reason": "",
       "matched": []
     },
     {
@@ -418,21 +446,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Boltzmann transport with Berry curvature; transport theory not connected to research clusters",
-      "matched": []
-    },
-    {
-      "title": "Theory of Spin-splitter Magnetoresistance in Altermagnets",
-      "authors": "Tim Kokkeler, Vitaly N. Golovach, F. Sebastian Bergeret",
-      "last_author": "F. Sebastian Bergeret",
-      "abstract": "arXiv:2605.10747v2 Announce Type: replace Abstract: We develop a theory of angular-dependent magnetoresistance (ADMR) in metallic altermagnets coupled to ferromagnetic insulators and establish criteria that distinguish them from conventional compensated magnets with spin-orbit coupling. We show that, once its full set of angular dependencies is established, the spin-splitter magnetoresistance (SSMR)-- recently reported in the bilayer geometry of H. Chen et al. [Adv. Mater. 37, 2507764 (2025)] -- would constitute a smoking-gun signature of collinear d-wave altermagnetism in metallic systems. Although SSMR has been regarded as a close analogue of spin Hall magnetoresistance (SMR), we demonstrate that the two differ qualitatively in three key respects: SSMR depends solely on the relative orientation between the ferromagnetic magnetization and the altermagnetic N\\'eel vector, yields a longitudinal ADMR response of opposite sign, and features a direct proportionality between longitudinal and transverse ADMR signals, absent in SMR. Building on these distinctions, we further show that the full angular dependence of the SSMR provides a practical recipe to extract the direction of the N\\'eel vector from customary magnetoresistance measurements. These results provide a clear route to unambiguously identify altermagnets in transport.",
-      "url": "https://arxiv.org/abs/2605.10747",
-      "paper_id": "2605.10747",
-      "feed_name": "cond-mat.mes-hall",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 2,
-      "reason": "Altermagnet magnetoresistance theory; out-of-scope topic",
+      "reason": "",
       "matched": []
     },
     {
@@ -446,7 +460,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Perovskite halide thermal stability; emerging PV material class but without MBPT/GW methods",
+      "reason": "",
       "matched": []
     },
     {
@@ -460,7 +474,21 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Transport theory with multipole symmetry; not MBPT-specific",
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Thickness dependence of diode efficiency in superconducting Fe(Se,Te)/FeTe thin-film heterostructure devices",
+      "authors": "Kaito Arizono, Kenshin Inamura, Kouta Kondou, Yusuke Kobayashi, Tsutomu Nojima, Jobu Matsuno, Junichi Shiogai",
+      "last_author": "Junichi Shiogai",
+      "abstract": "arXiv:2606.27639v1 Announce Type: cross Abstract: The superconducting diode effect (SDE) is a nonreciprocal transport phenomenon, in which the superconducting critical current density depends on the polarity of the current. It has attracted recent attention because of its potential applications to a rectifier without energy dissipation. While SDE has been observed in a wide range of superconducting materials with broken inversion symmetry as well as thin-film heterostructures, the microscopic origin linking structural inversion asymmetry of electronic band, spin-orbit interaction, and vortex pinning remains to be clarified. In this study, we investigate SDE in Fe(Se,Te)/FeTe heterostructure devices as a function of the superconducting Fe(Se,Te) layer thickness tFST to elucidate the role of structural inversion asymmetry on the vortex-induced SDE. We find that the SDE efficiency monotonically increases with increasing tFST, which can be understood by considering that the band bending in the bulk Fe(Se,Te) layer induces the structural inversion asymmetry and thus, the Rashba spin-orbit interaction. In addition, we demonstrate almost 100% rectification for the Fe(Se,Te)/FeTe heterostructure devices in half- and full-wave oscillation configurations. Our findings point out the importance of structural architecture for realization of highly efficient SDE devices based on superconducting thin-film heterostructures.",
+      "url": "https://arxiv.org/abs/2606.27639",
+      "paper_id": "2606.27639",
+      "feed_name": "cond-mat.str-el",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 2,
+      "reason": "Superconducting diode effect measurement; experimental superconductivity, not in research focus",
       "matched": []
     },
     {
@@ -474,7 +502,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 2,
-      "reason": "Perovskite radiation damage via MD; emerging PV material but MD-based, not MBPT",
+      "reason": "",
       "matched": []
     },
     {
@@ -487,20 +515,6 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 2,
-      "reason": "Wide-bandgap perovskites; emerging PV material but experimental discovery without first-principles MBPT",
-      "matched": []
-    },
-    {
-      "title": "invDFT : A CPU-GPU massively parallel tool to find exact exchange-correlation potentials from groundstate densities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Vishal Subramanian, Bikash Kanungo, Vikram Gavini",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002006?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 2,
       "reason": "",
       "matched": []
@@ -516,77 +530,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A BRAVE Alloy Design Campaign (Bayesian Risk-aware Alloy discoVery and Exploration)",
-      "authors": "Mrinalini Mulukutla (a), Danial Khatamsaz (a), Trevor Hastings (a), Wenle Xu (a), Daniel Salas (a), Joydeep Kundu (a), Vasanth C. Shunmugasamy (a), Daniel Lewis (a), Jacob Hempel (a), Clinton Strosser (a), Alexandra Salinas (b), Brent Vela (a), Nicolas Flores (a), Sina Hossein Zadeh (a), Ali Rachidi (d), David Elbert (d), Brady Butler (c), James Paramore (e), Dimitris Lagoudas (a), Justin Wilkerson (b), George Pharr (a), Douglas Allaire (b), Vahid Attari (a), Ibrahim Karaman (a), Ankit Srivastava (a), Raymundo Arr\\'oyave (a, b)",
-      "last_author": "b)",
-      "abstract": "arXiv:2606.27522v1 Announce Type: new Abstract: In constrained alloy optimization, the compositions with the highest performance potential often reside at the boundary of phase stability -- where the risk of experimental failure is also highest. This work demonstrates this principle through a risk-aware Bayesian optimization campaign on single-phase FCC high-entropy alloys in the Al-V-Cr-Mn-Fe-Co-Ni-Cu system. A learned feasibility classifier, integrated directly into the multi-objective acquisition function, probabilistically penalizes candidates likely to produce failed experiments while preserving access to high-performing boundary compositions. From approximately 27,000 CALPHAD-screened candidates, 48 alloys were synthesized over three closed-loop iterations targeting five objectives (yield strength, UTS/YS ratio, strain at UTS, dynamic-to-quasi-static hardness ratio, and simulated depth of penetration), exploring 0.12\\% of the feasible space. Two compositional regimes emerged: a V-rich, Ni-rich high-strength regime (UTS up to ${\\sim}1480$~MPa at 50% elongation) and a Mn-containing high-ductility regime (UTS/YS up to 4.20 at $>$50% elongation). Among feasible alloys, vanadium simultaneously drives yield strength ($r = 0.84$) and sigma-phase formation ($r = 0.54$ with infeasibility); at V = 24~at.%, the three strongest alloys and three sigma failures share the same compositional point. Additionally, the strongest performing alloys cluster in a narrow region of compositional space (V $\\geq$ 20 at.%, Ni $\\geq$ 36 at.%), representing ${\\sim}100$ of $27,074$ feasible candidates -- a probability of $P \\approx 6.5 \\times 10^{-6}$ under random sampling. This dual role -- consistent with the KKT prediction that constrained optima lie on active constraint boundaries -- required feasibility-aware acquisition to access; hard filtering would have excluded this region entirely.",
-      "url": "https://arxiv.org/abs/2606.27522",
-      "paper_id": "2606.27522",
-      "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A GPU-accelerated matrix-free FAS multigrid solver for Navier-Stokes equations with memory-efficient implementations",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jiale Meng, Shuqi Tang, Steven M. Wise, Zhenlin Guo",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002560?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A GPU-accelerated multi-resolution feature-preserving particle generation method for complex geometries",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Xingyue Yang, Taiqing Liu, Zhenxiang Nie, Zhe Ji",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001979?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A differentiable solver for phase-resolved nearshore wave modelling",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Willington Renteria, Maile McCann, Justin Bonus, Behzad Ebrahimi, Patrick Lynett",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002134?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A domain embedding strategy for acoustic wave scattering by moving obstacles",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Xuelong Gu, Hongxia Guo, Wenkai Yu, Guanghui Hu, Qi Wang",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600192X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Spinor helicity Mathematica package; particle physics, not relevant",
       "matched": []
     },
     {
@@ -600,7 +544,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Fractional Fokker-Planck solver; stochastic PDE, not relevant",
       "matched": []
     },
     {
@@ -609,20 +553,6 @@
       "last_author": "",
       "abstract": "Publication date: Available online 17 June 2026Source: Computer Physics CommunicationsAuthor(s): Hui Chen, Qian Yang, Linqian Li, Bing Wei, Jiarong Dong, Zhaomin Li",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002614?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "A new geometric Volume-of-Fluid advection scheme using Lagrangian volume particles in two-dimensional multi-material fluids",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Zeyu Zhang, Jinglei Yang, Lin Fu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001943?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -646,34 +576,6 @@
       "matched": []
     },
     {
-      "title": "A universal and efficient hybrid digital-analog fermionic quantum simulator",
-      "authors": "Hao-Tian Wei, Kaden R. A. Hazzard",
-      "last_author": "Kaden R. A. Hazzard",
-      "abstract": "arXiv:2606.05517v2 Announce Type: replace-cross Abstract: We present a universal framework to harness fermionic ultracold atom platforms for quantum simulation, showing how variational algorithms on existing hardware can simulate many-body systems well beyond the hardware's native Hamiltonian. Our analysis provides evidence that one can quantum simulate the ground-state properties of a broad class of gapless target Hamiltonians of local observables in a quantum evolution time that grows polynomially with the inverse relative error, $T\\sim O(\\mathrm{poly}(1/\\epsilon))$ up to logarithmic corrections, offering an exponential speedup over na{\\\"i}ve classical algorithms such as exact diagonalization. We provide numerical evidence and theoretical argument that this holds for energy density, density-density, and spin-spin correlations in three qualitatively distinct models -- the repulsive Hubbard model; a Hubbard model augmented with nearest-neighbor attractive interactions, which introduces the phenomenon of pairing; and the Hofstadter-Hubbard model, which introduces a gauge field and fractional quantum Hall physics. This work demonstrates quantum simulation using current fermionic platforms far beyond the models natively implemented in the hardware.",
-      "url": "https://arxiv.org/abs/2606.05517",
-      "paper_id": "2606.05517",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Abradable DEM: A novel framework to capture the mechanistic evolution of particle shape",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Haydn Rogan, Rosario Capozza, Kevin Stratford, David Scott, James Young, Kevin J. Hanley",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002018?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Adaptive Probability Flow Residual Minimization for High-Dimensional Fokker-Planck Equations",
       "authors": "Xiaolong Wu, Qifeng Liao",
       "last_author": "Qifeng Liao",
@@ -684,7 +586,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Probability flow for Fokker-Planck; stochastic PDE, not relevant",
       "matched": []
     },
     {
@@ -716,62 +618,6 @@
       "matched": []
     },
     {
-      "title": "An OpenFOAM based solver for three-phase flow in porous media incorporating foam effects",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Anderson de Moura Ribeiro, Grigori Chapiro, Bernardo Martins Rocha, Rodrigo Weber dos Santos",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001967?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "An adaptive dual-mesh method for fast and accurate 3D modeling of flow and transport in unsaturated porous environment at watershed scale",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Pierre Horgue, Gillien Latour, Romain Guibert, François Renard, Lionel Schaper, Gérald Debenest",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002298?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "An immersed interface method for microstructure-scale electrochemical battery models: numerical formulation and performance portable implementation",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Hariswaran Sitaraman, Jeffery Allen, Michael Brazell, Francois Usseglio-Viretta",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002237?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "An open-source, interactive python framework for solving the two-dimensional Lippmann-Schwinger equation for two-body bound states",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): K. Adderley, K. Mohseni, M.R. Hadizadeh",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001992?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Analysis of Nonlinear Random Polarization in Dispersive Dielectrics",
       "authors": "Nathan L. Gibson, Emmanuel E. Oguadimma",
       "last_author": "Emmanuel E. Oguadimma",
@@ -782,7 +628,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Nonlinear EM polarization in dielectrics; EM wave propagation, not relevant",
       "matched": []
     },
     {
@@ -796,21 +642,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Application of direct interpolation boundary element method to 2D elasticity with general body forces and thermoelastic effects",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): L.S. Campos, L.O.C. Lara, E.L. Albuquerque",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002201?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Multi-material hydrodynamics; not relevant",
       "matched": []
     },
     {
@@ -824,7 +656,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Quantum state preparation via NN; quantum information, not MBPT",
       "matched": []
     },
     {
@@ -838,7 +670,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Attractor-keyed memory; photonic computing, not relevant",
       "matched": []
     },
     {
@@ -866,7 +698,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Exotic quantum statistics (R-paraparticles); not relevant",
       "matched": []
     },
     {
@@ -894,63 +726,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "C++ CUDA programs for solving the time-dependent dipolar Gross-Pitaevskii equation",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Denis Mujo, Dušan Vudragović, Paulsamy Muruganandam, Sadhan K. Adhikari",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001918?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Cellular replisomes are powered by flex-fuel motors for unwinding DNA",
-      "authors": "Fahad Rashid, Sushil Pangeni, Chuan Liu, Harish Kumar, Gyeongtae Sun Moon, Qianyun Yan, Taekjip Ha, James M. Berger",
-      "last_author": "James M. Berger",
-      "abstract": "Nature Communications, Published online: 29 June 2026; doi:10.1038/s41467-026-73652-6DNA replication depends on helicases that unwind DNA ahead of the replication machinery. The authors show that bacterial DnaB is a rapid, highly processive motor with broad fuel flexibility, capable of using both ribonucleotides and deoxyribonucleotides to drive translocation.",
-      "url": "https://www.nature.com/articles/s41467-026-73652-6",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "ChemNetworks: New capabilities for high-throughput, real-time chemical graph construction and analysis",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Daniel J. Pope, Jackson Elowitt, Bo Zhang, Manish Parashar, Aurora E. Clark",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002341?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Silicon photonics Half Maxwell Fisheye; photonics design, not relevant",
       "matched": []
     },
     {
@@ -982,17 +758,17 @@
       "matched": []
     },
     {
-      "title": "Competing spin-1 and spin-2 regimes in a frustrated four-leg spin-1/2 ladder",
-      "authors": "D. S. Almeida, R. R. Montenegro-Filho",
-      "last_author": "R. R. Montenegro-Filho",
-      "abstract": "arXiv:2606.27991v1 Announce Type: new Abstract: We investigate a frustrated four-leg spin-$1/2$ ladder using density matrix renormalization group calculations. The uniform system displays three regimes: short-range antiferromagnetic legs, short-range ferromagnetic legs, and an effective spin-2 Heisenberg chain, separated by a crossover and a first-order transition. The spin-2 regime is confirmed through its finite string order parameter, edge-localized excitations, and excellent agreement with a projected $S_r=2$ effective Hamiltonian. Recasting the model as two frustrated two-leg ladders coupled by rung and diagonal interactions, we track how the trivial and Haldane phases of an isolated ladder evolve as interladder couplings are introduced. The resulting phase diagrams reveal crossover and first-order lines whose locations are captured by the spin-2 projection and show how singlet- and triplet-dominated regimes reorganize when two ladders merge into a four-leg structure, clarifying the emergence of effective spin-1 versus spin-2 behavior.",
-      "url": "https://arxiv.org/abs/2606.27991",
-      "paper_id": "2606.27991",
+      "title": "Comment on \"Altermagnetic and Dipolar Spitting of Magnons in FeF_2\" arXiv:2601.04303",
+      "authors": "S. W. Lovesey",
+      "last_author": "S. W. Lovesey",
+      "abstract": "arXiv:2606.27975v1 Announce Type: new Abstract: Conclusions by Sears et al. (arXiv: 2601.04303) about dispersions of magnons in rutile FeF_2 are unsound because compulsory lattice vibrations are omitted in the analysis of their neutron scattering spectra. Hybridized magnon-phonon modes in magnetically ordered FeF_2 were observed and successfully analysed half a century ago.",
+      "url": "https://arxiv.org/abs/2606.27975",
+      "paper_id": "2606.27975",
       "feed_name": "cond-mat.str-el",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Magnon-phonon modes in FeF₂; magnon physics not directly relevant",
       "matched": []
     },
     {
@@ -1010,6 +786,20 @@
       "matched": []
     },
     {
+      "title": "Confined exciton polaron in MoS$_2$ on twisted-hBN",
+      "authors": "Garima Gupta, Mayank Chhaperwal, Pankaj Kumar, Pushkar Dasika, Kenji Watanabe, Takashi Taniguchi, Archana Raja, Kausik Majumdar",
+      "last_author": "Kausik Majumdar",
+      "abstract": "arXiv:2606.27770v1 Announce Type: cross Abstract: The simple electrostatic picture of a trion is that of an excess charge inducing an exciton polarization and binding closer (farther) to the hole (electron) side of it. Trion formation can be forbidden when such spontaneous rearrangement of charges is not allowed by the application of external perturbation, such as electric field. Here we test this hypothesis experimentally using a non-monotonic electric field. We realize this scenario by imprinting the ferroelectric domains at the AA-stacked twisted-hBN (t-hBN) interface onto a monolayer of MoS2 placed over it. The spatially varying in-plane electric field around the domain wall serves the dual purpose of (a) confining and polarizing the 2D exciton in the domain wall, and (b) depleting the free charge carriers from the domain wall. We observe a large quantized exciton splitting confirming strong exciton confinement in the domain wall. Forced by the confining potential, the electron side of the polarized exciton lies closer to the domain with accumulated free electrons, which should ideally prevent any trion formation. Contrary to the laid hypothesis, we observe signatures of quantized charged exciton emission, with an inter-level splitting that mimics the level-splitting of the quantized excitons. This paradox is explained using the many-body picture of exciton polaron, where a conduction band hole attractively binds the polarized exciton and the electron Fermi sea. The results provide a definitive way to unambiguously discern exciton polaron from trion.",
+      "url": "https://arxiv.org/abs/2606.27770",
+      "paper_id": "2606.27770",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Detector-Conditioned Source-Space Nulls and Null-Mask Loss in a Programmable Two-Slit Interferometer",
       "authors": "Jianming Wen",
       "last_author": "Jianming Wen",
@@ -1020,7 +810,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Momentum-space double-slit interference; quantum mechanics, not MBPT",
       "matched": []
     },
     {
@@ -1048,7 +838,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "PIAA-ZWFS wavefront sensor; adaptive optics, not relevant",
       "matched": []
     },
     {
@@ -1062,7 +852,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "X-ray momentum space interference; X-ray physics, not relevant",
       "matched": []
     },
     {
@@ -1076,49 +866,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Dynamic linked list based parallel point-particle solver for high-performance computing",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jingyuan Bi, Jiaxin Tan, Chuanhong Zhang, Qing Li",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002249?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Dynamics of many-body localized systems: logarithmic lightcones and $\\log \\, t$-law of $\\alpha$-R\\'enyi entropies",
-      "authors": "Daniele Toniolo, Sougato Bose",
-      "last_author": "Sougato Bose",
-      "abstract": "arXiv:2408.02016v3 Announce Type: replace-cross Abstract: In the context of the Many-Body-Localization phenomenology we consider arbitrarily large one-dimensional local spin systems, the XXZ model with random magnetic field is a prototypical example. Without assuming the existence of exponentially localized integrals of motion (LIOM), but assuming instead that the system's dynamics gives rise to a Lieb-Robinson bound (L-R) with a logarithmic lightcone, we rigorously evaluate the dynamical generation, starting from a generic product state, of $ \\alpha$-R\\'enyi entropies, with $ \\alpha $ close to one, obtaining a $\\log \\, t$-law, that denotes a slow spread of entanglement. This is in sharp contrast with Anderson localized phases that show no dynamically generated entanglement. To prove this result we apply a general theory recently developed by us in arXiv:2408.00743 that quantitatively relates the L-R bounds of a local Hamiltonian with the dynamical generation of entanglement. Assuming instead the existence of LIOM we provide new independent proofs of the known facts that the L-R bound of the system's dynamics has a logarithmic lightcone and show that the dynamical generation of the von Neumann entropy has for large times a $ \\log \\, t$-shape. L-R bounds, that quantify the dynamical spreading of local operators, may be easier to measure in experiments in comparison to global quantities such as entanglement.",
-      "url": "https://arxiv.org/abs/2408.02016",
-      "paper_id": "2408.02016",
-      "feed_name": "cond-mat.mes-hall",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "EQUILIPY: A static forward Grad-Shafranov solver using CutFEM",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): P. Manyer, J.M. Sanchez Melian, D. Gallart, M.J. Mantsinen, A. Soba",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002328?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Chiral molecule enantiomer dynamics; molecular physics, not relevant",
       "matched": []
     },
     {
@@ -1146,21 +894,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Electrode-free bioelectrochemical intercalation for scalable lithium recovery",
-      "authors": "Kohei Shimokawa, Duyen Minh Pham, Heng Yi Teah, Xizi Long, Yasunori Kikuchi, Akihiro Okamoto",
-      "last_author": "Akihiro Okamoto",
-      "abstract": "Nature Communications, Published online: 29 June 2026; doi:10.1038/s41467-026-74500-3Electrochemical Li recovery from saline waters is rapid and selective but constrained by electrode scale-up. Here, authors show that bacteria and nanomaterials self-assemble into aggregates that extract >95% of Li from seawater within hours, at electrode-comparable rates, but without electrodes.",
-      "url": "https://www.nature.com/articles/s41467-026-74500-3",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
+      "reason": "Graph modularity in NN learning; ML graph theory, not relevant",
       "matched": []
     },
     {
@@ -1202,21 +936,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Enhancing photoionization rate calculations in low-temperature plasmas using spectral methods",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): A. Alibalazadeh, M. Gilmore, A. Fierro",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001931?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Silicon photonics security; device engineering, not relevant",
       "matched": []
     },
     {
@@ -1248,20 +968,6 @@
       "matched": []
     },
     {
-      "title": "Exchange-mediated spin–electric control of single molecules on surfaces",
-      "authors": "Paul Greule, Wantong Huang, Máté Stark, Kwan Ho Au-Yeung, Johannes Schwenk, Jose Reina-Gálvez, Christoph Sürgers, Wolfgang Wernsdorfer, Christoph Wolf, Philip Willke",
-      "last_author": "Philip Willke",
-      "abstract": "Nature Physics, Published online: 29 June 2026; doi:10.1038/s41567-026-03353-wSingle molecules that host isolated spins are promising candidates for applications in quantum technologies. Now it is shown that exchange interactions enable electric control of spins in two different molecular species.",
-      "url": "https://www.nature.com/articles/s41567-026-03353-w",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Experimental Investigation of Time Series Classification using a Self-Pulsing Microring Resonator Network",
       "authors": "Alessandro Foradori, Alessio Lugnan, Lorenzo Pavesi, Peter Bienstman",
       "last_author": "Peter Bienstman",
@@ -1272,7 +978,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Microring neuromorphic computing; photonic computing, not MBPT",
       "matched": []
     },
     {
@@ -1286,35 +992,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Explicit algorithm for describing a magnetohydrodynamic dynamo action in a rectangular domain",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Hidemoto Satake, Toshio Tagawa",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002274?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Josep Plana-Riu, F. Xavier Trias, Adel Alsalti-Badellou, Xavier Álvarez-Farré, Guillem Colomer, Assensi Oliva",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Photonic lantern wavefront sensing; instrumentation, not relevant",
       "matched": []
     },
     {
@@ -1328,49 +1006,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Ferrimagnetic and Haldane-type phases in a mixed-spin $1$-$\\tfrac{1}{2}$-$\\tfrac{1}{2}$ quantum trimer chain",
-      "authors": "A. Felinto, R. R. Montenegro-Filho",
-      "last_author": "R. R. Montenegro-Filho",
-      "abstract": "arXiv:2606.28000v1 Announce Type: new Abstract: Bipartite Lieb-Mattis ferrimagnetism and the symmetry-protected Haldane phase are paradigmatic mechanisms in quasi-one-dimensional quantum magnets. Both emerge, in distinct regimes, in a mixed-spin $1$-$\\tfrac{1}{2}$-$\\tfrac{1}{2}$ Heisenberg trimer chain with antiferromagnetic backbone exchange $J$ and a side spin-$\\tfrac{1}{2}$ coupled to each backbone spin by an exchange $J_t$ of either sign. Using the density matrix renormalization group, we compute magnetization curves and the entanglement spectrum and entropy. For $J_t>0$ a robust ferrimagnetic plateau forms at magnetization per unit cell $m=1$, whose multiplet entropy reflects how the conserved magnetization splits between the halves. For $J_t<0$ an $m=0$ plateau opens and grows with $|J_t|$, while the $m=1$ plateau closes. As $J_t\\to-\\infty$ the chain maps onto a spin-$1$ Heisenberg chain with coupling $J/2$: the $m=0$ width $\\Delta h\\simeq 0.196$ matches half the Haldane gap. Exponentially localized spin-$\\tfrac{1}{2}$ edge states and the even-fold degeneracy of the entanglement spectrum confirm the Haldane character of the $m=0$ phase.",
-      "url": "https://arxiv.org/abs/2606.28000",
-      "paper_id": "2606.28000",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "FeynGrav 4.0",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): B. Latosh",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001815?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "FiReSMOKE: An OpenFOAM-based collection of finite-rate chemistry solvers for turbulent combustion systems",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Ruggero Amaduzzi, Arthur Péquin, Yağiz Yalçinkaya, Alberto Cuoci, Alessandro Parente",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001657?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Temporal network analysis; social systems, not relevant",
       "matched": []
     },
     {
@@ -1384,49 +1020,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "GollumFit: An icecube open-source framework for binned-likelihood neutrino telescope analyses",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): R. Abbasi, M. Ackermann, J. Adams, S.K. Agarwalla, J.A. Aguilar, M. Ahlers, J.M. Alameddine, N.M. Amin, K. Andeen, C. Argüelles, Y. Ashida, S. Athanasiadou, S.N. Axani, R. Babu, X. Bai, A. Balagopal V․, M. Baricevic, S.W. Barwick, S. Bash, V. Basu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001773?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Grains3D, a flexible DEM approach for particles of arbitrary convex shape Part IV: Extension to superquadrics",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Alireza Yazdani, Ani Anciaux-Sedrakian, Anthony Wachs",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600233X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "HadroTOPS: A Monte Carlo event generator for hadron production in two-photon scattering in electron positron collisions",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Max Lellmann, Igor Danilkin, Achim Denig, Jan Muskalla, Christoph F. Redmer, Xiu-Lei Ren, Marc Vanderhaeghen",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002353?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "LIGO parametric instability control; gravitational wave detector, not relevant",
       "matched": []
     },
     {
@@ -1440,7 +1034,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Nanoscale heat engines, not relevant to MBPT or semiconductors",
       "matched": []
     },
     {
@@ -1454,7 +1048,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "Moiré exciton valley dynamics; out-of-scope moiré flat-band physics",
+      "reason": "",
       "matched": []
     },
     {
@@ -1482,7 +1076,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Holographic strange metals via AdS/CFT; not relevant to clusters",
       "matched": []
     },
     {
@@ -1496,35 +1090,7 @@
       "feed_category": "Nature",
       "published": "2026-06-29T08:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Hydroxyl-rich nanocavities on perovskite enable nearly barrierless intramolecular hydrogen transfer for nitrate electroreduction to ammonia",
-      "authors": "Mingkai Xu, Ruizhao Wang, Zaixing Wang, Zheng Tang, Wei-Hsiang Huang, Wang Tan, Lingjie Yuan, Huanhuan Tao, Zhongliang Dong, Min-Hsin Yeh, Chih-Wen Pao, Jun Yin, Zhiwei Hu, Jie Dai, Yinlong Zhu",
-      "last_author": "Yinlong Zhu",
-      "abstract": "Nature Communications, Published online: 29 June 2026; doi:10.1038/s41467-026-74405-1Electrocatalytic nitrate reduction offers a dual-effect solution for nitrate remediation and ammonia synthesis, yet slow hydrogen migration limits its efficiency. Here, the authors design hydroxyl-rich nanocavities on perovskites to enable rapid hydrogen transfer for efficient ammonia production.",
-      "url": "https://www.nature.com/articles/s41467-026-74405-1",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "IRSSG: An open-source software package for spin space groups",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Sheng Zhang, Ziyin Song, Zhong Fang, Hongming Weng, Zhijun Wang",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001724?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Editorial on AI for neurodivergent students; news article, not research",
       "matched": []
     },
     {
@@ -1580,7 +1146,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Higher-form symmetries in quantum systems; not relevant to research",
       "matched": []
     },
     {
@@ -1594,7 +1160,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Mid-IR frequency comb generator; photonic device, not relevant",
       "matched": []
     },
     {
@@ -1608,33 +1174,19 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Interface tracking algorithm; numerical methods, not condensed matter",
       "matched": []
     },
     {
-      "title": "Kondo breakdown induced by non-Hermitian complex hybridization",
-      "authors": "Kazuki Yamamoto, Masaya Nakagawa, Norio Kawakami",
-      "last_author": "Norio Kawakami",
-      "abstract": "arXiv:2510.20186v2 Announce Type: replace-cross Abstract: Recently, a non-Hermitian Anderson impurity model with one-body loss has been studied in [Phys. Rev. B 111, 125157 (2025)}], and it has been demonstrated that the renormalization effect generated by strong correlations counterintuitively changes the nature of dissipation into an emergent many-body dissipation that causes a Kondo breakdown. In a closely related context, it is also known that two-body loss in a non-Hermitian Kondo model triggers the Kondo breakdown. To elucidate the essence of these phenomena, we study the Anderson impurity model with a non-Hermitian complex hybridization as an effective model that provides a simple understanding of the Kondo breakdown. Using the slave-boson mean-field theory, we show that this model can explain the Kondo breakdown with a single complex parameter. Furthermore, we provide the exact Bethe ansatz solutions that support the results obtained by the slave-boson mean-field theory.",
-      "url": "https://arxiv.org/abs/2510.20186",
-      "paper_id": "2510.20186",
+      "title": "Interlayer electric multipole Hall effect in twisted multilayers",
+      "authors": "Chengxin Xiao, Cong Xiao, Dawei Zhai, Wang Yao",
+      "last_author": "Wang Yao",
+      "abstract": "arXiv:2606.28205v1 Announce Type: new Abstract: Electrons in layered van der Waals materials possess a layer pseudospin characterizing their wave-function distribution among layers. In twisted structures, this pseudospin forms nontrivial textures, leading to intriguing phenomena such as the layer Hall effect (LHE), where distinct layer Hall currents flow despite the presence of time-reversal symmetry. In chiral bilayers, LHE manifests as an interlayer electric dipole Hall effect with Hall counterflows and a concomitant in-plane magnetic dipole. Multilayers host richer layer-dependent Hall currents, generating interlayer electric multipole Hall effects and in-plane magnetic multipoles. We start from exploring the interlayer electric quadrupole Hall effect in mirror-symmetric twisted trilayers. At small twist angles, interlayer translation efficiently tunes layer Hall current magnitudes. At large angles and low doping, the currents can be well accounted for by adding the contributions from the two individual twisted interfaces. This decomposition allows obtaining layer-resolved Hall currents in large-angle twisted multilayers even without well-defined periodicity.",
+      "url": "https://arxiv.org/abs/2606.28205",
+      "paper_id": "2606.28205",
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "LNN-PINN: A unified physics-only training framework with liquid residual blocks",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Ze Tao, Hanxuan Wang, Fujun Liu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002195?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1650,7 +1202,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Multi-photonic lantern characterization; instrumentation, not relevant",
       "matched": []
     },
     {
@@ -1678,35 +1230,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "MCPlas, a MATLAB toolbox for reproducible plasma modelling with COMSOL",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Marjan Stankov, Daan Boer, Wouter Graef, Kevin van ’t Veer, Aleksandar P. Jovanović, Florian Sigeneger, Detlef Loffhagen, Jan van Dijk, Markus M. Becker",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002304?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "MDcraft – A modern molecular dynamics simulation package with machine learning potentials support",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): I.S. Galtsov, R.V. Muratov, G.V. Vyskvarko, S.A. Murzov, S.A. Dyachkov, P.R. Levashov",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002262?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Lie symmetries for PDE learning; ML for PDEs, not MBPT",
       "matched": []
     },
     {
@@ -1724,20 +1248,6 @@
       "matched": []
     },
     {
-      "title": "Magnetic long-range order at finite temperature in two-dimensional hyperbolic lattices",
-      "authors": "Alexander Hickey, Joseph Maciejko",
-      "last_author": "Joseph Maciejko",
-      "abstract": "arXiv:2606.27422v1 Announce Type: new Abstract: Infrared singularities of gapless Goldstone modes preclude magnetic long-range order at finite temperature in conventional two-dimensional systems. By studying the spin-$S$ Heisenberg model on regular tilings of the hyperbolic plane, we show that this obstruction is absent in negatively curved space. Using spin-wave theory, we find that the zero-energy collective modes required by symmetry carry vanishing local spectral weight and are separated from the thermodynamic bulk magnon continuum by a finite gap in the bulk local spectral density. As a result, local transverse correlations remain short ranged, with a finite correlation length, despite the presence of Goldstone modes associated with the broken SO(3) spin-rotation symmetry. Stronger negative curvature is found to suppress quantum fluctuations in bulk thermodynamic quantities, pushing the ordered state toward \"mean-field-like\" behavior. We further estimate the ordering temperature from the thermal spin-wave correction to the ordered moment. These results establish hyperbolic geometry as a route to finite-temperature magnetic order that circumvents the Mermin-Wagner obstruction without breaking or modifying the continuous symmetry.",
-      "url": "https://arxiv.org/abs/2606.27422",
-      "paper_id": "2606.27422",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Magnetoresistance in chiral systems driven by inter-band spin-orbit coupling",
       "authors": "Misa Nozaki, Takatoshi Fujita",
       "last_author": "Takatoshi Fujita",
@@ -1747,20 +1257,6 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Mapping histologic and functional maturation of human endocrine pancreas across early postnatal periods",
-      "authors": "Diane C. Saunders, Fan Feng, Alexander L. Hopkirk, Kristie I. Aamodt, Nathaniel Hart, Fong Cheng Pan, Conrad V. Reihsmann, Nike Izmaylov, Shaojun Mei, Brandon A. Sherrod, Corey Davis, Nongyao Nonpanya, Yasminye D. Pettway, Keval P. Patel, Kai S. Lee, Jeff Duryea, Rachana Haliyur, Radhika Aramandla, Heather Durai, Greg Poffenberger, Alexandra Martin, Amanda L. Posgai, Irina Kusmartseva, Maria L. Beery, Mingder Yang, Ke Xu, Hakmook Kang, Dale L. Greiner, Leonard D. Shultz, Jean-Philippe Cartailler, Rita Bottino, Mark A. Atkinson, Christopher V. E. Wright, Alvin C. Powers, Marcela Brissova",
-      "last_author": "Marcela Brissova",
-      "abstract": "Nature Communications, Published online: 29 June 2026; doi:10.1038/s41467-026-73854-ySystematic analysis of 123 pediatric pancreata reveals dynamic postnatal islet formation, endocrine cell rearrangement, asynchronous vascularization/innervation, and progressive glucagon secretory maturation during the first decade of life.",
-      "url": "https://www.nature.com/articles/s41467-026-73854-y",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1790,7 +1286,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Nonlinear superconductor spectroscopy; not in research focus",
       "matched": []
     },
     {
@@ -1804,33 +1300,33 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Heavy fermion UTe₂; heavy-fermion physics explicitly out of scope",
       "matched": []
     },
     {
-      "title": "Modifications in clusterization procedures for heavy-ion collisions: Minimum spanning tree, simulated annealing, coalescence",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Viktar Kireyeu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002602?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Mosaic: A Benchmark Suite for Differentiable Physics Solvers",
+      "authors": "Andrin Rehmann, Heiko Zimmermann, Dion H\\\"afner",
+      "last_author": "Dion H\\\"afner",
+      "abstract": "arXiv:2606.27895v1 Announce Type: new Abstract: Differentiable partial differential equation (PDE) solvers underpin solver-in-the-loop ML training, gradient-based optimal control, and inverse problems, yet the practical cost of obtaining correct, usable gradients from a given solver on a given problem is largely undocumented. Integration effort, computational cost, gradient accuracy, and numerical conditioning vary widely across solvers and are discoverable only by trial and error. We introduce Mosaic, an extensible benchmarking framework for differentiable PDE solvers that standardizes access to solver gradients. Each solver is packaged as a containerized component (Tesseract) exposing a uniform gradient API regardless of language or automatic differentiation (AD) strategy, enabling researchers to evaluate, compare, and build on non-trivial physical solvers. Our evaluation of 14 solvers across fluid dynamics, structural mechanics, and heat transfer demonstrates that the benchmark surfaces practically relevant differences: order-of-magnitude variation in computational cost and Jacobian conditioning, alongside structural incompatibilities that eliminate solvers from realistic tasks entirely. Despite this variation, all solvers that produce gradients converge to similar optima, indicating that the practical barriers are memory limits, numerical stability, and setup compatibility rather than gradient accuracy alone. Mosaic is open-source and available at https://github.com/pasteurlabs/mosaic.",
+      "url": "https://arxiv.org/abs/2606.27895",
+      "paper_id": "2606.27895",
+      "feed_name": "physics.comp-ph",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Differentiable PDE solver benchmarking; computational methods but not MBPT-focused",
       "matched": []
     },
     {
-      "title": "MoireStudio: A universal twisted electronic structure calculation package",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Junxi Yu, Yichen Liu, Cheng-Cheng Liu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001980?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Multiphoton Fingerprints of Altermagnetic Spin Splittings",
+      "authors": "Sayed Ali Akbar Ghorashi, Andrew M. Rappe",
+      "last_author": "Andrew M. Rappe",
+      "abstract": "arXiv:2606.27548v1 Announce Type: cross Abstract: We systematically investigate multiphoton absorption as a polarization-resolved nonlinear optical probe of planar altermagnets (ALMs). We show that the angular harmonic of the altermagnetic spin splitting fixes the lowest optical absorption at which a symmetry-selective response appears: two-photon absorption for $d$-wave order, four-photon absorption for $g$-wave order, and six-photon absorption for $i$-wave order. In each case, there exists a polarization channel locked to the symmetry harmonic of the altermagnetic texture in which the direct $n$-photon contribution to the transition matrix element is absent. This changes the frequency scaling of the absorption rate relative to other polarization channels and provides a direct optical fingerprint of the underlying altermagnetic harmonic. Our results establish a hierarchy of nonlinear spectroscopic signatures that distinguishes $d$-, $g$-, and $i$-wave altermagnetic spin splittings beyond linear response.",
+      "url": "https://arxiv.org/abs/2606.27548",
+      "paper_id": "2606.27548",
+      "feed_name": "cond-mat.mtrl-sci",
+      "feed_category": "arXiv",
+      "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1860,7 +1356,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Vibrational polariton transport simulation; not relevant",
       "matched": []
     },
     {
@@ -1873,34 +1369,6 @@
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Numerical modeling of laser cooling in molecules: From simple diatomics to polyatomics and radioactive species",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Felix Kogel, Tatsam Garg, Phillip Groß, Lukas Leczek, Marian Rockenhäuser, Neil Shah, Jakob Weiß, Andreas Schindewolf, Tim Langen",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002171?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Numerically optimizing shortcuts to adiabaticity: A hybrid control strategy",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Bo Xing, Jesús G. Parejo, Sofía Martínez-Garaot, Paola Cappellaro, Mikel Palmero",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002286?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1930,7 +1398,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "Altermagnet optical response; out-of-scope topic",
+      "reason": "",
       "matched": []
     },
     {
@@ -1944,21 +1412,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "PINNIES: An efficient physics-informed neural network framework for integral operator problems",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Alireza Afzal Aghaei, Mahdi Movahedian Moghaddam, Kourosh Parand",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002377?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Optothermal thermoosmotic flows; soft matter physics, not relevant",
       "matched": []
     },
     {
@@ -1976,20 +1430,6 @@
       "matched": []
     },
     {
-      "title": "Padé approximation and partition function zeros",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): R.G.M. Rodrigues",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600216X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Phase ordering governs curvature-insensitive magnetization reversal in FePt Janus particles",
       "authors": "Natalia Gonzalez-Vazquez, Eyl\\\"ul Suadiye, Eberhard Goering, Ruben O. Miranda-Rosales, Hilda David, Frank Thiele, Julia Unangst, Andrew K. Schulz, Gunther Richter",
       "last_author": "Gunther Richter",
@@ -1997,48 +1437,6 @@
       "url": "https://arxiv.org/abs/2605.12283",
       "paper_id": "2605.12283",
       "feed_name": "cond-mat.mtrl-sci",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Photo-thermal origin of pulse laser induced orientation of crystallographic c axis in Tellurium thin films",
-      "authors": "Arata Mitsuzuka, Yuta Kobayashi, Takuto Hiraoka, Masashi Kawaguchi, Masamitsu Hayashi",
-      "last_author": "Masamitsu Hayashi",
-      "abstract": "arXiv:2606.26499v2 Announce Type: replace Abstract: Recent studies have shown that the orientation of crystallographic c axis of Tellurium thin films can be controlled using picosecond long laser pulses. This method provides spatially programmable control of the crystal orientation and is therefore highly attractive for practical applications in functional optical and electronic devices. Previously, it was suggested that laser-induced selective melting and recrystallization can cause the laser-induced reorientation. However, this interpretation remains inconclusive due to limited data. To clarify the mechanism, here we systematically study Te samples under different irradiation conditions. We find that the threshold fluence for inducing optical reorientation depends on the number of laser pulses. The results agrees well with a minimal kinetic model based on the Arrhenius law. Using the model developed, we investigate the condition required to control the optic axis in other two-dimensional materials, such as black phosphorus, WTe2, and SnSe. These findings provide a guide for developing functional electro-optical devices based on anisotropic materials.",
-      "url": "https://arxiv.org/abs/2606.26499",
-      "paper_id": "2606.26499",
-      "feed_name": "cond-mat.mes-hall",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "PhySimNet: Accelerating PDE simulations with physics-integrated learning",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Qi Wang, Yuan Mi, Mengtao Yan, Yang Liu, Ji-Rong Wen, Hao Sun",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600202X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Physics-constrained neural networks for surrogate modeling of lossless periodic structures",
-      "authors": "Eric Prehn, Peter Jung",
-      "last_author": "Peter Jung",
-      "abstract": "arXiv:2606.28119v1 Announce Type: new Abstract: We introduce a physics-constrained neural network (PCNN) for the rapid prediction of rigorous coupled-wave analysis (RCWA) outputs in the form of Jones matrices. Starting from energy conservation in lossless layered periodic structures, we use the fact that RCWA outputs lie on a Stiefel manifold. This energy constraint is enforced as a hard condition by projecting onto the manifold using differentiable symmetric orthogonalization. The resulting surrogate enforces energy conservation by construction while preserving differentiability for gradient-based inverse design. The performance and generality of the proposed approach are demonstrated through the inverse design of a diffractive waveguide combiner for augmented reality glasses.",
-      "url": "https://arxiv.org/abs/2606.28119",
-      "paper_id": "2606.28119",
-      "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
@@ -2084,7 +1482,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Gamma-ray spectrometry via inference; radiation detection, not relevant",
       "matched": []
     },
     {
@@ -2098,7 +1496,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Axion dark matter detection, not relevant to research clusters",
       "matched": []
     },
     {
@@ -2112,35 +1510,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "RHEA-X: Distributed GPU-resident high-fidelity flow solver for multiphysics turbulence",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Carlos Monteiro, Xavier Álvarez-Farré, David Martín, Federico Pizzi, Lluís Jofre",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002158?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Randomized tensor-train truncation on GPUs for quantum-inspired computational fluid dynamics",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Kiet Tuan Pham, Gordon Euhyun Moon, Jinsung Kim",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002419?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Quantum frequency comb in lithium niobate; quantum photonics, not relevant",
       "matched": []
     },
     {
@@ -2153,34 +1523,6 @@
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Nikhil Kodali, Kartick Ramakrishnan, Phani Motamarri",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Resonances in the Gaussian potential",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jiří Horáček, Roman Čurík",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002250?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2214,20 +1556,6 @@
       "matched": []
     },
     {
-      "title": "SU(4) Heisenberg model on the hyperhoneycomb lattice",
-      "authors": "I. V. Lukin, A. G. Sotnikov",
-      "last_author": "A. G. Sotnikov",
-      "abstract": "arXiv:2606.27493v1 Announce Type: new Abstract: We study the ground state of the SU(4) Heisenberg model on the hyperhoneycomb lattice using three-dimensional projected entangled pair states. We show that it is possible to compute physical observables for the ground states using loop expansions, which converge quickly on tree-like lattices. Our extrapolations to the limit of infinite bond dimensions point toward gapless spin-liquid ground state.",
-      "url": "https://arxiv.org/abs/2606.27493",
-      "paper_id": "2606.27493",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Sampling the Schwinger Model with Gauge-Equivariant Diffusion",
       "authors": "Octavio Vega, Aida X. El-Khadra",
       "last_author": "Aida X. El-Khadra",
@@ -2238,7 +1566,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Lattice gauge theory sampling; particle physics, not relevant",
       "matched": []
     },
     {
@@ -2252,7 +1580,7 @@
       "feed_category": "Nature",
       "published": "2026-06-29T08:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Editorial on German academic freedom; news article, not research",
       "matched": []
     },
     {
@@ -2284,62 +1612,6 @@
       "matched": []
     },
     {
-      "title": "SoliDualSPHysics: An extension of DualSPHysics for solid mechanics with hyperelasticity, plasticity, and fracture",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Mohammad Naqib Rahimi, George Moutsanidis",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002390?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Study of the triangular-lattice Hubbard model with constrained-path quantum Monte Carlo",
-      "authors": "Shu Fay Ung, Ankit Mahajan, David R. Reichman",
-      "last_author": "David R. Reichman",
-      "abstract": "arXiv:2603.14808v3 Announce Type: replace Abstract: We benchmark constrained-path Monte Carlo (CPMC) on the triangular-lattice Hubbard model for several fillings and $U$ values and show that symmetry-adapted trial wave functions substantially improve quantitative accuracy. Away from half-filling, simple free-electron-based trials that preserve the ground state symmetry yield energy deviations $\\lesssim 1\\%$ from exact diagonalization and density matrix renormalization group results. At half-filling, strong frustration in the intermediate to large $U$ regimes necessitates symmetry-projected trials to reach comparable accuracy, where both free-electron and symmetry-broken Hartree-Fock trials incur substantial constraint bias. Since the computational cost of CPMC with symmetry projection scales polynomially with system size, our results motivate its use as a practical route for studying competing ground states in strongly correlated, frustrated systems.",
-      "url": "https://arxiv.org/abs/2603.14808",
-      "paper_id": "2603.14808",
-      "feed_name": "cond-mat.str-el",
-      "feed_category": "arXiv",
-      "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Surface d-orbital order in an intermetallic compound",
-      "authors": "Zhanyang Hao, Haohao Sheng, Wanru Ma, Wengen Zheng, Yongqing Cai, Zijuan Xie, Wanlin Cheng, Zuowei Liang, Wu Xie, Wenjuan Zhao, Chen Liu, Zhibin Su, Junhao Lin, Liusuo Wu, Zhengtai Liu, Mao Ye, Ji Dai, Massimo Tallarida, Shengtao Cui, Yogendra Kumar, Kenya Shimada, Kenichi Ozawa, Shuki Torii, Kazuhiro Mori, Yue Xie, Junze Deng, Jiaou Wang, Xuetao Zhu, Jiandong Guo, Jiawei Mei, Zhenyu Wang, Xianhui Chen, Ping Miao, Zhijun Wang, Chaoyu Chen",
-      "last_author": "Chaoyu Chen",
-      "abstract": "Nature Physics, Published online: 29 June 2026; doi:10.1038/s41567-026-03359-4Whether orbital order can exist with a clear band-structure fingerprint in correlated materials has remained unresolved. Now an orbital order from rare earth 5d electrons without structural or magnetic order is seen in an intermetallic compound.",
-      "url": "https://www.nature.com/articles/s41567-026-03359-4",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "TNL-SPH: Open-source modular SPH solver for modern computing platforms based on GPU accelerators",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Tomáš Halada, Luděk Beneš, Jakub Klinkovský, Tomáš Oberhuber",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001566?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Theory of Electron Spin Resonance Scanning Tunneling Microscopy: The First Decade",
       "authors": "Saba Taherpour, Denis Jankovi\\'c, Hoang-Anh Le, Jose Reina-Galvez, Christoph Wolf",
       "last_author": "Christoph Wolf",
@@ -2354,29 +1626,15 @@
       "matched": []
     },
     {
-      "title": "Thickness dependence of diode efficiency in superconducting Fe(Se,Te)/FeTe thin-film heterostructure devices",
-      "authors": "Kaito Arizono, Kenshin Inamura, Kouta Kondou, Yusuke Kobayashi, Tsutomu Nojima, Jobu Matsuno, Junichi Shiogai",
-      "last_author": "Junichi Shiogai",
-      "abstract": "arXiv:2606.27639v1 Announce Type: cross Abstract: The superconducting diode effect (SDE) is a nonreciprocal transport phenomenon, in which the superconducting critical current density depends on the polarity of the current. It has attracted recent attention because of its potential applications to a rectifier without energy dissipation. While SDE has been observed in a wide range of superconducting materials with broken inversion symmetry as well as thin-film heterostructures, the microscopic origin linking structural inversion asymmetry of electronic band, spin-orbit interaction, and vortex pinning remains to be clarified. In this study, we investigate SDE in Fe(Se,Te)/FeTe heterostructure devices as a function of the superconducting Fe(Se,Te) layer thickness tFST to elucidate the role of structural inversion asymmetry on the vortex-induced SDE. We find that the SDE efficiency monotonically increases with increasing tFST, which can be understood by considering that the band bending in the bulk Fe(Se,Te) layer induces the structural inversion asymmetry and thus, the Rashba spin-orbit interaction. In addition, we demonstrate almost 100% rectification for the Fe(Se,Te)/FeTe heterostructure devices in half- and full-wave oscillation configurations. Our findings point out the importance of structural architecture for realization of highly efficient SDE devices based on superconducting thin-film heterostructures.",
-      "url": "https://arxiv.org/abs/2606.27639",
-      "paper_id": "2606.27639",
-      "feed_name": "cond-mat.str-el",
+      "title": "Theory of Spin-splitter Magnetoresistance in Altermagnets",
+      "authors": "Tim Kokkeler, Vitaly N. Golovach, F. Sebastian Bergeret",
+      "last_author": "F. Sebastian Bergeret",
+      "abstract": "arXiv:2605.10747v2 Announce Type: replace Abstract: We develop a theory of angular-dependent magnetoresistance (ADMR) in metallic altermagnets coupled to ferromagnetic insulators and establish criteria that distinguish them from conventional compensated magnets with spin-orbit coupling. We show that, once its full set of angular dependencies is established, the spin-splitter magnetoresistance (SSMR)-- recently reported in the bilayer geometry of H. Chen et al. [Adv. Mater. 37, 2507764 (2025)] -- would constitute a smoking-gun signature of collinear d-wave altermagnetism in metallic systems. Although SSMR has been regarded as a close analogue of spin Hall magnetoresistance (SMR), we demonstrate that the two differ qualitatively in three key respects: SSMR depends solely on the relative orientation between the ferromagnetic magnetization and the altermagnetic N\\'eel vector, yields a longitudinal ADMR response of opposite sign, and features a direct proportionality between longitudinal and transverse ADMR signals, absent in SMR. Building on these distinctions, we further show that the full angular dependence of the SSMR provides a practical recipe to extract the direction of the N\\'eel vector from customary magnetoresistance measurements. These results provide a clear route to unambiguously identify altermagnets in transport.",
+      "url": "https://arxiv.org/abs/2605.10747",
+      "paper_id": "2605.10747",
+      "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Three-dimensional grain extraction from volumetric orientation maps using a label-equivalence-based algorithm",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jaemyung Kim, Yujiro Hayashi, Sung Soo Ha, Makina Yabashi",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002456?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2406,7 +1664,7 @@
       "feed_category": "Nature",
       "published": "2026-06-29T08:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Editorial on US AI policy; news article, not research paper",
       "matched": []
     },
     {
@@ -2424,20 +1682,6 @@
       "matched": []
     },
     {
-      "title": "Underwater Suit-Wearing Cyborg Insect Capable of Hours-Long Diving and Terra-Aqua Travel",
-      "authors": "Zifu FAN, Kazuki KAI, Kewei SONG, Duc Long LE, Thu Ha TRAN, Mingyu HAO, Wei Yang WAN, Shinjiro UMEZU, Hirotaka SATO",
-      "last_author": "Hirotaka SATO",
-      "abstract": "Nature Communications, Published online: 29 June 2026; doi:10.1038/s41467-026-74235-1A wearable diving suit enables terrestrial cyborg cockroaches to maintain respiration and locomotion underwater for up to 3 hours. This biohybrid system facilitates sustained exploration through hybrid hazardous terrains, serving as an amphibious robot.",
-      "url": "https://www.nature.com/articles/s41467-026-74235-1",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-29T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Uniaxial compression of crystalline HCP titanium: an atomistic modelling study of size effects",
       "authors": "Fatemeh Safari, Konstantinos Konstantinou",
       "last_author": "Konstantinos Konstantinou",
@@ -2448,7 +1692,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "Classical MD of Ti mechanics; explicitly out-of-scope methodology",
+      "reason": "",
       "matched": []
     },
     {
@@ -2462,7 +1706,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Unidirectional guided resonances; photonics, not relevant",
       "matched": []
     },
     {
@@ -2476,7 +1720,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Near-zero refractive index photonic crystals; photonics, not MBPT",
       "matched": []
     },
     {
@@ -2504,7 +1748,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "VLM-aware meta-optics design; ML optics, not condensed matter",
       "matched": []
     },
     {
@@ -2532,7 +1776,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Vacuum fluctuation switching in OPO; quantum optics, not relevant",
       "matched": []
     },
     {
@@ -2546,35 +1790,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Vidyut3d: A GPU accelerated fluid solver for non-equilibrium plasmas on adaptive grids",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Hariswaran Sitaraman, Nicholas Deak, Taaresh Taneja",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002183?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "WGrin: A Matlab toolbox for computing whispering gallery modes in graded index optical resonators",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Stéphane Balac",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600189X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Nanomechanical oscillator dynamics; nanomechanics, not MBPT or semiconductors",
       "matched": []
     },
     {
@@ -2588,49 +1804,7 @@
       "feed_category": "Nature",
       "published": "2026-06-29T08:00:00+00:00",
       "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Wild tomato genome assemblies reveal structural variants and repeat content act as recombination barriers",
-      "authors": "Willem M. J. van Rengs, Roven Rommel Fuentes, Zahra Zangishei, Elias Primetis, Yazhong Wang, Joiselle B. Fernandes, Tamara Susanto, Qichao Lian, Sieglinde Effgen, Bruno Huettel, Saleh Alseekh, Björn Usadel, Charles J. Underwood",
-      "last_author": "Charles J. Underwood",
-      "abstract": "Nature Communications, Published online: 28 June 2026; doi:10.1038/s41467-026-74784-5Introgression of genes from wild tomato species can enhance the robustness of modern tomatoes. Here van Rengs et al. describe the genomes of wild tomato species and show how reproductive gender and structural variation influence meiotic recombination.",
-      "url": "https://www.nature.com/articles/s41467-026-74784-5",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-06-28T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "cuGMEC: A high-performance code for gyrokinetic-MHD hybrid simulation on GPUs with CUDA C++",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): S.Y. Liu, P.Y. Jiang, G.Y. Fu",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002316?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "ff-bifbox: A scalable, open-source toolbox for bifurcation analysis of nonlinear PDEs",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Christopher M. Douglas, Pierre Jolivet",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002031?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
+      "reason": "Editorial on US research funding; news article, not research",
       "matched": []
     },
     {
@@ -2639,20 +1813,6 @@
       "last_author": "",
       "abstract": "Publication date: Available online 17 June 2026Source: Computer Physics CommunicationsAuthor(s): Pierre Kestener",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002572?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "moljax: GPU-accelerated method of lines for stiff reaction-diffusion PDEs with FFT preconditioning",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Gorgi Pavlov",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001876?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -2672,7 +1832,7 @@
       "feed_category": "arXiv",
       "published": "2026-06-29T12:00:00+00:00",
       "score": 1,
-      "reason": "",
+      "reason": "Van der Waals crystal metasurface; 2D materials in photonics context, not main focus",
       "matched": []
     },
     {
