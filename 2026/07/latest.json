@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-04T11:27:39.845497+00:00",
+  "generated": "2026-07-04T12:04:22.917954+00:00",
   "papers": [
     {
       "title": "A unified heterogeneous implementation of numerical atomic orbitals-based real-time TDDFT within the ABACUS package",
@@ -11,36 +11,22 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 4,
-      "reason": "Real-time TDDFT for exciton dynamics with GPU acceleration; directly addresses cluster D MBPT methodology and HPC",
+      "score": 3,
+      "reason": "Real-time TDDFT methodology and GPU implementation directly relevant to cluster D excited-state dynamics and exascale MBPT acceleration.",
       "matched": []
     },
     {
-      "title": "Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Soham Mandal, Manish Jain, Prabal K. Maiti",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001955?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Alternating atomic-dipole layers and switching dynamics in Al1-xScxN ferroelectrics",
+      "authors": "Yonghui Zheng, Ruirong Bai, Tianjiao Xin, Xuanyu Zhao, Yan Cheng, Yu-Ning Wu, Yingfen Wei, Binghui Ge, He Tian, Shiyou Chen, Qi Liu, Chungang Duan, Ming Liu",
+      "last_author": "Ming Liu",
+      "abstract": "Science, Volume 393, Issue 6806, Page 85-89, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aee9639?af=R",
+      "paper_id": "10.1126/science.aee9639?af=R",
+      "feed_name": "Science",
+      "feed_category": "AAAS",
+      "published": "2026-07-02T14:00:12+00:00",
       "score": 3,
-      "reason": "Ab initio phonon renormalization and higher-order anharmonicity directly relevant to MBPT electron-phonon methodology cluster; thermal transport focus rather than band gap renormalization or mobility primary interests.",
-      "matched": []
-    },
-    {
-      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 3,
-      "reason": "First-principles Berry-phase transport methodology complementary to band-structure and MBPT calculations",
+      "reason": "Al1-xScxN ferroelectric switching dynamics; background topic on high-k gate dielectrics for advanced FET channel design",
       "matched": []
     },
     {
@@ -54,35 +40,7 @@
       "feed_category": "Nature",
       "published": "2026-07-03T08:00:00+00:00",
       "score": 3,
-      "reason": "Exciton physics in 2D van der Waals materials relevant to BSE/GW methodology background",
-      "matched": []
-    },
-    {
-      "title": "H-NESSi: The hierarchical non-equilibrium systems simulation package",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Thomas Blommel, Jeremija Kovačević, Jason Kaye, Emanuel Gull, Jakša Vučičević, Denis Golež",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002389?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 3,
-      "reason": "Non-equilibrium Green's functions methodology relevant to MBPT and pump-probe ab initio spectroscopy",
-      "matched": []
-    },
-    {
-      "title": "A GPU-accelerated matrix-free FAS multigrid solver for Navier-Stokes equations with memory-efficient implementations",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jiale Meng, Shuqi Tang, Steven M. Wise, Zhenlin Guo",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002560?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "",
+      "reason": "2D exciton physics and light-matter control in layered materials relevant to cluster A band structure and optical properties background.",
       "matched": []
     },
     {
@@ -96,43 +54,15 @@
       "feed_category": "Nature",
       "published": "2026-07-04T08:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Multi-fidelity ML framework relevant to cluster C automated hyperparameter search and convergence testing for MBPT.",
       "matched": []
     },
     {
-      "title": "A sustainable seven-electron cascade battery via orchestrated gas-liquid-solid triphase redox reactions",
-      "authors": "Lingchang Wu, Chaoyi Qiu, Junwei Zhang, Zihao Tao, Xiang Liu, Zhixiao Cai, Haoxiang Yu, Lei Yan, Liyuan Zhang, Ting-Feng Yi, Jie Shu",
-      "last_author": "Jie Shu",
-      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2744?af=R",
-      "paper_id": "10.1126/sciadv.aef2744?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-03T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Alternating atomic-dipole layers and switching dynamics in Al1-xScxN ferroelectrics",
-      "authors": "Yonghui Zheng, Ruirong Bai, Tianjiao Xin, Xuanyu Zhao, Yan Cheng, Yu-Ning Wu, Yingfen Wei, Binghui Ge, He Tian, Shiyou Chen, Qi Liu, Chungang Duan, Ming Liu",
-      "last_author": "Ming Liu",
-      "abstract": "Science, Volume 393, Issue 6806, Page 85-89, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aee9639?af=R",
-      "paper_id": "10.1126/science.aee9639?af=R",
-      "feed_name": "Science",
-      "feed_category": "AAAS",
-      "published": "2026-07-02T14:00:12+00:00",
-      "score": 2,
-      "reason": "Semiconducting ferroelectric Al-Sc-N; materials physics but switching dynamics and structure focus, not GW/electronic-structure angle",
-      "matched": []
-    },
-    {
-      "title": "An immersed interface method for microstructure-scale electrochemical battery models: numerical formulation and performance portable implementation",
+      "title": "Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity",
       "authors": "",
       "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Hariswaran Sitaraman, Jeffery Allen, Michael Brazell, Francois Usseglio-Viretta",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002237?dgcid=rss_sd_all",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Soham Mandal, Manish Jain, Prabal K. Maiti",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526001955?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -142,17 +72,17 @@
       "matched": []
     },
     {
-      "title": "Atomic-scale regulation of ion motion and phonon scattering: ALD-driven interface engineering for stabilizing β-Zn4Sb3",
-      "authors": "Shiyang He, Jun Li, Dominique Mattlat, Falk Röder, Siyuan Zhang, Xiang Zhang, Christina Scheu, Pingjun Ying, Ran He, Yongchen Rao, Dongdong Li, Amin Bahrami, Kornelius Nielsch",
-      "last_author": "Kornelius Nielsch",
-      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3850?af=R",
-      "paper_id": "10.1126/sciadv.aeg3850?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-03T15:00:00+00:00",
+      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 2,
-      "reason": "",
+      "reason": "First-principles Berry curvature transport code related to ab-initio methods and BoltzTraP/BoltzWann tools, though topological focus not core to clusters A-D.",
       "matched": []
     },
     {
@@ -166,21 +96,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Computing inspired by the brain: a journey from algorithms to organoids",
-      "authors": "Paris Brown, Shyni Varghese",
-      "last_author": "Shyni Varghese",
-      "abstract": "Nature Computational Science, Published online: 03 July 2026; doi:10.1038/s43588-026-01012-xOrganoid intelligence represents a new frontier for computing inspired by the human brain. This Review discusses the evolution of brain-inspired computing along with potential challenges for future development.",
-      "url": "https://www.nature.com/articles/s43588-026-01012-x",
-      "paper_id": "",
-      "feed_name": "Nat. Comp. Sci.",
-      "feed_category": "Nature",
-      "published": "2026-07-03T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Chemical graph algorithms potentially applicable to cluster C workflow automation and high-throughput ab-initio infrastructure.",
       "matched": []
     },
     {
@@ -194,77 +110,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Dynamical structure factor related to dielectric response and χ matrix in response theory; likely phenomenological rather than ab initio MBPT computation.",
+      "reason": "",
       "matched": []
     },
     {
-      "title": "Electric field tunable coupling strength and quantum metric hot spots in a moiré flatband superconductor",
-      "authors": "Le Liu, Yu Hong, Cheng-Ping Zhang, Jundong Zhu, Jingwei Dong, Kenji Watanabe, Takashi Taniguchi, Luojun Du, Dongxia Shi, K. T. Law, Guangyu Zhang, Wei Yang",
-      "last_author": "Wei Yang",
-      "abstract": "Nature Communications, Published online: 04 July 2026; doi:10.1038/s41467-026-74848-6The authors study flat-band superconductivity in alternating twisted quadra-layer graphene by transport, finding an electric-field-tunable coupling strength within the superconducting phase, vanishing Fermi velocity and large superfluid stiffness. They attribute these phenomena to quantum metric contributions, mediated by hybridization of Dirac bands and flat bands.",
-      "url": "https://www.nature.com/articles/s41467-026-74848-6",
+      "title": "H-NESSi: The hierarchical non-equilibrium systems simulation package",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Thomas Blommel, Jeremija Kovačević, Jason Kaye, Emanuel Gull, Jakša Vučičević, Denis Golež",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002389?dgcid=rss_sd_all",
       "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-04T08:00:00+00:00",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Electronic structure–driven sodiophilicity enables stable anode-free sodium batteries",
-      "authors": "Saisai Qiu, Haolin Zhu, Tengfei Jiang, Qiang Wu, Jiayue Peng, Canfu Zhang, Shijie Cheng, Jia Xie",
-      "last_author": "Jia Xie",
-      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9370?af=R",
-      "paper_id": "10.1126/sciadv.aef9370?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-03T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Fast thermalization with quantum algorithms",
-      "authors": "Anirban Chowdhury",
-      "last_author": "Anirban Chowdhury",
-      "abstract": "Nature Physics, Published online: 03 July 2026; doi:10.1038/s41567-026-03357-6Quantum algorithms excel at simulating Hamiltonian dynamics, but they struggle with preparing the thermal equilibrium states needed for quantum simulation. Now it has been shown that a recent algorithm can efficiently prepare an important class of thermal states.",
-      "url": "https://www.nature.com/articles/s41567-026-03357-6",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-07-03T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Fractional quantum anomalous Hall effect in moiré fractional Chern insulators",
-      "authors": "Tingxin Li, Jianpeng Liu, Jian Xie, Xiaobo Lu",
-      "last_author": "Xiaobo Lu",
-      "abstract": "Nature Materials, Published online: 03 July 2026; doi:10.1038/s41563-026-02649-9The fractional quantum anomalous Hall effect serves as the defining experimental manifestation of fractional Chern insulators at zero magnetic field. This Perspective surveys its realization in moiré materials, examines underlying mechanisms and outlines pathways towards new fractional and non-Abelian topological states.",
-      "url": "https://www.nature.com/articles/s41563-026-02649-9",
-      "paper_id": "",
-      "feed_name": "Nat. Mater.",
-      "feed_category": "Nature",
-      "published": "2026-07-03T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "High-Chern-number orbital magnetism in twisted rhombohedral graphene",
-      "authors": "Xirui Wang, L. Antonio Benítez, Skandaprasad Rao, Võ Tiến Phong, Wai In Chu, Kenji Watanabe, Takashi Taniguchi, Cyprian Lewandowski, Pablo Jarillo-Herrero",
-      "last_author": "Pablo Jarillo-Herrero",
-      "abstract": "Nature Materials, Published online: 03 July 2026; doi:10.1038/s41563-026-02659-7Magnetotransport measurements and mean-field calculations of twisted monolayer–multilayer (1 + n) rhombohedral graphene reveals high-Chern-number orbital magnetism with Chern number C = n. Electrical and magnetic switching of these states is also demonstrated.",
-      "url": "https://www.nature.com/articles/s41563-026-02659-7",
-      "paper_id": "",
-      "feed_name": "Nat. Mater.",
-      "feed_category": "Nature",
-      "published": "2026-07-03T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Non-equilibrium systems simulation potentially relevant to cluster D real-time dynamics and MBPT methodology background.",
       "matched": []
     },
     {
@@ -278,7 +138,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Spin space groups symmetry package; crystallographic infrastructure supporting ab initio codes, but not MBPT-specific.",
+      "reason": "",
       "matched": []
     },
     {
@@ -292,7 +152,7 @@
       "feed_category": "IOP",
       "published": "2026-07-03T07:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "hBN in PV devices related to cluster B absorber materials and cluster A dielectric interface engineering.",
       "matched": []
     },
     {
@@ -301,20 +161,6 @@
       "last_author": "",
       "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): Ze Tao, Hanxuan Wang, Fujun Liu",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002195?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "Physics-informed neural networks for PDE solving; ML/AI infrastructure but not specific to ab initio MBPT workflow automation (cluster C).",
-      "matched": []
-    },
-    {
-      "title": "MDcraft – A modern molecular dynamics simulation package with machine learning potentials support",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): I.S. Galtsov, R.V. Muratov, G.V. Vyskvarko, S.A. Murzov, S.A. Dyachkov, P.R. Levashov",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002262?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -334,7 +180,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Electronic structure tool for moiré/twisted bilayer physics; explicitly out-of-scope material system per user scope.",
+      "reason": "",
       "matched": []
     },
     {
@@ -348,7 +194,7 @@
       "feed_category": "AAAS",
       "published": "2026-07-02T14:00:12+00:00",
       "score": 2,
-      "reason": "Magnetoresistance in correlated oxide (CoO); materials measurement but magnetism and strong correlations outside core clusters A–D",
+      "reason": "",
       "matched": []
     },
     {
@@ -362,21 +208,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Padé approximation and partition function zeros",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): R.G.M. Rodrigues",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600216X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "Padé approximation potentially useful for GW/BSE analytic continuation from imaginary frequencies, but very general mathematical methods paper.",
+      "reason": "Physics-informed neural networks relevant to cluster C AI-for-science and automated workflow development.",
       "matched": []
     },
     {
@@ -390,7 +222,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "ML-accelerated PDE simulations; AI/physics infrastructure but not specific to ab initio MBPT workflow orchestration.",
+      "reason": "",
       "matched": []
     },
     {
@@ -404,7 +236,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Eigenvalue solver for large systems; numerical infrastructure potentially supporting GW/BSE/EPW, but very general and not MBPT-specific.",
+      "reason": "",
       "matched": []
     },
     {
@@ -418,7 +250,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Semi-empirical pseudopotential for TMD; method gate caps at 2 despite 2D semiconductor material relevance.",
+      "reason": "",
       "matched": []
     },
     {
@@ -432,7 +264,7 @@
       "feed_category": "AAAS",
       "published": "2026-07-03T15:00:00+00:00",
       "score": 2,
-      "reason": "Thermoelectrics and phonon-entropy design; background topic (thermal transport) but not a focus cluster and method not specified",
+      "reason": "",
       "matched": []
     },
     {
@@ -446,7 +278,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "GPU-accelerated DFT XC potential inversion; ab initio and GPU-relevant, but DFT not GW/EPW focus.",
+      "reason": "",
       "matched": []
     },
     {
@@ -487,6 +319,20 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-07-03T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "A GPU-accelerated matrix-free FAS multigrid solver for Navier-Stokes equations with memory-efficient implementations",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jiale Meng, Shuqi Tang, Steven M. Wise, Zhenlin Guo",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002560?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -646,6 +492,20 @@
       "matched": []
     },
     {
+      "title": "A sustainable seven-electron cascade battery via orchestrated gas-liquid-solid triphase redox reactions",
+      "authors": "Lingchang Wu, Chaoyi Qiu, Junwei Zhang, Zihao Tao, Xiang Liu, Zhixiao Cai, Haoxiang Yu, Lei Yan, Liyuan Zhang, Ting-Feng Yi, Jie Shu",
+      "last_author": "Jie Shu",
+      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2744?af=R",
+      "paper_id": "10.1126/sciadv.aef2744?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-03T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "A targetable FTO/SLC7A11/CBS/CTH axis controls cysteine metabolism, growth and survival in NSCLC",
       "authors": "Nishanth Kuganesan, Margaret Pan, Haowen Jiang, Stavros Melemenidis, Jiangbin Ye, Sara Richter, Maximillian Diehn, Kerriann M. Casey, Edward E. Graves, Quynh Thu Le, Erinn B. Rankin",
       "last_author": "Erinn B. Rankin",
@@ -730,6 +590,20 @@
       "matched": []
     },
     {
+      "title": "An immersed interface method for microstructure-scale electrochemical battery models: numerical formulation and performance portable implementation",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Hariswaran Sitaraman, Jeffery Allen, Michael Brazell, Francois Usseglio-Viretta",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002237?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "An open-source, interactive python framework for solving the two-dimensional Lippmann-Schwinger equation for two-body bound states",
       "authors": "",
       "last_author": "",
@@ -792,6 +666,20 @@
       "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
       "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7793?af=R",
       "paper_id": "10.1126/sciadv.aef7793?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-03T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Atomic-scale regulation of ion motion and phonon scattering: ALD-driven interface engineering for stabilizing β-Zn4Sb3",
+      "authors": "Shiyang He, Jun Li, Dominique Mattlat, Falk Röder, Siyuan Zhang, Xiang Zhang, Christina Scheu, Pingjun Ying, Ran He, Yongchen Rao, Dongdong Li, Amin Bahrami, Kornelius Nielsch",
+      "last_author": "Kornelius Nielsch",
+      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3850?af=R",
+      "paper_id": "10.1126/sciadv.aeg3850?af=R",
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-07-03T15:00:00+00:00",
@@ -1038,6 +926,34 @@
       "matched": []
     },
     {
+      "title": "Electric field tunable coupling strength and quantum metric hot spots in a moiré flatband superconductor",
+      "authors": "Le Liu, Yu Hong, Cheng-Ping Zhang, Jundong Zhu, Jingwei Dong, Kenji Watanabe, Takashi Taniguchi, Luojun Du, Dongxia Shi, K. T. Law, Guangyu Zhang, Wei Yang",
+      "last_author": "Wei Yang",
+      "abstract": "Nature Communications, Published online: 04 July 2026; doi:10.1038/s41467-026-74848-6The authors study flat-band superconductivity in alternating twisted quadra-layer graphene by transport, finding an electric-field-tunable coupling strength within the superconducting phase, vanishing Fermi velocity and large superfluid stiffness. They attribute these phenomena to quantum metric contributions, mediated by hybridization of Dirac bands and flat bands.",
+      "url": "https://www.nature.com/articles/s41467-026-74848-6",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-04T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Electronic structure–driven sodiophilicity enables stable anode-free sodium batteries",
+      "authors": "Saisai Qiu, Haolin Zhu, Tengfei Jiang, Qiang Wu, Jiayue Peng, Canfu Zhang, Shijie Cheng, Jia Xie",
+      "last_author": "Jia Xie",
+      "abstract": "Science Advances, Volume 12, Issue 27, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9370?af=R",
+      "paper_id": "10.1126/sciadv.aef9370?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-03T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "End “reusable” waste dumping in Africa",
       "authors": "Chengjun Li, Chunyang Li, Ilham Ku-nwa Hamid, Mike Anane, Innocent Chidi Nnorom, Raphael Kanyire Seidu, Yuelin Li, Muntaka Chasant, Huan Zhong, and Cornelis Peter Baldé",
       "last_author": "Cornelis Peter Baldé",
@@ -1122,6 +1038,20 @@
       "matched": []
     },
     {
+      "title": "Fast thermalization with quantum algorithms",
+      "authors": "Anirban Chowdhury",
+      "last_author": "Anirban Chowdhury",
+      "abstract": "Nature Physics, Published online: 03 July 2026; doi:10.1038/s41567-026-03357-6Quantum algorithms excel at simulating Hamiltonian dynamics, but they struggle with preparing the thermal equilibrium states needed for quantum simulation. Now it has been shown that a recent algorithm can efficiently prepare an important class of thermal states.",
+      "url": "https://www.nature.com/articles/s41567-026-03357-6",
+      "paper_id": "",
+      "feed_name": "Nat. Phys.",
+      "feed_category": "Nature",
+      "published": "2026-07-03T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Feeling a chill",
       "authors": "Richard Stone",
       "last_author": "Richard Stone",
@@ -1159,6 +1089,20 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Fractional quantum anomalous Hall effect in moiré fractional Chern insulators",
+      "authors": "Tingxin Li, Jianpeng Liu, Jian Xie, Xiaobo Lu",
+      "last_author": "Xiaobo Lu",
+      "abstract": "Nature Materials, Published online: 03 July 2026; doi:10.1038/s41563-026-02649-9The fractional quantum anomalous Hall effect serves as the defining experimental manifestation of fractional Chern insulators at zero magnetic field. This Perspective surveys its realization in moiré materials, examines underlying mechanisms and outlines pathways towards new fractional and non-Abelian topological states.",
+      "url": "https://www.nature.com/articles/s41563-026-02649-9",
+      "paper_id": "",
+      "feed_name": "Nat. Mater.",
+      "feed_category": "Nature",
+      "published": "2026-07-03T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1257,6 +1201,20 @@
       "feed_name": "Science",
       "feed_category": "AAAS",
       "published": "2026-07-02T14:00:12+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "High-Chern-number orbital magnetism in twisted rhombohedral graphene",
+      "authors": "Xirui Wang, L. Antonio Benítez, Skandaprasad Rao, Võ Tiến Phong, Wai In Chu, Kenji Watanabe, Takashi Taniguchi, Cyprian Lewandowski, Pablo Jarillo-Herrero",
+      "last_author": "Pablo Jarillo-Herrero",
+      "abstract": "Nature Materials, Published online: 03 July 2026; doi:10.1038/s41563-026-02659-7Magnetotransport measurements and mean-field calculations of twisted monolayer–multilayer (1 + n) rhombohedral graphene reveals high-Chern-number orbital magnetism with Chern number C = n. Electrical and magnetic switching of these states is also demonstrated.",
+      "url": "https://www.nature.com/articles/s41563-026-02659-7",
+      "paper_id": "",
+      "feed_name": "Nat. Mater.",
+      "feed_category": "Nature",
+      "published": "2026-07-03T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1421,6 +1379,20 @@
       "last_author": "",
       "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Marjan Stankov, Daan Boer, Wouter Graef, Kevin van ’t Veer, Aleksandar P. Jovanović, Florian Sigeneger, Detlef Loffhagen, Jan van Dijk, Markus M. Becker",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002304?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "MDcraft – A modern molecular dynamics simulation package with machine learning potentials support",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): I.S. Galtsov, R.V. Muratov, G.V. Vyskvarko, S.A. Murzov, S.A. Dyachkov, P.R. Levashov",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002262?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -1598,6 +1570,20 @@
       "matched": []
     },
     {
+      "title": "Observation of ubiquitous charge correlations and hidden quantum critical point in hole-doped kagome superconductors",
+      "authors": "Ilija K. Nikolov, Giuseppe Allodi, Adrien Rosuel, Ginevra Corsale, Anshu Kataria, Pietro Bonfà, Roberto De Renzi, Andrea Capa Salinas, Stephen D. Wilson, Marc-Henri Julien, Samuele Sanna, Vesna F. Mitrović",
+      "last_author": "Vesna F. Mitrović",
+      "abstract": "npj Quantum Materials, Published online: 04 July 2026; doi:10.1038/s41535-026-00916-1Observation of ubiquitous charge correlations and hidden quantum critical point in hole-doped kagome superconductors",
+      "url": "https://www.nature.com/articles/s41535-026-00916-1",
+      "paper_id": "",
+      "feed_name": "npj QM",
+      "feed_category": "Nature",
+      "published": "2026-07-04T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "On Zeppelin Mountain, sensors sniff Russian air",
       "authors": "Richard Stone",
       "last_author": "Richard Stone",
@@ -1617,6 +1603,20 @@
       "last_author": "",
       "abstract": "Publication date: Available online 22 June 2026Source: Computer Physics CommunicationsAuthor(s): A. Vagnoni, M. Gherardi, E. Ghedini",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002626?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Padé approximation and partition function zeros",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: September 2026Source: Computer Physics Communications, Volume 326Author(s): R.G.M. Rodrigues",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600216X?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
