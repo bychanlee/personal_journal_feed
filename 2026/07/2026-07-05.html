@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Digest — 2026-07-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Site title */
+  .site-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Header */
+  .page-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .page-header .meta {
+    font-size: 15px;
+    color: #656d76;
+  }
+  .page-header .feeds {
+    font-size: 13px;
+    color: #848d97;
+    margin-top: 4px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848d97;
+    padding: 10px 12px;
+    border-bottom: 2px solid #d1d9e0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1f2328; }
+  tbody tr {
+    border-bottom: 1px solid #eaeef2;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #f6f8fa; }
+  td { padding: 10px 12px; vertical-align: top; }
+
+  .td-score {
+    width: 48px;
+    text-align: center;
+  }
+  .score-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .td-title a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .td-title a:hover { text-decoration: underline; }
+  .reason {
+    font-size: 13px;
+    color: #848d97;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .td-authors {
+    color: #656d76;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .td-time {
+    width: 50px;
+    text-align: right;
+    color: #848d97;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: #848d97;
+  }
+
+  .group-header td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 12px 6px;
+    color: #1f2328;
+    border-bottom: 2px solid #d1d9e0;
+    background: #f6f8fa;
+    letter-spacing: 0.3px;
+  }
+
+  /* News section */
+  .news-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d1d9e0;
+  }
+  .news-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .news-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeef2;
+    font-size: 15px;
+  }
+  .news-item a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-item a:hover { text-decoration: underline; }
+  .news-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #656d76;
+    border: 1px solid #eaeef2;
+    margin-right: 6px;
+  }
+  .news-time {
+    color: #848d97;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; }
+    .td-authors { max-width: 150px; }
+    .td-time { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-title">Byeongchan Lee's Personal Journal Feed</div>
+
+<div class="page-header">
+  <h1>Journal Digest</h1>
+  <div class="meta">2026-07-05 — 47 papers scored by Haiku</div>
+  <div class="feeds">Comp. Phys. Comm. (47)</div>
+</div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Score</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th style="text-align:right">Time</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+<tr class="group-header"><td colspan="4">Comp. Phys. Comm.</td></tr><tr><td class="td-score"><span class="score-num" style="background:#f97316">4</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001955?dgcid=rss_sd_all" target="_blank" rel="noopener">Ab initio investigation of thermal transport in insulators: Unveiling the roles of phonon renormalization and higher-order anharmonicity</a><br><span class=reason>Ab initio thermal transport with phonon renormalization and anharmonicity directly relevant to phonon-limited mobility theory (cluster A) and electron-phonon MBPT methodology (cluster D)</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all" target="_blank" rel="noopener">Dysurf: A program for simulating four-dimensional dynamical structure factor</a><br><span class=reason>Dynamical structure factor simulator potentially relevant to many-body spectroscopy calculations but abstract provides insufficient detail</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001724?dgcid=rss_sd_all" target="_blank" rel="noopener">IRSSG: An open-source software package for spin space groups</a><br><span class=reason>Spin space group symmetry utility useful for ab-initio workflows but not MBPT-specific</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002195?dgcid=rss_sd_all" target="_blank" rel="noopener">LNN-PINN: A unified physics-only training framework with liquid residual blocks</a><br><span class=reason>Physics-informed neural networks general ML methodology without specific ab-initio or materials application</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002584?dgcid=rss_sd_all" target="_blank" rel="noopener">Neural Network Preconditioning of Linear Tabulation Methods for Fast Function Approximation</a><br><span class=reason>Neural network numerical preconditioning method without stated materials or MBPT application</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600216X?dgcid=rss_sd_all" target="_blank" rel="noopener">Padé approximation and partition function zeros</a><br><span class=reason>Mathematical method (Padé approximation) without stated materials or MBPT application</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600202X?dgcid=rss_sd_all" target="_blank" rel="noopener">PhySimNet: Accelerating PDE simulations with physics-integrated learning</a><br><span class=reason>Physics-integrated ML for PDEs is AI-for-science approach but lacks specific ab-initio/materials/MBPT context</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all" target="_blank" rel="noopener">Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products</a><br><span class=reason>Eigenvalue solver tolerant to inexact matvecs potentially useful for GW/BSE exascale (cluster D) but no stated application</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002225?dgcid=rss_sd_all" target="_blank" rel="noopener">Semi-empirical pseudopotential method for monolayer transition metal dichalcogenides</a><br><span class=reason>TMD pseudopotential methods relevant to cluster A materials but semi-empirical approach is below ab-initio/MBPT scope</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">2</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002006?dgcid=rss_sd_all" target="_blank" rel="noopener">invDFT : A CPU-GPU massively parallel tool to find exact exchange-correlation potentials from groundstate densities</a><br><span class=reason>GPU-accelerated inverse DFT is first-principles computational method but outside GW/EPW/GWPT focus</span></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001979?dgcid=rss_sd_all" target="_blank" rel="noopener">A GPU-accelerated multi-resolution feature-preserving particle generation method for complex geometries</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002134?dgcid=rss_sd_all" target="_blank" rel="noopener">A differentiable solver for phase-resolved nearshore wave modelling</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600192X?dgcid=rss_sd_all" target="_blank" rel="noopener">A domain embedding strategy for acoustic wave scattering by moving obstacles</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002614?dgcid=rss_sd_all" target="_blank" rel="noopener">A new DGTD algorithm for calculating radiation form rotationally symmetric antennas</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001943?dgcid=rss_sd_all" target="_blank" rel="noopener">A new geometric Volume-of-Fluid advection scheme using Lagrangian volume particles in two-dimensional multi-material fluids</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002018?dgcid=rss_sd_all" target="_blank" rel="noopener">Abradable DEM: A novel framework to capture the mechanistic evolution of particle shape</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002535?dgcid=rss_sd_all" target="_blank" rel="noopener">Additions to the FUMILIM minimization package</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001967?dgcid=rss_sd_all" target="_blank" rel="noopener">An OpenFOAM based solver for three-phase flow in porous media incorporating foam effects</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002298?dgcid=rss_sd_all" target="_blank" rel="noopener">An adaptive dual-mesh method for fast and accurate 3D modeling of flow and transport in unsaturated porous environment at watershed scale</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002237?dgcid=rss_sd_all" target="_blank" rel="noopener">An immersed interface method for microstructure-scale electrochemical battery models: numerical formulation and performance portable implementation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001992?dgcid=rss_sd_all" target="_blank" rel="noopener">An open-source, interactive python framework for solving the two-dimensional Lippmann-Schwinger equation for two-body bound states</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002201?dgcid=rss_sd_all" target="_blank" rel="noopener">Application of direct interpolation boundary element method to 2D elasticity with general body forces and thermoelastic effects</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002638?dgcid=rss_sd_all" target="_blank" rel="noopener">BO-PBK: A new solver for dispersion relations of obliquely propagating waves in multi-species plasmas with anisotropic loss-cone drift product-bi-kappa distributions</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001918?dgcid=rss_sd_all" target="_blank" rel="noopener">C++ CUDA programs for solving the time-dependent dipolar Gross-Pitaevskii equation</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002432?dgcid=rss_sd_all" target="_blank" rel="noopener">Computation of the dynamics of rotating 2D/3D Gross-Pitaevskii equations based on the HPC pseudo-spectral solver BEC2HPC</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002249?dgcid=rss_sd_all" target="_blank" rel="noopener">Dynamic linked list based parallel point-particle solver for high-performance computing</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600250X?dgcid=rss_sd_all" target="_blank" rel="noopener">Editorial Board</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001931?dgcid=rss_sd_all" target="_blank" rel="noopener">Enhancing photoionization rate calculations in low-temperature plasmas using spectral methods</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002274?dgcid=rss_sd_all" target="_blank" rel="noopener">Explicit algorithm for describing a magnetohydrodynamic dynamo action in a rectangular domain</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002146?dgcid=rss_sd_all" target="_blank" rel="noopener">Exploiting repeated matrix block structures for more efficient CFD on modern supercomputers</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001815?dgcid=rss_sd_all" target="_blank" rel="noopener">FeynGrav 4.0</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001657?dgcid=rss_sd_all" target="_blank" rel="noopener">FiReSMOKE: An OpenFOAM-based collection of finite-rate chemistry solvers for turbulent combustion systems</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001773?dgcid=rss_sd_all" target="_blank" rel="noopener">GollumFit: An icecube open-source framework for binned-likelihood neutrino telescope analyses</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600233X?dgcid=rss_sd_all" target="_blank" rel="noopener">Grains3D, a flexible DEM approach for particles of arbitrary convex shape Part IV: Extension to superquadrics</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002596?dgcid=rss_sd_all" target="_blank" rel="noopener">MF-toolkit: A High-Performance Python Library for Multifractal Analysis with Automated Crossover Detection, Source Identification and Application to Gravitational Waves Data</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001980?dgcid=rss_sd_all" target="_blank" rel="noopener">MoireStudio: A universal twisted electronic structure calculation package</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002286?dgcid=rss_sd_all" target="_blank" rel="noopener">Numerically optimizing shortcuts to adiabaticity: A hybrid control strategy</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002626?dgcid=rss_sd_all" target="_blank" rel="noopener">PPFM (Plasma Properties For Many): An Object Oriented C++ Library for Computing Thermodynamic and Transport Properties of Plasmas Under Different Operating Conditions</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002158?dgcid=rss_sd_all" target="_blank" rel="noopener">RHEA-X: Distributed GPU-resident high-fidelity flow solver for multiphysics turbulence</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001906?dgcid=rss_sd_all" target="_blank" rel="noopener">Simple third order operator-splitting schemes for stochastic mechanics and field theory</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001566?dgcid=rss_sd_all" target="_blank" rel="noopener">TNL-SPH: Open-source modular SPH solver for modern computing platforms based on GPU accelerators</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002456?dgcid=rss_sd_all" target="_blank" rel="noopener">Three-dimensional grain extraction from volumetric orientation maps using a label-equivalence-based algorithm</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002183?dgcid=rss_sd_all" target="_blank" rel="noopener">Vidyut3d: A GPU accelerated fluid solver for non-equilibrium plasmas on adaptive grids</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S001046552600189X?dgcid=rss_sd_all" target="_blank" rel="noopener">WGrin: A Matlab toolbox for computing whispering gallery modes in graded index optical resonators</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002031?dgcid=rss_sd_all" target="_blank" rel="noopener">ff-bifbox: A scalable, open-source toolbox for bifurcation analysis of nonlinear PDEs</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526002572?dgcid=rss_sd_all" target="_blank" rel="noopener">kalypsso: a performance portable platform for compressible hydrodynamics simulations using adaptive mesh refinement</a></td><td class="td-authors"></td><td class="td-time"></td></tr><tr><td class="td-score"><span class="score-num" style="background:#6b7280">1</span></td><td class="td-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010465526001876?dgcid=rss_sd_all" target="_blank" rel="noopener">moljax: GPU-accelerated method of lines for stiff reaction-diffusion PDEs with FFT preconditioning</a></td><td class="td-authors"></td><td class="td-time"></td></tr>
+</tbody>
+</table>
+
+
+<div class="news-section">
+  <h2>Tech News</h2>
+  <div class="news-list">
+    <div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31144" target="_blank" rel="noopener">GPT-5.5 Codex의 추론 토큰 클러스터링이 성능 저하로 이어질 수 있음</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31143" target="_blank" rel="noopener">워크스페이스 인스턴스 또는 소비자 계정 간 잠재적 세션/캐시 누출</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31139" target="_blank" rel="noopener">Google Books 또는 유사한 전체 도서 스캔에 20만 달러 보상금 제시(2025)</a><span class="news-time">now</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31138" target="_blank" rel="noopener">Command &amp;amp; Conquer Generals, Fable로 macOS·iPhone·iPad 네이티브 포팅</a><span class="news-time">1h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31136" target="_blank" rel="noopener">Linux htop/top 화면에 보이는 값들 해설 (2019)</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31135" target="_blank" rel="noopener">YouTube 크리에이터의 비공개 영상 유출</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31134" target="_blank" rel="noopener">MemNixFS - 리눅스 메모리 덤프를 파일시스템으로 변환해 조사하는 도구</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31133" target="_blank" rel="noopener">Show GN: Cluedoc: 코드베이스 이해를 돕는 문서 작성 에이전트 스킬</a><span class="news-time">2h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31132" target="_blank" rel="noopener">개인 웹사이트는 무엇이어야 하는가?</a><span class="news-time">3h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31131" target="_blank" rel="noopener">웹 개발자를 위한 Safari MCP 서버</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31130" target="_blank" rel="noopener">회의 병목은 회의실 공기일지도 모름</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31129" target="_blank" rel="noopener">무언가를 배워보는 게 좋을지도 모름</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31128" target="_blank" rel="noopener">아프리카에서 Starlink 이용이 늘어나는 이유</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31127" target="_blank" rel="noopener">Fable 비용 60% 절감: 코드를 이미지로 변환하고 모델이 OCR하게 하기</a><span class="news-time">4h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31126" target="_blank" rel="noopener">내 Homelab은 유지보수하지 않는다</a><span class="news-time">6h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31125" target="_blank" rel="noopener">Wordgard: ProseMirror 제작자의 브라우저용 리치 텍스트 편집기</a><span class="news-time">6h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31124" target="_blank" rel="noopener">Leanstral 1.5: 모두를 위한 증명 풍요</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31123" target="_blank" rel="noopener">달러당 성능이 더 빠르고 저렴해지고 있음</a><span class="news-time">10h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31122" target="_blank" rel="noopener">EXAPUNKS (2018)</a><span class="news-time">11h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31121" target="_blank" rel="noopener">최신 수준 LLM 로컬 실행 가이드</a><span class="news-time">11h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31120" target="_blank" rel="noopener">유럽의회 대상 스파이 활동: Pegasus 조사위원도 해킹됨</a><span class="news-time">14h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31117" target="_blank" rel="noopener">Show GN: 축구감독 공항 대탈출 게임</a><span class="news-time">21h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31116" target="_blank" rel="noopener">미국의 개인정보 비상사태</a><span class="news-time">22h</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31115" target="_blank" rel="noopener">에이전트 자율성 수준</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31114" target="_blank" rel="noopener">Costco는 안티-Amazon이다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31113" target="_blank" rel="noopener">Fable을 이기는 ‘짧은 목줄’ AI 코딩 방법</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31112" target="_blank" rel="noopener">세션 기록을 기억하는건 에이전트에 유용하지 않음</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31111" target="_blank" rel="noopener">Show GN: Retry-now, 지금 바로 윤회 - 완전 자율 루프 에이전트</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31107" target="_blank" rel="noopener">Fable 필드 가이드: 나의 미지(Unknowns) 찾기</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31106" target="_blank" rel="noopener">루프 엔지니어링의 미학 (The Art of Loop Engineering)</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31105" target="_blank" rel="noopener">1인 창업자의 시대</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31104" target="_blank" rel="noopener">epiq - Git 기반 분산형 로컬 CLI 네이티브 이슈 트래커</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31103" target="_blank" rel="noopener">KDE Plasma에서 샌드박스를 깨는 임의 코드 실행 취약점</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31102" target="_blank" rel="noopener">ActivityPub 구현이 어려운 이유, 그리고 그럴 필요가 없는 이유</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31101" target="_blank" rel="noopener">ClickHouse가 Observability 전쟁에서 앞서가는 이유</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31100" target="_blank" rel="noopener">14주년을 맞은 Lobsters</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31099" target="_blank" rel="noopener">저커버그, Meta의 해고가 효과 없었음을 ‘인정’</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31098" target="_blank" rel="noopener">스위스는 왜 25Gbit 인터넷이 가능하고 미국은 아닌가</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31097" target="_blank" rel="noopener">Alibaba, 백도어 위험 우려해 사내에서 클로드 코드 사용 금지 조치 예정</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31096" target="_blank" rel="noopener">Half-Baked Product: 반쯤 구운 제품</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31095" target="_blank" rel="noopener">Valve, Steam Machine e-ink 전면을 오픈소스로 공개</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31094" target="_blank" rel="noopener">CarPlay는 부가적이다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31093" target="_blank" rel="noopener">멘탈 모델을 전달하는 도구나 기법은?</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31092" target="_blank" rel="noopener">로컬 인텔리전스에 대한 권리</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31091" target="_blank" rel="noopener">jj v0.43.0 공개</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31090" target="_blank" rel="noopener">계란 담합 업체들, 벌금의 1,000배를 벌었다</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31089" target="_blank" rel="noopener">Immich 3.0</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31088" target="_blank" rel="noopener">crustc: rustc 전체를 C로 변환</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31087" target="_blank" rel="noopener">Linux 6.9 이후 LUKS suspend가 디스크 암호화 키를 메모리에서 지우지 못함</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">GeekNews</code> <a href="https://news.hada.io/topic?id=31086" target="_blank" rel="noopener">모르는 사람에게 도움을 요청하는 방법</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/computational-strategies-for-schottky-barrier-heights-prediction-nist-u-maryland-johns-hopkins/" target="_blank" rel="noopener">Computational Strategies for Schottky Barrier Heights Prediction (NIST, U. Maryland, Johns Hopkins)</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/llm-agents-to-refactor-software-for-high-level-synthesis-carnegie-mellon-ucla/" target="_blank" rel="noopener">LLM Agents To Refactor Software For High Level Synthesis (Carnegie Mellon, UCLA)</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/probabilistic-memory-architecture-that-bridges-the-gap-between-rng-sampling-and-memory-access-notre-dame-georgia-tech-villanova/" target="_blank" rel="noopener">Probabilistic Memory Architecture That Bridges The Gap Between RNG Sampling and Memory Access (Notre Dame, Georgia Tech, Villanova)</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">SemiEng</code> <a href="https://semiengineering.com/chip-industry-week-in-review-145/" target="_blank" rel="noopener">Chip Industry Week In Review</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/inside-infineon-e5b-dresden-fab-virtual-fab-cloning-fast-tracked-the-launch/" target="_blank" rel="noopener">Inside Infineon’s €5B Dresden Fab: Virtual Fab Cloning Fast-Tracked the Launch</a><span class="news-time">16h</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/sk-hynix-plans-713b-domestic-investment/" target="_blank" rel="noopener">SK hynix Plans $713B Domestic Investment</a><span class="news-time">1d</span></div><div class="news-item"><code class="news-source">EETimes</code> <a href="https://www.eetimes.com/spains-semiconductor-landscape-six-stories-from-a-growing-ecosystem/" target="_blank" rel="noopener">Spain’s Semiconductor Landscape: Six Stories from a Growing Ecosystem</a><span class="news-time">1d</span></div>
+  </div>
+</div>
+
+
+</body>
+</html>
