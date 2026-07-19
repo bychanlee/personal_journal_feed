@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19T11:30:23.654615+00:00",
+  "generated": "2026-07-19T12:03:33.051010+00:00",
   "papers": [
     {
       "title": "Self-consistent $GW$ + extended dynamical mean field theory for semiconductors and insulators",
@@ -12,21 +12,7 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 4,
-      "reason": "Self-consistent GW method development for semiconductors; directly relevant to cluster D MBPT methodology advances",
-      "matched": []
-    },
-    {
-      "title": "A unified heterogeneous implementation of numerical atomic orbitals-based real-time TDDFT within the ABACUS package",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Taoni Bao, Yuanbo Li, Zichao Deng, Haotian Zhao, Denghui Lu, Yike Huang, Chao Lian, Lixin He, Mohan Chen",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002420?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 3,
-      "reason": "Real-time TDDFT heterogeneous GPU implementation in ABACUS, directly relevant to D:methodology and D:HPC exascale clusters",
+      "reason": "Self-consistent GW methodology for semiconductors—directly in cluster D (GW/BSE methodology advances)",
       "matched": []
     },
     {
@@ -40,35 +26,21 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 3,
-      "reason": "Dielectric screening in 2D heterostructures; directly relevant to cluster A high-priority research on 2D semiconductors and screening effects",
+      "reason": "Exciton dielectric screening in 2D TMD heterostructures—related to cluster A (screening in 2D/thin films)",
       "matched": []
     },
     {
-      "title": "κALDo 2.0: Scalable thermal transport from first principles and machine learning potentials",
+      "title": "A unified heterogeneous implementation of numerical atomic orbitals-based real-time TDDFT within the ABACUS package",
       "authors": "",
       "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Giuseppe Barbalinardo, Zekun Chen, Dylan A. Folkner, Bohan Li, Nicholas W. Lundgren, Nathaniel Troup, Alfredo Fiorentino, Davide Donadio",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600264X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 3,
-      "reason": "First-principles phonon-BTE thermal transport in 2D/bulk materials, directly relevant to cluster A phonon-limited mobility methodology.",
-      "matched": []
-    },
-    {
-      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Taoni Bao, Yuanbo Li, Zichao Deng, Haotian Zhao, Denghui Lu, Yike Huang, Chao Lian, Lixin He, Mohan Chen",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002420?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "",
+      "reason": "RT-TDDFT GPU implementation for ab initio; background topic in methodology and HPC infrastructure",
       "matched": []
     },
     {
@@ -82,35 +54,21 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Cation disorder in semiconductor; DFT-only, not GW; tangential to disorder physics",
       "matched": []
     },
     {
-      "title": "DiFfRG: A discretisation framework for functional renormalisation group flows",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Franz R. Sattler, Jan M. Pawlowski",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002444?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Electric dipole spin-flip resonances in semiconductors: A personal perspective",
+      "authors": "Bruce D. McCombe",
+      "last_author": "Bruce D. McCombe",
+      "abstract": "Author(s): Bruce D. McCombeEmmanuel Rashba is responsible for a body of theory that demonstrates the profound effects of spin-orbit interaction on charge carriers in semiconductors. This notably includes the discovery of important effects on confined carriers in the presence of structural inversion asymmetry. The present article describes, from a personal perspective, experimental discovery and studies of electric-field-excited spin-flip resonances in semiconductors motivated by these theoretical predictions. Initial experiments in 1960 focused on electric-dipole excited spin resonance (EDSR) and combined cyclotron plus spin resonance (in 1967). Recent experiments on quasi-two-dimensional electrons in the quantum Hall effect regime in an asymmetric quantum-well structure have revealed unusual multiline EDSR spectra attributed to effects of Rashba spin-orbit effective fields of electrons in quantum Hall edge channels.[Phys. Rev. B 114, 019603] Published Fri Jul 17, 2026",
+      "url": "http://link.aps.org/doi/10.1103/l17b-q33x",
+      "paper_id": "10.1103/l17b-q33x",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Yongheng Li, Changpeng Lin, Qi Ren, Junyan Liu, Bin Wei, Jiawang Hong",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "",
+      "reason": "Semiconductor spin-orbit physics background; not MBPT-connected",
       "matched": []
     },
     {
@@ -124,7 +82,7 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Moiré TMD excitons; 2D exciton background but user scope excludes moiré without scalable growth",
       "matched": []
     },
     {
@@ -138,7 +96,7 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "Exciton-phonon coupling in TMD; background topic on exciton-phonon methodology, but Wigner crystal-specific",
       "matched": []
     },
     {
@@ -152,35 +110,21 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "",
+      "reason": "Non-equilibrium Green's function methods for real-time dynamics; DMFT-centric but addresses time-dependent simulation (capped at 2 due to strongly-correlated focus)",
       "matched": []
     },
     {
-      "title": "Jahn-Teller-dynamics: Python package to determine vibronic interaction demonstrated on molecules and trigonal defect qubits",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Balázs Tóth, Ádám Gali, Gergő Thiering",
-      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600281X?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
+      "title": "Hidden Chiral Ferroelectricity in ${\\mathrm{AgNbO}}_{3}$ Perovskite",
+      "authors": "Ying Song, Lingzhi Cao, Jinming Zhai, Zhilong Yang, Yali Yang, Laurent Bellaiche, and Jiangang He",
+      "last_author": "Jiangang He",
+      "abstract": "Author(s): Ying Song, Lingzhi Cao, Jinming Zhai, Zhilong Yang, Yali Yang, Laurent Bellaiche, and Jiangang He${\\mathrm{AgNbO}}_{3}$ is a lead-free perovskite with considerable potential for energy storage and optoelectronic applications, yet its low-temperature crystal structure has remained controversial. In this Letter, we revisit its low-energy structural landscape using a systematic first-principles st…[Phys. Rev. Lett. 137, 036102] Published Fri Jul 17, 2026",
+      "url": "http://link.aps.org/doi/10.1103/kbfj-btly",
+      "paper_id": "10.1103/kbfj-btly",
+      "feed_name": "PRL",
+      "feed_category": "APS",
+      "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Learning ordinality-aware multimodal representations for composite materials design",
-      "authors": "Xinyao Li, Hangwei Qian, Jingjing Li, Lei Zhu, Ivor Tsang",
-      "last_author": "Ivor Tsang",
-      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75615-3Composite materials design is difficult due to complex, continuous design space. This work builds ORDER, a multimodal framework linking microstructures and descriptors with preserved property trends, aiding prediction, retrieval, and microstructure generation.",
-      "url": "https://www.nature.com/articles/s41467-026-75615-3",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-18T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Perovskite material; not connected to MBPT or GW absorber properties",
       "matched": []
     },
     {
@@ -194,77 +138,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Electronic structure methodology but not GW/BSE/EPW-specific; extreme-condition scope limits materials applicability",
-      "matched": []
-    },
-    {
-      "title": "Mitigating surface structural disorder for high-performance near-infrared quantum dot light-emitting diodes",
-      "authors": "Jiawei Chen, Xiyu Luo, Xiangyu Liu, Boning Han, Danlei Zhu, Yuhang Cui, Xudong Hu, Jiuyao Du, Wenyu Gu, Xinghua Yan, Ye Wu, Yuanzhuang Cheng, Shulin Chen, Xiaoming Li, Lian Duan, Dongxin Ma, Haibo Zeng",
-      "last_author": "Haibo Zeng",
-      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg2635?af=R",
-      "paper_id": "10.1126/sciadv.aeg2635?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-17T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Noninteracting tight-binding models for Fock parafermions",
-      "authors": "Edward McCann",
-      "last_author": "Edward McCann",
-      "abstract": "Author(s): Edward McCannWe model $p$-state Fock parafermions on a lattice in one dimension (with occupation per orbital of $0,1,...,p−1$). For $p$ a composite number, they may be mapped to ${q}_{m}$-state parafermions where ${q}_{m}$ are the prime factors of $p$. For a Hamiltonian with a single-particle spectrum, the paraf…[Phys. Rev. B 114, 055122] Published Fri Jul 17, 2026",
-      "url": "http://link.aps.org/doi/10.1103/65hp-72hs",
-      "paper_id": "10.1103/65hp-72hs",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-07-17T18:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Optical-based stretchable multimodal sensors for detecting strain and light with periodic buckling structures",
-      "authors": "Tomohiro Anda, Yusuke Ebihara, Mari Koizumi, Kento Yamagishi, Tomoyuki Yokota, Takao Someya",
-      "last_author": "Takao Someya",
-      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee9547?af=R",
-      "paper_id": "10.1126/sciadv.aee9547?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-17T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "PINNIES: An efficient physics-informed neural network framework for integral operator problems",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Alireza Afzal Aghaei, Mahdi Movahedian Moghaddam, Kourosh Parand",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002377?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Photoinduced anion exchange for spatially patterned perovskite ASE: Enabling full-color pixelated lasing displays",
-      "authors": "Shuaiqi Li, Yan He, Nian Liu, Yexiong Huang, Mingyu Pi, Jingwen Yao, Wensheng Fu, Dingke Zhang, Haiyang Xu, Zhenxiang Cheng",
-      "last_author": "Zhenxiang Cheng",
-      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef5186?af=R",
-      "paper_id": "10.1126/sciadv.aef5186?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-17T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Ab initio electronic structure algorithm, but extreme-conditions focus outside primary research clusters",
       "matched": []
     },
     {
@@ -278,49 +152,7 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Reconfigurable ferroelectric transistor array for embodied neuromorphic vision with hardware-native sensing, computing, and activation",
-      "authors": "Yuan Li, Zhi-Cheng Zhang, Zhaolong Chen, Fu-Dong Wang, Jian Yao, Hui-Ling Qi, Shu-Han Si, Yue Ding, Lixing Kang, Zhi-Bo Liu, Shuqi Chen, Jian-Guo Tian, Xu-Dong Chen",
-      "last_author": "Xu-Dong Chen",
-      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9436?af=R",
-      "paper_id": "10.1126/sciadv.aed9436?af=R",
-      "feed_name": "Sci. Adv.",
-      "feed_category": "AAAS",
-      "published": "2026-07-17T15:00:00+00:00",
-      "score": 2,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products",
-      "authors": "",
-      "last_author": "",
-      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Nikhil Kodali, Kartick Ramakrishnan, Phani Motamarri",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all",
-      "paper_id": "",
-      "feed_name": "Comp. Phys. Comm.",
-      "feed_category": "Elsevier",
-      "published": "",
-      "score": 2,
-      "reason": "Hermitian eigenvalue solver methods foundational to electronic structure codes, potential D:HPC utility but no MBPT specificity",
-      "matched": []
-    },
-    {
-      "title": "Scale-bridging interface design enables high-performance sustainable thermoelectrics",
-      "authors": "Gang Wu, Airan Li, Xinzhi Wu, Takao Mori",
-      "last_author": "Takao Mori",
-      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75865-1By linking device contacts with internal material interfaces, this study introduces a scale-bridging design that improves charge transport and heat management, enabling thermoelectric modules to convert waste heat into electricity more efficiently.",
-      "url": "https://www.nature.com/articles/s41467-026-75865-1",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-18T08:00:00+00:00",
-      "score": 2,
-      "reason": "",
+      "reason": "Ballistic phonon transport theory; tangentially related to phonon dynamics in nanoscale",
       "matched": []
     },
     {
@@ -334,7 +166,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "TMD band structure relevant to A:layered-FET scope but semi-empirical pseudopotential method lacks GW/BSE foundation",
+      "reason": "TMD band structure relevant to cluster A, but semi-empirical pseudopotential method capped by method gate",
       "matched": []
     },
     {
@@ -348,7 +180,7 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 2,
-      "reason": "Crystal symmetry utility for ab initio calculations, background infrastructure but not MBPT-focused",
+      "reason": "Crystal symmetry analysis tool; infrastructure support for ab initio workflows",
       "matched": []
     },
     {
@@ -362,21 +194,21 @@
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
       "score": 2,
-      "reason": "",
+      "reason": "2D exciton physics background; theory but not GW/BSE or ab initio",
       "matched": []
     },
     {
-      "title": "Wavelength-encoded neuromorphic inference enabled by microcavity MoS2 photodetector arrays",
-      "authors": "Xiang Chen, Kangjian Di, Fuhao Yu, Jiashu Li, Lixiang Sun, Shengdi Chen, Silin Chen, Andy Liu, Xiang Peng, Shitong Zhu, Taotao Li, Wei Jiang, Xuping Zhang, Yi Shi, Xinran Wang, Li Gao, Zehua Hu, Ningmu Zou",
-      "last_author": "Ningmu Zou",
-      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75808-wConventional vision hardware separates photodetection from computation, incurring substantial latency and energy costs. Chen and Di et al. report an optoelectronic architecture based on a microcavity-integrated MoS2 photodetector array that unifies sensing, weighting and temporal accumulation within each pixel.",
-      "url": "https://www.nature.com/articles/s41467-026-75808-w",
+      "title": "κALDo 2.0: Scalable thermal transport from first principles and machine learning potentials",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Giuseppe Barbalinardo, Zekun Chen, Dylan A. Folkner, Bohan Li, Nicholas W. Lundgren, Nathaniel Troup, Alfredo Fiorentino, Davide Donadio",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600264X?dgcid=rss_sd_all",
       "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-18T08:00:00+00:00",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 2,
-      "reason": "",
+      "reason": "Phonon BTE thermal transport from first principles—background topic relevant to phonon thermal conductivity in nanoscale channels",
       "matched": []
     },
     {
@@ -562,20 +394,6 @@
       "matched": []
     },
     {
-      "title": "Annealing-aware screening of Co–Ir–Ni–Rh–Ru alloys for ammonia decomposition",
-      "authors": "Xingyu Li, Cao Wang, Liang Cao",
-      "last_author": "Liang Cao",
-      "abstract": "npj Computational Materials, Published online: 18 July 2026; doi:10.1038/s41524-026-02242-3Annealing-aware screening of Co–Ir–Ni–Rh–Ru alloys for ammonia decomposition",
-      "url": "https://www.nature.com/articles/s41524-026-02242-3",
-      "paper_id": "",
-      "feed_name": "npj Comput. Mater.",
-      "feed_category": "Nature",
-      "published": "2026-07-18T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Anomalous semiconductorlike transport induced by the Curie transition in a $\\mathrm{C}{\\mathrm{o}}_{51}{\\mathrm{V}}_{31}\\mathrm{G}{\\mathrm{a}}_{18}$ metamagnetic Heusler alloy",
       "authors": "Hongwei Liu, Qi Chen, Yuanlei Zhang, Tianzhi Xia, Yanru Kang, Yiming Cao, Kun Xu, Zhe Li, Changqin Liu, Yongsheng Liu, Liang Zuo, and Zongbin Li",
       "last_author": "Zongbin Li",
@@ -669,6 +487,20 @@
       "feed_name": "PR Applied",
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "C-BerryTrans : A C++ code for first-principles calculation of Berry-curvature-driven anomalous Hall and Nernst conductivities",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Vivek Pandey, Sudhir K. Pandey",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002365?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -828,6 +660,20 @@
       "matched": []
     },
     {
+      "title": "DiFfRG: A discretisation framework for functional renormalisation group flows",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Franz R. Sattler, Jan M. Pawlowski",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002444?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Digital-alloy Bragg mirrors in high-$Q$ microcavities for polariton lasing",
       "authors": "V. A. Stolyarov, A. S. Kurdyubov, A. V. Trifonov, M. Yu. Petrov, I. V. Ignatiev, M. S. Lozhkin, S. A. Eliseev, Yu. P. Efimov, V. A. Lovtcius, and A. V. Kavokin",
       "last_author": "A. V. Kavokin",
@@ -884,6 +730,20 @@
       "matched": []
     },
     {
+      "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Yongheng Li, Changpeng Lin, Qi Ren, Junyan Liu, Bin Wei, Jiawang Hong",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002407?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "EQUILIPY: A static forward Grad-Shafranov solver using CutFEM",
       "authors": "",
       "last_author": "",
@@ -907,20 +767,6 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Electric dipole spin-flip resonances in semiconductors: A personal perspective",
-      "authors": "Bruce D. McCombe",
-      "last_author": "Bruce D. McCombe",
-      "abstract": "Author(s): Bruce D. McCombeEmmanuel Rashba is responsible for a body of theory that demonstrates the profound effects of spin-orbit interaction on charge carriers in semiconductors. This notably includes the discovery of important effects on confined carriers in the presence of structural inversion asymmetry. The present article describes, from a personal perspective, experimental discovery and studies of electric-field-excited spin-flip resonances in semiconductors motivated by these theoretical predictions. Initial experiments in 1960 focused on electric-dipole excited spin resonance (EDSR) and combined cyclotron plus spin resonance (in 1967). Recent experiments on quasi-two-dimensional electrons in the quantum Hall effect regime in an asymmetric quantum-well structure have revealed unusual multiline EDSR spectra attributed to effects of Rashba spin-orbit effective fields of electrons in quantum Hall edge channels.[Phys. Rev. B 114, 019603] Published Fri Jul 17, 2026",
-      "url": "http://link.aps.org/doi/10.1103/l17b-q33x",
-      "paper_id": "10.1103/l17b-q33x",
-      "feed_name": "PRB",
-      "feed_category": "APS",
-      "published": "2026-07-17T18:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1122,20 +968,6 @@
       "matched": []
     },
     {
-      "title": "Hidden Chiral Ferroelectricity in ${\\mathrm{AgNbO}}_{3}$ Perovskite",
-      "authors": "Ying Song, Lingzhi Cao, Jinming Zhai, Zhilong Yang, Yali Yang, Laurent Bellaiche, and Jiangang He",
-      "last_author": "Jiangang He",
-      "abstract": "Author(s): Ying Song, Lingzhi Cao, Jinming Zhai, Zhilong Yang, Yali Yang, Laurent Bellaiche, and Jiangang He${\\mathrm{AgNbO}}_{3}$ is a lead-free perovskite with considerable potential for energy storage and optoelectronic applications, yet its low-temperature crystal structure has remained controversial. In this Letter, we revisit its low-energy structural landscape using a systematic first-principles st…[Phys. Rev. Lett. 137, 036102] Published Fri Jul 17, 2026",
-      "url": "http://link.aps.org/doi/10.1103/kbfj-btly",
-      "paper_id": "10.1103/kbfj-btly",
-      "feed_name": "PRL",
-      "feed_category": "APS",
-      "published": "2026-07-17T18:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "High-resolution cryo-EM structure of integrin αIIbβ3 bound to disease-causing maternal HPA-1a antibody that blocks integrin activation",
       "authors": "José M. de Pereda, Wendy Stam, Marcos Gragera, Femke van der Meer, Francisco J. Chichón, Eleftherios Zarkadas, Ellen van der Schoot, Gestur Vidarsson, Junichi Takagi, Coert Margadant",
       "last_author": "Coert Margadant",
@@ -1220,6 +1052,20 @@
       "matched": []
     },
     {
+      "title": "Jahn-Teller-dynamics: Python package to determine vibronic interaction demonstrated on molecules and trigonal defect qubits",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Balázs Tóth, Ádám Gali, Gergő Thiering",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001046552600281X?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "KnudsenModel: A physically consistent Python framework for computing evaporative cooling of liquid jets",
       "authors": "",
       "last_author": "",
@@ -1243,6 +1089,20 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Learning ordinality-aware multimodal representations for composite materials design",
+      "authors": "Xinyao Li, Hangwei Qian, Jingjing Li, Lei Zhu, Ivor Tsang",
+      "last_author": "Ivor Tsang",
+      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75615-3Composite materials design is difficult due to complex, continuous design space. This work builds ORDER, a multimodal framework linking microstructures and descriptors with preserved property trends, aiding prediction, retrieval, and microstructure generation.",
+      "url": "https://www.nature.com/articles/s41467-026-75615-3",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-18T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1360,6 +1220,20 @@
       "matched": []
     },
     {
+      "title": "Mitigating surface structural disorder for high-performance near-infrared quantum dot light-emitting diodes",
+      "authors": "Jiawei Chen, Xiyu Luo, Xiangyu Liu, Boning Han, Danlei Zhu, Yuhang Cui, Xudong Hu, Jiuyao Du, Wenyu Gu, Xinghua Yan, Ye Wu, Yuanzhuang Cheng, Shulin Chen, Xiaoming Li, Lian Duan, Dongxin Ma, Haibo Zeng",
+      "last_author": "Haibo Zeng",
+      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg2635?af=R",
+      "paper_id": "10.1126/sciadv.aeg2635?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-17T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Model-driven conditional Fourier neural operator for spectrum-consistent synthetic turbulence generation",
       "authors": "",
       "last_author": "",
@@ -1444,6 +1318,20 @@
       "matched": []
     },
     {
+      "title": "Noninteracting tight-binding models for Fock parafermions",
+      "authors": "Edward McCann",
+      "last_author": "Edward McCann",
+      "abstract": "Author(s): Edward McCannWe model $p$-state Fock parafermions on a lattice in one dimension (with occupation per orbital of $0,1,...,p−1$). For $p$ a composite number, they may be mapped to ${q}_{m}$-state parafermions where ${q}_{m}$ are the prime factors of $p$. For a Hamiltonian with a single-particle spectrum, the paraf…[Phys. Rev. B 114, 055122] Published Fri Jul 17, 2026",
+      "url": "http://link.aps.org/doi/10.1103/65hp-72hs",
+      "paper_id": "10.1103/65hp-72hs",
+      "feed_name": "PRB",
+      "feed_category": "APS",
+      "published": "2026-07-17T18:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Numerical modeling of laser cooling in molecules: From simple diatomics to polyatomics and radioactive species",
       "authors": "",
       "last_author": "",
@@ -1486,6 +1374,20 @@
       "matched": []
     },
     {
+      "title": "Optical-based stretchable multimodal sensors for detecting strain and light with periodic buckling structures",
+      "authors": "Tomohiro Anda, Yusuke Ebihara, Mari Koizumi, Kento Yamagishi, Tomoyuki Yokota, Takao Someya",
+      "last_author": "Takao Someya",
+      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee9547?af=R",
+      "paper_id": "10.1126/sciadv.aee9547?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-17T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Optimization of high-fidelity single-qubit gates for fluxonium qubits using single-flux quantum control",
       "authors": "Maxime Lapointe-Major, Boyan Torosov, Bohdan Kulchytskyy, and Pooya Ronagh",
       "last_author": "Pooya Ronagh",
@@ -1505,6 +1407,20 @@
       "last_author": "",
       "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Jacob S. Merson, Cameron W. Smith, Mark S. Shephard, Fuad Hasan, Abhiyan Paudel, Angel Castillo-Crooke, Joyal Mathew, Mohammad Elahi",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002651?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "PINNIES: An efficient physics-informed neural network framework for integral operator problems",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Alireza Afzal Aghaei, Mahdi Movahedian Moghaddam, Kourosh Parand",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002377?dgcid=rss_sd_all",
       "paper_id": "",
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
@@ -1579,6 +1495,20 @@
       "feed_name": "PRB",
       "feed_category": "APS",
       "published": "2026-07-17T18:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Photoinduced anion exchange for spatially patterned perovskite ASE: Enabling full-color pixelated lasing displays",
+      "authors": "Shuaiqi Li, Yan He, Nian Liu, Yexiong Huang, Mingyu Pi, Jingwen Yao, Wensheng Fu, Dingke Zhang, Haiyang Xu, Zhenxiang Cheng",
+      "last_author": "Zhenxiang Cheng",
+      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef5186?af=R",
+      "paper_id": "10.1126/sciadv.aef5186?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-17T15:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1682,6 +1612,20 @@
       "matched": []
     },
     {
+      "title": "Reconfigurable ferroelectric transistor array for embodied neuromorphic vision with hardware-native sensing, computing, and activation",
+      "authors": "Yuan Li, Zhi-Cheng Zhang, Zhaolong Chen, Fu-Dong Wang, Jian Yao, Hui-Ling Qi, Shu-Han Si, Yue Ding, Lixing Kang, Zhi-Bo Liu, Shuqi Chen, Jian-Guo Tian, Xu-Dong Chen",
+      "last_author": "Xu-Dong Chen",
+      "abstract": "Science Advances, Volume 12, Issue 29, July 2026.",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9436?af=R",
+      "paper_id": "10.1126/sciadv.aed9436?af=R",
+      "feed_name": "Sci. Adv.",
+      "feed_category": "AAAS",
+      "published": "2026-07-17T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Refractory inclusions in Bennu samples indicative of outer Solar System accretion",
       "authors": "Noriyuki Kawasaki, Toru Matsumoto, Sota Arakawa, Naoya Sakamoto, Ken-ichi Bajo, Sara S. Russell, Jessica J. Barnes, Ann N. Nguyen, Timothy J. McCoy, Pierre Haenecour, Hisayoshi Yurimoto, Harold C. Connolly Jr., Dante S. Lauretta",
       "last_author": "Dante S. Lauretta",
@@ -1691,6 +1635,20 @@
       "feed_name": "Nat. Commun.",
       "feed_category": "Nature",
       "published": "2026-07-18T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Residual-based Chebyshev filtered subspace iteration for Hermitian eigenvalue problems tolerant to inexact matrix-vector products",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Publication date: October 2026Source: Computer Physics Communications, Volume 327Author(s): Nikhil Kodali, Kartick Ramakrishnan, Phani Motamarri",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010465526002213?dgcid=rss_sd_all",
+      "paper_id": "",
+      "feed_name": "Comp. Phys. Comm.",
+      "feed_category": "Elsevier",
+      "published": "",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1761,6 +1719,20 @@
       "feed_name": "Sci. Adv.",
       "feed_category": "AAAS",
       "published": "2026-07-17T15:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Scale-bridging interface design enables high-performance sustainable thermoelectrics",
+      "authors": "Gang Wu, Airan Li, Xinzhi Wu, Takao Mori",
+      "last_author": "Takao Mori",
+      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75865-1By linking device contacts with internal material interfaces, this study introduces a scale-bridging design that improves charge transport and heat management, enabling thermoelectric modules to convert waste heat into electricity more efficiently.",
+      "url": "https://www.nature.com/articles/s41467-026-75865-1",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-18T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2088,6 +2060,20 @@
       "matched": []
     },
     {
+      "title": "Wavelength-encoded neuromorphic inference enabled by microcavity MoS2 photodetector arrays",
+      "authors": "Xiang Chen, Kangjian Di, Fuhao Yu, Jiashu Li, Lixiang Sun, Shengdi Chen, Silin Chen, Andy Liu, Xiang Peng, Shitong Zhu, Taotao Li, Wei Jiang, Xuping Zhang, Yi Shi, Xinran Wang, Li Gao, Zehua Hu, Ningmu Zou",
+      "last_author": "Ningmu Zou",
+      "abstract": "Nature Communications, Published online: 18 July 2026; doi:10.1038/s41467-026-75808-wConventional vision hardware separates photodetection from computation, incurring substantial latency and energy costs. Chen and Di et al. report an optoelectronic architecture based on a microcavity-integrated MoS2 photodetector array that unifies sensing, weighting and temporal accumulation within each pixel.",
+      "url": "https://www.nature.com/articles/s41467-026-75808-w",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-18T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "When trust building looks like surveillance: Public polarization toward Chicago policing",
       "authors": "Tony Cheng and Shelley Liu",
       "last_author": "Tony Cheng and Shelley Liu",
@@ -2154,6 +2140,20 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Show GN: 브라우저에서만 돌아가는 한국어 AI 글 판별기",
+      "authors": "mssmss",
+      "last_author": "mssmss",
+      "abstract": "얼마전에 Hacker News를 뜨겁게 달궜던 주제가 있습니다. 고전 ML로 AI Slop Text를 판별하는 게 생각보다 효과가 좋다는 블로그 글이었어요. https://news.ycombinator.com/item?id=48936880 https://blog.lyc8503.net/en/post/llm-classifier/ 이미 많이 논의되었던 접근이기도 했지만 아",
+      "url": "https://news.hada.io/topic?id=31582",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-07-19T19:53:11+00:00",
+      "score": 0,
       "reason": "",
       "matched": []
     },
@@ -2839,20 +2839,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-07-17T23:52:58+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "SpaceX 주가, 장중 IPO 공모가 아래로 밀리며 상승분 모두 반납",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "상장 직후 50% 넘게 올랐던 SpaceX 주가는 처음으로 장중 공모가 135달러 아래로 내려가며 지난달 상승분을 모두 반납함 이후 일부 회복해 135.27달러로 마감했지만, IPO 당시 시가총액 2조 2,000억 달러와 AI 사업 계획을 둘러싼 초기 열기는 약해짐 IPO...",
-      "url": "https://news.hada.io/topic?id=31523",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-07-17T23:34:26+00:00",
       "score": 0,
       "reason": "",
       "matched": []
