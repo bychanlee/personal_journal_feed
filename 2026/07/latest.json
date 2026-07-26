@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T11:03:04.177456+00:00",
+  "generated": "2026-07-26T12:00:31.764908+00:00",
   "papers": [
     {
       "title": "A Differentiable EFIE–MoM Framework for Surface-Impedance Inverse Design of Reactive Metasurfaces",
@@ -1990,15 +1990,29 @@
       "matched": []
     },
     {
-      "title": "Claude 5 세대 모델을 위한 새로운 컨텍스트 엔지니어링 규칙",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "Claude Opus 5와 Claude Fable 5의 판단력이 향상되면서 Claude Code 시스템 프롬프트의 80% 이상을 제거해도 코딩 평가에서 측정 가능한 성능 저하가 없었음 규칙과 사용 예시를 과도하게 제공하기보다 주변 코드와 사용자 의도를 판단하게 하고, 표현력 있는 도구 인터페이...",
-      "url": "https://news.hada.io/topic?id=31825",
+      "title": "Show GN: 엄랭으로 틱택토 AI를 만들어 봤습니다.",
+      "authors": "arcoding",
+      "last_author": "arcoding",
+      "abstract": "엄랭(UmmLang)으로 틱택토 AI를 구현해봤습니다. 엄랭은 변수, 입출력, 조건문, 라인 점프 정도만 제공하는 난해한 프로그래밍 언어로 [ 어어엄어어어,,,,,,,, 식어어어ㅋ 동탄어?준. ] 이러한 생김새를 가지고 있습니다. 반복문이나 함수 같은 일반적인 제어 구조가 거의 없습니다. 정수조차",
+      "url": "https://news.hada.io/topic?id=31827",
       "paper_id": "",
       "feed_name": "GeekNews",
       "feed_category": "News",
-      "published": "2026-07-26T18:34:32+00:00",
+      "published": "2026-07-26T19:39:14+00:00",
+      "score": 0,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Taylor Farms, 사이클로스포라 리콜 발표 연기 위해 백악관에 연락",
+      "authors": "neo",
+      "last_author": "neo",
+      "abstract": "미국의 대형 농산물 공급업체 Taylor Farms가 미국 역사상 최대 규모 중 하나인 식품 매개 질병 사태와 관련해 리콜 발표를 늦춰달라고 백악관에 요청함 감염 사태의 원인으로 지목되기 전에 추가 증거와 대응 시간이 필요하다는 입장이었음 비용이 많이 ...",
+      "url": "https://news.hada.io/topic?id=31826",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-07-26T19:33:06+00:00",
       "score": 0,
       "reason": "",
       "matched": []
@@ -2671,20 +2685,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-07-24T23:40:02+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "빔 엔진의 작동 원리",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "초기 빔 엔진은 증기의 팽창·응축과 대기압을 이용해 약 15마력을 지속적으로 생산했으며, 왕복 운동을 회전으로 바꿔 산업혁명기 광산과 공장 기계를 구동함 Newcomen 엔진은 증기를 응축해 진공을 만들고 대기압으로 피스톤을 움직였지만, 실린더를 행정마다 식히고 다시 데우느라...",
-      "url": "https://news.hada.io/topic?id=31769",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-07-24T22:42:56+00:00",
       "score": 0,
       "reason": "",
       "matched": []
