@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T11:13:29.730815+00:00",
+  "generated": "2026-07-27T12:00:43.608034+00:00",
   "papers": [
     {
       "title": "A Differentiable EFIE–MoM Framework for Surface-Impedance Inverse Design of Reactive Metasurfaces",
@@ -67,6 +67,20 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "A fever dream of jellies and slugs",
+      "authors": "Josie Glausiusz",
+      "last_author": "Josie Glausiusz",
+      "abstract": "Nature, Published online: 27 July 2026; doi:10.1038/d41586-026-02314-wA celebration of Ernst Haeckel’s sketches of life forms, from microscopic to majestic.",
+      "url": "https://www.nature.com/articles/d41586-026-02314-w",
+      "paper_id": "",
+      "feed_name": "Nature",
+      "feed_category": "Nature",
+      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -170,20 +184,6 @@
       "matched": []
     },
     {
-      "title": "Achieving enhanced and robust propane selective oxidative dehydrogenation via electrically-driven continuous chemical looping",
-      "authors": "Shihui Zhang, Chang-An Zhou, Jinhuang Cai, Hongjiao Li, Tao Liu, Qiang Hu, Chao Wang, Lei Song, Jiawei Xie, Lirong Zheng, Bin Liang, Hairong Yue, Kui Ma",
-      "last_author": "Kui Ma",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76063-9Oxidative propane dehydrogenation (OPDH) for propylene production is promising but limited by overoxidation. Here, the authors report an electrically driven chemical looping process using solid oxide electrolysis cells, which achieves high propylene selectivity in CO2 OPDH via anode catalyst design.",
-      "url": "https://www.nature.com/articles/s41467-026-76063-9",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Additions to the FUMILIM minimization package",
       "authors": "",
       "last_author": "",
@@ -212,20 +212,6 @@
       "matched": []
     },
     {
-      "title": "An agent-guided peptide hydrogel bio-stabilizer clamps pericellular viscoelastic drift",
-      "authors": "Xiao Wei, Liqiang Zhang, Zhuo Chang, Fan Ding, Ziyan Qu, Jianghao Chen, Guangkui Xu, Wangxiao He, Wenjia Liu",
-      "last_author": "Wenjia Liu",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76070-wHere, the authors present ViscoClamp, a hydrogel that stabilizes the local mechanical environment around cells, restores bone-forming activity under diabetes-related stress, and improves jaw and skull bone repair in animal models.",
-      "url": "https://www.nature.com/articles/s41467-026-76070-w",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "An immersed interface method for microstructure-scale electrochemical battery models: numerical formulation and performance portable implementation",
       "authors": "",
       "last_author": "",
@@ -235,20 +221,6 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "An ingestible origami-inspired metamaterial for prolonged oral delivery of therapeutics",
-      "authors": "Farhad Javid, Sahab Babaee, Jasmine Quigley, Ameya Kirtane, Hormoz Mazdiyasni, Jaimie Rogner, Cody Cleveland, Taylor Bensel, Vance Soares, Joy E. Collins, Kaitlyn Hess, Shane McDonnell, Alison M. Hayward, Robert Langer, Giovanni Traverso",
-      "last_author": "Giovanni Traverso",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76028-yPoor adherence to oral drug regimen adversely affects treatments. Here, the authors developed an origami-inspired, oral drug delivery dosage form capable of prolonged residence in the gastric cavity.",
-      "url": "https://www.nature.com/articles/s41467-026-76028-y",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -520,20 +492,6 @@
       "matched": []
     },
     {
-      "title": "Determinants of electron transport at asymmetric metal/molecule/metal contacts",
-      "authors": "Guirong Su, Rulin Feng, Yonghao Zhao, Igor Ying Zhang, Wei Liu",
-      "last_author": "Wei Liu",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76040-2The development of molecular diodes has been hindered by trial-and-error approaches due to the breakdown of classical transport models at the metal–molecule interface. Su et al. investigate 144 molecular junctions and introduce a descriptor that achieves over 93% predictive accuracy in rectification ratio.",
-      "url": "https://www.nature.com/articles/s41467-026-76040-2",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Developing the THETA transport code with the linear source enhanced random ray method for high-fidelity radiation shielding simulation",
       "authors": "",
       "last_author": "",
@@ -618,6 +576,20 @@
       "matched": []
     },
     {
+      "title": "Dynamics of supracellular keratin bundling and nuclear uncaging in stretched epithelia",
+      "authors": "Tom Golde, Marco Pensalfini, Nimesh Chahare, Pere Roca-Cusachs, Gerhard Wiche, Guillaume T. Charras, Marino Arroyo, Xavier Trepat",
+      "last_author": "Xavier Trepat",
+      "abstract": "Nature Physics, Published online: 27 July 2026; doi:10.1038/s41567-026-03371-8Keratin intermediate filaments form a cage around the nucleus to protect it from stress. Now it is shown that under large deformations the filaments bundle and ultimately release the nucleus from its cage.",
+      "url": "https://www.nature.com/articles/s41567-026-03371-8",
+      "paper_id": "",
+      "feed_name": "Nat. Phys.",
+      "feed_category": "Nature",
+      "published": "2026-07-27T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
       "authors": "",
       "last_author": "",
@@ -697,20 +669,6 @@
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-07-27T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Enantioselective synthesis of ring-constrained biaryls via a twist-expand-seal strategy",
-      "authors": "Yuxing Cai, Yuxuan Zhang, Hanyu Gao, Yong Huang",
-      "last_author": "Yong Huang",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76125-yThe authors report a “twist-expand-seal” strategy for synthesizing a unique class of cyclic biaryls that exhibit axial chirality and conformational constraint, with adjustable ring sizes.",
-      "url": "https://www.nature.com/articles/s41467-026-76125-y",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -921,20 +879,6 @@
       "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-07-27T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Food-related energy consumption can help reveal poverty in rural Chinese households",
-      "authors": "Ruohan Zhong, Jinjun Xue, Xinye Zheng, Chu Wei, Qian Sun",
-      "last_author": "Qian Sun",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76026-0This study introduces the Energy Engel Coefficient, a food-related energy consumption indicator. Using household survey data from China, it identifies low-income rural households not identified by traditional income-based poverty measures.",
-      "url": "https://www.nature.com/articles/s41467-026-76026-0",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1229,20 +1173,6 @@
       "feed_name": "physics.comp-ph",
       "feed_category": "arXiv",
       "published": "2026-07-27T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Improving atomic force microscopy structure discovery via style-translation",
-      "authors": "Jie Huang, Niko Oinonen, Fabio Priante, Filippo Federici Canova, Lauri Kurki, Chen Xu, Adam S. Foster",
-      "last_author": "Adam S. Foster",
-      "abstract": "npj Computational Materials, Published online: 27 July 2026; doi:10.1038/s41524-026-02243-2Improving atomic force microscopy structure discovery via style-translation",
-      "url": "https://www.nature.com/articles/s41524-026-02243-2",
-      "paper_id": "",
-      "feed_name": "npj Comput. Mater.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1565,20 +1495,6 @@
       "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-07-27T12:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Microbial drought resistance is achieved at the expense of soil carbon loss",
-      "authors": "Xuesen Pang, Chengjie Ren, Nianpeng He, Xinyi Zhang, Yanghui He, Zhenghu Zhou",
-      "last_author": "Zhenghu Zhou",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-76033-1This study shows that soil microbes adapt to aridity by shifting their yield, resource acquisition and stress tolerance strategies, and that aridification amplifies the effects of these strategies on soil carbon mineralization.",
-      "url": "https://www.nature.com/articles/s41467-026-76033-1",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2648,20 +2564,6 @@
       "matched": []
     },
     {
-      "title": "The influence of structural variants from 2445 pigs on gene expression and complex traits",
-      "authors": "Zhongzi Wu, Lu Gui, Jianchao Hu, Xiaoyun Chen, Zhiyan Zhang, Jun Gao, Weiwei Liu, Lusheng Huang",
-      "last_author": "Lusheng Huang",
-      "abstract": "Nature Communications, Published online: 27 July 2026; doi:10.1038/s41467-026-75525-4Structural variation in pigs remains poorly understood. Here, the authors analyse the genomes from 2,445 pigs to create a map of structural variation in pigs and explore how these variants affect gene activity, domestication and body size.",
-      "url": "https://www.nature.com/articles/s41467-026-75525-4",
-      "paper_id": "",
-      "feed_name": "Nat. Commun.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Thermal avalanches in a quasiperiodic XXZ model",
       "authors": "Paolo Molignini, Antonio \\v{S}trkalj",
       "last_author": "Antonio \\v{S}trkalj",
@@ -2699,6 +2601,20 @@
       "feed_name": "physics.optics",
       "feed_category": "arXiv",
       "published": "2026-07-27T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Topological phase transitions and mixed-state order in a Hubbard quantum simulator",
+      "authors": "Lin Su, Rahul Sahay, Michal Szurek, Alexander Douglas, Ognjen Marković, Ceren B. Dag, Ruben Verresen, Markus Greiner",
+      "last_author": "Markus Greiner",
+      "abstract": "Nature Physics, Published online: 27 July 2026; doi:10.1038/s41567-026-03381-6Topological phases can be hard to distinguish with local measurements. Now, a transition between two such phases has been revealed in ultracold erbium atoms, and shown to disappear when two systems are stacked or information about disorder is lost.",
+      "url": "https://www.nature.com/articles/s41567-026-03381-6",
+      "paper_id": "",
+      "feed_name": "Nat. Phys.",
+      "feed_category": "Nature",
+      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2924,6 +2840,20 @@
       "feed_category": "Elsevier",
       "published": "",
       "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Show GN: 크롬 원격 데스크탑에서 언어 변경이 불편할 때 - LangToggle",
+      "authors": "simsan00",
+      "last_author": "simsan00",
+      "abstract": "최근에 맥미니를 사서 사용할 때 원격으로 접속하면 어떤 툴들을 사용할지 고민하다가 선택한게 Chrome Remote Desktop이었습니다. 하지만 몇번 사용하다보니, 제가 생각하지 못했던 불편한 점이 꽤나 많이 나왔는데요. 일단 제 맥북에서 맥미니에 접속해서 커맨트+탭을 사용해서 다른 탭으로 전환하는게",
+      "url": "https://news.hada.io/topic?id=31876",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-07-27T19:22:56+00:00",
+      "score": 0,
       "reason": "",
       "matched": []
     },
@@ -3609,20 +3539,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-07-26T06:33:15+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "IRGC, 바레인의 Amazon 데이터 센터를 파괴했다고 주장",
-      "authors": "neo",
-      "last_author": "neo",
-      "abstract": "IRGC는 2026년 7월 21일 Operation Nasr-2 24차 공세에서 AWS 바레인 데이터 센터를 순항미사일로 파괴했다고 주장했으나, Amazon·바레인 정부·CENTCOM은 이를 확인하지 않음 이번 공격은 이틀 전 미국이 이란의 Darkhovin 원자력발전소를 타격한 데 대한 보복으로...",
-      "url": "https://news.hada.io/topic?id=31809",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-07-26T04:35:21+00:00",
       "score": 0,
       "reason": "",
       "matched": []
