@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T11:27:35.119539+00:00",
+  "generated": "2026-07-28T12:00:38.779476+00:00",
   "papers": [
     {
       "title": "$D$-Wave Phonon Angular Momentum Texture in Altermagnets by Magnon-Phonon Hybridization",
@@ -620,6 +620,20 @@
       "matched": []
     },
     {
+      "title": "Author Correction: Bacterial detoxification of plant defence secondary metabolites mediates the interaction between a shrub and frugivorous birds",
+      "authors": "Beny Trabelcy, Nimrod Shteindel, Maya Lalzar, Ido Izhaki, Yoram Gerchman",
+      "last_author": "Yoram Gerchman",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-73042-yAuthor Correction: Bacterial detoxification of plant defence secondary metabolites mediates the interaction between a shrub and frugivorous birds",
+      "url": "https://www.nature.com/articles/s41467-026-73042-y",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "BO-PBK: A new solver for dispersion relations of obliquely propagating waves in multi-species plasmas with anisotropic loss-cone drift product-bi-kappa distributions",
       "authors": "",
       "last_author": "",
@@ -1208,6 +1222,20 @@
       "matched": []
     },
     {
+      "title": "Data-driven reduced modeling of neural dynamics",
+      "authors": "A. Marraffa, R. Krause, V. Mante, G. Haller",
+      "last_author": "G. Haller",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-75924-7Spectral submanifolds can be used to reduce recurrent neural networks to low-dimensional models, revealing their core dynamics. Here, authors uncover robust structures underlying decision-making and working-memory tasks, providing predictions about the underlying behavior of neural computations.",
+      "url": "https://www.nature.com/articles/s41467-026-75924-7",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Decoding Equilibrium and Dynamical Criticality in the 2D Topological Order",
       "authors": "Xiao-Ming Zhao, Cui-Xian Guo, Gaoyong Sun, Su-Peng Kou",
       "last_author": "Su-Peng Kou",
@@ -1446,20 +1474,6 @@
       "matched": []
     },
     {
-      "title": "Dynamics of supracellular keratin bundling and nuclear uncaging in stretched epithelia",
-      "authors": "Tom Golde, Marco Pensalfini, Nimesh Chahare, Pere Roca-Cusachs, Gerhard Wiche, Guillaume T. Charras, Marino Arroyo, Xavier Trepat",
-      "last_author": "Xavier Trepat",
-      "abstract": "Nature Physics, Published online: 27 July 2026; doi:10.1038/s41567-026-03371-8Keratin intermediate filaments form a cage around the nucleus to protect it from stress. Now it is shown that under large deformations the filaments bundle and ultimately release the nucleus from its cage.",
-      "url": "https://www.nature.com/articles/s41567-026-03371-8",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
       "title": "Dysurf: A program for simulating four-dimensional dynamical structure factor",
       "authors": "",
       "last_author": "",
@@ -1539,6 +1553,20 @@
       "feed_name": "cond-mat.mes-hall",
       "feed_category": "arXiv",
       "published": "2026-07-28T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Electrochemical upcycling of spent ITO via charge-induced deconstruction",
+      "authors": "Rongcen Zhao, Xiaotao Lv, Zepeng Lv, Shaolong Li, Yong Fan, Jilin He, Jianxun Song",
+      "last_author": "Jianxun Song",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-75921-wAn electrochemical upcycling strategy for spent indium-tin oxide (ITO) via charge-induced deconstruction. Spent ITO acts directly as the anode, where charge excitation creates oxygen vacancies to release indium and tin ions, deposited as a high-purity In-Sn alloy.",
+      "url": "https://www.nature.com/articles/s41467-026-75921-w",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -1880,6 +1908,20 @@
       "matched": []
     },
     {
+      "title": "Facial expression discrimination emerges from partially overlapping neural subspaces of detection and identity",
+      "authors": "Maren Wehrheim, Shirin Taghian Alamooti, Hamidreza Ramezanpour, Kohitij Kar",
+      "last_author": "Kohitij Kar",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-76106-1How the brain supports facial expression perception remains unclear. Here, the authors show that macaques are a good model of human expression perception and that early high-level visual cortex activity links face identity and expression.",
+      "url": "https://www.nature.com/articles/s41467-026-76106-1",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "False Summit and Silent Drift: A Failure Taxonomy and Efficiency Analysis of LLM-Assisted Multiphysics Simulation in an Open-Source Framework",
       "authors": "Chi-Chun Chiang, Shih-Ming He",
       "last_author": "Shih-Ming He",
@@ -1959,6 +2001,20 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-07-28T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Fertility clinics are offering young mitochondria in controversial fertility technique",
+      "authors": "Edward Chen",
+      "last_author": "Edward Chen",
+      "abstract": "Nature, Published online: 28 July 2026; doi:10.1038/d41586-026-01935-5Researchers are alarmed that the procedure, which has not been rigorously studied, is advertised by clinics around the world.",
+      "url": "https://www.nature.com/articles/d41586-026-01935-5",
+      "paper_id": "",
+      "feed_name": "Nature",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2225,6 +2281,20 @@
       "feed_name": "Nature",
       "feed_category": "Nature",
       "published": "2026-07-27T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Human cortex organizes dynamic co-fluctuations along the sensorimotor-association axis",
+      "authors": "De-Zhi Jin, Changsong Zhou, Xi-Nian Zuo, Joshua Faskowitz, Ting Xu, Ye He",
+      "last_author": "Ye He",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-76011-7This study reveals that amplitude-stratified co-fluctuations in brain activity transit from sensorimotor to association dominance. These patterns matured between childhood to adulthood and reconfigured under naturalistic stimuli, linking dynamic activity to stable network organization.",
+      "url": "https://www.nature.com/articles/s41467-026-76011-7",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -2804,6 +2874,20 @@
       "matched": []
     },
     {
+      "title": "Medical AI has a measurement problem",
+      "authors": "Arjun K. Manrai",
+      "last_author": "Arjun K. Manrai",
+      "abstract": "Nature, Published online: 28 July 2026; doi:10.1038/d41586-026-02125-zThe development of two medical AI assistants highlights an unnerving challenge: as the technology races ahead, what is the best way to evaluate what works?",
+      "url": "https://www.nature.com/articles/d41586-026-02125-z",
+      "paper_id": "",
+      "feed_name": "Nature",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Mesoscopic scattering dynamics under generic uniform SU(2) gauge fields: Spin-momentum relaxation and coherent backscattering",
       "authors": "Masataka Kakoi, Christian Miniatura, Keith Slevin",
       "last_author": "Keith Slevin",
@@ -2953,6 +3037,20 @@
       "feed_name": "cond-mat.mtrl-sci",
       "feed_category": "arXiv",
       "published": "2026-07-28T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Molecular velcro for precision genome repair",
+      "authors": "Roman Jerala, Duško Lainšček",
+      "last_author": "Duško Lainšček",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-76136-9Base editing promises transformative therapies for genetic disease, but delivery constraints have limited clinical translation. Mu and colleagues show that programmable coiled-coil assembly can create highly efficient split base editors and demonstrate its in vivo functionality.",
+      "url": "https://www.nature.com/articles/s41467-026-76136-9",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -4106,6 +4204,20 @@
       "matched": []
     },
     {
+      "title": "Scalable irradiance-adaptive electrochromic shading for photothermal regulation",
+      "authors": "Wenting Wu, Xueyang Wang, Alvin Wei Ming Tan, Yangyang Xin, Yixuan Jiang, Tan Hu, Hui Wang, Yawei Jiang, Pooi See Lee",
+      "last_author": "Pooi See Lee",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-76115-0A solar-powered electrochromic shading system dynamically regulates sunlight intensity for crops without external energy input. In tropical field tests, it reduces temperatures, improves crop quality, and increases biomass yield by up to 235% compared with conventional shading.",
+      "url": "https://www.nature.com/articles/s41467-026-76115-0",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Scaling Enhancement in Distributed Quantum Sensing via Bidirectional Causal Routing",
       "authors": "Binke Xia, Zhaotong Cui, Jingzheng Huang, Yuxiang Yang, Guihua Zeng",
       "last_author": "Guihua Zeng",
@@ -4638,6 +4750,20 @@
       "matched": []
     },
     {
+      "title": "Temporal drift of sleep-wake representations in hypothalamic neuronal ensembles",
+      "authors": "Yudong Yan, Niccolò Calcini, Thomas Rusterholz, Carolina Gutierrez, Antoine Adamantidis",
+      "last_author": "Antoine Adamantidis",
+      "abstract": "Nature Communications, Published online: 28 July 2026; doi:10.1038/s41467-026-75792-1Hypothalamic neurons encode sleep–wake states, but their long-term stability is unclear. Here, authors show that although single-cell state selectivity drifts over days, the overall ensemble representations remain stable and are altered by diazepam.",
+      "url": "https://www.nature.com/articles/s41467-026-75792-1",
+      "paper_id": "",
+      "feed_name": "Nat. Commun.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Terahertz electrodynamics in a zero-field Wigner crystal",
       "authors": "Su-Di Chen, Ruishi Qi, Ha-Leem Kim, Qixin Feng, Ruichen Xia, Dishan Abeysinghe, Jingxu Xie, Takashi Taniguchi, Kenji Watanabe, Dung-Hai Lee, Feng Wang",
       "last_author": "Feng Wang",
@@ -4759,20 +4885,6 @@
       "feed_name": "Comp. Phys. Comm.",
       "feed_category": "Elsevier",
       "published": "",
-      "score": 1,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "Topological phase transitions and mixed-state order in a Hubbard quantum simulator",
-      "authors": "Lin Su, Rahul Sahay, Michal Szurek, Alexander Douglas, Ognjen Marković, Ceren B. Dag, Ruben Verresen, Markus Greiner",
-      "last_author": "Markus Greiner",
-      "abstract": "Nature Physics, Published online: 27 July 2026; doi:10.1038/s41567-026-03381-6Topological phases can be hard to distinguish with local measurements. Now, a transition between two such phases has been revealed in ultracold erbium atoms, and shown to disappear when two systems are stacked or information about disorder is lost.",
-      "url": "https://www.nature.com/articles/s41567-026-03381-6",
-      "paper_id": "",
-      "feed_name": "Nat. Phys.",
-      "feed_category": "Nature",
-      "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -4946,6 +5058,20 @@
       "matched": []
     },
     {
+      "title": "Upconverting nanoparticles enable bioimaging with sub-ångström precision",
+      "authors": "",
+      "last_author": "",
+      "abstract": "Nature Nanotechnology, Published online: 28 July 2026; doi:10.1038/s41565-026-02253-7Visualization of protein organization with ångström localization precision is limited by rapid photobleaching of conventional fluorophores. We compositionally engineered upconverting nanoparticles to blink spontaneously and indefinitely, enabling two-colour bio-imaging with sub-ångström localization precision using a single near-infrared excitation source.",
+      "url": "https://www.nature.com/articles/s41565-026-02253-7",
+      "paper_id": "",
+      "feed_name": "Nat. Nano.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
       "title": "Use AI, but don’t mask it",
       "authors": "Francesco Branda",
       "last_author": "Francesco Branda",
@@ -5011,6 +5137,20 @@
       "feed_name": "physics.comp-ph",
       "feed_category": "arXiv",
       "published": "2026-07-28T12:00:00+00:00",
+      "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "Watch the interfacial gap",
+      "authors": "Xin Li",
+      "last_author": "Xin Li",
+      "abstract": "Nature Materials, Published online: 28 July 2026; doi:10.1038/s41563-026-02694-4Watch the interfacial gap",
+      "url": "https://www.nature.com/articles/s41563-026-02694-4",
+      "paper_id": "",
+      "feed_name": "Nat. Mater.",
+      "feed_category": "Nature",
+      "published": "2026-07-28T08:00:00+00:00",
       "score": 1,
       "reason": "",
       "matched": []
@@ -5222,6 +5362,20 @@
       "feed_category": "Nature",
       "published": "2026-07-27T08:00:00+00:00",
       "score": 1,
+      "reason": "",
+      "matched": []
+    },
+    {
+      "title": "밑줄 하나를 빠뜨린 수사 오류로 무고한 남성이 18개월 복역",
+      "authors": "neo",
+      "last_author": "neo",
+      "abstract": "2018년 아동 유인 수사에서 경찰이 Kik 사용자명 fus__ro_dah의 밑줄 하나를 누락하면서 전혀 다른 Brandon Klayme이 용의자로 지목돼 18개월을 복역함 위스콘신 경찰은 밑줄이 2개인 계정 대신 1개인 계정의 정보를 Kik에 요청했고, 회신받은 이메일과 캐나다 IP 주소...",
+      "url": "https://news.hada.io/topic?id=31911",
+      "paper_id": "",
+      "feed_name": "GeekNews",
+      "feed_category": "News",
+      "published": "2026-07-28T19:32:13+00:00",
+      "score": 0,
       "reason": "",
       "matched": []
     },
@@ -5907,20 +6061,6 @@
       "feed_name": "GeekNews",
       "feed_category": "News",
       "published": "2026-07-27T08:35:02+00:00",
-      "score": 0,
-      "reason": "",
-      "matched": []
-    },
-    {
-      "title": "CodeAlmanac - AI 코딩 에이전트를 위한 코드베이스 위키",
-      "authors": "xguru",
-      "last_author": "xguru",
-      "abstract": "코드만으로는 담을 수 없는 결정, 흐름, 불변 조건, 함정(gotchas) 을 기록해 AI 에이전트에게 맥락을 제공하는 살아있는 위키 시스템이 왜 지금의 형태인지, 과거에 무엇이 깨졌는지, 워크플로가 파일/서비스를 어떻게 가로지르는지 기록 위키는 저장소 안의 ...",
-      "url": "https://news.hada.io/topic?id=31845",
-      "paper_id": "",
-      "feed_name": "GeekNews",
-      "feed_category": "News",
-      "published": "2026-07-27T08:31:01+00:00",
       "score": 0,
       "reason": "",
       "matched": []
